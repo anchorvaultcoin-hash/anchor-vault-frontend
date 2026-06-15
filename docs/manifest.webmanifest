@@ -1,0 +1,36 @@
+{
+  "name": "AnchorVault V45 Pulse",
+  "short_name": "AnchorVault",
+  "description": "Phishing-resistant Web3 vault protocol \u2014 EIP-712 signed operations, multi-asset ERC-20 support, dual-key recovery.",
+  "start_url": "/pulse.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a0a0b",
+  "theme_color": "#0a0a0b",
+  "categories": [
+    "finance",
+    "productivity",
+    "security",
+    "utilities"
+  ],
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    {
+      "src": "./favicon.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./og.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "AnchorVault V45 Pulse \u2014 dashboard"
+    }
+  ]
+}
