@@ -14,22 +14,9 @@
 if(typeof window.Capacitor==='undefined'){
   window.Capacitor = {
     Plugins: {},
-    registerPlugin: function(name){
-      if(name==='WalletConnectNative'){
-        return {
-          init: async function(){},
-          getSession: async function(){ return null; },
-          connect: async function(){ throw new Error('Native WalletConnect unavailable in local browser'); },
-          sendTransaction: async function(){ throw new Error('Native WalletConnect unavailable in local browser'); }
-        };
-      }
-      if(name==='SecureWallet'){
-        return {
-          signMessage: async function(){ throw new Error('SecureWallet unavailable in local browser'); },
-          signTypedData: async function(){ throw new Error('SecureWallet unavailable in local browser'); }
-        };
-      }
-      return {};
+    registerPlugin: function(){
+      // No native Capacitor plugins in browser mode.
+      return undefined;
     }
   };
 }
@@ -968,12 +955,23 @@ async function connect(){
     S.ep=await getWCProvider();
     log('[2] provider ready, enable() start','info');
     window.__wcEnabling=false;
-    const accs=(S.ep&&S.ep.__nativeAddress)?[S.ep.__nativeAddress]:[];
-    log('[3] native connect: '+(accs.length?accs[0]:'null'),'info');
+    let browserAddress=null;
+    if(S.ep&&S.ep.__nativeAddress){
+      browserAddress=S.ep.__nativeAddress;
+      S.prov=__rpcProvider();
+      S.sign=new NativeWCSigner(S.ep.__nativeAddress,S.prov);
+      log('[3] native connect: '+browserAddress,'info');
+    } else if(S.ep&&S.ep.__browserAddress){
+      browserAddress=S.ep.__browserAddress;
+      S.prov=S.ep.provider;
+      S.sign=S.prov.getSigner(browserAddress);
+      log('[3] browser connect: '+browserAddress,'info');
+    } else {
+      hideL();
+      toast(t('t_no_metamask'),'warning');
+      return;
+    }
     hideL();
-    if(!accs.length){toast(t('t_no_metamask'),'warning');return;}
-    S.prov=__rpcProvider();
-    S.sign=new NativeWCSigner(S.ep.__nativeAddress,S.prov);
     S.user=await S.sign.getAddress();
     log('[4] signer ok: '+S.user,'info');
     S.vlt=new ethers.Contract(C.CONTRACT,ABI,S.sign);
@@ -2649,20 +2647,35 @@ const WC_PROJECT_ID='63a49b51bae49ce2f64d32e1105021cd';
 let __wcProvider=null;
 async function getWCProvider(silentOnly=false){
   // НАТИВНЫЙ режим: owner-кошелёк через window.WalletConnectNative (Reown Sign в Kotlin).
-  // ethers-провайдер здесь НЕ создаём: транзакции уходят через плагин, чтение — через RPC.
-  if(!window.WalletConnectNative){
-    if(silentOnly)return null;
-    throw new Error('WalletConnectNative недоступен (запуск вне нативного приложения)');
+  // Браузерный режим: подключение через window.ethereum (MetaMask/совместимые провайдеры).
+  if(window.WalletConnectNative){
+    try{ await window.WalletConnectNative.init({}); }catch(e){ log('WC init: '+((e&&e.message)||e),'warning'); }
+    if(silentOnly){
+      try{
+        const ses=await window.WalletConnectNative.getSession();
+        return (ses&&ses.address)?{__nativeAddress:ses.address,__topic:ses.topic}:null;
+      }catch(e){ return null; }
+    }
+    const r=await window.WalletConnectNative.connect();
+    return {__nativeAddress:r.address,__topic:r.topic};
   }
-  try{ await window.WalletConnectNative.init({}); }catch(e){ log('WC init: '+((e&&e.message)||e),'warning'); }
-  if(silentOnly){
-    try{
-      const ses=await window.WalletConnectNative.getSession();
-      return (ses&&ses.address)?{__nativeAddress:ses.address,__topic:ses.topic}:null;
-    }catch(e){ return null; }
+
+  if(window.ethereum){
+    const provider = new ethers.BrowserProvider(window.ethereum, 'any');
+    if(silentOnly){
+      try{
+        const accounts = await provider.listAccounts();
+        return accounts.length?{__browserAddress:accounts[0],provider}:null;
+      }catch(e){ return null; }
+    }
+    await window.ethereum.request({ method:'eth_requestAccounts' });
+    const accounts = await provider.listAccounts();
+    if(!accounts.length) throw new Error('Браузерный кошелёк не подключён');
+    return {__browserAddress:accounts[0],provider};
   }
-  const r=await window.WalletConnectNative.connect();
-  return {__nativeAddress:r.address,__topic:r.topic};
+
+  if(silentOnly) return null;
+  throw new Error('Нет кошелька: установите MetaMask или откройте нативное приложение');
 }
 
 // RPC-провайдер только для чтения (баланс, receipt, сеть). Owner-кошелёк не нужен.
