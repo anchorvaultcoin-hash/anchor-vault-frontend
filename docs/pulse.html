@@ -955,22 +955,25 @@ async function connect(){
     S.ep=await getWCProvider();
     log('[2] provider ready, enable() start','info');
     window.__wcEnabling=false;
-    let browserAddress=null;
+    
+    // NATIVE MODE: Capacitor WalletConnectNative
     if(S.ep&&S.ep.__nativeAddress){
-      browserAddress=S.ep.__nativeAddress;
       S.prov=__rpcProvider();
       S.sign=new NativeWCSigner(S.ep.__nativeAddress,S.prov);
-      log('[3] native connect: '+browserAddress,'info');
-    } else if(S.ep&&S.ep.__browserAddress){
-      browserAddress=S.ep.__browserAddress;
+      log('[3] native connect: '+S.ep.__nativeAddress,'info');
+    } 
+    // BROWSER MODE: window.ethereum via ethers BrowserProvider
+    else if(S.ep&&S.ep.__browserAddress&&S.ep.provider){
       S.prov=S.ep.provider;
-      S.sign=S.prov.getSigner(browserAddress);
-      log('[3] browser connect: '+browserAddress,'info');
-    } else {
+      S.sign=S.prov.getSigner();
+      log('[3] browser connect: '+S.ep.__browserAddress,'info');
+    } 
+    else {
       hideL();
       toast(t('t_no_metamask'),'warning');
       return;
     }
+    
     hideL();
     S.user=await S.sign.getAddress();
     log('[4] signer ok: '+S.user,'info');
@@ -2664,14 +2667,16 @@ async function getWCProvider(silentOnly=false){
     const provider = new ethers.BrowserProvider(window.ethereum, 'any');
     if(silentOnly){
       try{
-        const accounts = await provider.listAccounts();
-        return accounts.length?{__browserAddress:accounts[0],provider}:null;
+        const signer = await provider.getSigner();
+        const addr = await signer.getAddress();
+        return addr?{__browserAddress:addr,provider}:null;
       }catch(e){ return null; }
     }
     await window.ethereum.request({ method:'eth_requestAccounts' });
-    const accounts = await provider.listAccounts();
-    if(!accounts.length) throw new Error('Браузерный кошелёк не подключён');
-    return {__browserAddress:accounts[0],provider};
+    const signer = await provider.getSigner();
+    const addr = await signer.getAddress();
+    if(!addr) throw new Error('Браузерный кошелёк не подключён');
+    return {__browserAddress:addr,provider};
   }
 
   if(silentOnly) return null;
