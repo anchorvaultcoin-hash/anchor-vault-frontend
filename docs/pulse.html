@@ -3,6 +3,7 @@
 <head>
 <link rel="canonical" href="https://anchorvaultcoin-hash.github.io/anchor-vault-v45/pulse.html" />
 <meta charset="utf-8">
+<script src="capacitor.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com; connect-src 'self' https: wss:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; frame-src 'none';">
 <title>AnchorVaultCoin V45 — Пульт управления</title>
@@ -355,7 +356,9 @@ pre.code{font-family:'JetBrains Mono',monospace;font-size:10px;white-space:pre-w
       <select id="lsel" style="width:auto;padding:3px 5px;cursor:pointer;font-size:10px;flex-shrink:0;background:#1e2736;border:1px solid #2a3347;color:#e2e8f0;border-radius:6px">
         <option value="ru">RU</option><option value="en">EN</option><option value="zh">ZH</option>
       </select>
-                </header>
+      <button id="bwallet" class="btn btnsm" style="display:none;width:32px;height:32px;padding:0;font-size:16px;flex-shrink:0" onclick="showWalletSetup()" title="Кошелёк">🔑</button>
+      <button id="bexit" class="btn btnsm" style="display:none;width:32px;height:32px;padding:0;font-size:18px;flex-shrink:0" onclick="disco()" title="Выйти"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjIwIiByeD0iMiIvPjxsaW5lIHgxPSIxNiIgeTE9IjEyIiB4Mj0iMjQiIHkyPSIxMiIvPjxwb2x5bGluZSBwb2ludHM9IjIwIDggMjQgMTIgMjAgMTYiLz48L3N2Zz4=" width="18" height="18" style="vertical-align:middle;filter:brightness(0) invert(1)"></button>
+    </header>
 
     <!-- INFOBAR -->
     <div id="ibar">
@@ -1074,7 +1077,8 @@ async function connect(){
     const b=$('bcon');
     b.style.display='none';
     const ha=$('haddr'); if(ha) ha.textContent=sh(S.user,6,4);
-
+    const bw=$('bwallet'); if(bw) bw.style.display='inline-flex';
+    const be=$('bexit'); if(be) be.style.display='inline-flex';
     $('neth').href=`${C.EXP}/address/${C.CONTRACT}`;
     log(`${t('t_connected')} ${sh(S.user,6,4)}`,'success');
     toast(`${t('t_connected')} ${sh(S.user,6,4)}`,'success');
@@ -1094,14 +1098,15 @@ function disco(){
   const b=$('bcon');
   b.style.display='inline-flex';
   const ha=$('haddr'); if(ha) ha.textContent='';
-
+  const bw=$('bwallet'); if(bw) bw.style.display='none';
+  const be=$('bexit'); if(be) be.style.display='none';
   ['ibv-n','ibv-s','ibv-a','ibv-l','ibv-e','ibv-v','ibv-ad'].forEach(id=>{$(id).textContent='—';});
   $('ibn').className='ib';$('ibs2').className='ib';
   $('irole').classList.add('hidden');$('irole-sep').style.display='none';
   $('ncr').classList.add('hidden');$('ngd').classList.add('hidden');$('sadm').classList.add('hidden');
   log(t('t_disconnected'),'warning');
   route('home');
-
+  if(window.SecureWallet) setTimeout(()=>showWalletSetup(),300);
 }
 
 async function loadRoles(){
@@ -1197,7 +1202,7 @@ function showGEM(){
    ================================================================ */
 let KW_TARGET=null;          // id целевого поля (opm/opr/ge-a) [SecureWallet mode]
 let KW_LABEL='';             // подпись поля
-let KW_GEN=[];
+let KW_GEN=[];               // сгенерированные за сессию {label,address,phrase,pk}
 
 // Открыть мастер. targetId — поле, label — что настраиваем. Если targetId не задан — экран выбора поля.
 // === SecureWallet: wallet address picker ===
@@ -1233,7 +1238,7 @@ window.closeKW=function(){
   $('kwz').classList.remove('show');
   // SECURITY: затираем приватные ключи и фразы из памяти при закрытии мастера
   if(KW_GEN.length){
-
+    KW_GEN.forEach(g=>{g.pk='';g.phrase='';});
     KW_GEN.length=0;
   }
   if(window.__kwTimer){clearTimeout(window.__kwTimer);window.__kwTimer=null;}
@@ -1243,7 +1248,7 @@ function kwArmTimer(){
   if(window.__kwTimer)clearTimeout(window.__kwTimer);
   window.__kwTimer=setTimeout(()=>{
     if(KW_GEN.length){
-  
+      KW_GEN.forEach(g=>{g.pk='';g.phrase='';});
       KW_GEN.length=0;
       log('🔒 Сгенерированные ключи стёрты из памяти (5 мин таймаут).','warning');
       try{closeKW();}catch{}
@@ -1277,7 +1282,7 @@ function kwChoose(){
       <span>${t('kw_agree_check')}</span>
     </label>
     <div style="display:flex;flex-direction:column;gap:9px">
-      <button class="btn btnsm btnbl" id="kwgenbtn" style="display:none" disabled>
+      <button class="btn btnsm btnbl" id="kwgenbtn" style="text-align:left;padding:11px;opacity:.4;cursor:not-allowed" disabled onclick="kwGen()">
         <div style="font-weight:700">${t('kw_gen_btn')}</div>
         <div style="font-size:10px;color:#94a3b8;font-weight:400;margin-top:2px">${t('kw_gen_desc')}</div>
       </button>
@@ -1300,9 +1305,51 @@ window.kwTogAgree=function(checked){
 
 // Способ A: генерация нового кошелька
 window.kwGen=async function(){
-  toast('Генерация ключей доступна только в мобильном приложении или Desktop версии','warning',5000);
-  return;
+  // === SecureWallet: native key generation ===
+  if(window.SecureWallet){
+    const wid=prompt('Имя кошелька (main/recovery):','main');
+    if(!wid)return;
+    try{
+      const r=await window.SecureWallet.createWallet({walletId:wid});
+      toast('Кошелёк создан: '+sh(r.address,8,6),'success');
+      // ВАЖНО: показываем мнемонику один раз
+      alert('⚠️ ЗАПИШИТЕ SEED-ФРАЗУ И СОХРАНИТЕ В БЕЗОПАСНОМ МЕСТЕ!\n\n'+r.mnemonic+'\n\nЭта фраза показывается ОДИН РАЗ.');
+      if(KW_TARGET){
+        const inp=$(KW_TARGET);if(inp){inp.value=r.address;inp.dispatchEvent(new Event('input'));}
+      }
+      closeKW();
+      return;
+    }catch(e){toast(perr(e),'error');return;}
+  }
+  // --- Browser fallback (original kwGen) ---
+  let w;
+  try{w=ethers.Wallet.createRandom();}catch(e){toast(perr(e),'error');return;}
+  const addr=w.address, phrase=w.mnemonic?.phrase||'', pk=w.privateKey;
+  KW_GEN.push({label:KW_LABEL,address:addr,phrase,pk});
+  kwArmTimer();
+  $('kwz-sub').textContent=KW_LABEL;
+  $('kwz-body').innerHTML=`
+    <div class="nc ncw mb3">${t('kw_gen_warn')}</div>
+    <div class="mb2">
+      <div class="stl">${t('kw_address')}</div>
+      <div class="mono" style="font-size:10.5px;word-break:break-all;background:#0f1318;border:1px solid #2a3347;border-radius:8px;padding:8px;margin-top:3px">${addr}</div>
+    </div>
+    <div class="mb2">
+      <div class="stl">${t('kw_phrase')}</div>
+      <div class="mono" style="font-size:11px;line-height:1.6;word-break:break-word;background:#0f1318;border:1px solid rgba(91,163,201,.4);border-radius:8px;padding:9px;margin-top:3px;color:#bde0f0">${E(phrase)}</div>
+    </div>
+    <div class="nc nci mb3" style="font-size:10px">${t('kw_import_note')}</div>
+    <label class="flex items-start gap2 mb3" style="font-size:11px;color:#e2e8f0;cursor:pointer">
+      <input type="checkbox" id="kwsaved" style="margin-top:1px;flex-shrink:0" onchange="$('kwuse').disabled=!this.checked"> ${t('kw_saved_check')}
+    </label>
+    <div class="flex gap2">
+      <button class="btn btnsm" onclick="kwDownload()">${t('kw_download')}</button>
+      <button class="btn btng btnsm flex-1" id="kwuse" disabled onclick="kwUse('${addr}')">${t('kw_use')}</button>
+    </div>
+    <button class="btn btnsm btnbl mt2" onclick="kwGen()">${t('kw_regen')}</button>`;
 };
+
+// Способ B: выбор из аккаунтов MetaMask
 window.kwMM=async function(){
   $('kwz-sub').textContent=KW_LABEL;
   $('kwz-body').innerHTML=`<div style="text-align:center;padding:18px;color:#94a3b8;font-size:12px">${t('kw_mm_loading')}</div>`;
@@ -1342,7 +1389,7 @@ window.kwDownload=function(){
            en:{h:'AnchorVault KEY MEMO',w:'DO NOT SHARE THIS FILE. Anyone with the secret phrase gets full access.',imp:'How to use: import each wallet into MetaMask via its secret phrase to sign operations with it.',a:'Address',p:'Secret phrase',k:'Private key',d:'Created'},
            zh:{h:'AnchorVault 钥匙备忘录',w:'请勿分享此文件。任何拥有助记词的人都将获得完全访问权限。',imp:'使用方法：通过助记词将每个钱包导入 MetaMask，以便用它签署操作。',a:'地址',p:'助记词',k:'私钥',d:'创建于'}}[S.lang]||{};
   let txt=`${L.h}\n${'='.repeat(40)}\n${L.d}: ${new Date().toLocaleString()}\n\n* ${L.w}\n${L.imp}\n\n`;
-  // key export removed
+  KW_GEN.forEach((g,i)=>{txt+=`[${i+1}] ${g.label}\n${L.a}: ${g.address}\n${L.p}: ${g.phrase}\n${L.k}: ${g.pk}\n\n`;});
   const blob=new Blob([txt],{type:'text/plain;charset=utf-8'});
   const url=URL.createObjectURL(blob);
   const a=document.createElement('a');
@@ -3144,7 +3191,7 @@ async function swCreate() {
         Она показывается <b>ОДИН РАЗ</b>. Потеряете — потеряете доступ к кошельку.
       </div>
       <div class="st mb2"><div class="stl">Seed-фраза для «${wid}»</div>
-        <!-- mnemonic removed -->
+        <div class="stv" style="font-size:12px;line-height:2;color:#22c55e">${r.mnemonic}</div>
       </div>
       <div class="st mb3"><div class="stl">Адрес</div><div class="stv">${r.address}</div></div>
       <button class="btn btng btnsm" onclick="$('swSetup').classList.remove('show');connect();">✅ Я записал, продолжить</button>
@@ -3274,7 +3321,8 @@ async function switchNet(network){
       window.SecureWallet = window.Capacitor.registerPlugin('SecureWallet');
       console.log('[AnchorVault] SecureWallet plugin registered');
       // Показываем кнопки управления кошельком сразу
-
+      const bw=$('bwallet'); if(bw) bw.style.display='inline-flex';
+      const be=$('bexit'); if(be) be.style.display='inline-flex';
     } else {
       console.log('[AnchorVault] Running in browser mode (no SecureWallet)');
     }
