@@ -235,6 +235,30 @@ footer .flinks a:hover{color:var(--gold)}
   </div>
 </section>
 
+
+<section id="privacy">
+  <div class="container">
+    <h2 style="text-align:center;margin-bottom:12px" id="privTitle"></h2>
+    <p style="text-align:center;color:var(--text2);max-width:680px;margin:0 auto 48px;font-size:1.02rem" id="privDesc"></p>
+    <div class="grid grid3">
+      <div class="card" style="text-align:center">
+        <div style="font-size:2rem;margin-bottom:10px">🪙</div>
+        <h3 id="priv1Title"></h3>
+        <p id="priv1Desc" style="font-size:.85rem"></p>
+      </div>
+      <div class="card" style="text-align:center">
+        <div style="font-size:2rem;margin-bottom:10px">👁️</div>
+        <h3 id="priv2Title"></h3>
+        <p id="priv2Desc" style="font-size:.85rem"></p>
+      </div>
+      <div class="card" style="text-align:center">
+        <div style="font-size:2rem;margin-bottom:10px">🤝</div>
+        <h3 id="priv3Title"></h3>
+        <p id="priv3Desc" style="font-size:.85rem"></p>
+      </div>
+    </div>
+  </div>
+</section>
 <section>
   <div class="container">
     <h2 id="secTitle"></h2>
@@ -334,6 +358,11 @@ footer .flinks a:hover{color:var(--gold)}
       ancr1Title:"Открывай сейфы", ancr1Desc:"ANCR — единственный токен для создания защищённых ячеек. Каждый сейф — ваш личный криптобункер.",
       ancr2Title:"Получай бонусы", ancr2Desc:"Бонусные выплаты за участие в протоколе. Чем дольше хранишь — тем больше награда.",
       ancr3Title:"Будущее DeFi", ancr3Desc:"Mainnet скоро. Ранние участники получат приоритетный доступ и специальные условия.",
+      privTitle:"Храни всё. Никто не увидит.",
+      privDesc:"AnchorVaultCoin — это не просто защита от взлома. Это полная конфиденциальность ваших активов. Баланс сейфа виден только вам — через наше приложение.",
+      priv1Title:"Любые ERC-20 токены", priv1Desc:"USDT, USDC, ETH (через WETH), ANCR и любые другие токены. Один сейф — полный портфель под защитой двух ключей.",
+      priv2Title:"Невидим для посторонних", priv2Desc:"Ваши активы в сейфе не отображаются в MetaMask, Trust Wallet и других кошельках. Только наше приложение показывает реальный баланс.",
+      priv3Title:"Приватная передача", priv3Desc:"Передача сейфа другому адресу происходит внутри протокола. Без публичных следов, без лишних транзакций. Конфиденциально и безопасно.",
       fPatent:"Pending patent application"
     },
     en: {
@@ -368,10 +397,20 @@ footer .flinks a:hover{color:var(--gold)}
       ancr1Title:"Открывай сейфы", ancr1Desc:"ANCR — единственный токен для создания защищённых ячеек. Каждый сейф — ваш личный криптобункер.",
       ancr2Title:"Получай бонусы", ancr2Desc:"Бонусные выплаты за участие в протоколе. Чем дольше хранишь — тем больше награда.",
       ancr3Title:"Будущее DeFi", ancr3Desc:"Mainnet скоро. Ранние участники получат приоритетный доступ и специальные условия.",
+      privTitle:"Храни всё. Никто не увидит.",
+      privDesc:"AnchorVaultCoin — это не просто защита от взлома. Это полная конфиденциальность ваших активов. Баланс сейфа виден только вам — через наше приложение.",
+      priv1Title:"Любые ERC-20 токены", priv1Desc:"USDT, USDC, ETH (через WETH), ANCR и любые другие токены. Один сейф — полный портфель под защитой двух ключей.",
+      priv2Title:"Невидим для посторонних", priv2Desc:"Ваши активы в сейфе не отображаются в MetaMask, Trust Wallet и других кошельках. Только наше приложение показывает реальный баланс.",
+      priv3Title:"Приватная передача", priv3Desc:"Передача сейфа другому адресу происходит внутри протокола. Без публичных следов, без лишних транзакций. Конфиденциально и безопасно.",
       ancrDesc:"ANCR is the native token of the AnchorVaultCoin ecosystem. Used to open vaults, earn bonuses and participate in the protocol. The first token with built-in two-factor storage protection.",
       ancr1Title:"Open vaults", ancr1Desc:"ANCR is the only token for creating protected cells. Each vault is your personal crypto bunker.",
       ancr2Title:"Earn bonuses", ancr2Desc:"Bonus rewards for protocol participation. The longer you hold — the greater the reward.",
       ancr3Title:"Future of DeFi", ancr3Desc:"Mainnet coming soon. Early participants get priority access and special conditions.",
+      privTitle:"Store everything. Nobody will see.",
+      privDesc:"AnchorVaultCoin is not just hack protection. It's complete asset confidentiality. Your vault balance is visible only to you — through our app.",
+      priv1Title:"Any ERC-20 tokens", priv1Desc:"USDT, USDC, ETH (via WETH), ANCR and any other tokens. One vault — a complete portfolio under two-key protection.",
+      priv2Title:"Invisible to others", priv2Desc:"Your vault assets don't show up in MetaMask, Trust Wallet or other wallets. Only our app shows the real balance.",
+      priv3Title:"Private transfer", priv3Desc:"Transferring a vault to another address happens inside the protocol. No public traces, no extra transactions. Confidential and secure.",
       fPatent:"Pending patent application"
     },
     zh: {
@@ -472,6 +511,12 @@ footer .flinks a:hover{color:var(--gold)}
     setText('ctaDesc', t.ctaDesc);
     setText('ctaBtn', t.ctaBtn);
     setText('ctaFootnote', t.ctaFootnote);
+    if(t.privTitle){
+      setText('privTitle', t.privTitle); setText('privDesc', t.privDesc);
+      setText('priv1Title', t.priv1Title); setText('priv1Desc', t.priv1Desc);
+      setText('priv2Title', t.priv2Title); setText('priv2Desc', t.priv2Desc);
+      setText('priv3Title', t.priv3Title); setText('priv3Desc', t.priv3Desc);
+    }
     if(t.ancrDesc){
       setText('ancrDesc', t.ancrDesc);
       setText('ancr1Title', t.ancr1Title); setText('ancr1Desc', t.ancr1Desc);
