@@ -355,9 +355,7 @@ pre.code{font-family:'JetBrains Mono',monospace;font-size:10px;white-space:pre-w
       <select id="lsel" style="width:auto;padding:3px 5px;cursor:pointer;font-size:10px;flex-shrink:0;background:#1e2736;border:1px solid #2a3347;color:#e2e8f0;border-radius:6px">
         <option value="ru">RU</option><option value="en">EN</option><option value="zh">ZH</option>
       </select>
-      
-      
-    </header>
+                </header>
 
     <!-- INFOBAR -->
     <div id="ibar">
@@ -1302,24 +1300,9 @@ window.kwTogAgree=function(checked){
 
 // Способ A: генерация нового кошелька
 window.kwGen=async function(){
-  // === SecureWallet: native key generation ===
-  if(window.SecureWallet){
-    const wid=prompt('Имя кошелька (main/recovery):','main');
-    if(!wid)return;
-    try{
-      const r=await window.SecureWallet.createWallet({walletId:wid});
-      toast('Кошелёк создан: '+sh(r.address,8,6),'success');
-      // ВАЖНО: показываем мнемонику один раз
-
-      if(KW_TARGET){
-        const inp=$(KW_TARGET);if(inp){inp.value=r.address;inp.dispatchEvent(new Event('input'));}
-      }
-      closeKW();
-      return;
-    }catch(e){toast(perr(e),'error');return;}
-  }
-  // Key generation removed in browser version
-
+  toast('Генерация ключей доступна только в мобильном приложении или Desktop версии','warning',5000);
+  return;
+};
 window.kwMM=async function(){
   $('kwz-sub').textContent=KW_LABEL;
   $('kwz-body').innerHTML=`<div style="text-align:center;padding:18px;color:#94a3b8;font-size:12px">${t('kw_mm_loading')}</div>`;
@@ -1359,7 +1342,7 @@ window.kwDownload=function(){
            en:{h:'AnchorVault KEY MEMO',w:'DO NOT SHARE THIS FILE. Anyone with the secret phrase gets full access.',imp:'How to use: import each wallet into MetaMask via its secret phrase to sign operations with it.',a:'Address',p:'Secret phrase',k:'Private key',d:'Created'},
            zh:{h:'AnchorVault 钥匙备忘录',w:'请勿分享此文件。任何拥有助记词的人都将获得完全访问权限。',imp:'使用方法：通过助记词将每个钱包导入 MetaMask，以便用它签署操作。',a:'地址',p:'助记词',k:'私钥',d:'创建于'}}[S.lang]||{};
   let txt=`${L.h}\n${'='.repeat(40)}\n${L.d}: ${new Date().toLocaleString()}\n\n* ${L.w}\n${L.imp}\n\n`;
-
+  // key export removed
   const blob=new Blob([txt],{type:'text/plain;charset=utf-8'});
   const url=URL.createObjectURL(blob);
   const a=document.createElement('a');
@@ -3161,7 +3144,7 @@ async function swCreate() {
         Она показывается <b>ОДИН РАЗ</b>. Потеряете — потеряете доступ к кошельку.
       </div>
       <div class="st mb2"><div class="stl">Seed-фраза для «${wid}»</div>
-        <!-- mnemonic display removed -->
+        <!-- mnemonic removed -->
       </div>
       <div class="st mb3"><div class="stl">Адрес</div><div class="stv">${r.address}</div></div>
       <button class="btn btng btnsm" onclick="$('swSetup').classList.remove('show');connect();">✅ Я записал, продолжить</button>
