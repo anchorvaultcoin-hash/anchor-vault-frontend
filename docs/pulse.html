@@ -453,6 +453,115 @@ async function createProvider(network) {
   throw new Error('Все RPC недоступны');
 }
 
+/* ================================================================
+   EIP-6963 — обнаружение всех инжектящихся кошельков (MetaMask,
+   Rabby, OKX, Coinbase, Trust, Brave и т.д.). Один источник истины.
+   ================================================================ */
+const EIP6963 = { wallets: [] };
+window.addEventListener('eip6963:announceProvider', (event) => {
+  const d = event.detail;
+  if (!d || !d.provider || !d.info) return;
+  // защита от дублей по uuid
+  if (EIP6963.wallets.some(w => w.info.uuid === d.info.uuid)) return;
+  EIP6963.wallets.push({ info: d.info, provider: d.provider });
+});
+// запрос анонса (кошельки ответят событием announceProvider)
+window.dispatchEvent(new Event('eip6963:requestProvider'));
+
+// Единая точка получения активного инжектённого провайдера.
+// Возвращает выбранный кошелёк (S.eip1193) либо legacy window.ethereum.
+function getInjected(){
+  if (typeof S !== 'undefined' && S && S.eip1193) return S.eip1193;
+  return window.ethereum || null;
+}
+
+/* Выбор кошелька из обнаруженных EIP-6963.
+   >1 → показать список с иконками; ==1 → вернуть молча; 0 → fallback window.ethereum. */
+function pickWallet(){
+  return new Promise(resolve=>{
+    const list = EIP6963.wallets.slice();
+    if (list.length === 0){ resolve(window.ethereum || null); return; }
+    if (list.length === 1){ resolve(list[0].provider); return; }
+
+    const rows = list.map((w,i)=>{
+      const icon = w.info.icon ? `<img src="${E(w.info.icon)}" alt="" style="width:24px;height:24px;border-radius:6px;vertical-align:middle;margin-right:8px">` : '';
+      return `<button class="btn btnsm wpick" data-i="${i}" style="display:flex;align-items:center;width:100%;justify-content:flex-start;margin:4px 0;padding:10px 12px">${icon}<span>${E(w.info.name||('Wallet '+(i+1)))}</span></button>`;
+    }).join('');
+
+    $('cmt').textContent = t('wallet_setup_title') || 'Выберите кошелёк';
+    $('cmb').innerHTML = `<div class="nc nci mb2">${E(S.lang==='en'?'Multiple wallets detected. Choose one:':S.lang==='zh'?'检测到多个钱包，请选择一个：':'Обнаружено несколько кошельков. Выберите один:')}</div>${rows}`;
+    $('cm').classList.add('show');
+
+    // прячем стандартную кнопку "да", оставляем "отмена"
+    const yBtn=$('cmy'); const prevY=yBtn.style.display; yBtn.style.display='none';
+
+    const cleanup=()=>{ yBtn.style.display=prevY; $('cm').classList.remove('show'); };
+
+    $('cmb').querySelectorAll('.wpick').forEach(b=>{
+      b.onclick=()=>{ const i=+b.dataset.i; cleanup(); resolve(list[i].provider); };
+    });
+    $('cmn').onclick=()=>{ cleanup(); resolve(null); };
+  });
+}
+
+/* ================================================================
+   quorumGuard — независимая сверка КРИТИЧНЫХ данных по нескольким RPC
+   ПЕРЕД подписью. Защита от подмены данных скомпрометированным RPC
+   (тип атаки KelpDAO). Сверяем только СТАТИЧНЫЕ значения (адреса/конфиг),
+   НЕ волатильные (баланс/блок) — иначе ложные тревоги из-за рассинхрона.
+   Бросает Error при расхождении → подпись не состоится.
+   ================================================================ */
+async function quorumGuard(owner, vaultId, network){
+  const urls = RPC_LISTS[network || 'sepolia'];
+  const chainId = (network === 'mainnet') ? 1 : 11155111;
+  // поднимаем независимые провайдеры (staticNetwork — без лишних запросов сети)
+  const provs = urls.map(u => {
+    try { return new ethers.JsonRpcProvider(u, chainId, { staticNetwork: true }); }
+    catch(e){ return null; }
+  }).filter(Boolean);
+
+  if (provs.length < 2){
+    console.warn('[quorumGuard] доступно <2 RPC — кворум невозможен, пропускаю сверку');
+    return true; // не блокируем работу, если независимых RPC физически мало
+  }
+
+  // Критичные чтения: резервный адрес + ядро сейфа (token, emergencyAddress)
+  const checks = [
+    { name:'globalEmergency',
+      read: (p)=> new ethers.Contract(C.CONTRACT, ABI, p).globalEmergency(owner) },
+    { name:'vaultCore.token',
+      read: async (p)=>{ const co=await new ethers.Contract(C.CONTRACT, ABI, p).getVaultCore(owner, vaultId); return co[1]; } },
+    { name:'vaultCore.emergencyAddress',
+      read: async (p)=>{ const co=await new ethers.Contract(C.CONTRACT, ABI, p).getVaultCore(owner, vaultId); return co[6]; } },
+  ];
+
+  const QUORUM = 2; // минимум 2 независимых RPC должны согласиться
+
+  for (const chk of checks){
+    const results = await Promise.all(provs.map(async p=>{
+      try{
+        const v = await Promise.race([
+          chk.read(p),
+          new Promise((_,rej)=>setTimeout(()=>rej('timeout'), 5000))
+        ]);
+        return String(v).toLowerCase();
+      }catch(e){ return null; }
+    }));
+
+    const tally = {};
+    results.forEach(r=>{ if(r!==null) tally[r]=(tally[r]||0)+1; });
+    const entries = Object.entries(tally).sort((a,b)=>b[1]-a[1]);
+
+    if (entries.length === 0)
+      throw new Error(`RPC-сверка «${chk.name}»: ни один RPC не ответил`);
+    if (entries[0][1] < QUORUM)
+      throw new Error(`RPC-сверка «${chk.name}»: согласие ${entries[0][1]}/${QUORUM} — недостаточно. Подпись отменена.`);
+    if (entries.length > 1)
+      throw new Error(`⚠️ RPC вернули РАЗНЫЕ данные для «${chk.name}». Возможна подмена RPC. Подпись отменена в целях безопасности.`);
+  }
+  return true;
+}
+
 const C = Object.freeze({
   CONTRACT: DEPLOY.CONTRACT,
   ANCR:     DEPLOY.TOKENS.ANCR.address,
@@ -919,6 +1028,7 @@ function perr(e){
    ================================================================ */
 const S={
   prov:null,sign:null,user:null,vlt:null,erc:null,
+  eip1193:null,  // выбранный EIP-6963 кошелёк (источник истины для браузер-режима)
   isCr:false,isGd:false,netOK:false,paused:false,
   vid:0n,hasEm:false,vd:null,
   selTok:'ANCR',  // символ выбранного токена сейфа (ключ из TOKENS)
@@ -1023,8 +1133,8 @@ async function ensureNet(){
     if($('nnet')) $('nnet').textContent='Сеть: Sepolia';
     return true;
   }
-  if(!window.ethereum)return false;
-  const cid=await window.ethereum.request({method:'eth_chainId'});
+  if(!getInjected())return false;
+  const cid=await getInjected().request({method:'eth_chainId'});
   const ok=parseInt(cid,16)===C.CHAIN;
   S.netOK=ok;
   const n=$('ibn'),v=$('ibv-n');
@@ -1033,8 +1143,8 @@ async function ensureNet(){
   return ok;
 }
 async function swNet(){
-  try{await window.ethereum.request({method:'wallet_switchEthereumChain',params:[{chainId:C.CHEX}]});}
-  catch(e){if(e.code===4902)await window.ethereum.request({method:'wallet_addEthereumChain',params:[{chainId:C.CHEX,chainName:'Sepolia',nativeCurrency:{name:'SepoliaETH',symbol:'SEP',decimals:18},rpcUrls:[C.RPC],blockExplorerUrls:[C.EXP]}]});}
+  try{await getInjected().request({method:'wallet_switchEthereumChain',params:[{chainId:C.CHEX}]});}
+  catch(e){if(e.code===4902)await getInjected().request({method:'wallet_addEthereumChain',params:[{chainId:C.CHEX,chainName:'Sepolia',nativeCurrency:{name:'SepoliaETH',symbol:'SEP',decimals:18},rpcUrls:[C.RPC],blockExplorerUrls:[C.EXP]}]});}
 }
 
 async function connect(){
@@ -1054,17 +1164,25 @@ async function connect(){
       S.vlt = new ethers.Contract(C.CONTRACT, ABI, S.sign);
       S.erc = new ethers.Contract(C.ANCR, ERC20, S.sign);
     }
-    // ═══ MetaMask browser fallback ═══
-    else if(window.ethereum){
-      showL(t('loading'),'MetaMask');
-      const accs=await window.ethereum.request({method:'eth_requestAccounts'});
+    // ═══ Browser wallets (EIP-6963: MetaMask, Rabby, OKX, Coinbase, Trust, Brave…) ═══
+    else if(EIP6963.wallets.length > 0 || window.ethereum){
+      const chosen = await pickWallet();
+      if(!chosen){ toast(t('op_cancelled')||'Отменено','warning'); return; }
+      S.eip1193 = chosen;
+      showL(t('loading'),'Wallet');
+      const accs=await chosen.request({method:'eth_requestAccounts'});
       hideL();
       if(!accs?.length){toast(t('t_no_metamask'),'warning');return;}
-      S.prov=new ethers.BrowserProvider(window.ethereum,'any');
+      S.prov=new ethers.BrowserProvider(chosen,'any');
       S.sign=await S.prov.getSigner();
       S.user=await S.sign.getAddress();
       S.vlt=new ethers.Contract(C.CONTRACT,ABI,S.sign);
       S.erc=new ethers.Contract(C.ANCR,ERC20,S.sign);
+      // листенеры именно на выбранный провайдер
+      if(chosen.on){
+        chosen.on('accountsChanged',()=>location.reload());
+        chosen.on('chainChanged',()=>location.reload());
+      }
     } else {
       toast('Установите кошелёк или запустите в Capacitor','warning',8000);
       return;
@@ -1092,6 +1210,7 @@ async function connect(){
 
 function disco(){
   S.prov=S.sign=S.user=S.vlt=S.erc=null;
+  S.eip1193=null;
   S.isCr=S.isGd=S.netOK=false;
   S.vid=0n;S.hasEm=false;S.vd=null;
   const b=$('bcon');
@@ -1312,8 +1431,8 @@ window.kwMM=async function(){
   $('kwz-body').innerHTML=`<div style="text-align:center;padding:18px;color:#94a3b8;font-size:12px">${t('kw_mm_loading')}</div>`;
   let accs=[];
   try{
-    await window.ethereum.request({method:'wallet_requestPermissions',params:[{eth_accounts:{}}]}).catch(()=>{});
-    accs=await window.ethereum.request({method:'eth_accounts'});
+    await getInjected().request({method:'wallet_requestPermissions',params:[{eth_accounts:{}}]}).catch(()=>{});
+    accs=await getInjected().request({method:'eth_accounts'});
   }catch(e){accs=[];}
   if(!accs||!accs.length){
     $('kwz-body').innerHTML=`<div class="nc ncw mb3">${t('kw_mm_none')}</div><div class="nc nci mb3" style="font-size:10.5px">${t('kw_mm_hint')}</div><button class="btn btnsm btnbl" onclick="kwChoose()">${t('btn_back')}</button>`;
@@ -1358,7 +1477,7 @@ window.kwDownload=function(){
    EIP-712 HELPERS
    ================================================================ */
 async function buildDom(){
-  const cid=await window.ethereum.request({method:'eth_chainId'});
+  const cid=await getInjected().request({method:'eth_chainId'});
   return{name:C.DOM_NAME,version:C.DOM_VER,chainId:parseInt(cid,16),verifyingContract:C.CONTRACT};
 }
 
@@ -2001,6 +2120,17 @@ window.signOp=async function(op){
   const note=cfg.key==='main'?t('sign_switch_main'):t('sign_switch_rec');
   const ok=await cdlg(t('sign_btn'),`<div class="nc ncw mb2">${note}<br><code style="font-size:10.5px">${kAddr}</code><br><br>${t('sign_addr_note')}</div>`);
   if(!ok)return;
+  // SECURITY: сверяем критичные данные сейфа по нескольким независимым RPC ПЕРЕД подписью
+  try{
+    showL(S.lang==='en'?'Verifying via independent RPCs…':S.lang==='zh'?'通过独立RPC验证…':'Проверка по независимым RPC…','quorum');
+    await quorumGuard(S.user, S.vid, 'sepolia');
+    hideL();
+  }catch(gErr){
+    hideL();
+    toast(perr ? perr(gErr) : (gErr.message||String(gErr)), 'error', 9000);
+    log('quorumGuard: '+(gErr.message||gErr), 'error');
+    return; // подпись НЕ выполняется при расхождении RPC
+  }
   try{
     const dom=await buildDom();
     // === SecureWallet: native signing ===
@@ -2942,18 +3072,18 @@ async function boot(){
   log(`Contract: ${C.CONTRACT}`,'info');
   log(`ANCR: ${C.ANCR}`,'info');
 
-  if(window.ethereum){
-    const accs=await window.ethereum.request({method:'eth_accounts'}).catch(()=>[]);
+  // SECURITY: НЕ автоподключаемся к случайному инжектённому кошельку.
+  // Браузерный коннект — только по явному действию юзера (connect → pickWallet).
+  // Восстанавливаем сессию лишь если кошелёк уже был выбран в этой вкладке.
+  if(S.eip1193){
+    const accs=await S.eip1193.request({method:'eth_accounts'}).catch(()=>[]);
     if(accs?.length){
       try{
-        // Re-connect on account change (MetaMask mode only)
-        if(window.ethereum){
-          S.prov=new ethers.BrowserProvider(window.ethereum,'any');
-          S.sign=await S.prov.getSigner();
-          S.user=await S.sign.getAddress();
-          S.vlt=new ethers.Contract(C.CONTRACT,ABI,S.sign);
-          S.erc=new ethers.Contract(C.ANCR,ERC20,S.sign);
-        }
+        S.prov=new ethers.BrowserProvider(S.eip1193,'any');
+        S.sign=await S.prov.getSigner();
+        S.user=await S.sign.getAddress();
+        S.vlt=new ethers.Contract(C.CONTRACT,ABI,S.sign);
+        S.erc=new ethers.Contract(C.ANCR,ERC20,S.sign);
         await ensureNet();
         await loadRoles();
         await refreshIB();
@@ -2964,9 +3094,11 @@ async function boot(){
         route('home');
         await chkEm();
       }catch(e){log('Авто-подключение: '+perr(e),'warning');}
+      if(S.eip1193.on){
+        S.eip1193.on('accountsChanged',()=>location.reload());
+        S.eip1193.on('chainChanged',()=>location.reload());
+      }
     }
-    window.ethereum.on('accountsChanged',()=>location.reload());
-    window.ethereum.on('chainChanged',()=>location.reload());
   }
   setInterval(()=>{if(S.user)refreshIB();},30000);
 }
