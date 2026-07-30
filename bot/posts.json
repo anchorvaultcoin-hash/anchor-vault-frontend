@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "posted": false,
+    "posted": true,
     "ru": "Они нашли уязвимый кошелёк, вывели ключи — и не смогли спасти деньги\n\nИюль этого года, уязвимость Ill Bloom. Слабая генерация начальной фразы в старых мобильных и браузерных кошельках. Украдено больше пяти миллионов долларов.\n\nСамое поучительное не в этом. Исследователи обнаружили кошелёк, который был всё ещё под угрозой. Они сами вывели скомпрометированные ключи. Пытались достучаться до владельца через биржи, которыми он пользовался.\n\nНе успели. Ушло ещё 2,1 миллиона.\n\nУ них был ключ. Они просто не могли доказать, что они владельцы — потому что сеть не видит разницы между владельцем и тем, кто получил ключ.\n\nВот это и есть настоящая проблема. Не кошелёк. Сама модель доступа.",
     "en": "They found the vulnerable wallet, derived the keys — and still couldn't save the funds\n\nThis July. Weak seed generation in older mobile and browser wallets. Over five million dollars stolen.\n\nThe instructive part isn't that. Researchers found a wallet still at risk. They derived the compromised keys themselves. They tried to reach the owner through exchanges he had used.\n\nThey were too late. Another $2.1 million left.\n\nThey had the key. They just couldn't prove they were the owner — because the network can't tell an owner from whoever holds the key.\n\nThat's the real bug. Not the wallet. The access model itself.",
     "zh": "他们找到了脆弱的钱包，推导出了密钥——却仍然救不了这笔钱\n\n今年七月。旧版手机和浏览器钱包的助记词生成机制存在缺陷，被盗金额超过五百万美元。\n\n最值得深思的不是这个。研究人员发现了一个仍处于危险中的钱包，自己推导出了被泄露的密钥，并试图通过该地址曾使用过的交易所联系上所有者。\n\n没来得及。又有 210 万美元被转走。\n\n他们手里有密钥，却无法证明自己是所有者——因为网络分辨不出所有者和持有密钥的人。\n\n这才是真正的问题所在。不是钱包，而是访问模型本身。",
