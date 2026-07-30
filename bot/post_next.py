@@ -20,24 +20,49 @@ import urllib.request
 import urllib.parse
 
 POSTS_FILE = os.path.join(os.path.dirname(__file__), "posts.json")
-SEPARATOR = "\n\n— — —\n\n"
 TELEGRAM_LIMIT = 4096
 
 
+def esc(text):
+    """Экранирует символы, ломающие HTML-разметку Telegram."""
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
 def build_text(post):
-    """Собирает сообщение из языковых версий поста."""
+    """Собирает сообщение: русский открыто, переводы под сворачиваемыми блоками."""
     if post.get("text"):
-        return post["text"]
+        return esc(post["text"]), False
 
-    parts = [post[lang] for lang in ("ru", "en", "zh") if post.get(lang)]
-    if not parts:
-        return ""
+    ru = post.get("ru", "")
+    if not ru:
+        parts = [post[l] for l in ("en", "zh") if post.get(l)]
+        return (esc(parts[0]) if parts else ""), False
 
-    text = SEPARATOR.join(parts)
+    emoji = post.get("emoji", "\U0001F510")
+
+    # Эмодзи приклеиваем к заголовку — это первая строка текста
+    lines = ru.split("\n")
+    lines[0] = f"{emoji} {lines[0]}"
+    body = esc("\n".join(lines))
+
+    blocks = [f"<b>{esc(lines[0])}</b>" + body[len(esc(lines[0])):]]
+
+    if post.get("en"):
+        blocks.append(
+            "<blockquote expandable>\U0001F1EC\U0001F1E7 <b>English</b>\n\n"
+            + esc(post["en"]) + "</blockquote>"
+        )
+    if post.get("zh"):
+        blocks.append(
+            "<blockquote expandable>\U0001F1E8\U0001F1F3 <b>\u4e2d\u6587</b>\n\n"
+            + esc(post["zh"]) + "</blockquote>"
+        )
+
+    text = "\n\n".join(blocks)
     if len(text) > TELEGRAM_LIMIT:
         print(f"ВНИМАНИЕ: пост id={post.get('id')} длиннее лимита, отправляю только ru.")
-        text = post.get("ru", parts[0])
-    return text
+        text = body
+    return text, True
 
 
 def save(posts):
@@ -68,7 +93,7 @@ def main():
             p["posted"] = False
         next_post = posts[0]
 
-    text = build_text(next_post)
+    text, use_html = build_text(next_post)
     if not text:
         print(f"У поста id={next_post.get('id')} нет текста — пропускаю и помечаю выполненным.")
         next_post["posted"] = True
@@ -76,11 +101,14 @@ def main():
         return
 
     url = f"https://api.telegram.org/bot{token}/sendMessage"
-    data = urllib.parse.urlencode({
+    payload = {
         "chat_id": chat,
         "text": text,
         "disable_web_page_preview": "true",
-    }).encode()
+    }
+    if use_html:
+        payload["parse_mode"] = "HTML"
+    data = urllib.parse.urlencode(payload).encode()
     req = urllib.request.Request(url, data=data)
     try:
         with urllib.request.urlopen(req, timeout=15) as resp:
