@@ -22,7 +22,7 @@
   },
   {
     "id": 4,
-    "posted": false,
+    "posted": true,
     "ru": "282 миллиона долларов. Один человек. Один разговор.\n\nВ январе у одного владельца увели больше 282 миллионов в биткоине и лайткоине. Это крупнейшая кража такого рода в истории отрасли.\n\nНикто ничего не взламывал. Атакующий представился поддержкой производителя аппаратного кошелька и уговорил человека назвать секретную фразу.\n\nАппаратный кошелёк работал исправно. Криптография работала исправно. Подвела не техника — подвело то, что одной фразы оказалось достаточно.\n\nЧеловека нельзя пропатчить. Можно только сделать так, чтобы одного его «да» не хватало.",
     "en": "$282 million. One person. One conversation.\n\nIn January, a single holder lost over $282 million in bitcoin and litecoin. The largest theft of its kind on record.\n\nNothing was hacked. The attacker posed as support from a hardware wallet maker and talked the man into revealing his seed phrase.\n\nThe device worked fine. The cryptography worked fine. What failed was that one phrase was enough.\n\nYou can't patch a person. You can only make sure one \"yes\" isn't enough.",
     "zh": "2.82 亿美元。一个人。一次对话。\n\n今年一月，一位持有者损失了超过 2.82 亿美元的比特币和莱特币。这是有记录以来同类盗窃中金额最大的一次。\n\n没有任何东西被黑客攻破。攻击者冒充硬件钱包厂商的客服，说服他说出了助记词。\n\n设备运转正常，密码学也没有问题。真正的失败在于：一句助记词就足够了。\n\n人是无法打补丁的。只能确保一个人的一句「好」还不够。"
