@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "posted": false,
+    "posted": true,
     "ru": "Почему в крипте нет кнопки «отменить»\n\nБанк может откатить перевод, потому что банк решает, кто ты. Живой человек смотрит документы и выносит решение о том, чьи это деньги.\n\nВ блокчейне такого человека нет. Владение здесь не решение, а арифметика: у кого ключ — тот и владелец.\n\nЗначит для сети вор и владелец — одно и то же лицо. Неразличимы.\n\nПоэтому «мы ничего не можем сделать» — это не отговорка поддержки. Действительно не существует никого, у кого есть полномочия это отменить.\n\nИз этого следует простая вещь: защита не может находиться после кражи. Только до.",
     "en": "Why crypto has no undo button\n\nYour bank can reverse a transfer because your bank decides who you are. A human looks at the case and rules on ownership.\n\nA blockchain has no such person. Ownership isn't a judgement here, it's arithmetic: whoever holds the key is the owner.\n\nWhich means the thief and the owner are indistinguishable to the network.\n\nSo \"nothing we can do\" isn't lazy customer service. There genuinely is nobody with the authority to undo it.\n\nThe consequence is simple: protection can't live after the theft. Only before.",
     "zh": "为什么加密货币没有「撤销」按钮\n\n银行能撤销转账，是因为银行有权判定你是谁。由人来审核并裁定这笔钱属于谁。\n\n区块链上没有这样的人。所有权在这里不是判断，而是算术：谁持有密钥，谁就是所有者。\n\n这意味着在网络看来，小偷和所有者毫无区别。\n\n所以「我们无能为力」并不是客服在敷衍。确实不存在任何有权撤销它的人。\n\n结论很简单：保护不能发生在盗窃之后，只能在之前。",
