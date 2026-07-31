@@ -14,5 +14,29 @@
     "date": "Thu, 30 Jul 2026 12:36:06 +0000",
     "collected": "2026-07-30",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "DPRK-Linked macOS Malvertising Uses Fake Updates to Deliver Crypto-Stealing Malware",
+    "link": "https://thehackernews.com/2026/07/dprk-linked-macos-malvertising-uses.html",
+    "date": "Thu, 30 Jul 2026 23:48:24 +0530",
+    "collected": "2026-07-31",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Major bitcoin wallet flaw drains 594 BTC in 25-minute sweep",
+    "link": "https://www.coindesk.com/tech/2026/07/31/major-bitcoin-wallet-flaw-drains-594-btc-in-25-minute-sweep",
+    "date": "Fri, 31 Jul 2026 05:12:55 +0000",
+    "collected": "2026-07-31",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Coldcard issues Mk3 warning as experts examine $38M Bitcoin wallet drain",
+    "link": "https://cointelegraph.com/news/coldcard-mk3-warning-594-btc-sweep?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 31 Jul 2026 06:23:25 +0000",
+    "collected": "2026-07-31",
+    "used": false
   }
 ]
