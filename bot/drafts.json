@@ -38,5 +38,45 @@
     "date": "Fri, 31 Jul 2026 06:23:25 +0000",
     "collected": "2026-07-31",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Online ad firm Adform’s script compromised to steal cryptocurrency",
+    "link": "https://www.bleepingcomputer.com/news/security/online-ad-firm-adforms-script-compromised-to-steal-cryptocurrency/",
+    "date": "Fri, 31 Jul 2026 17:09:25 -0400",
+    "collected": "2026-08-01",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "How bitcoin cold wallets lost $70 million in an attack that never touched the devices",
+    "link": "https://www.coindesk.com/tech/2026/08/01/how-bitcoin-cold-wallets-lost-usd70-million-in-an-attack-that-never-touched-the-devices",
+    "date": "Sat, 01 Aug 2026 05:55:46 +0000",
+    "collected": "2026-08-01",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs",
+    "link": "https://www.coindesk.com/business/2026/07/31/coldcard-s-usd38-million-so-far-exploit-shakes-faith-in-self-custody-may-push-investors-to-etfs",
+    "date": "Fri, 31 Jul 2026 17:07:30 +0000",
+    "collected": "2026-08-01",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Crypto Kiosk Scams Cost Texans $57M as Lawmakers Weigh a Ban",
+    "link": "https://decrypt.co/374778/crypto-kiosk-scams-cost-texans-57m-as-lawmakers-weigh-a-ban",
+    "date": "Fri, 31 Jul 2026 11:13:58 +0000",
+    "collected": "2026-08-01",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "$38M in Bitcoin Drained by Coldcard Key Flaw Its Maker Thinks AI Found",
+    "link": "https://decrypt.co/374766/38m-in-bitcoin-drained-by-coldcard-key-flaw-its-maker-thinks-ai-found",
+    "date": "Fri, 31 Jul 2026 09:02:01 +0000",
+    "collected": "2026-08-01",
+    "used": false
   }
 ]
