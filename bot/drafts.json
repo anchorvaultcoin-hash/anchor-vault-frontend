@@ -78,5 +78,45 @@
     "date": "Fri, 31 Jul 2026 09:02:01 +0000",
     "collected": "2026-08-01",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Coldcard Hardware Wallet Flaw Linked to $70 Million Bitcoin Theft in 41 Minutes",
+    "link": "https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html",
+    "date": "Sat, 01 Aug 2026 22:47:22 +0530",
+    "collected": "2026-08-02",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Poison Adform Script to Swap Crypto Wallet Addresses Across Customer Sites",
+    "link": "https://thehackernews.com/2026/08/hackers-poison-adform-script-to-swap.html",
+    "date": "Sat, 01 Aug 2026 14:33:07 +0530",
+    "collected": "2026-08-02",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Solana Foundation's new CISO warns AI is making crypto scams more convincing",
+    "link": "https://www.coindesk.com/tech/2026/07/31/solana-foundation-s-new-ciso-warns-ai-is-making-crypto-scams-more-convincing",
+    "date": "Sat, 01 Aug 2026 13:00:00 +0000",
+    "collected": "2026-08-02",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Binance founder CZ calls for wallet diversification after $70 million Coldcard exploit",
+    "link": "https://www.coindesk.com/markets/2026/08/01/binance-founder-cz-says-diversify-your-wallets-following-usd70-million-coldcard-exploit",
+    "date": "Sat, 01 Aug 2026 09:01:08 +0000",
+    "collected": "2026-08-02",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "CZ Warns Bitcoin Holders After $70 Million Wallet Exploit: 'Nothing Is 100%'",
+    "link": "https://decrypt.co/374810/cz-warns-bitcoin-holders-70-million-coldcard-wallet-exploit",
+    "date": "Sat, 01 Aug 2026 16:01:17 +0000",
+    "collected": "2026-08-02",
+    "used": false
   }
 ]
