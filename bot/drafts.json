@@ -118,5 +118,45 @@
     "date": "Sat, 01 Aug 2026 16:01:17 +0000",
     "collected": "2026-08-02",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "COLDCARD wallet RNG flaw likely linked to $88 million Bitcoin theft",
+    "link": "https://www.bleepingcomputer.com/news/security/coldcard-wallet-rng-flaw-likely-linked-to-88-million-bitcoin-theft/",
+    "date": "Sun, 02 Aug 2026 17:14:29 -0400",
+    "collected": "2026-08-03",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Unlike the FTX collapse, the $89 million Coldcard exploit has investors sending bitcoin back to exchanges",
+    "link": "https://www.coindesk.com/markets/2026/08/02/unlike-the-ftx-collapse-the-usd88-million-coldcard-exploit-has-investors-sending-bitcoin-back-to-exchanges",
+    "date": "Sun, 02 Aug 2026 12:03:51 +0000",
+    "collected": "2026-08-03",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Coldcard exploit sparks Bitcoin flight, ‘bullish’ crypto consolidation: Hodler’s Digest, August 2",
+    "link": "https://cointelegraph.com/magazine/coldcard-exploit-sparks-bitcoin-flight-clarity-act-no-vote-or-no-vote-hodlers-digest-august-2?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Sun, 02 Aug 2026 23:56:19 +0000",
+    "collected": "2026-08-03",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Coldcard hack sparks biggest sub-1 BTC move since FTX: CryptoQuant",
+    "link": "https://cointelegraph.com/news/coldcard-biggest-sub-1-btc-transfer-ftx-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 03 Aug 2026 07:40:00 +0000",
+    "collected": "2026-08-03",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Coldcard Bitcoin Exploit Balloons to $88 Million as Attackers Keep Draining Wallets",
+    "link": "https://decrypt.co/374817/coldcard-bitcoin-exploit-88-million-attackers-draining-wallets",
+    "date": "Sun, 02 Aug 2026 17:18:51 +0000",
+    "collected": "2026-08-03",
+    "used": false
   }
 ]
