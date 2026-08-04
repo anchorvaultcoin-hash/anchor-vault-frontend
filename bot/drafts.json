@@ -158,5 +158,61 @@
     "date": "Sun, 02 Aug 2026 17:18:51 +0000",
     "collected": "2026-08-03",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "⚡ Weekly Recap: Rogue AI Models, $88M Bitcoin Theft, Water-System Attacks and Dangling DNS Hijacks",
+    "link": "https://thehackernews.com/2026/08/weekly-recap-rogue-ai-models-88m.html",
+    "date": "Mon, 03 Aug 2026 19:33:11 +0530",
+    "collected": "2026-08-04",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "U.S. FBI intelligence agent arrested in connection with theft of $1 million in crypto",
+    "link": "https://www.coindesk.com/policy/2026/08/03/u-s-fbi-intelligence-agent-arrested-in-connection-with-theft-of-usd1-million-in-crypto",
+    "date": "Mon, 03 Aug 2026 22:17:59 +0000",
+    "collected": "2026-08-04",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Coldcard Bitcoin theft tops $100M across 3 confirmed attack waves: Galaxy",
+    "link": "https://cointelegraph.com/news/coldcard-bitcoin-theft-100-million-three-waves?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Tue, 04 Aug 2026 04:47:16 +0000",
+    "collected": "2026-08-04",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Malaysia Blockchain Week’s OnlyFans scandal, lonely heart scammed for $3.3M: Asia Express",
+    "link": "https://cointelegraph.com/magazine/hong-kong-lonely-heart-scammed-out-of-33m-in-crypto-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Tue, 04 Aug 2026 06:03:16 +0000",
+    "collected": "2026-08-04",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Former FBI Agent Charged With Stealing Nearly $1 Million in Crypto and Using ChatGPT for Investment Advice",
+    "link": "https://decrypt.co/374871/former-fbi-agent-charged-stealing-crypto-using-chatgpt-advice",
+    "date": "Mon, 03 Aug 2026 21:17:06 +0000",
+    "collected": "2026-08-04",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "What Is an Air-Gapped Bitcoin Wallet? Why the Coldcard Exploit Changes the Conversation About Offline Security",
+    "link": "https://decrypt.co/374868/what-is-air-gapped-bitcoin-wallet-coldcard-exploit-security",
+    "date": "Mon, 03 Aug 2026 20:39:33 +0000",
+    "collected": "2026-08-04",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Morning Minute: The Coldcard Bitcoin Hack Nears $114 Million in Potential Losses",
+    "link": "https://decrypt.co/374830/morning-minute-the-coldcard-bitcoin-hack-nears-114-million-in-potential-losses",
+    "date": "Mon, 03 Aug 2026 13:11:19 +0000",
+    "collected": "2026-08-04",
+    "used": false
   }
 ]
