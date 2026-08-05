@@ -38,5 +38,181 @@
     "date": "Fri, 31 Jul 2026 06:23:25 +0000",
     "collected": "2026-07-31",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Online ad firm Adform’s script compromised to steal cryptocurrency",
+    "link": "https://www.bleepingcomputer.com/news/security/online-ad-firm-adforms-script-compromised-to-steal-cryptocurrency/",
+    "date": "Fri, 31 Jul 2026 17:09:25 -0400",
+    "collected": "2026-08-01",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "How bitcoin cold wallets lost $70 million in an attack that never touched the devices",
+    "link": "https://www.coindesk.com/tech/2026/08/01/how-bitcoin-cold-wallets-lost-usd70-million-in-an-attack-that-never-touched-the-devices",
+    "date": "Sat, 01 Aug 2026 05:55:46 +0000",
+    "collected": "2026-08-01",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs",
+    "link": "https://www.coindesk.com/business/2026/07/31/coldcard-s-usd38-million-so-far-exploit-shakes-faith-in-self-custody-may-push-investors-to-etfs",
+    "date": "Fri, 31 Jul 2026 17:07:30 +0000",
+    "collected": "2026-08-01",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Crypto Kiosk Scams Cost Texans $57M as Lawmakers Weigh a Ban",
+    "link": "https://decrypt.co/374778/crypto-kiosk-scams-cost-texans-57m-as-lawmakers-weigh-a-ban",
+    "date": "Fri, 31 Jul 2026 11:13:58 +0000",
+    "collected": "2026-08-01",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "$38M in Bitcoin Drained by Coldcard Key Flaw Its Maker Thinks AI Found",
+    "link": "https://decrypt.co/374766/38m-in-bitcoin-drained-by-coldcard-key-flaw-its-maker-thinks-ai-found",
+    "date": "Fri, 31 Jul 2026 09:02:01 +0000",
+    "collected": "2026-08-01",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Coldcard Hardware Wallet Flaw Linked to $70 Million Bitcoin Theft in 41 Minutes",
+    "link": "https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html",
+    "date": "Sat, 01 Aug 2026 22:47:22 +0530",
+    "collected": "2026-08-02",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Poison Adform Script to Swap Crypto Wallet Addresses Across Customer Sites",
+    "link": "https://thehackernews.com/2026/08/hackers-poison-adform-script-to-swap.html",
+    "date": "Sat, 01 Aug 2026 14:33:07 +0530",
+    "collected": "2026-08-02",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Solana Foundation's new CISO warns AI is making crypto scams more convincing",
+    "link": "https://www.coindesk.com/tech/2026/07/31/solana-foundation-s-new-ciso-warns-ai-is-making-crypto-scams-more-convincing",
+    "date": "Sat, 01 Aug 2026 13:00:00 +0000",
+    "collected": "2026-08-02",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Binance founder CZ calls for wallet diversification after $70 million Coldcard exploit",
+    "link": "https://www.coindesk.com/markets/2026/08/01/binance-founder-cz-says-diversify-your-wallets-following-usd70-million-coldcard-exploit",
+    "date": "Sat, 01 Aug 2026 09:01:08 +0000",
+    "collected": "2026-08-02",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "CZ Warns Bitcoin Holders After $70 Million Wallet Exploit: 'Nothing Is 100%'",
+    "link": "https://decrypt.co/374810/cz-warns-bitcoin-holders-70-million-coldcard-wallet-exploit",
+    "date": "Sat, 01 Aug 2026 16:01:17 +0000",
+    "collected": "2026-08-02",
+    "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "COLDCARD wallet RNG flaw likely linked to $88 million Bitcoin theft",
+    "link": "https://www.bleepingcomputer.com/news/security/coldcard-wallet-rng-flaw-likely-linked-to-88-million-bitcoin-theft/",
+    "date": "Sun, 02 Aug 2026 17:14:29 -0400",
+    "collected": "2026-08-03",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Unlike the FTX collapse, the $89 million Coldcard exploit has investors sending bitcoin back to exchanges",
+    "link": "https://www.coindesk.com/markets/2026/08/02/unlike-the-ftx-collapse-the-usd88-million-coldcard-exploit-has-investors-sending-bitcoin-back-to-exchanges",
+    "date": "Sun, 02 Aug 2026 12:03:51 +0000",
+    "collected": "2026-08-03",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Coldcard exploit sparks Bitcoin flight, ‘bullish’ crypto consolidation: Hodler’s Digest, August 2",
+    "link": "https://cointelegraph.com/magazine/coldcard-exploit-sparks-bitcoin-flight-clarity-act-no-vote-or-no-vote-hodlers-digest-august-2?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Sun, 02 Aug 2026 23:56:19 +0000",
+    "collected": "2026-08-03",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Coldcard hack sparks biggest sub-1 BTC move since FTX: CryptoQuant",
+    "link": "https://cointelegraph.com/news/coldcard-biggest-sub-1-btc-transfer-ftx-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 03 Aug 2026 07:40:00 +0000",
+    "collected": "2026-08-03",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Coldcard Bitcoin Exploit Balloons to $88 Million as Attackers Keep Draining Wallets",
+    "link": "https://decrypt.co/374817/coldcard-bitcoin-exploit-88-million-attackers-draining-wallets",
+    "date": "Sun, 02 Aug 2026 17:18:51 +0000",
+    "collected": "2026-08-03",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "⚡ Weekly Recap: Rogue AI Models, $88M Bitcoin Theft, Water-System Attacks and Dangling DNS Hijacks",
+    "link": "https://thehackernews.com/2026/08/weekly-recap-rogue-ai-models-88m.html",
+    "date": "Mon, 03 Aug 2026 19:33:11 +0530",
+    "collected": "2026-08-04",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "U.S. FBI intelligence agent arrested in connection with theft of $1 million in crypto",
+    "link": "https://www.coindesk.com/policy/2026/08/03/u-s-fbi-intelligence-agent-arrested-in-connection-with-theft-of-usd1-million-in-crypto",
+    "date": "Mon, 03 Aug 2026 22:17:59 +0000",
+    "collected": "2026-08-04",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Coldcard Bitcoin theft tops $100M across 3 confirmed attack waves: Galaxy",
+    "link": "https://cointelegraph.com/news/coldcard-bitcoin-theft-100-million-three-waves?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Tue, 04 Aug 2026 04:47:16 +0000",
+    "collected": "2026-08-04",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Malaysia Blockchain Week’s OnlyFans scandal, lonely heart scammed for $3.3M: Asia Express",
+    "link": "https://cointelegraph.com/magazine/hong-kong-lonely-heart-scammed-out-of-33m-in-crypto-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Tue, 04 Aug 2026 06:03:16 +0000",
+    "collected": "2026-08-04",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Former FBI Agent Charged With Stealing Nearly $1 Million in Crypto and Using ChatGPT for Investment Advice",
+    "link": "https://decrypt.co/374871/former-fbi-agent-charged-stealing-crypto-using-chatgpt-advice",
+    "date": "Mon, 03 Aug 2026 21:17:06 +0000",
+    "collected": "2026-08-04",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "What Is an Air-Gapped Bitcoin Wallet? Why the Coldcard Exploit Changes the Conversation About Offline Security",
+    "link": "https://decrypt.co/374868/what-is-air-gapped-bitcoin-wallet-coldcard-exploit-security",
+    "date": "Mon, 03 Aug 2026 20:39:33 +0000",
+    "collected": "2026-08-04",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Morning Minute: The Coldcard Bitcoin Hack Nears $114 Million in Potential Losses",
+    "link": "https://decrypt.co/374830/morning-minute-the-coldcard-bitcoin-hack-nears-114-million-in-potential-losses",
+    "date": "Mon, 03 Aug 2026 13:11:19 +0000",
+    "collected": "2026-08-04",
+    "used": false
   }
 ]
