@@ -187,6 +187,7 @@ footer .flinks a:hover{color:var(--gold)}
       <a href="#download" class="nav-btn primary" id="navBtnVault">🚀 <span></span></a>
       <a href="https://github.com/anchorvaultcoin-hash/anchor-vault-frontend" class="nav-btn" id="navBtnGitHub" target="_blank" rel="noopener noreferrer">📂 <span>GitHub</span></a>
       <a href="https://anchorvaultcoin-hash.github.io/anchor-vault-blog/" class="nav-btn" id="navBtnBlog" target="_blank" rel="noopener noreferrer"><i class="bi bi-journal-text"></i> <span></span></a>
+      <a href="https://anchorvaultcoin-hash.github.io/anchor-vault-blog/kak-polzovatsya-kriptoseyfom-3-adresa-i-tri.html" class="nav-btn" id="navBtnGuide" target="_blank" rel="noopener noreferrer"><i class="bi bi-question-circle"></i> <span></span></a>
       <a href="https://t.me/AnchorVaultCoin" class="nav-btn" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="bi bi-telegram"></i></a>
       <a href="https://x.com/Anchorvaultcoin" class="nav-btn" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
       <span class="hexbadge"><span class="hexlogo" role="img" aria-label="Hexens"></span><span id="hexHdr"></span></span>
@@ -438,6 +439,8 @@ Full checksums: CHECKSUMS.txt</code></pre>
     ru: {
       navBtnVault:"Открыть пульт",
       navBtnBlog:"Блог",
+      navBtnGuide:"Как пользоваться",
+      navBtnGuideUrl:"https://anchorvaultcoin-hash.github.io/anchor-vault-blog/kak-polzovatsya-kriptoseyfom-3-adresa-i-tri.html",
       heroTitle1:"Кошелёк могут взломать.", heroTitle2:"Сейф должен устоять.",
       heroDesc:"Даже если злоумышленник перехватил твой приватный ключ — он уйдёт ни с чем. Стандартный вывод средств защищён независимой двухфакторной авторизацией. А если дорога каждая секунда — сверхсрочный вывод мгновенно эвакуирует 80% на заранее заданный резервный адрес владельца. Кошелёк могут взломать — сейф устоит.",
       heroBtn:"🚀 Открыть сейф за 2 минуты",
@@ -481,6 +484,8 @@ Full checksums: CHECKSUMS.txt</code></pre>
     en: {
       navBtnVault:"Open panel",
       navBtnBlog:"Blog",
+      navBtnGuide:"How it works",
+      navBtnGuideUrl:"https://anchorvaultcoin-hash.github.io/anchor-vault-blog/kak-polzovatsya-kriptoseyfom-3-adresa-i-tri-en.html",
       heroTitle1:"Your private key may already be stolen.", heroTitle2:"You just don't know it yet.",
       heroDesc:"Even if an attacker steals your private key, they walk away with nothing. Standard withdrawals are protected by independent two-factor authorization. And when seconds matter, panic withdraw evacuates 80% to your pre-set emergency address instantly. Your wallet can be compromised — your vault still holds.",
       heroBtn:"🚀 Open your vault in 2 minutes",
@@ -533,6 +538,8 @@ Full checksums: CHECKSUMS.txt</code></pre>
     zh: {
       navBtnVault:"打开控制台",
       navBtnBlog:"博客",
+      navBtnGuide:"使用指南",
+      navBtnGuideUrl:"https://anchorvaultcoin-hash.github.io/anchor-vault-blog/kak-polzovatsya-kriptoseyfom-3-adresa-i-tri-zh.html",
       heroTitle1:"钱包可能被攻破——", heroTitle2:"保险库依然稳固。",
       heroDesc:"即使攻击者窃取了你的私钥，他们也会空手而归。标准提款受独立双因素授权保护。当争分夺秒时，紧急提款会立即将80%撤至你预设的紧急地址。钱包可能被攻破——保险库依然稳固。",
       heroBtn:"🚀 2分钟开设保险库",
@@ -632,6 +639,10 @@ Full checksums: CHECKSUMS.txt</code></pre>
     if(navVaultSpan) navVaultSpan.textContent = t.navBtnVault;
     const navBlogSpan = document.querySelector('#navBtnBlog span');
     if(navBlogSpan) navBlogSpan.textContent = t.navBtnBlog;
+    const navGuideSpan = document.querySelector('#navBtnGuide span');
+    if(navGuideSpan) navGuideSpan.textContent = t.navBtnGuide;
+    const navGuideLink = document.getElementById('navBtnGuide');
+    if(navGuideLink && t.navBtnGuideUrl) navGuideLink.href = t.navBtnGuideUrl;
 
     // Hero
     setGold('heroTitle', t.heroTitle1 + ' ', t.heroTitle2);
