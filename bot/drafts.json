@@ -214,5 +214,37 @@
     "date": "Mon, 03 Aug 2026 13:11:19 +0000",
     "collected": "2026-08-04",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Greatness PhaaS Adds Device Code Phishing to Bypass MFA and Steal Tokens",
+    "link": "https://thehackernews.com/2026/08/greatness-phaas-adds-device-code.html",
+    "date": "Tue, 04 Aug 2026 22:57:39 +0530",
+    "collected": "2026-08-05",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "\"You stole, please return some.\" Coldcard hacker's wallet becomes a graffiti wall of pleas and hustles",
+    "link": "https://www.coindesk.com/markets/2026/08/05/you-stole-please-return-some-coldcard-hacker-s-wallet-becomes-a-graffiti-wall-of-pleas-and-hustles",
+    "date": "Wed, 05 Aug 2026 05:12:46 +0000",
+    "collected": "2026-08-05",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Ledger Says Coldcard Exploit Shows Bitcoin Wallet Security Must Adapt to AI",
+    "link": "https://decrypt.co/374914/ledger-coldcard-exploit-bitcoin-wallet-security-ai",
+    "date": "Tue, 04 Aug 2026 21:16:03 +0000",
+    "collected": "2026-08-05",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Coldcard Bitcoin Exploit Explained: Entropy, How Keys Are Generated, and Why Bits Matter",
+    "link": "https://decrypt.co/374916/coldcard-bitcoin-exploit-explained-entropy-keys-bits",
+    "date": "Tue, 04 Aug 2026 19:11:36 +0000",
+    "collected": "2026-08-05",
+    "used": false
   }
 ]
