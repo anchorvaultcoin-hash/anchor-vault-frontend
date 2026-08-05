@@ -834,5 +834,34 @@ Full checksums: CHECKSUMS.txt</code></pre>
 })();
 </script>
 
+<script>
+// UTM-метки: запоминаем источник перехода (X / Reddit / Telegram / блог)
+// и прокидываем его в ссылку на "пульт" (pulse.html), чтобы видеть,
+// какой канал реально доводит людей до тестнета.
+(function(){
+  var UTM_KEYS = ['utm_source','utm_medium','utm_campaign'];
+  var STORAGE_KEY = 'avc_utm';
+
+  var params = new URLSearchParams(window.location.search);
+  var hasUtm = UTM_KEYS.some(function(k){ return params.has(k); });
+  if (hasUtm) {
+    var data = {};
+    UTM_KEYS.forEach(function(k){ if (params.has(k)) data[k] = params.get(k); });
+    try { sessionStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch(e){}
+  }
+
+  var saved = null;
+  try { saved = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || 'null'); } catch(e){}
+  if (!saved) return;
+
+  document.querySelectorAll('a[href*="pulse.html"]').forEach(function(a){
+    var url = new URL(a.getAttribute('href'), window.location.href);
+    UTM_KEYS.forEach(function(k){ if (saved[k]) url.searchParams.set(k, saved[k]); });
+    a.setAttribute('href', url.pathname + '?' + url.searchParams.toString());
+  });
+})();
+</script>
+
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b40a9d0cf5a941a59f967566a2d8cc3d"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
