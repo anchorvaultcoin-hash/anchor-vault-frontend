@@ -575,6 +575,8 @@ const I18N = {
   status_active:{ru:"🟢 Активен",en:"🟢 Active",zh:"🟢 运行中"},
   status_paused:{ru:"⏸ Пауза",en:"⏸ Paused",zh:"⏸ 已暂停"},
   net_ok:{ru:"Sepolia ✓",en:"Sepolia ✓",zh:"Sepolia ✓"},
+  key_main:{ru:"Рабочий ключ",en:"Everyday key",zh:"日常密钥"},
+  key_rec:{ru:"Запасной ключ",en:"Backup key",zh:"备用密钥"},
   /* --- сверка данных / сеть --- */
   qg_title:{ru:"Проверка данных",en:"Data verification",zh:"数据核对"},
   qg_single:{ru:"Сейчас доступен только один сервер сети, сверить данные не с чем. Подписать всё равно?",en:"Only one network node is reachable, so the data cannot be cross-checked. Sign anyway?",zh:"当前只有一个可用节点，无法交叉核对数据。仍要签名吗？"},
@@ -855,14 +857,14 @@ const I18N = {
 
   // ===== Подсказки операций =====
   ti_op_dep:{ru:"Пополнить существующий сейф этим же токеном. Не требует EIP-712 подписи. Уровень и таймлок сейфа не меняются.",en:"Top up an existing vault with the same token. No EIP-712 signature needed. Vault level and timelock stay the same.",zh:"使用相同代币补充现有保险库。无需 EIP-712 签名。保险库等级和时间锁不变。"},
-  ti_op_wd:{ru:"Вывести часть средств из сейфа. Требует EIP-712 подпись mainAuthKey. Комиссия 0.5%.",en:"Withdraw part of vault funds. Requires mainAuthKey EIP-712 signature. 0.5% fee.",zh:"从保险库提取部分资金。需要 mainAuthKey EIP-712 签名。手续费 0.5%。"},
+  ti_op_wd:{ru:"Вывести часть денег из сейфа. Подтверждается рабочим ключом. Комиссия 0.5%.",en:"Withdraw part of the money from the safe. Confirmed with your everyday key. 0.5% fee.",zh:"从保险箱提取部分资金。用日常密钥确认。手续费 0.5%。"},
   ti_op_xfer:{ru:"Защищённая передача сейфа другому пользователю. Получатель должен принять её в течение 7 дней — иначе истечёт.",en:"Secure vault transfer to another user. Recipient must accept within 7 days, otherwise it expires.",zh:"将保险库安全转移给另一用户。接收方必须在 7 天内接受，否则过期。"},
   ti_op_tl:{ru:"Установить добровольный таймлок на свой сейф. На время таймлока вывод заблокирован для всех — даже для вас.",en:"Set a voluntary timelock on your vault. During the timelock, withdrawals are blocked for everyone, including you.",zh:"为您的保险库设置自愿时间锁。在此期间，所有人（包括您）都不能提取。"},
 
   // ===== Подсказки аварийных =====
   ti_em_panic:{ru:"Мгновенный вывод на резервный адрес. Без подписей и кодов. Комиссия 20%. Используйте если потеряли все ключи.",en:"Instant withdrawal to the reserve address. No signatures or codes. 20% fee. Use if you lost all keys.",zh:"立即提取到储备地址。无需签名或代码。手续费 20%。用于丢失所有密钥时。"},
-  ti_em_ec:{ru:"Закрыть сейф досрочно. Средства вам. Подпись recoveryAuthKey. Комиссия 5%.",en:"Close the vault early. Funds to you. recoveryAuthKey signature. 5% fee.",zh:"提前关闭保险库。资金返还给您。recoveryAuthKey 签名。手续费 5%。"},
-  ti_em_rs:{ru:"Возврат в резерв. Средства на ваш резервный адрес. Подпись recoveryAuthKey. Комиссия 10%.",en:"Return to reserve. Funds to your reserve address. recoveryAuthKey signature. 10% fee.",zh:"返回储备。资金到您的储备地址。recoveryAuthKey 签名。手续费 10%。"},
+  ti_em_ec:{ru:"Закрыть сейф раньше срока. Деньги вернутся вам. Подтверждается запасным ключом. Комиссия 5%.",en:"Close the safe before its time. The money comes back to you. Confirmed with your backup key. 5% fee.",zh:"提前关闭保险箱。资金退还给您。用备用密钥确认。手续费 5%。"},
+  ti_em_rs:{ru:"Отправить деньги на ваш аварийный адрес. Подтверждается запасным ключом. Комиссия 10%.",en:"Send the money to your emergency address. Confirmed with your backup key. 10% fee.",zh:"将资金转至您的紧急地址。用备用密钥确认。手续费 10%。"},
   ti_em_any:{ru:"Аварийный вывод на любой адрес. Используется если и основной, и резервный кошельки скомпрометированы. Комиссия 15%.",en:"Emergency withdrawal to any address. Used if both main and reserve wallets are compromised. 15% fee.",zh:"紧急提取到任意地址。用于主钱包和储备钱包都被攻击的情况。手续费 15%。"},
 
 };
@@ -2064,7 +2066,7 @@ window.doSign=async function(){
   else if(op==='RotateAuthKeys'){msg.newMainKey=gf('sf-nm');msg.newRecoveryKey=gf('sf-nr');}
   else if(op==='EmergencyWithdraw'){msg.to=gf('sf-t');}
   const MAIN_OPS=['Withdraw','TransferVault','InitSecureTransfer','SetTimelock','SetVoluntaryLock'];
-  const kType=MAIN_OPS.includes(op)?'Main key (mainAuthKey)':'Recovery key (recoveryAuthKey)';
+  const kType=MAIN_OPS.includes(op)?t('key_main'):t('key_rec');
   const kAddr=MAIN_OPS.includes(op)?au[1]:au[2];
   let amtNote='';
   if(op==='Withdraw'&&wRaw){
@@ -2839,116 +2841,156 @@ window.dAC=async function(){await txc('Accept Creatorship',()=>S.vlt.acceptCreat
    FAQ — частые вопросы пользователя
    ================================================================ */
 const FAQ_GROUPS = [
-  {id:'basics', t:{ru:'🚀 Основы',en:'🚀 Basics',zh:'🚀 基础'}, items:[
+  {id:'basics', t:{ru:'🚀 Начало',en:'🚀 Getting started',zh:'🚀 入门'}, items:[
     {
       q:{ru:'Что такое AnchorVaultCoin?',en:'What is AnchorVaultCoin?',zh:'什么是 AnchorVaultCoin？'},
-      a:{ru:'Хранилище токенов с защитой от взлома основного кошелька. Сейф управляется не вашим обычным ключом, а отдельными ключами-подписями. Даже если кто-то получит доступ к основному кошельку, он не сможет вытащить ваши деньги — для этого нужны отдельные подписи.',
-         en:'A token vault with protection against main wallet compromise. The vault is controlled not by your usual key, but by separate signing keys. Even if someone gains access to your main wallet, they cannot withdraw your funds — separate signatures are needed.',
-         zh:'一个保护主钱包免受攻击的代币保险库。保险库不由您的常用密钥控制，而是由单独的签名密钥控制。即使有人访问了您的主钱包，他们也无法提取您的资金 — 需要单独的签名。'}
+      a:{ru:'Это сейф для ваших монет. Вы кладёте в него токены, и забрать их обратно можно только подписью двух отдельных ключей — они не совпадают с ключом от самого кошелька. Смысл простой: даже если у вас украдут доступ к кошельку, деньги в сейфе вор не тронет.',
+         en:'It is a safe for your coins. You put tokens inside, and taking them out requires two separate keys — neither of which is the key to your wallet itself. The point is simple: even if someone steals access to your wallet, the money in the safe stays out of their reach.',
+         zh:'这是存放您代币的保险箱。您把代币放进去，取出时需要两把独立密钥的签名，而它们都不是钱包本身的密钥。道理很简单：即使有人盗取了您的钱包访问权限，保险箱里的资金他们也拿不走。'}
     },
     {
-      q:{ru:'Чем V45 лучше V44?',en:'Why is V45 better than V44?',zh:'V45 比 V44 好在哪里？'},
-      a:{ru:'В V44 коды передавались в открытом виде в мемпуле — их можно было перехватить. В V45 используются EIP-712 подписи: ничего секретного в транзакцию не попадает, перехватить нечего. Это принципиально другой уровень защиты.',
-         en:'In V44, codes were sent in plain text in the mempool — they could be intercepted. V45 uses EIP-712 signatures: nothing secret enters the transaction, nothing to intercept. A fundamentally different level of protection.',
-         zh:'在 V44 中，代码以明文形式发送到内存池 — 可能被拦截。V45 使用 EIP-712 签名：交易中没有任何秘密，无法拦截。这是根本不同的保护级别。'}
+      q:{ru:'Чем это отличается от обычного кошелька?',en:'How is this different from a regular wallet?',zh:'这与普通钱包有什么不同？'},
+      a:{ru:'В обычном кошельке всё держится на одной секретной фразе: узнал её посторонний — забрал всё. Здесь деньги лежат отдельным слоем, и одной украденной фразы для их вывода не хватит. Нужны подписи ключей, которые вы храните отдельно и не используете каждый день.',
+         en:'A regular wallet rests on a single secret phrase: whoever learns it takes everything. Here the money sits in a separate layer, and one stolen phrase is not enough to withdraw it. It takes signatures from keys you keep separately and do not use day to day.',
+         zh:'普通钱包全靠一句助记词：谁知道了它，谁就能拿走一切。这里资金存放在独立层中，仅凭一句被盗的助记词无法取出。还需要您单独保管、日常不使用的密钥签名。'}
     },
     {
-      q:{ru:'Какой минимальный депозит?',en:'What is the minimum deposit?',zh:'最低存款是多少？'},
-      a:{ru:'0.01 ANCR (или эквивалент в другом supported токене). Это защищает от спама пустыми сейфами.',
-         en:'0.01 ANCR (or equivalent in another supported token). This protects against spam with empty vaults.',
-         zh:'0.01 ANCR（或其他支持代币的等值）。这可以防止空保险库的垃圾邮件。'}
+      q:{ru:'Сколько нужно денег, чтобы начать?',en:'How much do I need to start?',zh:'开始需要多少资金？'},
+      a:{ru:'Минимальный вклад в сейф — 0.01 токена. Плюс небольшая сумма ETH на комиссию сети за каждую операцию. Сейчас всё работает в тестовой сети Sepolia, где монеты бесплатные и ничего не стоят.',
+         en:'The minimum deposit into a safe is 0.01 token. Plus a small amount of ETH to cover the network fee for each operation. Right now everything runs on the Sepolia test network, where coins are free and cost nothing.',
+         zh:'存入保险箱的最低金额为 0.01 个代币，另需少量 ETH 支付每笔操作的网络费用。目前全部运行在 Sepolia 测试网上，测试币是免费的，不产生任何成本。'}
+    },
+    {
+      q:{ru:'Какие монеты можно хранить?',en:'Which coins can I store?',zh:'可以存放哪些代币？'},
+      a:{ru:'Обычные токены Ethereum — ANCR, а также другие, которые добавлены в список поддерживаемых. Список пополняется. Для каждого токена у вас может быть один активный сейф.',
+         en:'Standard Ethereum tokens — ANCR, plus others added to the supported list. The list keeps growing. You can have one active safe per token.',
+         zh:'标准的以太坊代币 — ANCR，以及其他已加入支持列表的代币。列表会持续增加。每种代币您可以拥有一个活跃保险箱。'}
     },
   ]},
-  {id:'keys', t:{ru:'🔑 Ключи и подписи',en:'🔑 Keys & signatures',zh:'🔑 密钥和签名'}, items:[
+
+  {id:'keys', t:{ru:'🔑 Ключи',en:'🔑 Keys',zh:'🔑 密钥'}, items:[
     {
-      q:{ru:'Что такое mainAuthKey и recoveryAuthKey?',en:'What are mainAuthKey and recoveryAuthKey?',zh:'什么是 mainAuthKey 和 recoveryAuthKey？'},
-      a:{ru:'Два отдельных кошелька (приватных ключа), которыми вы подписываете операции с сейфом. Main — для обычных операций (вывод, депозит, передача). Recovery — для экстренных (досрочное закрытие, аварийный вывод). Они НЕ совпадают с вашим основным кошельком, и хранить их нужно отдельно — в идеале на разных устройствах или в холодном хранении.',
-         en:'Two separate wallets (private keys) used to sign vault operations. Main — for regular ops (withdraw, deposit, transfer). Recovery — for emergencies (early close, panic withdraw). They are NOT the same as your main wallet, and should be stored separately — ideally on different devices or in cold storage.',
-         zh:'两个独立的钱包（私钥），用于签署保险库操作。Main — 用于常规操作（提取、存款、转移）。Recovery — 用于紧急情况（提前关闭、紧急提取）。它们与您的主钱包不同，应分开存储 — 最好放在不同的设备上或冷存储中。'}
+      q:{ru:'Зачем два ключа и чем они отличаются?',en:'Why two keys, and how do they differ?',zh:'为什么需要两把密钥？它们有何不同？'},
+      a:{ru:'Рабочий ключ — для повседневных дел: снять деньги, перевести, поменять настройки. Запасной ключ — на случай беды: им вы возвращаете себе доступ, если рабочий ключ потерян или попал не в те руки. Держите их в разных местах. Если оба лежат рядом, смысл разделения пропадает.',
+         en:'The everyday key handles routine work: withdrawing, transferring, changing settings. The backup key is for trouble: with it you regain access if the everyday key is lost or falls into the wrong hands. Keep them in different places. If both sit side by side, splitting them loses its point.',
+         zh:'日常密钥用于常规操作：提款、转账、修改设置。备用密钥用于应急：当日常密钥丢失或落入他人之手时，用它恢复访问权限。请分开保管。若两者放在一起，分离的意义就没有了。'}
     },
     {
-      q:{ru:'Если я потеряю mainAuthKey?',en:'What if I lose mainAuthKey?',zh:'如果我丢失 mainAuthKey 怎么办？'},
-      a:{ru:'Используйте recoveryAuthKey для досрочного закрытия (earlyClose) или возврата в резерв (recoverToSafe). Recovery — отдельный ключ именно для таких случаев.',
-         en:'Use recoveryAuthKey for earlyClose or recoverToSafe. Recovery is a separate key precisely for such cases.',
-         zh:'使用 recoveryAuthKey 进行 earlyClose 或 recoverToSafe。Recovery 正是为这种情况而设的独立密钥。'}
+      q:{ru:'Что такое аварийный адрес?',en:'What is the emergency address?',zh:'什么是紧急地址？'},
+      a:{ru:'Это запасной выход. Адрес, на который уйдут деньги, если случится совсем плохое — потеряны оба ключа или нужно спасать средства прямо сейчас. Задаётся один раз, лучше всего указать холодный кошелёк, к которому у вас точно есть доступ. Без него сейф открыть нельзя.',
+         en:'It is your emergency exit. The address funds go to when things go badly wrong — both keys lost, or money needs rescuing right now. You set it once, ideally to a cold wallet you are certain you can access. Without it a safe cannot be opened.',
+         zh:'这是您的紧急出口。当情况非常糟糕时资金将转入的地址——两把密钥都丢失，或需要立即抢救资金。只需设置一次，最好指向您确定能访问的冷钱包。没有它就无法开设保险箱。'}
     },
     {
-      q:{ru:'А если потеряю оба ключа?',en:'What if I lose both keys?',zh:'如果两个密钥都丢失怎么办？'},
-      a:{ru:'Остаётся panicWithdraw — мгновенный вывод на резервный адрес без подписей. Комиссия 20%, но средства не теряются. Поэтому критически важно ЗАРАНЕЕ установить резервный адрес.',
-         en:'panicWithdraw remains — instant withdrawal to the reserve address without signatures. 20% fee, but funds are not lost. That is why it is critically important to set the reserve address IN ADVANCE.',
-         zh:'还有 panicWithdraw — 无需签名即可立即提取到储备地址。手续费 20%，但资金不会丢失。因此提前设置储备地址至关重要。'}
+      q:{ru:'Потерял рабочий ключ — что делать?',en:'I lost my everyday key — what now?',zh:'我丢失了日常密钥怎么办？'},
+      a:{ru:'Ничего страшного. Запасным ключом вы назначаете новую пару ключей, и сейф снова в вашем распоряжении. Деньги остаются на месте. Именно ради этого случая запасной ключ и хранится отдельно.',
+         en:'Nothing is lost. With the backup key you assign a new pair of keys and the safe is yours again. The money stays where it is. This is exactly the case the backup key is kept separately for.',
+         zh:'不必担心。用备用密钥指定一对新密钥，保险箱重新归您掌控，资金原封不动。备用密钥单独保管，正是为了这种情况。'}
     },
     {
-      q:{ru:'Что такое EIP-712?',en:'What is EIP-712?',zh:'什么是 EIP-712？'},
-      a:{ru:'Стандарт типизированных подписей в Ethereum. Вы подписываете не голый хэш, а структуру с типами полей — кошелёк показывает читаемое сообщение что именно вы подписываете. Это защита от слепого подписания.',
-         en:'A standard for typed signatures in Ethereum. You sign not a raw hash, but a structure with field types — the wallet shows a readable message of what exactly you are signing. Protection from blind signing.',
-         zh:'以太坊中的类型化签名标准。您签署的不是原始哈希，而是带有字段类型的结构 — 钱包显示您正在签署内容的可读消息。这是对盲签的保护。'}
-    },
-  ]},
-  {id:'safety', t:{ru:'🛡 Безопасность',en:'🛡 Safety',zh:'🛡 安全'}, items:[
-    {
-      q:{ru:'Что такое резервный адрес (globalEmergency)?',en:'What is the reserve address (globalEmergency)?',zh:'什么是储备地址（globalEmergency）？'},
-      a:{ru:'Адрес, куда автоматически уйдут средства в случае panicWithdraw. Устанавливается один раз для всего вашего аккаунта (для всех ваших сейфов). Менять можно, но через 7-дневный таймлок — защита от подмены при взломе.',
-         en:'Address where funds automatically go on panicWithdraw. Set once for your entire account (all your vaults). Can be changed, but through a 7-day timelock — protection against substitution if compromised.',
-         zh:'panicWithdraw 时资金自动转入的地址。为您整个帐户（所有保险库）设置一次。可以更改，但需要 7 天时间锁 — 防止被入侵时被替换。'}
+      q:{ru:'Потерял оба ключа — что делать?',en:'I lost both keys — what now?',zh:'两把密钥都丢了怎么办？'},
+      a:{ru:'Остаётся экстренный вывод. Деньги за вычетом комиссии уйдут на ваш аварийный адрес — тот, что вы задали заранее. Поэтому задайте его до того, как понадобится, и не теряйте к нему доступ.',
+         en:'The emergency exit remains. Your money, minus the fee, goes to the emergency address you set in advance. So set it before you need it, and do not lose access to it.',
+         zh:'还有紧急提款。资金扣除手续费后将转入您预先设定的紧急地址。所以请提前设置，并确保不会失去对它的访问权。'}
     },
     {
-      q:{ru:'Что такое таймлок сейфа?',en:'What is a vault timelock?',zh:'什么是保险库时间锁？'},
-      a:{ru:'Добровольное самоограничение: вы запрещаете самому себе выводить средства из сейфа в течение N часов. На уровне SAFE — нельзя поставить таймлок. VAULT — до 72ч. FORTRESS — до 168ч. Защита от импульсивных действий и от взлома (даже с ключами вор не сможет ничего вывести пока таймлок не истечёт).',
-         en:'Voluntary self-restriction: you forbid yourself from withdrawing from the vault for N hours. SAFE level — no timelock. VAULT — up to 72h. FORTRESS — up to 168h. Protection from impulsive actions and from compromise (even with keys, a thief cannot withdraw until the timelock expires).',
-         zh:'自愿自我限制：您禁止自己在 N 小时内从保险库提取。SAFE 等级 — 无时间锁。VAULT — 最多 72 小时。FORTRESS — 最多 168 小时。防止冲动行为和被入侵（即使有密钥，小偷也无法在时间锁到期前提取）。'}
+      q:{ru:'Украли доступ к моему кошельку. Деньги в сейфе в опасности?',en:'Someone stole access to my wallet. Is the money in the safe at risk?',zh:'有人盗取了我的钱包访问权限，保险箱里的钱有危险吗？'},
+      a:{ru:'Нет, если ключи от сейфа хранились отдельно. Кошелёк и сейф — разные вещи: чтобы забрать деньги из сейфа, одного доступа к кошельку мало. Но действовать стоит быстро — переведите средства на аварийный адрес и заведите новый кошелёк.',
+         en:'No, provided the safe keys were kept separately. Wallet and safe are different things: access to the wallet alone is not enough to take money out of the safe. Still, act quickly — move funds to your emergency address and set up a fresh wallet.',
+         zh:'不会，前提是保险箱密钥单独保管。钱包和保险箱是两回事：仅有钱包访问权限不足以取走保险箱里的钱。但仍应迅速行动——将资金转至紧急地址，并启用新钱包。'}
     },
     {
-      q:{ru:'Контракт может быть приостановлен?',en:'Can the contract be paused?',zh:'合约可以暂停吗？'},
-      a:{ru:'Да, через роль Guardian. Это сделано для аварийной ситуации (например при обнаружении бага). На паузе все операции пользователей замораживаются, но средства остаются на месте. Снять паузу может Creator.',
-         en:'Yes, via the Guardian role. This is for emergencies (e.g. discovered bug). On pause all user operations freeze, but funds stay in place. Only Creator can unpause.',
-         zh:'是的，通过 Guardian 角色。这是为了应对紧急情况（例如发现漏洞）。暂停时所有用户操作都冻结，但资金仍在原处。只有 Creator 可以解除暂停。'}
-    },
-    {
-      q:{ru:'Чем подтверждена безопасность контракта?',en:'How is contract safety verified?',zh:'合约安全性如何验证？'},
-      a:{ru:'Внутреннее тестирование: 12/12 Foundry-тестов, Slither 0 уязвимостей, инвариант платёжеспособности (баланс контракта всегда >= обязательств), DeepSeek-аудит 2 Low. Внешний аудит — в процессе. Mainnet будет только после положительного аудита.',
-         en:'Internal testing: 12/12 Foundry tests, Slither 0 vulnerabilities, solvency invariant (contract balance always >= obligations), DeepSeek audit 2 Low. External audit — in progress. Mainnet only after positive audit.',
-         zh:'内部测试：12/12 Foundry 测试，Slither 0 漏洞，偿付能力不变式（合约余额始终 >= 义务），DeepSeek 审计 2 Low。外部审计 — 进行中。仅在审计通过后部署主网。'}
+      q:{ru:'Где хранить ключи и секретные фразы?',en:'Where should I keep keys and secret phrases?',zh:'密钥和助记词该如何保管？'},
+      a:{ru:'На бумаге, в двух разных местах. Не фотографируйте, не храните в облаке, заметках или мессенджерах — именно оттуда их чаще всего и забирают. Рабочий и запасной ключ держите порознь: пожар или кража в одном месте не должны лишать вас обоих сразу.',
+         en:'On paper, in two different places. Do not photograph them, do not keep them in the cloud, in notes, or in messengers — that is where they get taken from most often. Keep the everyday and backup keys apart: a fire or a break-in at one location should not cost you both at once.',
+         zh:'写在纸上，存放于两个不同地点。不要拍照，不要存在云端、备忘录或聊天软件里——那正是最常被窃取的地方。日常密钥与备用密钥分开存放：某一处失火或被盗，不应让您同时失去两者。'}
     },
   ]},
+
+  {id:'levels', t:{ru:'🛡 Уровни и защита',en:'🛡 Levels and protection',zh:'🛡 等级与防护'}, items:[
+    {
+      q:{ru:'Уровни SAFE, VAULT и FORTRESS — в чём разница?',en:'SAFE, VAULT, FORTRESS — what is the difference?',zh:'SAFE、VAULT、FORTRESS 有何区别？'},
+      a:{ru:'Разница в комиссии за пополнение и в том, какую задержку можно поставить. SAFE — 0.5%, задержки нет, деньги доступны сразу. VAULT — 1.5%, задержка до 72 часов. FORTRESS — 2%, задержка до 168 часов, это семь суток. Чем длиннее задержка, тем больше у вас времени заметить чужую операцию.',
+         en:'They differ in the deposit fee and in how long a delay you may set. SAFE — 0.5%, no delay, money available at once. VAULT — 1.5%, delay up to 72 hours. FORTRESS — 2%, delay up to 168 hours, that is seven days. The longer the delay, the more time you have to spot an operation that is not yours.',
+         zh:'区别在于存入手续费和可设置的延迟时长。SAFE — 0.5%，无延迟，资金随时可取。VAULT — 1.5%，最长延迟 72 小时。FORTRESS — 2%，最长延迟 168 小时，即七天。延迟越长，您发现异常操作的时间就越充裕。'}
+    },
+    {
+      q:{ru:'Что такое задержка и зачем она нужна?',en:'What is the delay for?',zh:'延迟有什么用？'},
+      a:{ru:'Вы сами запрещаете себе снимать деньги раньше назначенного срока. Звучит странно, но это защита: если ключ украли, вор тоже не сможет вывести средства сразу — а вы за это время успеете заметить и вмешаться. Заодно спасает от собственных импульсивных решений.',
+         en:'You forbid yourself from withdrawing before a set time. It sounds odd, but it is protection: if a key is stolen, the thief cannot withdraw right away either — and you have that time to notice and step in. It also saves you from your own impulsive decisions.',
+         zh:'您主动禁止自己在设定时间之前提款。听起来奇怪，但这是一种保护：密钥被盗时，窃贼同样无法立即取走资金，而您有时间发现并介入。同时也能避免自己的冲动决定。'}
+    },
+    {
+      q:{ru:'Может ли кто-то заморозить мой сейф?',en:'Can anyone freeze my safe?',zh:'有人能冻结我的保险箱吗？'},
+      a:{ru:'Работу всего сервиса можно поставить на паузу — это предусмотрено на случай, если найдут ошибку в коде. На паузе операции временно недоступны, но деньги остаются на своих местах, забрать их никто не может. Отдельно ваш сейф заморозить нельзя.',
+         en:'The whole service can be paused — this exists in case a flaw is found in the code. While paused, operations are temporarily unavailable, but the money stays exactly where it is and nobody can take it. Your individual safe cannot be frozen separately.',
+         zh:'整个服务可以暂停——这是为发现代码缺陷时准备的。暂停期间操作暂时不可用，但资金原地不动，任何人都无法取走。您的单个保险箱无法被单独冻结。'}
+    },
+    {
+      q:{ru:'Насколько проверен код?',en:'How well is the code checked?',zh:'代码经过多少检验？'},
+      a:{ru:'365 автоматических тестов проходят успешно, плюс пять проверок на устойчивость — каждая прогоняет по 128 тысяч сценариев. Статический анализ серьёзных замечаний не находит. Независимую проверку ведёт компания Hexens: первоначальный отчёт получен, все замечания устранены, сейчас ждём повторной проверки и итогового заключения. Работа с настоящими деньгами начнётся только после него. Пока всё в тестовой сети.',
+         en:'365 automated tests pass, plus five robustness checks running 128 thousand scenarios each. Static analysis finds no serious issues. An independent review is being carried out by Hexens: the initial report has been received, every finding addressed, and we are now awaiting the re-test and the final conclusion. Work with real money will begin only after that. For now everything runs on the test network.',
+         zh:'365 项自动化测试全部通过，另有五项稳健性检验，每项运行 12.8 万个场景。静态分析未发现严重问题。Hexens 正在进行独立审计：初步报告已收到，所有问题均已修复，目前等待复测和最终结论。只有在此之后才会开始处理真实资金。目前全部在测试网运行。'}
+    },
+  ]},
+
   {id:'fees', t:{ru:'💰 Комиссии',en:'💰 Fees',zh:'💰 手续费'}, items:[
     {
-      q:{ru:'Иерархия комиссий — куда сколько уходит?',en:'Fee hierarchy — where does what go?',zh:'手续费层级 — 各项流向何处？'},
-      a:{ru:'withdraw: 0.5% · earlyClose: 5% · recoverToSafe: 10% · emergencyWithdrawToAny: 15% · panicWithdraw: 20%. Чем экстреннее операция — тем выше комиссия (защита от злоупотреблений).',
-         en:'withdraw: 0.5% · earlyClose: 5% · recoverToSafe: 10% · emergencyWithdrawToAny: 15% · panicWithdraw: 20%. The more emergency the operation — the higher the fee (anti-abuse).',
-         zh:'withdraw: 0.5% · earlyClose: 5% · recoverToSafe: 10% · emergencyWithdrawToAny: 15% · panicWithdraw: 20%。操作越紧急 — 手续费越高（防止滥用）。'}
+      q:{ru:'Сколько стоит пользоваться сейфом?',en:'What does using a safe cost?',zh:'使用保险箱的费用是多少？'},
+      a:{ru:'Открыть сейф — 0.2%. Положить деньги — по ставке уровня: 0.5%, 1.5% или 2%. Забрать обычным способом — 0.5%. Передать сейф другому человеку — 0.5%. Отдельно оплачивается комиссия сети Ethereum за каждую операцию, она зависит от загруженности сети и к сервису отношения не имеет.',
+         en:'Opening a safe — 0.2%. Depositing — at your level rate: 0.5%, 1.5% or 2%. A normal withdrawal — 0.5%. Handing a safe to someone else — 0.5%. The Ethereum network fee is paid separately for every operation; it depends on network load and is unrelated to the service.',
+         zh:'开设保险箱 — 0.2%。存入 — 按等级费率：0.5%、1.5% 或 2%。常规提取 — 0.5%。将保险箱转给他人 — 0.5%。每笔操作另需支付以太坊网络费用，取决于网络拥堵情况，与本服务无关。'}
     },
     {
-      q:{ru:'Куда уходят собранные комиссии?',en:'Where do collected fees go?',zh:'收取的手续费去哪里？'},
-      a:{ru:'Для ANCR: 20% сжигается (дефляция), 25% создателю, 20% в резерв, 35% в пул наград (welcome-бонусы). Для других токенов: 50% создателю, 50% в резерв. Никаких автовыплат — создатель забирает через заявку с 7-дн таймлоком.',
-         en:'For ANCR: 20% burned (deflation), 25% creator, 20% reserve, 35% rewards pool (welcome bonuses). For other tokens: 50% creator, 50% reserve. No auto-payouts — creator withdraws via a 7-day timelock request.',
-         zh:'对于 ANCR：20% 销毁（通缩），25% 创建者，20% 储备，35% 奖励池（欢迎奖励）。其他代币：50% 创建者，50% 储备。无自动支付 — 创建者通过 7 天时间锁申请提取。'}
+      q:{ru:'Почему срочные операции дороже?',en:'Why do urgent operations cost more?',zh:'为什么紧急操作费用更高？'},
+      a:{ru:'Закрыть сейф раньше срока — 5%. Вернуть деньги на аварийный адрес — 10%. Вывести на любой адрес в обход обычного порядка — 15%. Экстренный вывод, когда счёт идёт на минуты, — 20%. Повышенная комиссия существует, чтобы обходные пути не превратились в обычный способ работы: иначе вся защита теряет смысл. Обычный вывод стоит 0.5%, и в спокойной ситуации пользоваться нужно им.',
+         en:'Closing a safe early — 5%. Returning money to the emergency address — 10%. Withdrawing to any address outside the normal flow — 15%. Emergency withdrawal, when minutes matter — 20%. The higher fee exists so that shortcuts do not become the routine way of working: otherwise the whole protection loses its meaning. A normal withdrawal costs 0.5%, and in a calm situation that is the one to use.',
+         zh:'提前关闭保险箱 — 5%。将资金退回紧急地址 — 10%。绕过常规流程提取到任意地址 — 15%。争分夺秒时的紧急提款 — 20%。较高的费率是为了防止捷径变成日常做法：否则整个防护就失去意义。常规提取仅需 0.5%，情况平稳时应当使用它。'}
     },
     {
-      q:{ru:'Зачем 7-дневный таймлок на вывод создателю?',en:'Why a 7-day timelock on creator withdrawals?',zh:'为什么创建者提取需要 7 天时间锁？'},
-      a:{ru:'Прозрачность для пользователей. Создатель не может внезапно вывести деньги — заявка видна публично, и пользователи имеют 7 дней чтобы заметить и среагировать. Это знак честного проекта.',
-         en:'Transparency for users. Creator cannot suddenly withdraw — the request is public, and users have 7 days to notice and react. A sign of an honest project.',
-         zh:'为用户透明。创建者不能突然提取 — 申请是公开的，用户有 7 天时间注意并作出反应。这是诚实项目的标志。'}
+      q:{ru:'Куда идут собранные комиссии?',en:'Where do collected fees go?',zh:'收取的手续费流向何处？'},
+      a:{ru:'Для токена ANCR: пятая часть сжигается навсегда, четверть идёт на развитие проекта, пятая часть в резерв, остальное — в фонд приветственных бонусов новым пользователям. Для остальных токенов: половина на развитие, половина в резерв. Автоматических выплат нет — средства выводятся по заявке с недельной задержкой, и эта заявка видна всем.',
+         en:'For the ANCR token: a fifth is burned permanently, a quarter goes to project development, a fifth to reserve, and the rest into a welcome-bonus fund for new users. For other tokens: half to development, half to reserve. There are no automatic payouts — funds are withdrawn by request with a one-week delay, and that request is visible to everyone.',
+         zh:'对于 ANCR 代币：五分之一永久销毁，四分之一用于项目开发，五分之一进入储备，其余进入新用户欢迎奖励基金。其他代币：一半用于开发，一半进入储备。没有自动支付——资金需通过申请提取，并有一周延迟，且该申请对所有人可见。'}
+    },
+    {
+      q:{ru:'Зачем недельная задержка на вывод средств проекта?',en:'Why a one-week delay on project withdrawals?',zh:'为什么项目提款要延迟一周？'},
+      a:{ru:'Чтобы никто не мог тихо забрать накопленное. Заявка публикуется в сети заранее, и целую неделю любой может её увидеть и проверить. Внезапный вывод невозможен технически.',
+         en:'So that nobody can quietly take what has accumulated. The request is published on-chain in advance, and for a whole week anyone can see and check it. A sudden withdrawal is technically impossible.',
+         zh:'为了防止有人悄悄取走积累的资金。申请会提前公布在链上，整整一周内任何人都能查看和核实。技术上不可能突然提款。'}
     },
   ]},
-  {id:'usage', t:{ru:'⚙ Использование',en:'⚙ Usage',zh:'⚙ 使用'}, items:[
+
+  {id:'usage', t:{ru:'⚙ Как пользоваться',en:'⚙ How to use it',zh:'⚙ 使用方法'}, items:[
     {
-      q:{ru:'Что такое уровни SAFE / VAULT / FORTRESS?',en:'What are SAFE / VAULT / FORTRESS levels?',zh:'SAFE / VAULT / FORTRESS 等级是什么？'},
-      a:{ru:'SAFE: комиссия открытия 0.5%, без таймлока. VAULT: 1.5%, таймлок до 72ч. FORTRESS: 2.0%, таймлок до 168ч (неделя). Выше уровень — выше плата за открытие, но больше защиты.',
-         en:'SAFE: 0.5% open fee, no timelock. VAULT: 1.5%, timelock up to 72h. FORTRESS: 2.0%, timelock up to 168h (week). Higher level — higher open fee, but more protection.',
-         zh:'SAFE：开仓费 0.5%，无时间锁。VAULT：1.5%，时间锁最长 72 小时。FORTRESS：2.0%，时间锁最长 168 小时（一周）。等级越高 — 开仓费越高，但保护越强。'}
+      q:{ru:'С чего начать?',en:'Where do I start?',zh:'从哪里开始？'},
+      a:{ru:'Сначала задайте аварийный адрес — без него сейф не откроется. Затем подготовьте два разных ключа: рабочий и запасной. Ни один из них не должен совпадать с вашим кошельком и с аварийным адресом. Потом выбирайте уровень, сумму и открывайте сейф.',
+         en:'First set the emergency address — without it a safe will not open. Then prepare two different keys: everyday and backup. Neither may match your wallet or the emergency address. After that pick a level, an amount, and open the safe.',
+         zh:'首先设置紧急地址——没有它无法开设保险箱。然后准备两把不同的密钥：日常密钥和备用密钥。两者都不得与您的钱包或紧急地址相同。之后选择等级和金额，开设保险箱。'}
     },
     {
-      q:{ru:'Можно ли передать сейф другому пользователю?',en:'Can a vault be transferred to another user?',zh:'可以将保险库转移给其他用户吗？'},
-      a:{ru:'Да — Secure Transfer. Создаёте передачу подписью recovery-ключа, получатель должен принять в течение 7 дней. Если не принял — передача истечёт, сейф остаётся у вас.',
-         en:'Yes — Secure Transfer. Create a transfer with recovery key signature, recipient must accept within 7 days. If not accepted — transfer expires, vault stays with you.',
-         zh:'可以 — Secure Transfer。使用 recovery 密钥签名创建转移，接收者必须在 7 天内接受。如果未接受 — 转移过期，保险库保留在您处。'}
+      q:{ru:'Как забрать деньги из сейфа?',en:'How do I get money out of the safe?',zh:'如何从保险箱取出资金？'},
+      a:{ru:'Обычный вывод: указываете сумму и адрес, подтверждаете рабочим ключом. Если стоит задержка, деньги придут после её окончания. Комиссия 0.5%. Это самый выгодный способ, все остальные — для нештатных ситуаций.',
+         en:'A normal withdrawal: enter the amount and address, confirm with your everyday key. If a delay is set, the money arrives once it expires. The fee is 0.5%. This is the cheapest route; all the others are for situations that have gone wrong.',
+         zh:'常规提取：输入金额和地址，用日常密钥确认。若设置了延迟，资金将在延迟结束后到账。手续费 0.5%。这是最划算的方式，其他方式都是为异常情况准备的。'}
     },
     {
-      q:{ru:'Что будет если creator уберёт токен из supported?',en:'What if creator removes a token from supported?',zh:'如果 creator 从支持列表中移除代币会怎样？'},
-      a:{ru:'Существующие сейфы продолжают работать полностью: вывод, депозит, передача, закрытие. Нельзя только открыть НОВЫЙ сейф с этим токеном. Это защита пользователей — нельзя «отжать» средства административно.',
-         en:'Existing vaults keep fully working: withdraw, deposit, transfer, close. Only opening a NEW vault with this token is blocked. User protection — funds cannot be administratively taken away.',
-         zh:'现有保险库完全继续运作：提取、存款、转移、关闭。只是无法开设此代币的新保险库。保护用户 — 资金无法被管理员剥夺。'}
+      q:{ru:'Можно ли передать сейф другому человеку?',en:'Can I hand a safe to someone else?',zh:'可以把保险箱转给他人吗？'},
+      a:{ru:'Да. Сейф переходит вместе с содержимым, а для нового владельца назначаются его собственные ключи. Комиссия 0.5%. У получателя должен быть задан аварийный адрес и не должно быть другого активного сейфа с этим же токеном.',
+         en:'Yes. The safe moves along with its contents, and the new owner gets keys of their own. The fee is 0.5%. The recipient must have an emergency address set and must not already hold an active safe with the same token.',
+         zh:'可以。保险箱连同内容一起转移，新主人将获得属于自己的密钥。手续费 0.5%。接收方必须已设置紧急地址，且不能已持有同一代币的活跃保险箱。'}
+    },
+    {
+      q:{ru:'Что будет, если токен уберут из списка поддерживаемых?',en:'What if a token is removed from the supported list?',zh:'如果某代币被移出支持列表会怎样？'},
+      a:{ru:'Ваш сейф продолжит работать, и деньги вы заберёте как обычно. Убирают токен только из списка доступных для новых сейфов — на уже открытые это не влияет.',
+         en:'Your safe keeps working and you withdraw as usual. Removal only affects the list available for new safes — already open ones are not touched.',
+         zh:'您的保险箱照常运作，可以正常提取资金。移除仅影响可用于新建保险箱的列表，已开设的不受影响。'}
+    },
+    {
+      q:{ru:'Почему кошелёк показывает предупреждение при подключении?',en:'Why does my wallet warn me when connecting?',zh:'为什么钱包连接时会显示警告？'},
+      a:{ru:'Сервис пока работает на бесплатном хостинге, а у такого адреса нет собственной репутации. Автоматические проверки кошельков относятся к новым адресам настороженно. Заявка на снятие пометки подана, и свой домен появится к запуску с настоящими деньгами.',
+         en:'The service still runs on free hosting, and such an address has no reputation of its own. Automated wallet checks treat new addresses with suspicion. A request to clear the flag has been filed, and a proper domain will be in place before launch with real money.',
+         zh:'本服务目前使用免费托管，此类地址没有自身的信誉记录。钱包的自动检测对新地址持谨慎态度。已提交解除标记的申请，正式使用真实资金前将启用自有域名。'}
     },
   ]},
 ];
