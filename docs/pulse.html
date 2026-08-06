@@ -355,7 +355,7 @@ pre.code{font-family:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,Consolas,'Rob
       <span style="flex:1;text-align:center;font-size:14px;font-weight:700;letter-spacing:0.05em;pointer-events:none">ANCHORVAULT<span style="color:#d4a843">COIN</span></span>
       <span id="haddr" style="font-size:10px;font-family:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,Consolas,'Roboto Mono','Droid Sans Mono',monospace;color:#94a3b8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:120px"></span>
       <select id="lsel" style="width:auto;padding:3px 5px;cursor:pointer;font-size:10px;flex-shrink:0;background:#1e2736;border:1px solid #2a3347;color:#e2e8f0;border-radius:6px">
-        <option value="ru">RU</option><option value="en">EN</option><option value="zh">ZH</option>
+        <option value="en">EN</option><option value="ru">RU</option><option value="zh">ZH</option>
       </select>
                 </header>
 
@@ -659,6 +659,9 @@ const I18N = {
   lvl_safe_desc:{ru:"0.5% · без задержки",en:"0.5% · no delay",zh:"0.5% · 无延迟"},
   lvl_vault_desc:{ru:"1.5% · задержка до 72ч",en:"1.5% · up to 72h delay",zh:"1.5% · 延迟至 72 小时"},
   lvl_fortress_desc:{ru:"2.0% · задержка до 168ч",en:"2.0% · up to 168h delay",zh:"2.0% · 延迟至 168 小时"},
+  lvl_name_safe:{ru:"СЕЙФ",en:"SAFE",zh:"保险箱"},
+  lvl_name_vault:{ru:"ХРАНИЛИЩЕ",en:"VAULT",zh:"金库"},
+  lvl_name_fortress:{ru:"КРЕПОСТЬ",en:"FORTRESS",zh:"堡垒"},
 
   ops_tab_deposit:{ru:"📥 Пополнить",en:"📥 Deposit",zh:"📥 存入"},
   ops_tab_withdraw:{ru:"📤 Вывести",en:"📤 Withdraw",zh:"📤 提取"},
@@ -868,7 +871,7 @@ const I18N = {
   ti_em_any:{ru:"Аварийный вывод на любой адрес. Используется если и основной, и резервный кошельки скомпрометированы. Комиссия 15%.",en:"Emergency withdrawal to any address. Used if both main and reserve wallets are compromised. 15% fee.",zh:"紧急提取到任意地址。用于主钱包和储备钱包都被攻击的情况。手续费 15%。"},
 
 };
-function t(k){const e=I18N[k];if(!e)return k;return e[S.lang]||e.ru||k;}
+function t(k){const e=I18N[k];if(!e)return k;return e[S.lang]||e.en||e.ru||k;}
 // Проставляет переводы в статичные элементы с атрибутом data-i18n
 function applyI18n(){
   document.querySelectorAll('[data-i18n]').forEach(el=>{el.textContent=t(el.getAttribute('data-i18n'));});
@@ -1014,7 +1017,7 @@ const S={
   isCr:false,isGd:false,netOK:false,paused:false,
   vid:0n,hasEm:false,vd:null,
   selTok:'ANCR',  // символ выбранного токена сейфа (ключ из TOKENS)
-  route:'home',lang:localStorage.getItem('av45l')||'ru',
+  route:'home',lang:localStorage.getItem('av45l')||'en',
 };
 // Текущий объект выбранного токена сейфа (для openVault/операций с сейфом)
 function curTok(){return TOKENS[S.selTok]||TOKENS.ANCR;}
@@ -1535,7 +1538,7 @@ async function rHome(){
     balRows=bEntries;
   }catch(e){log('home scan: '+perr(e),'warning');}
   const[wc,wa]=await Promise.all([S.vlt.welcomeBonusClaimed(S.user).catch(()=>false),S.vlt.welcomeBonus().catch(()=>0n)]);
-  const LN=['SAFE','VAULT','FORTRESS'],LB=['bdg-ok','bdg-g','bdg-w'];
+  const LN=[t('lvl_name_safe'),t('lvl_name_vault'),t('lvl_name_fortress')],LB=['bdg-ok','bdg-g','bdg-w'];
   const vaultsHtml=vaultRows.length
     ? vaultRows.map(r=>`
         <div class="st" style="display:flex;align-items:center;gap:8px">
@@ -1610,9 +1613,9 @@ async function rOpen(){
       <div class="mb3">
         <label class="lbl">${t('open_level')}${tip('tip_level')}</label>
         <div class="g3" id="lvg">
-          <div class="lvc lvs sel" data-l="0" onclick="sl(0)"><div style="font-size:18px">🛡</div><div style="font-weight:800;font-size:12.5px">SAFE</div><span class="bdg bdg-ok" style="font-size:8px">${t('lvl_safe')}</span><div style="font-size:9px;color:#94a3b8;margin-top:2px">${t('lvl_safe_desc')}</div></div>
-          <div class="lvc lvv" data-l="1" onclick="sl(1)"><div style="font-size:18px">🏛</div><div style="font-weight:800;font-size:12.5px">VAULT</div><span class="bdg bdg-g" style="font-size:8px">${t('lvl_vault')}</span><div style="font-size:9px;color:#94a3b8;margin-top:2px">${t('lvl_vault_desc')}</div></div>
-          <div class="lvc lvf" data-l="2" onclick="sl(2)"><div style="font-size:18px">🏰</div><div style="font-weight:800;font-size:12.5px">FORTRESS</div><span class="bdg bdg-w" style="font-size:8px">${t('lvl_fortress')}</span><div style="font-size:9px;color:#94a3b8;margin-top:2px">${t('lvl_fortress_desc')}</div></div>
+          <div class="lvc lvs sel" data-l="0" onclick="sl(0)"><div style="font-size:18px">🛡</div><div style="font-weight:800;font-size:12.5px">${t('lvl_name_safe')}</div><span class="bdg bdg-ok" style="font-size:8px">${t('lvl_safe')}</span><div style="font-size:9px;color:#94a3b8;margin-top:2px">${t('lvl_safe_desc')}</div></div>
+          <div class="lvc lvv" data-l="1" onclick="sl(1)"><div style="font-size:18px">🏛</div><div style="font-weight:800;font-size:12.5px">${t('lvl_name_vault')}</div><span class="bdg bdg-g" style="font-size:8px">${t('lvl_vault')}</span><div style="font-size:9px;color:#94a3b8;margin-top:2px">${t('lvl_vault_desc')}</div></div>
+          <div class="lvc lvf" data-l="2" onclick="sl(2)"><div style="font-size:18px">🏰</div><div style="font-weight:800;font-size:12.5px">${t('lvl_name_fortress')}</div><span class="bdg bdg-w" style="font-size:8px">${t('lvl_fortress')}</span><div style="font-size:9px;color:#94a3b8;margin-top:2px">${t('lvl_fortress_desc')}</div></div>
         </div>
         <input type="hidden" id="oplv" value="0">
       </div>
@@ -1716,7 +1719,7 @@ window.doOpen=async function(){
     <div style="display:flex;flex-direction:column;gap:4px;font-size:11.5px">
       <div>Токен: <b>${tk.symbol}</b></div>
       <div>Название: <b>${E(name)}</b></div>
-      <div>Уровень: <b>${['SAFE','VAULT','FORTRESS'][lvl]}</b></div>
+      <div>Уровень: <b>${[t('lvl_name_safe'),t('lvl_name_vault'),t('lvl_name_fortress')][lvl]}</b></div>
       <div>Сумма: <b>${tr(fu(w,tk.decimals))} ${tk.symbol}</b></div>
       <div>Main key: <code style="font-size:10px">${sh(mk,10,8)}</code></div>
       <div>Recovery key: <code style="font-size:10px">${sh(rk,10,8)}</code></div>
@@ -1755,7 +1758,7 @@ async function rOps(){
       <div class="card mb3">
         <div class="ch">
           <div class="ct">${t('ib_vault')} #${v.id} · ${E(v.name)}</div>
-          <span class="bdg ${['bdg-ok','bdg-g','bdg-w'][v.level]}">${['SAFE','VAULT','FORTRESS'][v.level]}</span>
+          <span class="bdg ${['bdg-ok','bdg-g','bdg-w'][v.level]}">${[t('lvl_name_safe'),t('lvl_name_vault'),t('lvl_name_fortress')][v.level]}</span>
         </div>
         <div class="g3">
           <div class="st"><div class="stl">${t('ops_lbl_balance')}</div><div class="stv g">${tr(fu(v.amount,v.dec))} ${v.sym}</div></div>
@@ -2909,10 +2912,10 @@ const FAQ_GROUPS = [
 
   {id:'levels', t:{ru:'🛡 Уровни и защита',en:'🛡 Levels and protection',zh:'🛡 等级与防护'}, items:[
     {
-      q:{ru:'Уровни SAFE, VAULT и FORTRESS — в чём разница?',en:'SAFE, VAULT, FORTRESS — what is the difference?',zh:'SAFE、VAULT、FORTRESS 有何区别？'},
-      a:{ru:'Разница в комиссии за пополнение и в том, какую задержку можно поставить. SAFE — 0.5%, задержки нет, деньги доступны сразу. VAULT — 1.5%, задержка до 72 часов. FORTRESS — 2%, задержка до 168 часов, это семь суток. Чем длиннее задержка, тем больше у вас времени заметить чужую операцию.',
+      q:{ru:'Уровни СЕЙФ, ХРАНИЛИЩЕ и КРЕПОСТЬ — в чём разница?',en:'SAFE, VAULT, and FORTRESS — what is the difference?',zh:'保险箱、金库和堡垒 — 有何区别？'},
+      a:{ru:'Разница в комиссии за пополнение и в том, какую задержку можно поставить. СЕЙФ — 0.5%, задержки нет, деньги доступны сразу. ХРАНИЛИЩЕ — 1.5%, задержка до 72 часов. КРЕПОСТЬ — 2%, задержка до 168 часов, это семь суток. Чем длиннее задержка, тем больше у вас времени заметить чужую операцию.',
          en:'They differ in the deposit fee and in how long a delay you may set. SAFE — 0.5%, no delay, money available at once. VAULT — 1.5%, delay up to 72 hours. FORTRESS — 2%, delay up to 168 hours, that is seven days. The longer the delay, the more time you have to spot an operation that is not yours.',
-         zh:'区别在于存入手续费和可设置的延迟时长。SAFE — 0.5%，无延迟，资金随时可取。VAULT — 1.5%，最长延迟 72 小时。FORTRESS — 2%，最长延迟 168 小时，即七天。延迟越长，您发现异常操作的时间就越充裕。'}
+         zh:'区别在于存入手续费和可设置的延迟时长。保险箱 — 0.5%，无延迟，资金随时可取。金库 — 1.5%，最长延迟 72 小时。堡垒 — 2%，最长延迟 168 小时，即七天。延迟越长，您发现异常操作的时间就越充裕。'}
     },
     {
       q:{ru:'Что такое задержка и зачем она нужна?',en:'What is the delay for?',zh:'延迟有什么用？'},
@@ -2928,45 +2931,69 @@ const FAQ_GROUPS = [
     },
     {
       q:{ru:'Насколько проверен код?',en:'How well is the code checked?',zh:'代码经过多少检验？'},
-      a:{ru:'365 автоматических тестов проходят успешно, плюс пять проверок на устойчивость — каждая прогоняет по 128 тысяч сценариев. Статический анализ серьёзных замечаний не находит. Независимую проверку ведёт компания Hexens: первоначальный отчёт получен, все замечания устранены, сейчас ждём повторной проверки и итогового заключения. Работа с настоящими деньгами начнётся только после него. Пока всё в тестовой сети.',
-         en:'365 automated tests pass, plus five robustness checks running 128 thousand scenarios each. Static analysis finds no serious issues. An independent review is being carried out by Hexens: the initial report has been received, every finding addressed, and we are now awaiting the re-test and the final conclusion. Work with real money will begin only after that. For now everything runs on the test network.',
-         zh:'365 项自动化测试全部通过，另有五项稳健性检验，每项运行 12.8 万个场景。静态分析未发现严重问题。Hexens 正在进行独立审计：初步报告已收到，所有问题均已修复，目前等待复测和最终结论。只有在此之后才会开始处理真实资金。目前全部在测试网运行。'}
+      a:{ru:'365 автоматических тестов проходят успешно, плюс пять проверок на устойчивость — каждая прогоняет по 128 тысяч сценариев. Статический анализ серьёзных замечаний не находит. Независимую проверку ведёт компания Hexens в рамках своей программы поддержки разработчиков (Builder Support Program): первоначальный отчёт получен, все замечания устранены, сейчас ждём повторной проверки и итогового заключения. Работа с настоящими деньгами начнётся только после него. Пока всё в тестовой сети.',
+         en:'365 automated tests pass, plus five robustness checks running 128 thousand scenarios each. Static analysis finds no serious issues. An independent review is being carried out by Hexens through their Builder Support Program: the initial report has been received, every finding addressed, and we are now awaiting the re-test and the final conclusion. Work with real money will begin only after that. For now everything runs on the test network.',
+         zh:'365 项自动化测试全部通过，另有五项稳健性检验，每项运行 12.8 万个场景。静态分析未发现严重问题。Hexens 正通过其 Builder Support Program（开发者支持计划）进行独立审计：初步报告已收到，所有问题均已修复，目前等待复测和最终结论。只有在此之后才会开始处理真实资金。目前全部在测试网运行。'}
     },
   ]},
 
   {id:'fees', t:{ru:'💰 Комиссии',en:'💰 Fees',zh:'💰 手续费'}, items:[
     {
       q:{ru:'Сколько стоит пользоваться сейфом?',en:'What does using a safe cost?',zh:'使用保险箱的费用是多少？'},
-      a:{ru:'Открыть сейф — 0.2%. Положить деньги — по ставке уровня: 0.5%, 1.5% или 2%. Забрать обычным способом — 0.5%. Передать сейф другому человеку — 0.5%. Отдельно оплачивается комиссия сети Ethereum за каждую операцию, она зависит от загруженности сети и к сервису отношения не имеет.',
-         en:'Opening a safe — 0.2%. Depositing — at your level rate: 0.5%, 1.5% or 2%. A normal withdrawal — 0.5%. Handing a safe to someone else — 0.5%. The Ethereum network fee is paid separately for every operation; it depends on network load and is unrelated to the service.',
-         zh:'开设保险箱 — 0.2%。存入 — 按等级费率：0.5%、1.5% 或 2%。常规提取 — 0.5%。将保险箱转给他人 — 0.5%。每笔操作另需支付以太坊网络费用，取决于网络拥堵情况，与本服务无关。'}
+      a:{ru:'При открытии сейфа с суммы удерживается 0.2% — это входит в тот же взнос, отдельно платить не нужно. Дальнейшие пополнения — по ставке уровня: 0.5%, 1.5% или 2%. Забрать обычным способом — 0.5%. Передать сейф другому человеку — 0.5%. Отдельно оплачивается комиссия сети Ethereum за каждую операцию, она зависит от загруженности сети и к сервису отношения не имеет.',
+         en:'When you open a safe, 0.2% is held back from the amount you put in — it is part of that same deposit, nothing extra to pay. Further deposits — at your level rate: 0.5%, 1.5% or 2%. A normal withdrawal — 0.5%. Handing a safe to someone else — 0.5%. The Ethereum network fee is paid separately for every operation; it depends on network load and is unrelated to the service.',
+         zh:'开设保险箱时，会从存入金额中扣除 0.2%——这是同一笔存款的一部分，无需另外支付。后续存入 — 按等级费率：0.5%、1.5% 或 2%。常规提取 — 0.5%。将保险箱转给他人 — 0.5%。每笔操作另需支付以太坊网络费用，取决于网络拥堵情况，与本服务无关。'}
     },
     {
       q:{ru:'Почему срочные операции дороже?',en:'Why do urgent operations cost more?',zh:'为什么紧急操作费用更高？'},
-      a:{ru:'Закрыть сейф раньше срока — 5%. Вернуть деньги на аварийный адрес — 10%. Вывести на любой адрес в обход обычного порядка — 15%. Экстренный вывод, когда счёт идёт на минуты, — 20%. Повышенная комиссия существует, чтобы обходные пути не превратились в обычный способ работы: иначе вся защита теряет смысл. Обычный вывод стоит 0.5%, и в спокойной ситуации пользоваться нужно им.',
-         en:'Closing a safe early — 5%. Returning money to the emergency address — 10%. Withdrawing to any address outside the normal flow — 15%. Emergency withdrawal, when minutes matter — 20%. The higher fee exists so that shortcuts do not become the routine way of working: otherwise the whole protection loses its meaning. A normal withdrawal costs 0.5%, and in a calm situation that is the one to use.',
-         zh:'提前关闭保险箱 — 5%。将资金退回紧急地址 — 10%。绕过常规流程提取到任意地址 — 15%。争分夺秒时的紧急提款 — 20%。较高的费率是为了防止捷径变成日常做法：否则整个防护就失去意义。常规提取仅需 0.5%，情况平稳时应当使用它。'}
+      a:{ru:'Закрыть сейф раньше срока — 5%. Вернуть деньги на аварийный адрес — 10%. Вывести на любой адрес в обход обычного порядка — 15%. Экстренный вывод, когда счёт идёт на минуты, — 20%. У этого способа есть особенность: он не требует подписи запасным ключом и срабатывает даже если этот ключ недоступен — единственный из четырёх, который работает так. Повышенная комиссия существует, чтобы обходные пути не превратились в обычный способ работы: иначе вся защита теряет смысл. Обычный вывод стоит 0.5%, и в спокойной ситуации пользоваться нужно им.',
+         en:'Closing a safe early — 5%. Returning money to the emergency address — 10%. Withdrawing to any address outside the normal flow — 15%. Emergency withdrawal, when minutes matter — 20%. This last one has a distinct feature: it needs no backup-key signature and works even if that key is unreachable — the only one of the four that does. The higher fee exists so that shortcuts do not become the routine way of working: otherwise the whole protection loses its meaning. A normal withdrawal costs 0.5%, and in a calm situation that is the one to use.',
+         zh:'提前关闭保险箱 — 5%。将资金退回紧急地址 — 10%。绕过常规流程提取到任意地址 — 15%。争分夺秒时的紧急提款 — 20%。这最后一种方式有其特别之处：无需备用密钥签名，即使该密钥无法使用也能执行——四种方式中唯一如此的一种。较高的费率是为了防止捷径变成日常做法：否则整个防护就失去意义。常规提取仅需 0.5%，情况平稳时应当使用它。'}
     },
     {
-      q:{ru:'Куда идут собранные комиссии?',en:'Where do collected fees go?',zh:'收取的手续费流向何处？'},
-      a:{ru:'Для токена ANCR: пятая часть сжигается навсегда, четверть идёт на развитие проекта, пятая часть в резерв, остальное — в фонд приветственных бонусов новым пользователям. Для остальных токенов: половина на развитие, половина в резерв. Автоматических выплат нет — средства выводятся по заявке с недельной задержкой, и эта заявка видна всем.',
-         en:'For the ANCR token: a fifth is burned permanently, a quarter goes to project development, a fifth to reserve, and the rest into a welcome-bonus fund for new users. For other tokens: half to development, half to reserve. There are no automatic payouts — funds are withdrawn by request with a one-week delay, and that request is visible to everyone.',
-         zh:'对于 ANCR 代币：五分之一永久销毁，四分之一用于项目开发，五分之一进入储备，其余进入新用户欢迎奖励基金。其他代币：一半用于开发，一半进入储备。没有自动支付——资金需通过申请提取，并有一周延迟，且该申请对所有人可见。'}
+      q:{ru:'Что происходит с собранными комиссиями?',en:'What happens to the fees collected?',zh:'收取的手续费会怎样？'},
+      a:{ru:'Заметная часть комиссий в ANCR сжигается навсегда — эти токены исчезают из обращения и больше никогда не появятся. Чем активнее пользуются сейфами, тем меньше становится общее количество монет. Остальное идёт на развитие, в резервный фонд и на приветственные бонусы новым пользователям.',
+         en:'A significant share of ANCR fees is burned permanently — those tokens leave circulation and never come back. The more the safes are used, the smaller the total supply becomes. The rest goes to development, a reserve fund, and welcome bonuses for new users.',
+         zh:'ANCR 手续费中有相当一部分被永久销毁——这些代币退出流通，永不再现。保险箱使用得越多，代币总量就越少。其余部分用于开发、储备基金以及新用户的欢迎奖励。'}
     },
     {
-      q:{ru:'Зачем недельная задержка на вывод средств проекта?',en:'Why a one-week delay on project withdrawals?',zh:'为什么项目提款要延迟一周？'},
-      a:{ru:'Чтобы никто не мог тихо забрать накопленное. Заявка публикуется в сети заранее, и целую неделю любой может её увидеть и проверить. Внезапный вывод невозможен технически.',
-         en:'So that nobody can quietly take what has accumulated. The request is published on-chain in advance, and for a whole week anyone can see and check it. A sudden withdrawal is technically impossible.',
-         zh:'为了防止有人悄悄取走积累的资金。申请会提前公布在链上，整整一周内任何人都能查看和核实。技术上不可能突然提款。'}
+      q:{ru:'Может ли кто-то внезапно вывести накопленные средства?',en:'Can anyone suddenly drain the accumulated funds?',zh:'有人能突然抽走积累的资金吗？'},
+      a:{ru:'Нет. Автоматических выплат не существует, а любой вывод требует заявки, которая публикуется в сети за неделю до исполнения. Всю эту неделю заявку видит кто угодно и может её проверить. Незаметно забрать что-либо технически невозможно.',
+         en:'No. There are no automatic payouts, and any withdrawal requires a request published on-chain a week before it can execute. For that entire week anyone can see and check it. Taking anything unnoticed is technically impossible.',
+         zh:'不能。不存在自动支付，任何提款都需要提前一周在链上公布申请。整整一周内任何人都能查看和核实。技术上不可能悄无声息地取走任何资金。'}
     },
   ]},
 
   {id:'usage', t:{ru:'⚙ Как пользоваться',en:'⚙ How to use it',zh:'⚙ 使用方法'}, items:[
     {
-      q:{ru:'С чего начать?',en:'Where do I start?',zh:'从哪里开始？'},
-      a:{ru:'Сначала задайте аварийный адрес — без него сейф не откроется. Затем подготовьте два разных ключа: рабочий и запасной. Ни один из них не должен совпадать с вашим кошельком и с аварийным адресом. Потом выбирайте уровень, сумму и открывайте сейф.',
-         en:'First set the emergency address — without it a safe will not open. Then prepare two different keys: everyday and backup. Neither may match your wallet or the emergency address. After that pick a level, an amount, and open the safe.',
-         zh:'首先设置紧急地址——没有它无法开设保险箱。然后准备两把不同的密钥：日常密钥和备用密钥。两者都不得与您的钱包或紧急地址相同。之后选择等级和金额，开设保险箱。'}
+      q:{ru:'Как открыть первый сейф — по шагам',en:'Opening your first safe — step by step',zh:'开设第一个保险箱——分步说明'},
+      a:{ru:'Шаг первый: подключите кошелёк. Второй: задайте аварийный адрес — без него сейф не откроется, укажите холодный кошелёк, к которому у вас точно есть доступ. Третий: заготовьте два новых адреса — они станут рабочим и запасным ключом; ни один не должен совпадать с кошельком или аварийным адресом. Четвёртый: выберите токен и уровень. Пятый: укажите сумму, не меньше 0.01. Шестой: подтвердите операцию в кошельке и дождитесь, пока она пройдёт в сети. Сейф появится на главной странице.',
+         en:'Step one: connect your wallet. Two: set the emergency address — a safe will not open without it, so point it at a cold wallet you are certain you can reach. Three: prepare two fresh addresses — they become your everyday and backup keys; neither may match your wallet or the emergency address. Four: pick a token and a level. Five: enter an amount, at least 0.01. Six: confirm in your wallet and wait for the network to process it. The safe then appears on the main page.',
+         zh:'第一步：连接钱包。第二步：设置紧急地址——没有它无法开设保险箱，请指向您确定能访问的冷钱包。第三步：准备两个新地址——它们将成为日常密钥和备用密钥；两者都不得与钱包或紧急地址相同。第四步：选择代币和等级。第五步：输入金额，不少于 0.01。第六步：在钱包中确认并等待网络处理。保险箱随后会出现在主页上。'}
+    },
+    {
+      q:{ru:'Как добавить денег в уже открытый сейф?',en:'How do I add money to a safe I already have?',zh:'如何向已开设的保险箱追加资金？'},
+      a:{ru:'На странице операций выберите пополнение, укажите сумму и подтвердите. Подпись ключом здесь не нужна — класть деньги в свой сейф может только владелец кошелька. Комиссия берётся по ставке вашего уровня. Уровень при пополнении не меняется.',
+         en:'On the operations page choose deposit, enter an amount and confirm. No key signature is needed here — only the wallet owner can put money into their own safe. The fee is charged at your level rate. Depositing does not change the level.',
+         zh:'在操作页面选择存入，输入金额并确认。此处无需密钥签名——只有钱包所有者才能向自己的保险箱存钱。按您的等级费率收取手续费。存入不会改变等级。'}
+    },
+    {
+      q:{ru:'Засомневался в безопасности ключей. Что делать?',en:'I am no longer sure my keys are safe. What now?',zh:'我不确定密钥是否安全了，该怎么办？'},
+      a:{ru:'Замените их, не дожидаясь беды. Заготовьте два новых адреса и выполните смену ключей, подтвердив запасным ключом. Старые ключи сразу перестают работать, деньги остаются на месте. Это дешевле и спокойнее, чем экстренный вывод, и делать это можно сколько угодно раз.',
+         en:'Replace them without waiting for trouble. Prepare two new addresses and run the key change, confirming with your backup key. The old keys stop working immediately and the money stays put. This is cheaper and calmer than an emergency withdrawal, and you can do it as often as you like.',
+         zh:'不必等到出事，直接更换。准备两个新地址并执行密钥更换，用备用密钥确认。旧密钥立即失效，资金原封不动。这比紧急提款更省钱也更从容，且可以随时反复进行。'}
+    },
+    {
+      q:{ru:'Как поставить задержку на снятие?',en:'How do I set a withdrawal delay?',zh:'如何设置提款延迟？'},
+      a:{ru:'В настройках сейфа укажите срок в часах и подтвердите рабочим ключом. Больше предела своего уровня поставить нельзя: у СЕЙФА задержки нет вовсе, у ХРАНИЛИЩА до 72 часов, у КРЕПОСТИ до 168. Срок можно менять в любой момент, пока сейф активен.',
+         en:'In the safe settings enter the delay in hours and confirm with your everyday key. You cannot exceed your level limit: SAFE has no delay at all, VAULT allows up to 72 hours, FORTRESS up to 168. The period can be changed at any time while the safe is active.',
+         zh:'在保险箱设置中输入延迟小时数，用日常密钥确认。不能超过等级上限：保险箱完全没有延迟，金库最长 72 小时，堡垒最长 168 小时。保险箱处于活跃状态时可随时更改时长。'}
+    },
+    {
+      q:{ru:'Операция не проходит — в чём может быть дело?',en:'My operation will not go through — what could it be?',zh:'操作无法完成，可能是什么原因？'},
+      a:{ru:'Чаще всего одно из трёх: не хватает ETH на комиссию сети, кошелёк переключён не на ту сеть, или ещё не истекла назначенная вами задержка. Проверьте это в первую очередь. Если подпись была создана давно, она могла устареть — сделайте новую. Текст ошибки внизу страницы обычно подсказывает причину.',
+         en:'Usually one of three things: not enough ETH for the network fee, the wallet is switched to the wrong network, or the delay you set has not expired yet. Check those first. If a signature was created a while ago it may have expired — make a new one. The error text at the bottom of the page usually points to the cause.',
+         zh:'通常是三种情况之一：ETH 不足以支付网络费用、钱包切换到了错误的网络，或您设置的延迟尚未结束。请先检查这些。如果签名创建时间较久，可能已过期——重新生成一个。页面底部的错误提示通常能指出原因。'}
     },
     {
       q:{ru:'Как забрать деньги из сейфа?',en:'How do I get money out of the safe?',zh:'如何从保险箱取出资金？'},
