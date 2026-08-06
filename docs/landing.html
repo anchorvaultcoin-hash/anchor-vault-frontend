@@ -728,8 +728,8 @@ Full checksums: CHECKSUMS.txt</code></pre>
       const saved = localStorage.getItem('av_lang');
       if(saved && Object.prototype.hasOwnProperty.call(LANG, saved)) return saved;
     }catch(e){}
-    const nav = (navigator.language || 'ru').toLowerCase().slice(0,2);
-    return Object.prototype.hasOwnProperty.call(LANG, nav) ? nav : 'ru';
+    const nav = (navigator.language || 'en').toLowerCase().slice(0,2);
+    return Object.prototype.hasOwnProperty.call(LANG, nav) ? nav : 'en';
   }
 
   const langSelect = document.getElementById('langSelect');
