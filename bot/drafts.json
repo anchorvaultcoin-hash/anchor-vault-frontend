@@ -262,5 +262,37 @@
     "date": "Wed, 05 Aug 2026 15:44:08 +0000",
     "collected": "2026-08-06",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "ClickFix attack pushes macOS infostealer for crypto theft attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/clickfix-attack-pushes-macos-infostealer-for-crypto-theft-attacks/",
+    "date": "Thu, 06 Aug 2026 18:37:17 -0400",
+    "collected": "2026-08-07",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "CryptoJS Weak RNG Behind $5.7 Million in Drains Affects Five Crypto Wallet Apps",
+    "link": "https://thehackernews.com/2026/08/cryptojs-weak-rng-behind-57-million-in.html",
+    "date": "Thu, 06 Aug 2026 17:19:48 +0530",
+    "collected": "2026-08-07",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Japan FSA asks crypto exchanges to impose withdrawal delays to fight scams",
+    "link": "https://cointelegraph.com/news/japan-fsa-crypto-exchanges-withdrawal-delays-scams?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 07 Aug 2026 05:25:52 +0000",
+    "collected": "2026-08-07",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Crypto Wrench Attacks on Pace for Record Year as $30M Stolen in 2026: Chainalysis",
+    "link": "https://decrypt.co/375014/crypto-wrench-attacks-30m-stolen-2026-chainalysis",
+    "date": "Thu, 06 Aug 2026 12:01:04 +0000",
+    "collected": "2026-08-07",
+    "used": false
   }
 ]
