@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "posted": false,
+    "posted": true,
     "ru": "Поддержка никогда не пишет первой\n\nНи одна настоящая служба поддержки не напишет тебе в личку сама. Ни в Telegram, ни в Discord, ни где-либо ещё.\n\nЕсли тебе написали первыми и представились поддержкой — это мошенник. Без исключений. Даже если аватарка правильная, даже если ник почти совпадает, даже если он знает подробности твоей проблемы.\n\nОсобенно если знает подробности. Это значит, что он прочитал твоё сообщение в публичном чате и пришёл к тебе с готовым сценарием.\n\nЯ тоже никогда не пишу первым.",
     "en": "Support never messages you first\n\nNo real support team will ever DM you out of the blue. Not on Telegram, not on Discord, nowhere.\n\nIf someone messaged you first claiming to be support, they're a scammer. No exceptions. Even if the avatar is right, even if the handle almost matches, even if they know the details of your problem.\n\nEspecially if they know the details. That means they read your message in a public chat and came prepared.\n\nI never message anyone first either.",
     "zh": "客服永远不会主动私信你\n\n没有任何真正的客服团队会主动给你发私信。Telegram 不会，Discord 不会，任何地方都不会。\n\n如果有人主动联系你并自称客服，那就是骗子。没有例外。哪怕头像正确，哪怕用户名几乎一模一样，哪怕他清楚你遇到的问题。\n\n尤其是当他清楚细节的时候。那说明他在公开群里读到了你的消息，带着准备好的话术找上门来。\n\n我本人同样从不主动私信任何人。",
