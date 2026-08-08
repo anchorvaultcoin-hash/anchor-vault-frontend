@@ -294,5 +294,13 @@
     "date": "Thu, 06 Aug 2026 12:01:04 +0000",
     "collected": "2026-08-07",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "ClickFix Attacks Deliver macOS Stealer That Can Drain Crypto Wallets",
+    "link": "https://thehackernews.com/2026/08/clickfix-attacks-deliver-macos-stealer.html",
+    "date": "Fri, 07 Aug 2026 23:59:08 +0530",
+    "collected": "2026-08-08",
+    "used": false
   }
 ]
