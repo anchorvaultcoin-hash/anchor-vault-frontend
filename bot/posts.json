@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "posted": false,
+    "posted": true,
     "ru": "Проверяй весь адрес, а не первые четыре символа\n\nЕсть вредоносные программы, которые сидят в буфере обмена. Ты копируешь адрес получателя, а вставляется другой — похожий на твой началом и концом.\n\nЛюди сверяют первые символы, иногда последние, и отправляют. Деньги уходят чужому.\n\nПроверяй адрес целиком, символ за символом. Или отправь сначала маленькую сумму и убедись, что она пришла туда, куда надо.\n\nЭто занимает полминуты и сохраняет всё.",
     "en": "Check the whole address, not the first four characters\n\nThere is malware that sits in your clipboard. You copy a recipient address, and something else gets pasted — matching at the start and the end.\n\nPeople check the first few characters, sometimes the last few, and hit send. The money goes to a stranger.\n\nCheck the entire address, character by character. Or send a small amount first and confirm it arrived where it should.\n\nIt takes thirty seconds and saves everything.",
     "zh": "核对完整地址，而不是前四位字符\n\n有一类恶意软件专门盯着剪贴板。你复制收款地址，粘贴出来的却是另一个——开头和结尾都很相似。\n\n人们只核对前几位，有时再看看最后几位，然后就点了发送。钱进了陌生人的口袋。\n\n请逐个字符核对完整地址。或者先转一笔小额，确认到账无误再转其余。\n\n这只需要半分钟，却能保住一切。",
