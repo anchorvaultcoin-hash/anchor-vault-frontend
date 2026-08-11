@@ -334,5 +334,45 @@
     "date": "Mon, 10 Aug 2026 06:10:01 +0000",
     "collected": "2026-08-10",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "China-Linked Hackers Deploy New StormEncryptor Ransomware, Likely via N-central Flaw",
+    "link": "https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html",
+    "date": "Mon, 10 Aug 2026 22:08:37 +0530",
+    "collected": "2026-08-11",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "New Passkey Attacks Can Recover Synced Private Keys or Bypass Phishing-Resistant MFA",
+    "link": "https://thehackernews.com/2026/08/new-passkey-attacks-can-recover-synced.html",
+    "date": "Mon, 10 Aug 2026 17:55:04 +0530",
+    "collected": "2026-08-11",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Solidity Pro VS Code Extensions Steal Crypto Wallets, API Keys, and Credentials",
+    "link": "https://thehackernews.com/2026/08/solidity-pro-vs-code-extensions-steal.html",
+    "date": "Mon, 10 Aug 2026 13:08:23 +0530",
+    "collected": "2026-08-11",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "BTCPay offers $190,000 bounty after bitcoin payment servers drained in exploit",
+    "link": "https://www.coindesk.com/markets/2026/08/11/btcpay-offers-usd190-000-bounty-after-bitcoin-payment-servers-drained-in-exploit",
+    "date": "Tue, 11 Aug 2026 06:19:07 +0000",
+    "collected": "2026-08-11",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Hackers Drain $8 Million From Crypto Exchange Across Two Blockchains",
+    "link": "https://decrypt.co/375213/hackers-drain-8-million-from-crypto-platform-coinsbuy",
+    "date": "Mon, 10 Aug 2026 15:56:30 +0000",
+    "collected": "2026-08-11",
+    "used": false
   }
 ]
