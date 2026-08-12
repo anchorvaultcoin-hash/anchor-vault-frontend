@@ -374,5 +374,21 @@
     "date": "Mon, 10 Aug 2026 15:56:30 +0000",
     "collected": "2026-08-11",
     "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "BTCPay Backers Offer Bitcoin Bounty After Wallet Exploit",
+    "link": "https://decrypt.co/375376/btcpay-bitcoin-bounty-critical-wallet-exploit",
+    "date": "Tue, 11 Aug 2026 21:16:03 +0000",
+    "collected": "2026-08-12",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "North Korea Now Leans on Crime Networks to Launder Stolen Crypto: RUSI",
+    "link": "https://decrypt.co/375305/north-korea-now-leans-on-crime-networks-to-launder-stolen-crypto-rusi",
+    "date": "Tue, 11 Aug 2026 12:02:42 +0000",
+    "collected": "2026-08-12",
+    "used": false
   }
 ]
