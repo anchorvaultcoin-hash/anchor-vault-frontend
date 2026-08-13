@@ -390,5 +390,29 @@
     "date": "Tue, 11 Aug 2026 12:02:42 +0000",
     "collected": "2026-08-12",
     "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Bitcoin firms ask AI labs for same tools attackers already have",
+    "link": "https://www.coindesk.com/tech/2026/08/13/bitcoin-firms-ask-ai-labs-for-same-tools-attackers-already-have",
+    "date": "Thu, 13 Aug 2026 05:21:21 +0000",
+    "collected": "2026-08-13",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Arizona crypto ATM law helps 35 scam victims recover $171K",
+    "link": "https://cointelegraph.com/news/arizona-crypto-atm-law-scam-refunds-171k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 13 Aug 2026 02:28:29 +0000",
+    "collected": "2026-08-13",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "After Coldcard Was Hacked, $15 Billion in Bitcoin Moved to Safety",
+    "link": "https://decrypt.co/375450/coldcard-hack-15-billion-bitcoin-moved-safety",
+    "date": "Wed, 12 Aug 2026 18:16:04 +0000",
+    "collected": "2026-08-13",
+    "used": false
   }
 ]
