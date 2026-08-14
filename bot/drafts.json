@@ -414,5 +414,37 @@
     "date": "Wed, 12 Aug 2026 18:16:04 +0000",
     "collected": "2026-08-13",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers breach govt webmail while running parallel crypto fraud",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-govt-webmail-while-running-parallel-crypto-fraud/",
+    "date": "Thu, 13 Aug 2026 14:15:19 -0400",
+    "collected": "2026-08-14",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Crypto platform operator gets 15-year prison sentence in South Korea due to $50 million scam",
+    "link": "https://www.coindesk.com/business/2026/08/13/crypto-platform-operator-gets-15-year-prison-sentence-in-south-korea-due-to-usd50-million-scam",
+    "date": "Thu, 13 Aug 2026 13:37:56 +0000",
+    "collected": "2026-08-14",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Delio CEO sentenced to 15 years in prison on crypto fraud in South Korea",
+    "link": "https://cointelegraph.com/news/delio-ceo-prison-crypto-fraud-south-korea?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 13 Aug 2026 19:22:28 +0000",
+    "collected": "2026-08-14",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Bitcoin Companies Want Help From AI Labs to Guard Against Hackers",
+    "link": "https://decrypt.co/375564/bitcoin-firms-want-ai-hacking-tools",
+    "date": "Thu, 13 Aug 2026 17:11:04 +0000",
+    "collected": "2026-08-14",
+    "used": false
   }
 ]
