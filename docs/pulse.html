@@ -361,7 +361,7 @@ pre.code{font-family:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,Consolas,'Rob
 
     <!-- INFOBAR -->
     <div id="ibar">
-      <div class="ib" id="ibn"><span class="ibl" data-i18n="ib_network">Сеть</span><span class="ibv" id="ibv-n">—</span></div>
+      <div class="ib" id="ibn" onclick="swNetRetry()" style="cursor:pointer" title="Нажмите, чтобы переключить MetaMask на Ethereum Mainnet"><span class="ibl" data-i18n="ib_network">Сеть</span><span class="ibv" id="ibv-n">—</span></div>
       <div class="ibs"></div>
       <div class="ib" id="ibs2"><span class="ibl" data-i18n="ib_status">Статус</span><span class="ibv" id="ibv-s">—</span></div>
       <div class="ibs"></div>
@@ -730,6 +730,7 @@ const I18N = {
   t_connected:{ru:"Подключён",en:"Connected",zh:"已连接"},
   t_disconnected:{ru:"Отключён",en:"Disconnected",zh:"已断开"},
   t_wrong_net:{ru:"Переключитесь на Ethereum Mainnet",en:"Switch to Ethereum Mainnet",zh:"请切换到以太坊主网"},
+  t_wrong_net_manual:{ru:"Не удалось переключить сеть автоматически. Откройте MetaMask и выберите Ethereum Mainnet вручную, затем нажмите на бейдж «Сеть» ещё раз.",en:"Could not switch the network automatically. Open MetaMask and select Ethereum Mainnet manually, then click the Network badge again.",zh:"无法自动切换网络。请打开 MetaMask 手动选择以太坊主网，然后再次点击「网络」标签。"},
   t_no_metamask:{ru:"MetaMask не найден",en:"MetaMask not found",zh:"未找到 MetaMask"},
   t_fill_all:{ru:"Заполните все поля",en:"Fill in all fields",zh:"请填写所有字段"},
   t_bad_address:{ru:"Неверный адрес",en:"Invalid address",zh:"地址无效"},
@@ -1124,6 +1125,15 @@ async function ensureNet(){
   if($('nnet')) $('nnet').textContent=`Сеть: ${ok?'Ethereum':'WRONG'}`;
   return ok;
 }
+async function swNetRetry(){
+  if(!window.ethereum){toast(t('t_no_metamask'),'warning');return;}
+  await swNet();
+  const ok=await ensureNet();
+  if(ok){ toast(t('net_ok'),'success'); await refreshIB(); }
+  else{ toast(t('t_wrong_net_manual'),'warning',9000); }
+}
+window.swNetRetry=swNetRetry;
+
 async function swNet(){
   try{await window.ethereum.request({method:'wallet_switchEthereumChain',params:[{chainId:C.CHEX}]});}
   catch(e){if(e.code===4902)await window.ethereum.request({method:'wallet_addEthereumChain',params:[{chainId:C.CHEX,chainName:'Ethereum Mainnet',nativeCurrency:{name:'Ether',symbol:'ETH',decimals:18},rpcUrls:[C.RPC],blockExplorerUrls:[C.EXP]}]});}
@@ -1161,8 +1171,13 @@ async function connect(){
       toast('Установите кошелёк или запустите в Capacitor','warning',8000);
       return;
     }
-    const ok=await ensureNet();
-    if(!ok && !window.SecureWallet){toast(t('t_wrong_net'),'warning');await swNet();}
+    let ok=await ensureNet();
+    if(!ok && !window.SecureWallet){
+      toast(t('t_wrong_net'),'warning');
+      await swNet();
+      ok=await ensureNet();               // проверяем, реально ли переключилось
+      if(!ok) toast(t('t_wrong_net_manual'),'warning',9000);
+    }
     await loadRoles();
     await refreshIB();
     const b=$('bcon');
