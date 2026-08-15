@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "posted": false,
+    "posted": true,
     "ru": "Поддержка никогда не пишет первой\n\nНи одна настоящая служба поддержки не напишет тебе в личку сама. Ни в Telegram, ни в Discord, ни где-либо ещё.\n\nЕсли тебе написали первыми и представились поддержкой — это мошенник. Без исключений. Даже если аватарка правильная, даже если ник почти совпадает, даже если он знает подробности твоей проблемы.\n\nОсобенно если знает подробности. Это значит, что он прочитал твоё сообщение в публичном чате и пришёл к тебе с готовым сценарием.\n\nЯ тоже никогда не пишу первым.",
     "en": "Support never messages you first\n\nNo real support team will ever DM you out of the blue. Not on Telegram, not on Discord, nowhere.\n\nIf someone messaged you first claiming to be support, they're a scammer. No exceptions. Even if the avatar is right, even if the handle almost matches, even if they know the details of your problem.\n\nEspecially if they know the details. That means they read your message in a public chat and came prepared.\n\nI never message anyone first either.",
     "zh": "客服永远不会主动私信你\n\n没有任何真正的客服团队会主动给你发私信。Telegram 不会，Discord 不会，任何地方都不会。\n\n如果有人主动联系你并自称客服，那就是骗子。没有例外。哪怕头像正确，哪怕用户名几乎一模一样，哪怕他清楚你遇到的问题。\n\n尤其是当他清楚细节的时候。那说明他在公开群里读到了你的消息，带着准备好的话术找上门来。\n\n我本人同样从不主动私信任何人。",
@@ -73,7 +73,7 @@
   },
   {
     "id": 10,
-    "posted": false,
+    "posted": true,
     "ru": "Проверяй весь адрес, а не первые четыре символа\n\nЕсть вредоносные программы, которые сидят в буфере обмена. Ты копируешь адрес получателя, а вставляется другой — похожий на твой началом и концом.\n\nЛюди сверяют первые символы, иногда последние, и отправляют. Деньги уходят чужому.\n\nПроверяй адрес целиком, символ за символом. Или отправь сначала маленькую сумму и убедись, что она пришла туда, куда надо.\n\nЭто занимает полминуты и сохраняет всё.",
     "en": "Check the whole address, not the first four characters\n\nThere is malware that sits in your clipboard. You copy a recipient address, and something else gets pasted — matching at the start and the end.\n\nPeople check the first few characters, sometimes the last few, and hit send. The money goes to a stranger.\n\nCheck the entire address, character by character. Or send a small amount first and confirm it arrived where it should.\n\nIt takes thirty seconds and saves everything.",
     "zh": "核对完整地址，而不是前四位字符\n\n有一类恶意软件专门盯着剪贴板。你复制收款地址，粘贴出来的却是另一个——开头和结尾都很相似。\n\n人们只核对前几位，有时再看看最后几位，然后就点了发送。钱进了陌生人的口袋。\n\n请逐个字符核对完整地址。或者先转一笔小额，确认到账无误再转其余。\n\n这只需要半分钟，却能保住一切。",
@@ -81,7 +81,7 @@
   },
   {
     "id": 11,
-    "posted": false,
+    "posted": true,
     "ru": "Каждый четвёртый украденный доллар теперь из личного кошелька\n\nПо данным аналитиков блокчейна, за прошлый год скомпрометировано около 158 тысяч личных кошельков, пострадало не меньше 80 тысяч человек.\n\nДоля личных кошельков в общем объёме краж выросла примерно с десяти процентов в 2022 году до почти двадцати пяти сейчас.\n\nРаньше воровали у бирж, потому что там лежали большие суммы в одном месте. Биржи научились защищаться. Теперь идут за отдельными людьми.\n\nЗа тобой в том числе.",
     "en": "One in four stolen dollars now comes from a personal wallet\n\nAccording to blockchain analysts, roughly 158,000 personal wallets were compromised last year, affecting at least 80,000 people.\n\nThe share of personal wallets in total theft volume grew from about ten percent in 2022 to nearly twenty-five percent now.\n\nThieves used to target exchanges, because that's where large sums sat in one place. Exchanges learned to defend themselves. Now they come for individuals.\n\nYou included.",
     "zh": "如今每四美元被盗资金中，就有一美元来自个人钱包\n\n据链上分析机构统计，去年约有 15.8 万个个人钱包被攻破，至少 8 万人受到影响。\n\n个人钱包在被盗总额中的占比，已从 2022 年的约百分之十上升到如今的近百分之二十五。\n\n过去小偷盯着交易所，因为大额资金集中在那里。交易所学会了防守，于是他们转向了个人。\n\n也包括你。",

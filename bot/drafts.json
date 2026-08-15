@@ -246,5 +246,229 @@
     "date": "Tue, 04 Aug 2026 19:11:36 +0000",
     "collected": "2026-08-05",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Leaked n8n API Tokens Exposed Live Instances to Credential Theft",
+    "link": "https://thehackernews.com/2026/08/leaked-n8n-api-tokens-exposed-live.html",
+    "date": "Wed, 05 Aug 2026 16:05:29 +0530",
+    "collected": "2026-08-06",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Coldcard exploit could boost demand for regulated bitcoin exposure, analysts say",
+    "link": "https://www.coindesk.com/tech/2026/08/05/coldcard-exploit-could-boost-demand-for-regulated-bitcoin-exposure-analysts-say",
+    "date": "Wed, 05 Aug 2026 15:44:08 +0000",
+    "collected": "2026-08-06",
+    "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "ClickFix attack pushes macOS infostealer for crypto theft attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/clickfix-attack-pushes-macos-infostealer-for-crypto-theft-attacks/",
+    "date": "Thu, 06 Aug 2026 18:37:17 -0400",
+    "collected": "2026-08-07",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "CryptoJS Weak RNG Behind $5.7 Million in Drains Affects Five Crypto Wallet Apps",
+    "link": "https://thehackernews.com/2026/08/cryptojs-weak-rng-behind-57-million-in.html",
+    "date": "Thu, 06 Aug 2026 17:19:48 +0530",
+    "collected": "2026-08-07",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Japan FSA asks crypto exchanges to impose withdrawal delays to fight scams",
+    "link": "https://cointelegraph.com/news/japan-fsa-crypto-exchanges-withdrawal-delays-scams?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 07 Aug 2026 05:25:52 +0000",
+    "collected": "2026-08-07",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Crypto Wrench Attacks on Pace for Record Year as $30M Stolen in 2026: Chainalysis",
+    "link": "https://decrypt.co/375014/crypto-wrench-attacks-30m-stolen-2026-chainalysis",
+    "date": "Thu, 06 Aug 2026 12:01:04 +0000",
+    "collected": "2026-08-07",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "ClickFix Attacks Deliver macOS Stealer That Can Drain Crypto Wallets",
+    "link": "https://thehackernews.com/2026/08/clickfix-attacks-deliver-macos-stealer.html",
+    "date": "Fri, 07 Aug 2026 23:59:08 +0530",
+    "collected": "2026-08-08",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "New CSS Attacks Can Break Webmail Defenses to Steal Passwords and Tokens",
+    "link": "https://thehackernews.com/2026/08/new-css-attacks-can-break-webmail.html",
+    "date": "Sat, 08 Aug 2026 13:33:57 +0530",
+    "collected": "2026-08-09",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Another Bitcoin infrastructure exploit hits, this time draining Lightning payment servers",
+    "link": "https://www.coindesk.com/tech/2026/08/08/another-bitcoin-infrastructure-exploit-hits-this-time-draining-merchant-lightning-nodes",
+    "date": "Sat, 08 Aug 2026 07:46:04 +0000",
+    "collected": "2026-08-09",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Bitcoin Red Team Says AI Is Finding Critical Exploits Across Core Projects",
+    "link": "https://decrypt.co/375169/bitcoin-red-team-ai-finding-critical-vulnerabilities",
+    "date": "Sat, 08 Aug 2026 17:31:03 +0000",
+    "collected": "2026-08-09",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Brazil targets crypto fraud with up to 24-hour transfer hold",
+    "link": "https://cointelegraph.com/news/brazil-targets-crypto-fraud-with-up-to-24-hour-transfer-hold?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 10 Aug 2026 06:10:01 +0000",
+    "collected": "2026-08-10",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "China-Linked Hackers Deploy New StormEncryptor Ransomware, Likely via N-central Flaw",
+    "link": "https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html",
+    "date": "Mon, 10 Aug 2026 22:08:37 +0530",
+    "collected": "2026-08-11",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "New Passkey Attacks Can Recover Synced Private Keys or Bypass Phishing-Resistant MFA",
+    "link": "https://thehackernews.com/2026/08/new-passkey-attacks-can-recover-synced.html",
+    "date": "Mon, 10 Aug 2026 17:55:04 +0530",
+    "collected": "2026-08-11",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Solidity Pro VS Code Extensions Steal Crypto Wallets, API Keys, and Credentials",
+    "link": "https://thehackernews.com/2026/08/solidity-pro-vs-code-extensions-steal.html",
+    "date": "Mon, 10 Aug 2026 13:08:23 +0530",
+    "collected": "2026-08-11",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "BTCPay offers $190,000 bounty after bitcoin payment servers drained in exploit",
+    "link": "https://www.coindesk.com/markets/2026/08/11/btcpay-offers-usd190-000-bounty-after-bitcoin-payment-servers-drained-in-exploit",
+    "date": "Tue, 11 Aug 2026 06:19:07 +0000",
+    "collected": "2026-08-11",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Hackers Drain $8 Million From Crypto Exchange Across Two Blockchains",
+    "link": "https://decrypt.co/375213/hackers-drain-8-million-from-crypto-platform-coinsbuy",
+    "date": "Mon, 10 Aug 2026 15:56:30 +0000",
+    "collected": "2026-08-11",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "BTCPay Backers Offer Bitcoin Bounty After Wallet Exploit",
+    "link": "https://decrypt.co/375376/btcpay-bitcoin-bounty-critical-wallet-exploit",
+    "date": "Tue, 11 Aug 2026 21:16:03 +0000",
+    "collected": "2026-08-12",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "North Korea Now Leans on Crime Networks to Launder Stolen Crypto: RUSI",
+    "link": "https://decrypt.co/375305/north-korea-now-leans-on-crime-networks-to-launder-stolen-crypto-rusi",
+    "date": "Tue, 11 Aug 2026 12:02:42 +0000",
+    "collected": "2026-08-12",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Bitcoin firms ask AI labs for same tools attackers already have",
+    "link": "https://www.coindesk.com/tech/2026/08/13/bitcoin-firms-ask-ai-labs-for-same-tools-attackers-already-have",
+    "date": "Thu, 13 Aug 2026 05:21:21 +0000",
+    "collected": "2026-08-13",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Arizona crypto ATM law helps 35 scam victims recover $171K",
+    "link": "https://cointelegraph.com/news/arizona-crypto-atm-law-scam-refunds-171k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 13 Aug 2026 02:28:29 +0000",
+    "collected": "2026-08-13",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "After Coldcard Was Hacked, $15 Billion in Bitcoin Moved to Safety",
+    "link": "https://decrypt.co/375450/coldcard-hack-15-billion-bitcoin-moved-safety",
+    "date": "Wed, 12 Aug 2026 18:16:04 +0000",
+    "collected": "2026-08-13",
+    "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers breach govt webmail while running parallel crypto fraud",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-govt-webmail-while-running-parallel-crypto-fraud/",
+    "date": "Thu, 13 Aug 2026 14:15:19 -0400",
+    "collected": "2026-08-14",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Crypto platform operator gets 15-year prison sentence in South Korea due to $50 million scam",
+    "link": "https://www.coindesk.com/business/2026/08/13/crypto-platform-operator-gets-15-year-prison-sentence-in-south-korea-due-to-usd50-million-scam",
+    "date": "Thu, 13 Aug 2026 13:37:56 +0000",
+    "collected": "2026-08-14",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Delio CEO sentenced to 15 years in prison on crypto fraud in South Korea",
+    "link": "https://cointelegraph.com/news/delio-ceo-prison-crypto-fraud-south-korea?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 13 Aug 2026 19:22:28 +0000",
+    "collected": "2026-08-14",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Bitcoin Companies Want Help From AI Labs to Guard Against Hackers",
+    "link": "https://decrypt.co/375564/bitcoin-firms-want-ai-hacking-tools",
+    "date": "Thu, 13 Aug 2026 17:11:04 +0000",
+    "collected": "2026-08-14",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "France Tax Data Leak Could Fuel Scams, Attacks Targeting Bitcoin Holders",
+    "link": "https://decrypt.co/375715/france-tax-data-leak-wrench-attacks-bitcoin",
+    "date": "Fri, 14 Aug 2026 21:03:35 +0000",
+    "collected": "2026-08-15",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Coldcard Bitcoin Thefts Slow, But Losses Could Top $150 Million: Galaxy",
+    "link": "https://decrypt.co/375656/coldcard-bitcoin-thefts-slow-losses-top-150-million",
+    "date": "Fri, 14 Aug 2026 17:46:06 +0000",
+    "collected": "2026-08-15",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Fake LinkedIn Crypto Job Scams Have Cost $11.8M: Singapore",
+    "link": "https://decrypt.co/375653/fake-linkedin-crypto-job-scams-have-cost-11-8m-singapore",
+    "date": "Fri, 14 Aug 2026 14:55:29 +0000",
+    "collected": "2026-08-15",
+    "used": false
   }
 ]
