@@ -446,5 +446,29 @@
     "date": "Thu, 13 Aug 2026 17:11:04 +0000",
     "collected": "2026-08-14",
     "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "France Tax Data Leak Could Fuel Scams, Attacks Targeting Bitcoin Holders",
+    "link": "https://decrypt.co/375715/france-tax-data-leak-wrench-attacks-bitcoin",
+    "date": "Fri, 14 Aug 2026 21:03:35 +0000",
+    "collected": "2026-08-15",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Coldcard Bitcoin Thefts Slow, But Losses Could Top $150 Million: Galaxy",
+    "link": "https://decrypt.co/375656/coldcard-bitcoin-thefts-slow-losses-top-150-million",
+    "date": "Fri, 14 Aug 2026 17:46:06 +0000",
+    "collected": "2026-08-15",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Fake LinkedIn Crypto Job Scams Have Cost $11.8M: Singapore",
+    "link": "https://decrypt.co/375653/fake-linkedin-crypto-job-scams-have-cost-11-8m-singapore",
+    "date": "Fri, 14 Aug 2026 14:55:29 +0000",
+    "collected": "2026-08-15",
+    "used": false
   }
 ]
