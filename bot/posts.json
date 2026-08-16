@@ -89,7 +89,7 @@
   },
   {
     "id": 12,
-    "posted": false,
+    "posted": true,
     "ru": "Что такое секретная фраза, если объяснять честно\n\nЭто набор слов, из которого математически выводится доступ ко всем твоим деньгам. Не пароль, который можно сменить. Не логин, который можно восстановить.\n\nЭто и есть деньги.\n\nКто знает эти слова — владеет всем, что за ними стоит. Не «может попытаться получить доступ», а именно владеет, с точки зрения сети, окончательно и без возражений.\n\nПоэтому фразу нельзя вводить нигде, кроме своего кошелька. Ни для проверки, ни для подтверждения, ни для участия в раздаче. Нигде и никогда.",
     "en": "What a seed phrase actually is, honestly explained\n\nIt's a set of words from which access to all your money is mathematically derived. Not a password you can change. Not a login you can recover.\n\nIt is the money.\n\nWhoever knows those words owns everything behind them. Not \"might try to get access\" — owns, finally and without appeal.\n\nSo never type it anywhere except your own wallet. Not to verify, not to confirm, not to claim an airdrop. Nowhere, ever.",
     "zh": "助记词到底是什么，坦白地说\n\n它是一组单词，你所有资金的访问权限都由它通过数学推导而来。它不是可以更改的密码，也不是可以找回的账号。\n\n它本身就是钱。\n\n知道这些单词的人，就拥有它们背后的一切。不是「有可能尝试获取访问权」，而是彻底地、无可申辩地拥有。\n\n所以除了自己的钱包，任何地方都不要输入它。不为验证，不为确认，不为领取空投。永远不要。",
