@@ -1,9 +1,9 @@
 {
-  "name": "AnchorVault V45 Pulse",
+  "name": "AnchorVaultCoin Pulse",
   "short_name": "AnchorVault",
-  "description": "Phishing-resistant Web3 vault protocol \u2014 EIP-712 signed operations, multi-asset ERC-20 support, dual-key recovery.",
-  "start_url": "/pulse.html",
-  "scope": "/",
+  "description": "Non-custodial ERC-20 vaults on Ethereum mainnet — EIP-712 signed operations, dual-key recovery, hardware-backed key storage in the mobile and desktop apps.",
+  "start_url": "./pulse.html",
+  "scope": "./",
   "display": "standalone",
   "orientation": "any",
   "background_color": "#0a0a0b",
@@ -26,11 +26,11 @@
   ],
   "screenshots": [
     {
-      "src": "./og.png",
-      "sizes": "1200x630",
+      "src": "./og-v2.png",
+      "sizes": "1200x675",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "AnchorVault V45 Pulse \u2014 dashboard"
+      "label": "AnchorVaultCoin Pulse — dashboard"
     }
   ]
 }
