@@ -433,7 +433,7 @@ pre.code{font-family:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,Consolas,'Rob
       <div class="ibs"></div>
       <div class="ib" id="ibs2"><span class="ibl" data-i18n="ib_status">Статус</span><span class="ibv" id="ibv-s">—</span></div>
       <div class="ibs"></div>
-      <div class="ib gold" style="position:relative"><span class="ibl" data-i18n="ib_token">Токен</span><button type="button" id="tokSelBtn" onclick="tokMenuToggle(event)" style="background:transparent;border:0;color:#d4a843;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;font-weight:600;padding:0 2px;cursor:pointer;outline:none;display:flex;align-items:center;gap:3px"><span id="tokSelLbl">ANCR</span><span style="font-size:7px;opacity:.7">▼</span></button><span onclick="rescanTokens()" title="Пересканировать список токенов" style="cursor:pointer;margin-left:5px;font-size:11px">🔄</span><span onclick="addTokenByAddr()" title="Добавить токен по адресу" style="cursor:pointer;margin-left:3px;font-size:11px">＋</span></div>
+      <div class="ib gold" style="position:relative"><span class="ibl" data-i18n="ib_token">Токен</span><button type="button" id="tokSelBtn" onclick="tokMenuToggle(event)" style="background:transparent;border:0;color:#d4a843;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;font-weight:600;padding:0 2px;cursor:pointer;outline:none;display:flex;align-items:center;gap:3px"><span id="tokSelLbl">ANCR</span><span style="font-size:7px;opacity:.7">▼</span></button></div>
       <div class="ibs"></div>
       <div class="ib gold"><span class="ibl" data-i18n="ib_balance">Баланс</span><span class="ibv" id="ibv-a">—</span></div>
       <div class="ibs"></div>
@@ -447,6 +447,10 @@ pre.code{font-family:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,Consolas,'Rob
       <div class="ibs"></div>
       <div class="ib" style="cursor:pointer" onclick="cpA()"><span class="ibl" data-i18n="ib_address">Адрес</span><span class="ibv" id="ibv-ad">—</span></div>
     </div>
+
+    <!-- PENDING ROLE — видно получателю роли на любом экране,
+         иначе он не может принять переданную ему роль -->
+    <div id="prole" class="hidden" style="margin:8px 10px 0"></div>
 
     <!-- PAGE -->
     <div id="page"></div>
@@ -475,8 +479,9 @@ pre.code{font-family:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,Consolas,'Rob
 const DEPLOY = {
   CONTRACT: '0xAc362D7bFCe7a4475873C37A0A96F2CE5C00E929',  // AnchorVaultCoin — mainnet
   RPC: 'https://ethereum-rpc.publicnode.com',  // Ethereum Mainnet RPC (для JsonRpcProvider при native-режиме)
-  CREATOR:  '0x391d669e82BCCb8543baDc09018CAF14dd5c7699',
-  GUARDIAN: '0x9A02D27Cf01c81717CAe7244096F45E9A8E454Ec',
+  /* Адреса Creator и Guardian здесь не хранятся: пульт читает их из
+     контракта — creator() и guardian(). Так они всегда актуальны после
+     передачи роли, и в исходниках нет постоянной ссылки на владельца. */
   TOKENS: {
     ANCR:   { address:'0x52FBd42e9c9CBD3E1CED969EE4245C0e6ED9219B', symbol:'ANCR',   decimals:18, native:true },
 
@@ -507,7 +512,6 @@ const DEPLOY = {
 // === RPC CONFIGURATION ===
 const RPC_LISTS = {
   mainnet: [
-    "https://eth-mainnet.g.alchemy.com/v2/zCzb2PzbZO-lcf7vGzgwf",
     "https://ethereum-rpc.publicnode.com",
     "https://rpc.flashbots.net",
     "https://1rpc.io/eth",
@@ -677,8 +681,6 @@ const C = Object.freeze({
   CONTRACT: DEPLOY.CONTRACT,
   ANCR:     DEPLOY.TOKENS.ANCR.address,
   RPC:      DEPLOY.RPC,
-  CREATOR:  DEPLOY.CREATOR,
-  GUARDIAN: DEPLOY.GUARDIAN,
   CHAIN:    1,
   CHEX:     '0x1',
   EXP:      'https://etherscan.io',
@@ -1175,7 +1177,7 @@ const I18N = {
   ti_cr_quick:{ru:"Быстрое добавление токенов, которые есть в реестре пульта, но ещё не в контракте.",en:"Quick add for tokens registered in the dashboard but not yet in the contract.",zh:"快速添加已在面板注册但尚未在合约中的代币。"},
   ti_cr_wb:{ru:"Сумма ANCR, выдаваемая новому пользователю при открытии первого сейфа. Максимум 0.005 ANCR (половина MIN_DEPOSIT).",en:"ANCR given to a new user opening their first vault. Max 0.005 ANCR (half of MIN_DEPOSIT).",zh:"新用户开设首个保险库时获得的 ANCR。最多 0.005 ANCR（MIN_DEPOSIT 的一半）。"},
   ti_cr_wbm:{ru:"Лимит выдач бонуса. Когда исчерпан — бонус новым не идёт.",en:"Bonus issuance limit. Once exhausted — no more bonuses to newcomers.",zh:"奖励发放限额。用完后不再向新人发放。"},
-  ti_cr_tcr:{ru:"Передать роль Creator другому адресу. Принимающий должен явно её принять (acceptCreatorship). После приёма 7-дн таймлок. Необратимо.",en:"Transfer the Creator role to another address. The recipient must explicitly accept (acceptCreatorship). 7-day timelock after acceptance. Irreversible.",zh:"将 Creator 角色转移到另一地址。接收方必须明确接受（acceptCreatorship）。接受后 7 天时间锁。不可逆。"},
+  ti_cr_tcr:{ru:"Передать роль Creator другому адресу. Получатель обязан принять её сам (acceptCreatorship), и не раньше чем через 7 дней. До приёма роль остаётся у вас, передачу можно отменить.",en:"Transfer the Creator role to another address. The recipient must accept it themselves (acceptCreatorship), and not before 7 days pass. Until then the role stays with you and the transfer can be cancelled.",zh:"将 Creator 角色转移到另一地址。接收方必须自行接受（acceptCreatorship），且需等待 7 天。在接受之前角色仍属于您，可以取消转移。"},
   ti_cr_tgd:{ru:"Передать роль Guardian. Принимающий получает право ставить паузу.",en:"Transfer the Guardian role. The recipient gains pause authority.",zh:"转移 Guardian 角色。接收方获得暂停权限。"},
   ti_cr_acpt:{ru:"Принять Creator-роль, если предыдущий создатель передал её на ваш адрес.",en:"Accept the Creator role if the previous creator transferred it to your address.",zh:"如果上一个创建者已将 Creator 角色转移到您的地址，请接受。"},
   ti_cr_unp:{ru:"Снять паузу с контракта. Доступно только Creator. Используется после устранения причины паузы.",en:"Unpause the contract. Creator only. Used after the pause reason is resolved.",zh:"解除合约暂停。仅限 Creator。用于暂停原因解决后。"},
@@ -1348,6 +1350,15 @@ const ABI = [
   'function cancelCreatorshipTransfer()',
   'function cancelGuardianshipTransfer()',
 
+  /* ── Состояние передачи ролей. Без этих методов получатель роли
+        не видит, что роль ему передают, и не может её принять ── */
+  'function pendingCreator() view returns (address)',
+  'function pendingGuardian() view returns (address)',
+  'function creatorshipRequestedAt() view returns (uint256)',
+  'function guardianshipRequestedAt() view returns (uint256)',
+  'function CREATOR_COOLDOWN() view returns (uint256)',
+  'function GUARDIAN_COOLDOWN() view returns (uint256)',
+
   /* ── Прочее ── */
   'function burn(uint256)',
   'event TokenSupported(address indexed token)',
@@ -1432,7 +1443,9 @@ let SYNC_AT = 0;
 
 const TOKKEY = 'av45tok';        // найденные адреса токенов
 const DEPKEY = 'av45deploy';     // блок деплоя контракта
-const SCNKEY = 'av45scanned';    // до какого блока уже просканировано
+const SCNKEY = 'av45scanned3';   // до какого блока уже просканировано
+                                 // (имя с цифрой: старый кэш мог хранить
+                                 //  отметку от неудачного скана и мешать)
 
 function lsGet(k, def){ try{ const v = localStorage.getItem(k); return v===null?def:v; }catch(e){ return def; } }
 function lsSet(k, v){ try{ localStorage.setItem(k, String(v)); }catch(e){} }
@@ -1445,8 +1458,20 @@ function tokenSupportedTopic(){
 
 /* Запрос логов с адаптивным дроблением: узел с лимитом в 1000 блоков и
    узел без лимита обслуживаются одним и тем же кодом. */
+const LOGS_WINDOW = 9000;   // безопасный размер окна для публичных узлов
+
 async function getLogsAdaptive(prov, address, topic, from, to, depth){
   if(from > to) return [];
+  // Большой диапазон режем СРАЗУ, не дожидаясь ошибки: некоторые узлы
+  // (publicnode) на слишком широкий запрос возвращают пустой список вместо
+  // ошибки — дробление по исключению в таком случае никогда не сработает,
+  // и приложение решает, что событий нет.
+  if(to - from > LOGS_WINDOW){
+    const mid = Math.floor((from + to) / 2);
+    const a = await getLogsAdaptive(prov, address, topic, from, mid, (depth||0)+1);
+    const b = await getLogsAdaptive(prov, address, topic, mid+1, to, (depth||0)+1);
+    return a.concat(b);
+  }
   try{
     return await prov.getLogs({ address, topics:[topic], fromBlock: from, toBlock: to });
   }catch(e){
@@ -1459,11 +1484,15 @@ async function getLogsAdaptive(prov, address, topic, from, to, depth){
   }
 }
 
-/* Блок деплоя ищем половинным делением по eth_getCode: до деплоя кода по
-   адресу нет, после — есть. Около 25 запросов, потом навсегда в кэше.
-   Неархивный узел выдаёт себя тем, что «не видит» кода на свежем блоке —
-   в этом случае отказываемся от поиска, не портя кэш. */
+/* Блок, в котором контракт задеплоен. Величина неизменная, поэтому просто
+   записана здесь: искать её половинным делением по eth_getCode бесполезно —
+   публичные узлы почти все неархивные и историю не отдают, поиск возвращал
+   ноль, и скан уходил на 3,6 млн блоков вслепую. С этой константой читать
+   нужно лишь блоки от деплоя до текущего. */
+const DEPLOY_BLOCK = 25753821;   // 0xAc362D7b…E929, tx 0xaaf0b406…66ef
+
 async function findDeployBlock(prov, head){
+  if(DEPLOY_BLOCK > 0 && DEPLOY_BLOCK <= head) return DEPLOY_BLOCK;
   const cached = parseInt(lsGet(DEPKEY, '0')) || 0;
   if(cached > 0) return cached;
   try{
@@ -1529,10 +1558,11 @@ async function syncChainTokensInner(force){
   let scanned = parseInt(lsGet(SCNKEY, '0')) || 0;
   if(force){ scanned = 0; lsSet(SCNKEY, 0); }
 
-  let from;
-  if(scanned > 0 && !force){
+  let from, fullScan = false;
+  if(scanned > DEPLOY_BLOCK && !force){
     from = scanned + 1;                       // догружаем только хвост
   }else{
+    fullScan = true;
     const dep = await findDeployBlock(S.prov, head);
     if(dep > 0){
       from = dep;
@@ -1559,6 +1589,14 @@ async function syncChainTokensInner(force){
         if(!t1) continue;
         try{ found.add(ethers.getAddress('0x' + t1.slice(26))); }catch(e){}
       }
+      // Проверка честности узла: при скане от блока деплоя обязан найтись
+      // ANCR — контракт шлёт TokenSupported(ANCR) прямо в конструкторе.
+      // Не нашёлся — узел отдал неполный журнал, верить ему нельзя.
+      const anchorSeen = [...found].some(x => String(x).toLowerCase() === String(C.ANCR).toLowerCase());
+      if(fullScan && !anchorSeen){
+        log('Узел отдал неполный журнал, пробую следующий','warning');
+        continue;
+      }
       ok = true;
       try{ usedHost = (prov._getConnection ? prov._getConnection().url : '').replace(/^https?:\/\//,'').split('/')[0]; }catch(e){}
       break;
@@ -1581,24 +1619,37 @@ async function syncChainTokensInner(force){
 
   // Проверяем каждый адрес: токен могли и убрать через removeSupportedToken.
   const hard = new Set(Object.values(TOKENS).map(t => t.address.toLowerCase()));
-  const fresh = [];
+  const fresh = [], dropped = [];
   for(const a of addrs){
     const lc = String(a).toLowerCase();
     if(hard.has(lc)) continue;                 // уже зашит в приложение
-    if(CHAIN_TOKENS[a]) continue;              // уже подхвачен в этой сессии
+    // Статус спрашиваем ВСЕГДА, даже для уже подхваченных: иначе снятие
+    // токена с поддержки осталось бы незамеченным до перезапуска.
     let still = false;
     try{ still = await S.vlt.supportedTokens(a); }catch(e){ continue; }
-    if(!still){ continue; }
+    if(!still){
+      // Creator убрал токен через removeSupportedToken — убираем и у себя.
+      if(CHAIN_TOKENS[a]){ delete CHAIN_TOKENS[a]; dropped.push(a); }
+      continue;
+    }
+    if(CHAIN_TOKENS[a]) continue;              // уже подхвачен и всё ещё в силе
     const meta = await readTokenMeta(a);
     if(!meta) continue;
     CHAIN_TOKENS[a] = meta;
     if(!before.has(lc)) fresh.push(meta);      // именно новый для этого устройства
   }
 
+  if(dropped.length){
+    log('Снято с поддержки: '+dropped.length+' токен(ов)','warning');
+    try{ const st=JSON.parse(lsGet(TOKKEY,'[]')).filter(x=>!dropped.includes(x));
+         lsSet(TOKKEY, JSON.stringify(st)); }catch(e){}
+  }
   const n = Object.keys(CHAIN_TOKENS).length;
   log('Токенов: '+Object.keys(TOKENS).length+' зашитых + '+n+' из контракта = '+
       Object.keys(allTokens()).length, 'info');
   fillTokSel();
+  // Инфобар и главная должны увидеть изменение сразу, не дожидаясь перехода.
+  if(S.user){ refreshIB().catch(()=>{}); if(S.route==='home') route('home'); }
 
   // Уведомление о пополнении списка — пользователь не обязан следить за
   // консолью, чтобы узнать о новом токене.
@@ -1631,30 +1682,6 @@ function showNewTokenBanner(list){
 }
 window.showNewTokenBanner = showNewTokenBanner;
 
-/* Ручное добавление: если узел не отдал логи (а публичные узлы это любят),
-   адрес токена можно вбить руками — контракт всё равно спросят напрямую. */
-async function addTokenByAddr(){
-  if(!S.vlt){ toast('Сначала подключитесь','warning'); return; }
-  const a = (prompt('Адрес токена (0x…)') || '').trim();
-  if(!a) return;
-  if(!ethers.isAddress(a)){ toast('Это не адрес','error'); return; }
-  const addr = ethers.getAddress(a);
-  try{
-    const sup = await S.vlt.supportedTokens(addr);
-    if(!sup){ toast('Контракт этот токен не поддерживает','warning',5000); return; }
-    const meta = await readTokenMeta(addr);
-    if(!meta){ toast('Токен не отвечает на symbol()/decimals()','error',5000); return; }
-    CHAIN_TOKENS[addr] = meta;
-    try{
-      const st = JSON.parse(localStorage.getItem('av45tok') || '[]');
-      if(!st.includes(addr)){ st.push(addr); localStorage.setItem('av45tok', JSON.stringify(st.slice(-50))); }
-    }catch(e){}
-    fillTokSel();
-    toast('Добавлен '+meta.symbol+' ('+meta.decimals+' знаков)','success');
-    log('Токен добавлен вручную: '+meta.symbol+' '+addr,'success');
-  }catch(e){ toast('Ошибка: '+perr(e),'error'); }
-}
-window.addTokenByAddr = addTokenByAddr;
 
 /* Полный пересбор списка: сбрасывает кэш и сканирует всю историю. */
 async function rescanTokens(){
@@ -1883,6 +1910,10 @@ async function ensureNet(){
   return ok;
 }
 async function swNetRetry(){
+  // В нативном режиме сеть задаёт сам провайдер приложения — MetaMask здесь
+  // ни при чём, и предлагать его установить бессмысленно. Просто
+  // переподключаем провайдер: это и есть «повторить попытку».
+  if(window.SecureWallet){ await switchNet(); return; }
   if(!window.ethereum){toast(t('t_no_metamask'),'warning');return;}
   await swNet();
   const ok=await ensureNet();
@@ -1969,6 +2000,7 @@ function disco(){
   $('ibn').className='ib';$('ibs2').className='ib';
   $('irole').classList.add('hidden');$('irole-sep').style.display='none';
   $('ncr').classList.add('hidden');$('ngd').classList.add('hidden');$('sadm').classList.add('hidden');
+  S.pend=null; try{ renderPendingRole(); }catch(e){}
   log(t('t_disconnected'),'warning');
   route('home');
   if(window.SecureWallet) setTimeout(()=>showWalletSetup(),300);
@@ -1988,7 +2020,114 @@ async function loadRoles(){
       $('irole-sep').style.display='';
       $('ibv-r').textContent=S.isCr?'👑 Creator':'🛡 Guardian';
     }
+    try{ await loadPendingRole(cr,gd); }catch(e){ log('pendingRole: '+perr(e),'warning'); }
   }catch(e){log('loadRoles: '+perr(e),'warning');}
+}
+
+/* ================================================================
+   ПЕРЕДАЧА РОЛЕЙ — сторона получателя
+   Роль переходит в два шага: transferCreatorship (текущим владельцем)
+   и acceptCreatorship (получателем, после кулдауна). Всё это время
+   получатель ещё НЕ creator, поэтому панель «Владелец» ему не видна.
+   Без отдельного баннера принять роль было бы нечем.
+   ================================================================ */
+let PROLE_TIMER=null;
+const DAY_S=86400;
+
+function chainNow(){ return Math.floor(Date.now()/1000)+(S.tskew||0); }
+
+function fmtLeft(sec){
+  if(sec<=0) return '0 мин';
+  const d=Math.floor(sec/DAY_S), h=Math.floor((sec%DAY_S)/3600), m=Math.floor((sec%3600)/60);
+  if(d>0) return d+' д '+h+' ч';
+  if(h>0) return h+' ч '+m+' мин';
+  return Math.max(1,m)+' мин';
+}
+
+function fmtWhen(ts){
+  try{ return new Date(ts*1000).toLocaleString(); }catch(e){ return '—'; }
+}
+
+async function loadPendingRole(cr,gd){
+  S.pend=null;
+  if(!S.user||!S.vlt) { renderPendingRole(); return; }
+
+  // Часы устройства могут врать, а решает время блока. Считаем поправку.
+  try{
+    const b=await S.prov.getBlock('latest');
+    if(b&&b.timestamp) S.tskew=Number(b.timestamp)-Math.floor(Date.now()/1000);
+  }catch(e){ S.tskew=0; }
+
+  const me=S.user.toLowerCase();
+  const zero='0x0000000000000000000000000000000000000000';
+
+  const[pc,pg,ca,ga,cc,gc]=await Promise.all([
+    S.vlt.pendingCreator().catch(()=>zero),
+    S.vlt.pendingGuardian().catch(()=>zero),
+    S.vlt.creatorshipRequestedAt().catch(()=>0n),
+    S.vlt.guardianshipRequestedAt().catch(()=>0n),
+    S.vlt.CREATOR_COOLDOWN().catch(()=>BigInt(7*DAY_S)),
+    S.vlt.GUARDIAN_COOLDOWN().catch(()=>BigInt(2*DAY_S))
+  ]);
+
+  if(String(pc).toLowerCase()===me && String(pc).toLowerCase()!==zero){
+    S.pend={role:'creator',from:cr,at:Number(ca),cool:Number(cc),fn:'dAC'};
+  }else if(String(pg).toLowerCase()===me && String(pg).toLowerCase()!==zero){
+    S.pend={role:'guardian',from:gd,at:Number(ga),cool:Number(gc),fn:'dAG'};
+  }
+
+  // Действующему владельцу — показать, что передача им запущена
+  if(!S.pend && S.isCr && String(pc).toLowerCase()!==zero){
+    S.pend={role:'creator-out',to:pc,at:Number(ca),cool:Number(cc)};
+  }
+
+  renderPendingRole();
+}
+
+function renderPendingRole(){
+  const box=$('prole');
+  if(!box) return;
+  if(PROLE_TIMER){ clearInterval(PROLE_TIMER); PROLE_TIMER=null; }
+  const p=S.pend;
+  if(!p){ box.classList.add('hidden'); box.innerHTML=''; return; }
+
+  const draw=()=>{
+    const ready = p.at>0 && chainNow() >= p.at+p.cool;
+    const left  = p.at>0 ? (p.at+p.cool-chainNow()) : 0;
+    const when  = p.at>0 ? fmtWhen(p.at+p.cool) : '—';
+    const title = p.role==='creator' ? '👑 Вам передают роль Creator'
+                : p.role==='guardian'? '🛡 Вам передают роль Guardian'
+                : '⏳ Передача роли Creator запущена';
+
+    if(p.role==='creator-out'){
+      box.innerHTML =
+        '<div class="card" style="border-color:#b45309;background:#1c1710">'+
+          '<div style="font-weight:700;margin-bottom:4px">'+title+'</div>'+
+          '<div class="hint mb2">Кому: <span class="mono">'+E(String(p.to||'—'))+'</span></div>'+
+          '<div class="hint mb2">'+(ready
+            ? 'Кулдаун истёк — получатель может принять роль в любой момент.'
+            : 'Получатель сможет принять через <b>'+E(fmtLeft(left))+'</b> — с '+E(when)+'.')+
+            ' До приёма вы остаётесь Creator.</div>'+
+          '<button class="btn btnsm" onclick="dCCT()">Отменить передачу</button>'+
+        '</div>';
+      return;
+    }
+
+    box.innerHTML =
+      '<div class="card" style="border-color:'+(ready?'#15803d':'#b45309')+';background:'+(ready?'#0f1a12':'#1c1710')+'">'+
+        '<div style="font-weight:700;margin-bottom:4px">'+title+'</div>'+
+        '<div class="hint mb2">От: <span class="mono">'+E(String(p.from||'—'))+'</span></div>'+
+        (ready
+          ? '<div class="hint mb2" style="color:#4ade80">Кулдаун истёк — роль можно принять.</div>'+
+            '<button class="btn btnok btnsm" onclick="'+p.fn+'()">Принять роль</button>'
+          : '<div class="hint mb2">Принять можно через <b>'+E(fmtLeft(left))+'</b> — с '+E(when)+'</div>'+
+            '<button class="btn btnsm" disabled>Принять роль</button>')+
+      '</div>';
+  };
+
+  draw();
+  box.classList.remove('hidden');
+  PROLE_TIMER=setInterval(()=>{ if($('prole')) draw(); else clearInterval(PROLE_TIMER); }, 30000);
 }
 
 async function refreshIB(retry=0){
@@ -3126,17 +3265,84 @@ function trSeenAdd(id){try{const a=trSeenGet();if(!a.includes(String(id))){a.pus
 function trSoundOn(){try{return localStorage.getItem(LS_SND)!=='0';}catch{return true;}}
 window.trSoundToggle=function(el){try{localStorage.setItem(LS_SND,el.checked?'1':'0');}catch{}};
 
-// Звук — необязательный слой. Его отказ не должен ломать обнаружение перевода.
+/* Звук — необязательный слой. Его отказ не должен ломать обнаружение перевода.
+
+   Раньше на каждый сигнал создавался новый AudioContext. В WebView (и в любом
+   современном браузере) свежий контекст рождается в состоянии 'suspended' и
+   молчит, пока страница не получит жест пользователя. Уведомление же приходит
+   само, без жеста — поэтому звука не было слышно никогда.
+   Теперь контекст один, он «разблокируется» при первом касании экрана и
+   переиспользуется, а перед каждым сигналом вызывается resume(). */
+let AUDIO_CTX=null;
+
+function audioCtx(){
+  const Ctx=window.AudioContext||window.webkitAudioContext;
+  if(!Ctx) return null;
+  if(!AUDIO_CTX){ try{ AUDIO_CTX=new Ctx(); }catch(e){ return null; } }
+  return AUDIO_CTX;
+}
+
+function audioUnlock(){
+  const ctx=audioCtx(); if(!ctx) return;
+  if(ctx.state==='suspended'){ ctx.resume().catch(()=>{}); }
+}
+['pointerdown','touchstart','keydown','click'].forEach(ev=>{
+  try{ document.addEventListener(ev, audioUnlock, {passive:true}); }catch(e){}
+});
+
 function trBeep(){
   if(!trSoundOn())return;
   try{
-    const Ctx=window.AudioContext||window.webkitAudioContext; if(!Ctx)return;
-    const ctx=new Ctx(); const o=ctx.createOscillator(), g=ctx.createGain();
-    o.type='sine'; o.frequency.value=880; g.gain.value=0.08;
-    o.connect(g); g.connect(ctx.destination); o.start();
-    setTimeout(()=>{try{o.stop();ctx.close();}catch{}},200);
+    const ctx=audioCtx(); if(!ctx) return;
+    const go=()=>{
+      try{
+        const t0=ctx.currentTime;
+        // Компрессор поднимает среднюю громкость, не давая пикам захрипеть.
+        // Без него приходится держать низкий gain, и сигнал еле слышно.
+        let out=ctx.destination;
+        try{
+          const comp=ctx.createDynamicsCompressor();
+          comp.threshold.setValueAtTime(-24, t0);
+          comp.ratio.setValueAtTime(12, t0);
+          comp.attack.setValueAtTime(0.003, t0);
+          comp.release.setValueAtTime(0.25, t0);
+          comp.connect(ctx.destination);
+          out=comp;
+        }catch(e){}
+
+        // Три ноты вверх — заметнее одиночного писка и не сливается с
+        // системными звуками телефона.
+        const notes=[[880,0],[1174.7,0.11],[1567.98,0.22]];
+        notes.forEach(([f,dt])=>{
+          const g=ctx.createGain();
+          g.connect(out);
+          g.gain.setValueAtTime(0.0001, t0+dt);
+          g.gain.exponentialRampToValueAtTime(0.55, t0+dt+0.012);
+          g.gain.exponentialRampToValueAtTime(0.0001, t0+dt+0.34);
+          // triangle воспринимается громче синуса при той же амплитуде:
+          // у него есть верхние гармоники, которые лучше пробиваются
+          // через маленький динамик телефона.
+          const o=ctx.createOscillator();
+          o.type='triangle'; o.frequency.setValueAtTime(f, t0+dt);
+          // Вторая октава тише — добавляет «звонкости»
+          const o2=ctx.createOscillator();
+          o2.type='sine'; o2.frequency.setValueAtTime(f*2, t0+dt);
+          const g2=ctx.createGain(); g2.gain.setValueAtTime(0.30, t0+dt); g2.connect(g);
+          o.connect(g); o2.connect(g2);
+          o.start(t0+dt);  o.stop(t0+dt+0.36);
+          o2.start(t0+dt); o2.stop(t0+dt+0.36);
+          setTimeout(()=>{ try{ g.disconnect(); g2.disconnect(); }catch(e){} }, 1200);
+        });
+      }catch(e){}
+    };
+    if(ctx.state==='suspended'){ ctx.resume().then(go).catch(()=>{}); } else { go(); }
   }catch{/* звук недоступен — не мешаем работе */}
 }
+// Проверка звука из панели уведомлений
+window.trBeepTest=function(){
+  if(!trSoundOn()){ toast('Звук выключен — включите галочку выше','warning',4000); return; }
+  audioUnlock(); trBeep();
+};
 
 function trIsExpired(st){ return Number(st.status)===TR_ST.PENDING && Number(st.expiresAt)*1000 <= Date.now(); }
 function trStatusLabel(st){
@@ -4045,7 +4251,7 @@ async function rCreator(){
       <details class="card">
         <summary style="cursor:pointer;font-weight:600;font-size:13px;color:#fbbf24">⚠ Опасная зона (передача ролей)</summary>
         <div class="mt2">
-          <div class="hint mb2">Передача Creator — необратимо, через 7 дней приёма. Внимательно проверь адрес.</div>
+          <div class="hint mb2">Передача Creator: роль уйдёт только когда получатель сам её примет, и не раньше чем через 7 дней. До приёма вы остаётесь Creator и можете отменить передачу. Внимательно проверьте адрес — контракт опечатку не заметит.</div>
           <div class="g2 mb2">
             <div><label class="lbl">Новый Creator${tip('ti_cr_tcr')}</label><input id="nca" class="mono" placeholder="0x…"></div>
             <div><label class="lbl">Новый Guardian${tip('ti_cr_tgd')}</label><input id="nga" class="mono" placeholder="0x…"></div>
@@ -4053,6 +4259,7 @@ async function rCreator(){
           <div class="flex gap2">
             <button class="btn btnsm" onclick="dTC()">Передать Creator</button>
             <button class="btn btnsm" onclick="dTG()">Передать Guardian</button>
+            <button class="btn btnsm" onclick="dCCT()" title="Снять свою заявку на передачу роли Creator">Отменить передачу</button>
             <button class="btn btnsm" onclick="dAC()" title="Принять переданную роль">Принять Creator${tip('ti_cr_acpt')}</button>
             <button class="btn btnok btnsm btnbl" onclick="dUP()" title="Снять паузу с контракта">unpause()${tip('ti_cr_unp')}</button>
           </div>
@@ -4157,7 +4364,7 @@ function crTokObj(){return TOKENS[CR_TOK]||TOKENS.ANCR;}
 window.dAddReg=async function(k){
   const ctk=allTokens()[k];if(!ctk)return;
   const rc=await txc(`Add ${k}`,()=>S.vlt.addSupportedToken(ctk.address));
-  if(rc)route('creator');
+  if(rc){ await syncChainTokens(true); route('creator'); }
 };
 window.dATk=async function(){
   const a=($('ctk')?.value||'').trim();
@@ -4184,7 +4391,7 @@ window.dRTk=async function(){
   if(a.toLowerCase()===C.ANCR.toLowerCase()){toast('ANCR',('warning'));return;}
   const ok=await cdlg(t('btn_remove'),t('btn_confirm')+'?');if(!ok)return;
   const rc=await txc('Remove token',()=>S.vlt.removeSupportedToken(a));
-  if(rc)route('creator');
+  if(rc){ await syncChainTokens(true); route('creator'); }
 };
 window.dSWB=async function(){
   const a=($('wba')?.value||'').trim(),m=parseInt($('wbm2')?.value||'0');
@@ -4209,9 +4416,48 @@ window.dRRV=async function(){
 window.dXRV=async function(){const ctk=crTokObj();await txc('Cancel Reserve Withdraw',()=>S.vlt.cancelReserveWithdraw(ctk.address));};
 window.dWRV=async function(){const ctk=crTokObj();const ok=await cdlg(t('btn_confirm'),'?');if(!ok)return;await txc('Withdraw Reserve',()=>S.vlt.withdrawStrategicReserve(ctk.address));};
 window.dUP=async function(){const ok=await cdlg('Снять паузу','Продолжить?');if(!ok)return;const rc=await txc('Unpause',()=>S.vlt.unpause());if(rc){S.paused=false;await refreshIB();}};
-window.dTC=async function(){const a=($('nca')?.value||'').trim();if(!ethers.isAddress(a)){toast(t('t_bad_addr'),'warning');return;}const ok=await cdlg('Передать Creator','7 дней cooldown.');if(!ok)return;await txc('Transfer Creatorship',()=>S.vlt.transferCreatorship(a));};
-window.dTG=async function(){const a=($('nga')?.value||'').trim();if(!ethers.isAddress(a)){toast(t('t_bad_addr'),'warning');return;}const ok=await cdlg('Передать Guardian','2 дня cooldown.');if(!ok)return;await txc('Transfer Guardianship',()=>S.vlt.transferGuardianship(a));};
-window.dAC=async function(){await txc('Accept Creatorship',()=>S.vlt.acceptCreatorship());};
+window.dTC=async function(){
+  const a=($('nca')?.value||'').trim();
+  if(!ethers.isAddress(a)){toast(t('t_bad_addr'),'warning');return;}
+  // ethers.isAddress пропускает адрес в нижнем регистре без контрольной суммы —
+  // тогда опечатку поймать нечем. Предупреждаем явно.
+  const mixed=/[a-f]/.test(a.slice(2))&&/[A-F]/.test(a.slice(2));
+  if(!mixed && !(await cdlg('Адрес без контрольной суммы',
+      'Адрес записан в одном регистре, поэтому опечатку в нём проверить невозможно. Сверьте символы вручную. Продолжить?'))) return;
+  let cur='',grd='';
+  try{ cur=await S.vlt.creator(); grd=await S.vlt.guardian(); }catch(e){}
+  if(grd&&a.toLowerCase()===grd.toLowerCase()){toast('Это адрес Guardian — контракт откатит передачу','error',6000);return;}
+  if(cur&&a.toLowerCase()===cur.toLowerCase()){toast('Это текущий Creator','warning',5000);return;}
+  const ok=await cdlg('Передать Creator','Новый Creator: '+a+'\n\nРоль перейдёт только после того, как этот адрес сам её примет, и не раньше чем через 7 дней. До приёма вы остаётесь Creator и можете отменить передачу.');
+  if(!ok)return;
+  await txc('Transfer Creatorship',()=>S.vlt.transferCreatorship(a),
+            txDetails({'Операция':'Передача роли Creator','Новый Creator':E(a),'Кулдаун':'7 дней','Приём':'получателем вручную'}));
+  await loadRoles().catch(()=>{});
+};
+window.dCCT=async function(){
+  const ok=await cdlg('Отменить передачу Creator','Заявка будет снята, роль останется у вас. Отсчёт 7 дней обнулится.');
+  if(!ok)return;
+  await txc('Cancel Creatorship Transfer',()=>S.vlt.cancelCreatorshipTransfer(),
+            txDetails({'Операция':'Отмена передачи роли Creator'}));
+  await loadRoles().catch(()=>{});
+};
+window.dTG=async function(){
+  const a=($('nga')?.value||'').trim();
+  if(!ethers.isAddress(a)){toast(t('t_bad_addr'),'warning');return;}
+  let cur='';
+  try{ cur=await S.vlt.creator(); }catch(e){}
+  if(cur&&a.toLowerCase()===cur.toLowerCase()){toast('Это адрес Creator — контракт откатит передачу','error',6000);return;}
+  const ok=await cdlg('Передать Guardian','Новый Guardian: '+a+'\n\nРоль перейдёт только после того, как этот адрес сам её примет, и не раньше чем через 2 дня.');
+  if(!ok)return;
+  await txc('Transfer Guardianship',()=>S.vlt.transferGuardianship(a),
+            txDetails({'Операция':'Передача роли Guardian','Новый Guardian':E(a),'Кулдаун':'2 дня','Приём':'получателем вручную'}));
+  await loadRoles().catch(()=>{});
+};
+window.dAC=async function(){
+  await txc('Accept Creatorship',()=>S.vlt.acceptCreatorship(),
+            txDetails({'Операция':'Принять роль Creator','Адрес':E(S.user||'—')}));
+  await loadRoles().catch(()=>{});
+};
 
 /* ================================================================
    FAQ — частые вопросы пользователя
@@ -4517,7 +4763,11 @@ window.dRP=async function(){const ok=await cdlg(t('guardian_req_pause'),t('guard
 window.dEP=async function(){const ok=await cdlg(t('guardian_emerg_pause'),t('em_panic_confirm'));if(!ok)return;const rc=await txc('Emergency Pause',()=>S.vlt.emergencyPause());if(rc){S.paused=true;await refreshIB();}};
 window.dCP=async function(){await txc('Cancel Pause',()=>S.vlt.cancelPauseRequest());};
 window.dExP=async function(){const ok=await cdlg(t('guardian_exec_pause'),t('btn_confirm'));if(!ok)return;const rc=await txc('Execute Pause',()=>S.vlt.executePause());if(rc){S.paused=true;await refreshIB();}};
-window.dAG=async function(){await txc('Accept Guardianship',()=>S.vlt.acceptGuardianship());};
+window.dAG=async function(){
+  await txc('Accept Guardianship',()=>S.vlt.acceptGuardianship(),
+            txDetails({'Операция':'Принять роль Guardian','Адрес':E(S.user||'—')}));
+  await loadRoles().catch(()=>{});
+};
 
 /* ================================================================
    HELPERS
@@ -4928,26 +5178,41 @@ async function swImport() {
 
 
 // Проверка ETH газа
-async function checkGas() {
+/* Прежняя версия требовала запас на 250 000 газа для ЛЮБОЙ операции.
+   Дешёвые вызовы (acceptCreatorship ≈ 60 000) она блокировала на балансе,
+   которого хватало с запасом. Теперь две границы:
+     GAS_MIN  — дешевле этого в контракте нет ничего, ниже → жёсткий отказ;
+     GAS_TYP  — обычная операция, между границами → предупреждение, но пуск.
+   Последнее слово всё равно за сетью: она отвергнет неоплаченную транзакцию. */
+const GAS_MIN = 60000n;
+const GAS_TYP = 150000n;
+
+async function checkGas(gasHint) {
   try {
     const ethBal = await S.prov.getBalance(S.user);
-    // Считаем по текущей цене сети: фиксированные 0.0005 ETH пропускали
-    // транзакции, которые заведомо не оплачивались при дорогом газе.
-    let need;
+    let price;
     try{
       const fd = await S.prov.getFeeData();
-      const price = fd.maxFeePerGas || fd.gasPrice || ethers.parseUnits('20','gwei');
-      need = BigInt(price) * 250000n;
+      price = BigInt(fd.maxFeePerGas || fd.gasPrice || ethers.parseUnits('20','gwei'));
     }catch(e){
-      need = ethers.parseUnits('0.0005', 18);
+      price = BigInt(ethers.parseUnits('20','gwei'));
     }
-    if (ethBal < need) {
+    const limit = gasHint ? BigInt(gasHint) : GAS_TYP;
+    const hard  = price * GAS_MIN;
+    const soft  = price * limit;
+
+    if (ethBal < hard) {
       toast(t('t_no_gas'), 'warning', 6000);
-      log(`На комиссию нужно ≈${tr(fu(need),6)} ETH, на балансе ${tr(fu(ethBal),6)} ETH`,'warning');
+      log(`Не хватает ETH на газ: нужно минимум ≈${tr(fu(hard),6)}, на балансе ${tr(fu(ethBal),6)}`,'error');
       return false;
+    }
+    if (ethBal < soft) {
+      log(`ETH в обрез: обычной операции нужно ≈${tr(fu(soft),6)}, на балансе ${tr(fu(ethBal),6)}. Пробую отправить.`,'warning');
     }
     return true;
   } catch(e) {
+    // Пропускаем: решение за сетью. Но молча — нельзя, это скрывало сбои RPC.
+    log('Проверка газа не удалась ('+perr(e)+') — продолжаю без неё','warning');
     return true;
   }
 }
@@ -5090,6 +5355,7 @@ async function switchNet(){
     </label>
     <label style="display:flex;align-items:center;gap:7px;font-size:11px;color:#cbd5e1;cursor:pointer">
       <input type="checkbox" id="nf-snd" onchange="trSoundToggle(this)"> Звук уведомлений
+      <button class="btn btnsm" style="font-size:10px;padding:2px 8px;margin-left:auto" onclick="event.preventDefault();trBeepTest()">Проверить</button>
     </label>
   </div>
   <div id="notifList" style="padding:6px"></div>
