@@ -478,5 +478,21 @@
     "date": "Mon, 17 Aug 2026 02:55:45 +0000",
     "collected": "2026-08-17",
     "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "The bitcoin price level where leveraged bulls could get whacked",
+    "link": "https://www.coindesk.com/markets/2026/08/18/the-bitcoin-price-level-where-leveraged-bulls-could-get-whacked",
+    "date": "Tue, 18 Aug 2026 05:55:43 +0000",
+    "collected": "2026-08-18",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Pirated Copies of 'The Odyssey' Are Hiding Crypto-Stealing Malware",
+    "link": "https://decrypt.co/375747/pirated-copies-odyssey-hiding-crypto-stealing-malware",
+    "date": "Mon, 17 Aug 2026 12:31:04 +0000",
+    "collected": "2026-08-18",
+    "used": false
   }
 ]
