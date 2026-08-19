@@ -97,7 +97,7 @@
   },
   {
     "id": 13,
-    "posted": false,
+    "posted": true,
     "ru": "Одна точка отказа охраняет всё\n\nПодумай, как устроена твоя обычная жизнь. Вход в почту — пароль плюс код из сообщения. Перевод в банке — подтверждение. Вход на рабочий компьютер — второй фактор.\n\nВезде, где есть что-то ценное, придумали второй шаг.\n\nА деньги в блокчейне по умолчанию до сих пор охраняет один секрет. Одна фраза, и больше ничего.\n\nСтранно, если вдуматься. Самая необратимая форма денег защищена слабее, чем почтовый ящик.",
     "en": "A single point of failure guards everything\n\nThink about the rest of your life. Email login: password plus a code. Bank transfer: confirmation. Work laptop: second factor.\n\nEverywhere something valuable is at stake, someone added a second step.\n\nMeanwhile money on-chain is still guarded by one secret. One phrase, and nothing else.\n\nOdd, when you think about it. The most irreversible form of money is protected worse than your inbox.",
     "zh": "一个单点故障守护着一切\n\n想想你生活中的其他部分。登录邮箱：密码加验证码。银行转账：需要确认。工作电脑：第二重验证。\n\n凡是涉及贵重东西的地方，人们都加上了第二个步骤。\n\n而链上的资金，默认至今仍只由一个秘密守护。一句助记词，再无其他。\n\n仔细想想很奇怪。这种最不可逆的资金形式，保护程度还不如你的邮箱。",
