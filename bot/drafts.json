@@ -494,5 +494,13 @@
     "date": "Mon, 17 Aug 2026 12:31:04 +0000",
     "collected": "2026-08-18",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "16 Typosquatted RubyGems Packages Steal Browser Credentials and Crypto Wallets",
+    "link": "https://thehackernews.com/2026/08/16-typosquatted-rubygems-packages-steal.html",
+    "date": "Tue, 18 Aug 2026 16:50:00 +0530",
+    "collected": "2026-08-19",
+    "used": false
   }
 ]
