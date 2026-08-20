@@ -502,5 +502,21 @@
     "date": "Tue, 18 Aug 2026 16:50:00 +0530",
     "collected": "2026-08-19",
     "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Trader who made $49 million shorting crypto lost $24 million on ether in 12 seconds",
+    "link": "https://www.coindesk.com/markets/2026/08/20/trader-who-made-usd49-million-shorting-crypto-lost-usd24-million-on-ether-in-12-seconds",
+    "date": "Thu, 20 Aug 2026 05:40:54 +0000",
+    "collected": "2026-08-20",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Six-Bug Exploit Halts Maya Protocol After $1.4 Million in Bitcoin Stolen",
+    "link": "https://decrypt.co/375976/maya-protocol-halts-network-bitcoin-exploit",
+    "date": "Wed, 19 Aug 2026 18:20:35 +0000",
+    "collected": "2026-08-20",
+    "used": false
   }
 ]
