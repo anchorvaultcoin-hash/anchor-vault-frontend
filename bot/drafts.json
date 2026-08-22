@@ -566,5 +566,21 @@
     "date": "Thu, 20 Aug 2026 13:31:05 +0000",
     "collected": "2026-08-21",
     "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Coldcard ships firmware after $114 million bitcoin theft; says AI helped catch more bugs",
+    "link": "https://www.coindesk.com/tech/2026/08/21/coldcard-ships-firmware-after-usd114-million-bitcoin-theft-says-ai-helped-catch-more-bugs",
+    "date": "Fri, 21 Aug 2026 12:10:55 +0000",
+    "collected": "2026-08-22",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Coldcard Adds New Security Measures After $130 Million Bitcoin Exploit",
+    "link": "https://decrypt.co/376270/coldcard-new-security-after-bitcoin-exploit",
+    "date": "Fri, 21 Aug 2026 21:31:05 +0000",
+    "collected": "2026-08-22",
+    "used": false
   }
 ]
