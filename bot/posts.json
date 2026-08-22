@@ -105,7 +105,7 @@
   },
   {
     "id": 14,
-    "posted": false,
+    "posted": true,
     "ru": "Аналогия, которая объясняет всё за десять секунд\n\nБанковская ячейка в хранилище открывается двумя ключами одновременно. Один у тебя, второй у банка. По отдельности ни один не работает.\n\nЭто придумали не потому, что банкам нравится сложность. А потому, что так укравший один ключ не получает ничего.\n\nAnchorVaultCoin устроен так же. Деньги лежат в сейфе, к которому нужны два разных ключа, и хранятся они раздельно.\n\nУкрали один — замок не повернулся.",
     "en": "The analogy that explains it in ten seconds\n\nA safe deposit box opens with two keys turned at once. You hold one, the bank holds the other. Separately, neither works.\n\nThis wasn't invented because banks enjoy complexity. It was invented so that stealing one key gets you nothing.\n\nAnchorVaultCoin works the same way. Funds sit in a vault that needs two different keys, and those keys are kept apart.\n\nSteal one — the lock doesn't turn.",
     "zh": "十秒钟就能讲清楚的比喻\n\n银行保险箱需要两把钥匙同时转动才能打开。一把在你手里，一把在银行手里。单独任何一把都打不开。\n\n这样设计不是因为银行喜欢麻烦，而是为了让偷到一把钥匙的人什么也拿不到。\n\nAnchorVaultCoin 的原理相同。资金存放在需要两把不同密钥的保险库里，而这两把密钥分开保管。\n\n偷走一把——锁纹丝不动。",
