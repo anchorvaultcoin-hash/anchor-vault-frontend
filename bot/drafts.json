@@ -582,5 +582,13 @@
     "date": "Fri, 21 Aug 2026 21:31:05 +0000",
     "collected": "2026-08-22",
     "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Web3 gaming network Sandbox stops Base and BNB chain bridging after exploit",
+    "link": "https://www.coindesk.com/web3/2026/08/22/web3-gaming-network-sandbox-stops-base-and-bnb-chain-bridging-after-exploit",
+    "date": "Sat, 22 Aug 2026 14:10:17 +0000",
+    "collected": "2026-08-23",
+    "used": false
   }
 ]
