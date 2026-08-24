@@ -590,5 +590,13 @@
     "date": "Sat, 22 Aug 2026 14:10:17 +0000",
     "collected": "2026-08-23",
     "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Ethereum lending app Term Finance loses $8.5 million after attacker buys voting power",
+    "link": "https://www.coindesk.com/markets/2026/08/24/ethereum-lending-app-term-finance-loses-usd8-5-million-after-attacker-buys-voting-power",
+    "date": "Mon, 24 Aug 2026 06:27:33 +0000",
+    "collected": "2026-08-24",
+    "used": false
   }
 ]
