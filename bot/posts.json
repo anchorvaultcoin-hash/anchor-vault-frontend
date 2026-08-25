@@ -113,7 +113,7 @@
   },
   {
     "id": 15,
-    "posted": false,
+    "posted": true,
     "ru": "Чем сейф отличается от кошелька\n\nКошелёк — это то, чем ты пользуешься каждый день. Подписал, отправил, купил. Он должен быть быстрым, поэтому у него один ключ.\n\nСейф — это то, куда ты кладёшь то, что не собираешься трогать месяцами. Здесь скорость не нужна. Здесь нужно, чтобы никто не забрал.\n\nПроблема в том, что большинство людей держат сбережения в кошельке, потому что отдельного сейфа просто нет.\n\nВот его я и делаю.",
     "en": "How a vault differs from a wallet\n\nA wallet is what you use daily. Sign, send, buy. It has to be fast, so it has one key.\n\nA vault is where you put what you don't intend to touch for months. Speed isn't the point here. Not losing it is.\n\nThe problem is that most people keep their savings in a wallet, simply because a separate vault doesn't exist.\n\nThat's what I'm building.",
     "zh": "保险库与钱包的区别\n\n钱包是你每天都在用的东西。签名、转账、消费。它必须快，所以只有一把密钥。\n\n保险库是你存放几个月都不打算动的资产的地方。这里不需要速度，需要的是没人能拿走。\n\n问题在于，大多数人把积蓄放在钱包里，仅仅因为根本不存在一个单独的保险库。\n\n我做的就是这个。",
