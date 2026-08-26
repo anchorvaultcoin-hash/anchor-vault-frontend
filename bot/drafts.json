@@ -598,5 +598,29 @@
     "date": "Mon, 24 Aug 2026 06:27:33 +0000",
     "collected": "2026-08-24",
     "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Chainalysis-run sting targets child exploitation networks with aid of Binance, Coinbase",
+    "link": "https://www.coindesk.com/policy/2026/08/24/chainalysis-run-sting-targets-child-exploitation-networks-with-aid-of-binance-coinbase",
+    "date": "Tue, 25 Aug 2026 13:00:00 +0000",
+    "collected": "2026-08-26",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Crypto Fund Founder Convicted of Fraud Over Fake Trading Bot",
+    "link": "https://decrypt.co/376441/crypto-fund-founder-convicted-of-fraud-over-fake-trading-bot",
+    "date": "Tue, 25 Aug 2026 14:56:10 +0000",
+    "collected": "2026-08-26",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Dozens of Fake Firefox Wallet Extensions Linked to Crypto-Stealing Malware",
+    "link": "https://decrypt.co/376432/dozens-of-fake-firefox-wallet-extensions-linked-to-crypto-stealing-malware",
+    "date": "Tue, 25 Aug 2026 14:10:05 +0000",
+    "collected": "2026-08-26",
+    "used": false
   }
 ]
