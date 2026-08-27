@@ -7,9 +7,25 @@ AnchorVaultCoin adds an additional security layer for storing and managing crypt
 ## Status
 
 * **Network:** Ethereum Mainnet
-* **Security audit:** Hexens — completed
+* **Security audit:** Hexens — completed, 0 Critical / 0 High
+* **Contract source:** verified on Etherscan
 * **Product:** Mainnet release
 * **Vault dashboard:** `pulse.html`
+
+## Contracts
+
+Verify these addresses before every interaction. Any other address is not this project.
+
+**Vault — AnchorVaultCoin:**
+`0xAc362D7bFCe7a4475873C37A0A96F2CE5C00E929`
+https://etherscan.io/address/0xAc362D7bFCe7a4475873C37A0A96F2CE5C00E929#code
+
+**Token — ANCR:**
+`0x52FBd42e9c9CBD3E1CED969EE4245C0e6ED9219B`
+https://etherscan.io/token/0x52FBd42e9c9CBD3E1CED969EE4245C0e6ED9219B#code
+
+Both contracts are verified on Etherscan — the source code published there matches
+the bytecode running on Ethereum Mainnet, so it can be read and checked by anyone.
 
 ## Supported assets
 
@@ -36,6 +52,9 @@ https://anchorvaultcoin-hash.github.io/anchor-vault-frontend/
 
 **Vault Dashboard:**
 https://anchorvaultcoin-hash.github.io/anchor-vault-frontend/pulse.html
+
+**Security audit (Hexens, PDF, 3.2 MB):**
+https://anchorvaultcoin-hash.github.io/anchor-vault-frontend/hexens-audit-anchorvaultcoin-2026-08-10.pdf
 
 **Telegram:**
 https://t.me/AnchorVaultCoin
@@ -64,7 +83,8 @@ No part of the project may be copied, reproduced, redistributed, modified, repub
 
 This repository does not grant permission to reproduce or distribute the AnchorVaultCoin product, branding or proprietary materials.
 
-The smart-contract source code is maintained separately.
+The smart-contract source code is maintained in a separate repository:
+https://github.com/anchorvaultcoin-hash/anchor-vault-v45
 
 ---
 
