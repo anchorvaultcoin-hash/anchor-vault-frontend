@@ -622,5 +622,13 @@
     "date": "Tue, 25 Aug 2026 14:10:05 +0000",
     "collected": "2026-08-26",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "19 Chrome and Edge Extensions Found With Wallet-Stealing and Crypto-Draining Code",
+    "link": "https://thehackernews.com/2026/08/19-chrome-and-edge-extensions-found.html",
+    "date": "Fri, 28 Aug 2026 20:57:26 +0530",
+    "collected": "2026-08-28",
+    "used": false
   }
 ]
