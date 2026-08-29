@@ -630,5 +630,13 @@
     "date": "Fri, 28 Aug 2026 20:57:26 +0530",
     "collected": "2026-08-28",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Cosmos EVM Flaw Exploited After Cosmos Labs Knew Every Blockchain Running It Was Vulnerable",
+    "link": "https://thehackernews.com/2026/08/cosmos-evm-flaw-exploited-after-cosmos.html",
+    "date": "Sat, 29 Aug 2026 02:08:47 +0530",
+    "collected": "2026-08-29",
+    "used": false
   }
 ]
