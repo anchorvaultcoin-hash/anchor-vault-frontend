@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://anchorvaultcoin-hash.github.io/anchor-vault-frontend/</loc>
+    <loc>https://anchorvaultcoin.com/</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://anchorvaultcoin-hash.github.io/anchor-vault-frontend/landing.html</loc>
+    <loc>https://anchorvaultcoin.com/landing.html</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://anchorvaultcoin-hash.github.io/anchor-vault-frontend/landing.html?lang=ru"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://anchorvaultcoin-hash.github.io/anchor-vault-frontend/landing.html?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://anchorvaultcoin-hash.github.io/anchor-vault-frontend/landing.html?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://anchorvaultcoin-hash.github.io/anchor-vault-frontend/landing.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://anchorvaultcoin.com/landing.html?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anchorvaultcoin.com/landing.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://anchorvaultcoin.com/landing.html?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anchorvaultcoin.com/landing.html"/>
   </url>
   <url>
-    <loc>https://anchorvaultcoin-hash.github.io/anchor-vault-frontend/pulse.html</loc>
+    <loc>https://anchorvaultcoin.com/pulse.html</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anchorvaultcoin-hash.github.io/anchor-vault-frontend/hexens-audit-anchorvaultcoin-2026-08-10.pdf</loc>
+    <loc>https://anchorvaultcoin.com/hexens-audit-anchorvaultcoin-2026-08-10.pdf</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
