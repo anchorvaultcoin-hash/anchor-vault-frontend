@@ -646,5 +646,29 @@
     "date": "Sat, 29 Aug 2026 23:49:17 +0000",
     "collected": "2026-08-30",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Chrome Web Store extensions caught stealing crypto, browser data",
+    "link": "https://www.bleepingcomputer.com/news/security/chrome-web-store-extensions-caught-stealing-crypto-browser-data/",
+    "date": "Sun, 30 Aug 2026 10:17:44 -0400",
+    "collected": "2026-08-31",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Cronos halts blockchain after $75 million lending exploit hits lending app Tectonic",
+    "link": "https://www.coindesk.com/tech/2026/08/31/cronos-halts-blockchain-after-usd75-million-lending-exploit-hits-lending-app-tectonic",
+    "date": "Mon, 31 Aug 2026 04:57:13 +0000",
+    "collected": "2026-08-31",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Crypto.com's Cronos Halts Entire Blockchain After $75M Tectonic Exploit",
+    "link": "https://decrypt.co/376913/crypto-coms-cronos-halts-entire-blockchain-after-75m-tectonic-exploit",
+    "date": "Mon, 31 Aug 2026 09:41:27 +0000",
+    "collected": "2026-08-31",
+    "used": false
   }
 ]
