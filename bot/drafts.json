@@ -670,5 +670,21 @@
     "date": "Mon, 31 Aug 2026 09:41:27 +0000",
     "collected": "2026-08-31",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Cronos blockchain restarts after $74 million Tectonic exploit",
+    "link": "https://www.bleepingcomputer.com/news/security/cronos-blockchain-restarts-after-74-million-tectonic-exploit/",
+    "date": "Mon, 31 Aug 2026 16:47:54 -0400",
+    "collected": "2026-09-01",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "North Korean hackers are moving tens of millions on Hyperliquid as Trump pushes to onshore the crypto platform",
+    "link": "https://www.coindesk.com/business/2026/08/31/north-korean-hackers-are-moving-tens-of-millions-on-hyperliquid-as-trump-pushes-to-onshore-the-crypto-platform",
+    "date": "Mon, 31 Aug 2026 20:48:40 +0000",
+    "collected": "2026-09-01",
+    "used": false
   }
 ]
