@@ -686,5 +686,29 @@
     "date": "Mon, 31 Aug 2026 20:48:40 +0000",
     "collected": "2026-09-01",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Attackers Exploit Critical JFrog Artifactory Flaw to Mint Admin Tokens Days After Disclosure",
+    "link": "https://thehackernews.com/2026/09/attackers-exploit-critical-jfrog.html",
+    "date": "Tue, 01 Sep 2026 23:23:11 +0530",
+    "collected": "2026-09-02",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "13 Malicious Packagist Packages Target Unpatched iPhones to Steal Crypto Wallet Seeds",
+    "link": "https://thehackernews.com/2026/09/13-malicious-packagist-packages-target.html",
+    "date": "Tue, 01 Sep 2026 19:37:20 +0530",
+    "collected": "2026-09-02",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Fake Claude desktop app spreads crypto-stealing malware",
+    "link": "https://cointelegraph.com/news/fake-claude-desktop-app-spreads-crypto-stealing-malware?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Wed, 02 Sep 2026 09:06:41 +0000",
+    "collected": "2026-09-02",
+    "used": false
   }
 ]
