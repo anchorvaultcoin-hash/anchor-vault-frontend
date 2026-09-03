@@ -710,5 +710,53 @@
     "date": "Wed, 02 Sep 2026 09:06:41 +0000",
     "collected": "2026-09-02",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers exploit critical JFrog Artifactory flaw to forge admin tokens",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-jfrog-artifactory-flaw-to-forge-admin-tokens/",
+    "date": "Wed, 02 Sep 2026 11:47:08 -0400",
+    "collected": "2026-09-03",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "CISA Adds Seven Exploited Flaws as Attackers Deploy Reverse Shells and Crypto Miners",
+    "link": "https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html",
+    "date": "Thu, 03 Sep 2026 10:49:04 +0530",
+    "collected": "2026-09-03",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "CrowdStrike and federal authorities dismantle Russian malware that secretly stole crypto for 8 years",
+    "link": "https://www.coindesk.com/tech/2026/09/02/crowdstrike-and-federal-authorities-dismantle-russian-malware-that-secretly-stole-crypto-for-8-years",
+    "date": "Wed, 02 Sep 2026 13:14:47 +0000",
+    "collected": "2026-09-03",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Coldcard hacker swaps stolen Bitcoin for ETH via THORChain",
+    "link": "https://cointelegraph.com/news/coldcard-hacker-swaps-stolen-bitcoin-eth-thorchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 03 Sep 2026 09:49:17 +0000",
+    "collected": "2026-09-03",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "US officials work with CrowdStrike to fight malware behind crypto theft",
+    "link": "https://cointelegraph.com/news/us-officials-crowdstrike-malware-stealing-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 03 Sep 2026 06:56:55 +0000",
+    "collected": "2026-09-03",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Ukraine Busts Kyiv Crypto Drainer Ring Moving Up to $1M Monthly",
+    "link": "https://decrypt.co/377245/ukraine-busts-kyiv-crypto-drainer-ring-moving-up-to-1m-monthly",
+    "date": "Thu, 03 Sep 2026 09:53:41 +0000",
+    "collected": "2026-09-03",
+    "used": false
   }
 ]
