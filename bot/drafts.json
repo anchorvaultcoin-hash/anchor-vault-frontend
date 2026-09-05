@@ -766,5 +766,21 @@
     "date": "Fri, 04 Sep 2026 06:11:20 +0000",
     "collected": "2026-09-04",
     "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "FinCEN ties $13B in crypto scams to non-US operations",
+    "link": "https://cointelegraph.com/news/fincen-crypto-overseas-scam-centers-analysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 04 Sep 2026 19:24:43 +0000",
+    "collected": "2026-09-05",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "FinCEN Ties $12.7B to Crypto Scams Run From Asian Compounds",
+    "link": "https://decrypt.co/377386/fincen-ties-12-7b-to-crypto-scams-run-from-asian-compounds",
+    "date": "Fri, 04 Sep 2026 10:22:57 +0000",
+    "collected": "2026-09-05",
+    "used": false
   }
 ]
