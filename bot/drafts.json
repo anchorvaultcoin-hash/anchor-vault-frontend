@@ -782,5 +782,21 @@
     "date": "Fri, 04 Sep 2026 10:22:57 +0000",
     "collected": "2026-09-05",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Over 5,400 hacked sites serve ClickFix payloads stored on the blockchain",
+    "link": "https://www.bleepingcomputer.com/news/security/over-5-400-hacked-sites-serve-clickfix-payloads-stored-on-the-blockchain/",
+    "date": "Sat, 05 Sep 2026 10:29:13 -0400",
+    "collected": "2026-09-06",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "British investor thought he lost $2,000 in bitcoin in 2012. He just recovered $4.5 million",
+    "link": "https://www.coindesk.com/business/2026/09/02/british-investor-thought-he-lost-usd2-000-in-bitcoin-in-2012-he-just-recovered-usd4-5-million",
+    "date": "Sat, 05 Sep 2026 12:00:00 +0000",
+    "collected": "2026-09-06",
+    "used": false
   }
 ]
