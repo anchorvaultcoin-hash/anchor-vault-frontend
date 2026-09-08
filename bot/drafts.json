@@ -854,5 +854,37 @@
     "date": "Mon, 07 Sep 2026 09:55:42 +0000",
     "collected": "2026-09-07",
     "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Liquid Network gets back 3,400 bitcoin from whitehat hackers; talks underway for the rest",
+    "link": "https://www.coindesk.com/markets/2026/09/08/white-hat-hackers-return-most-of-usd320m-bitcoin-taken-from-liquid-network",
+    "date": "Tue, 08 Sep 2026 04:41:17 +0000",
+    "collected": "2026-09-08",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Liquid Hackers Return $270M in Bitcoin After Swiping $320 Million",
+    "link": "https://decrypt.co/377600/liquid-hackers-return-270m-bitcoin",
+    "date": "Mon, 07 Sep 2026 19:13:56 +0000",
+    "collected": "2026-09-08",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Malone Lam Faces Plea Hearing Over $245M Bitcoin Theft",
+    "link": "https://decrypt.co/377595/malone-lam-faces-plea-hearing-over-245m-bitcoin-theft",
+    "date": "Mon, 07 Sep 2026 17:41:55 +0000",
+    "collected": "2026-09-08",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Coldcard Hacker Moves $7.7M, Nearly Half of Third-Wave Bitcoin Haul",
+    "link": "https://decrypt.co/377537/coldcard-hacker-moves-7-7m-nearly-half-of-third-wave-bitcoin-haul",
+    "date": "Mon, 07 Sep 2026 11:09:27 +0000",
+    "collected": "2026-09-08",
+    "used": false
   }
 ]
