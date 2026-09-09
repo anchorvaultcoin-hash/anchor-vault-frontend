@@ -886,5 +886,45 @@
     "date": "Mon, 07 Sep 2026 11:09:27 +0000",
     "collected": "2026-09-08",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Slim Spider Steals Crypto Custody Secrets From Brazilian Financial Institution",
+    "link": "https://thehackernews.com/2026/09/slim-spider-steals-crypto-custody.html",
+    "date": "Tue, 08 Sep 2026 21:50:23 +0530",
+    "collected": "2026-09-09",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Liquid Hackers Return 3,400 Bitcoin Taken via Elements Bug, Still Holding $47M in BTC",
+    "link": "https://thehackernews.com/2026/09/liquid-hackers-return-3400-bitcoin.html",
+    "date": "Tue, 08 Sep 2026 20:24:30 +0530",
+    "collected": "2026-09-09",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Singaporean 22-year old pleads guilty to being the ringleader in $245 million crypto fraud case",
+    "link": "https://www.coindesk.com/business/2026/09/09/singaporean-22-year-old-pleads-guilty-to-being-the-ringleader-in-usd245-million-crypto-fraud-case",
+    "date": "Wed, 09 Sep 2026 09:54:42 +0000",
+    "collected": "2026-09-09",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Cybercrime ringleader Malone Lam pleads guilty in $245M crypto theft conspiracy",
+    "link": "https://cointelegraph.com/news/malone-lam-pleads-guilty-245m-crypto-theft-conspiracy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Wed, 09 Sep 2026 08:36:39 +0000",
+    "collected": "2026-09-09",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Cronos Erased Two Hours of Transactions to Reverse $111 Million DeFi Exploit",
+    "link": "https://decrypt.co/377686/cronos-erased-two-hours-transactions-defi-exploit",
+    "date": "Tue, 08 Sep 2026 17:10:51 +0000",
+    "collected": "2026-09-09",
+    "used": false
   }
 ]
