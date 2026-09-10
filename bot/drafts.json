@@ -926,5 +926,69 @@
     "date": "Tue, 08 Sep 2026 17:10:51 +0000",
     "collected": "2026-09-09",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Trezor warns users of email provider breach, phishing attacks",
+    "link": "https://www.bleepingcomputer.com/news/security/trezor-warns-users-of-email-provider-breach-phishing-attacks/",
+    "date": "Thu, 10 Sep 2026 02:56:33 -0400",
+    "collected": "2026-09-10",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "U.S. Disrupts Xinbi Guarantee Scam Marketplace, Freezes $52.8 Million in Crypto",
+    "link": "https://thehackernews.com/2026/09/us-disrupts-xinbi-guarantee-scam.html",
+    "date": "Wed, 09 Sep 2026 23:56:05 +0530",
+    "collected": "2026-09-10",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Infostealer Logs Expose Replayable AI Tokens That Can Bypass MFA",
+    "link": "https://thehackernews.com/2026/09/infostealer-logs-expose-replayable-ai.html",
+    "date": "Wed, 09 Sep 2026 19:53:55 +0530",
+    "collected": "2026-09-10",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Alby Hub Critical Flaw Could Let Attackers Take Over Internet-Exposed Bitcoin Wallets",
+    "link": "https://thehackernews.com/2026/09/alby-hub-critical-flaw-could-let.html",
+    "date": "Wed, 09 Sep 2026 16:13:04 +0530",
+    "collected": "2026-09-10",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Hunter Biden's new LAPTOP token lost 98% of its value in under an hour after $1.6 billion debut",
+    "link": "https://www.coindesk.com/business/2026/09/09/hunter-biden-s-laptop-memecoin-debuts-at-usd1-6-billion-market-cap",
+    "date": "Wed, 09 Sep 2026 13:57:57 +0000",
+    "collected": "2026-09-10",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "US sanctions Xinbi scam marketplace, restrains $52M in crypto",
+    "link": "https://cointelegraph.com/news/us-sanctions-xinbi-restrains-52m-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 10 Sep 2026 05:04:41 +0000",
+    "collected": "2026-09-10",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Bitcoin Wallet Maker Trezor Says Hackers Breached Its Email Provider",
+    "link": "https://decrypt.co/377831/bitcoin-wallet-trezor-hackers-breach-email",
+    "date": "Wed, 09 Sep 2026 23:02:23 +0000",
+    "collected": "2026-09-10",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Secret Service Freezes $52.8 Million in Crypto Tied to Telegram Bazaar Behind Global Scams",
+    "link": "https://decrypt.co/377804/secret-service-freezes-crypto-telegram-bazaar-xinbi",
+    "date": "Wed, 09 Sep 2026 17:16:08 +0000",
+    "collected": "2026-09-10",
+    "used": false
   }
 ]
