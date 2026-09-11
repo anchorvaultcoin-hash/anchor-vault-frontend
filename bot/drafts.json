@@ -990,5 +990,21 @@
     "date": "Wed, 09 Sep 2026 17:16:08 +0000",
     "collected": "2026-09-10",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Trezor: 347,000 users targeted in phishing attacks after Brevo breach",
+    "link": "https://www.bleepingcomputer.com/news/security/trezor-347-000-users-targeted-in-phishing-attacks-after-brevo-breach/",
+    "date": "Fri, 11 Sep 2026 03:55:15 -0400",
+    "collected": "2026-09-11",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Brevo login flaw enabled phishing email targeting 347K Trezor subscribers",
+    "link": "https://cointelegraph.com/news/brevo-login-flaw-trezor-bitbox-cointracking-phishing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 11 Sep 2026 04:24:24 +0000",
+    "collected": "2026-09-11",
+    "used": false
   }
 ]
