@@ -1006,5 +1006,21 @@
     "date": "Fri, 11 Sep 2026 04:24:24 +0000",
     "collected": "2026-09-11",
     "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Blockstream Refuses Ransom for Return of $47M in Bitcoin from Liquid Hack: 'It Is Theft'",
+    "link": "https://decrypt.co/377959/blockstream-refuses-ransom-for-return-of-47m-in-bitcoin-from-liquid-hack-it-is-theft",
+    "date": "Fri, 11 Sep 2026 14:17:38 +0000",
+    "collected": "2026-09-12",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Blockstream Rejects Ransom Demand After Liquid Bitcoin Exploit",
+    "link": "https://thedefiant.io/news/security/blockstream-rejects-ransom-demand-after-liquid-bitcoin-exploit",
+    "date": "Fri, 11 Sep 2026 14:42:37 GMT",
+    "collected": "2026-09-12",
+    "used": false
   }
 ]
