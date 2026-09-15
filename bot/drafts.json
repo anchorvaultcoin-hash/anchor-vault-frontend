@@ -1022,5 +1022,21 @@
     "date": "Fri, 11 Sep 2026 14:42:37 GMT",
     "collected": "2026-09-12",
     "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "How a simple coding mistake let a hacker drain $7.8 million from a crypto wallet",
+    "link": "https://www.coindesk.com/business/2026/09/15/how-a-simple-coding-mistake-let-a-hacker-drain-usd7-8-million-from-a-crypto-wallet",
+    "date": "Tue, 15 Sep 2026 10:27:55 +0000",
+    "collected": "2026-09-15",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "MetaMask Adds New Wallet Protections Against Crypto Scams",
+    "link": "https://decrypt.co/378117/metamask-adds-wallet-protections",
+    "date": "Mon, 14 Sep 2026 14:01:04 +0000",
+    "collected": "2026-09-15",
+    "used": false
   }
 ]
