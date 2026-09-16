@@ -1038,5 +1038,37 @@
     "date": "Mon, 14 Sep 2026 14:01:04 +0000",
     "collected": "2026-09-15",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Active Exploitation Attempts Target WSO2 API Manager JWT Bypass With Forged Admin Tokens",
+    "link": "https://thehackernews.com/2026/09/active-exploitation-attempts-target.html",
+    "date": "Wed, 16 Sep 2026 10:48:06 +0530",
+    "collected": "2026-09-16",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "KREMLIN Banking Malware Hijacks Chrome and Edge to Steal Credentials and Session Tokens",
+    "link": "https://thehackernews.com/2026/09/kremlin-banking-malware-hijacks-chrome.html",
+    "date": "Wed, 16 Sep 2026 00:24:14 +0530",
+    "collected": "2026-09-16",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Robinhood Engineers Charged With Fraud Over Alleged Crypto Listing Trades",
+    "link": "https://decrypt.co/378267/robinhood-engineers-charged-fraud-over-crypto-listing-trades",
+    "date": "Tue, 15 Sep 2026 17:49:23 +0000",
+    "collected": "2026-09-16",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "MEV Bot Front-Runs $7.8 Million rsETH Exploit on Ethereum",
+    "link": "https://thedefiant.io/news/hacks/mev-bot-front-runs-7-8-million-rseth-exploit-on-ethereum",
+    "date": "Tue, 15 Sep 2026 16:03:00 GMT",
+    "collected": "2026-09-16",
+    "used": false
   }
 ]
