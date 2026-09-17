@@ -1070,5 +1070,13 @@
     "date": "Tue, 15 Sep 2026 16:03:00 GMT",
     "collected": "2026-09-16",
     "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Hackers Hijack HBO Max’s Reddit Account to Spread Crypto-Stealing Malware",
+    "link": "https://decrypt.co/378401/hackers-hbo-max-reddit-account-crypto-malware",
+    "date": "Wed, 16 Sep 2026 17:06:02 +0000",
+    "collected": "2026-09-17",
+    "used": false
   }
 ]
