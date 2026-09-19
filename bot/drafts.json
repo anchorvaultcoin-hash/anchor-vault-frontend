@@ -1078,5 +1078,21 @@
     "date": "Wed, 16 Sep 2026 17:06:02 +0000",
     "collected": "2026-09-17",
     "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Crypto tech provider Haruko hit by cyberattack affecting 15 clients, some funds lost",
+    "link": "https://www.coindesk.com/business/2026/09/18/crypto-tech-provider-haruko-hit-by-cyberattack-affecting-15-clients-some-funds-lost",
+    "date": "Fri, 18 Sep 2026 15:06:31 +0000",
+    "collected": "2026-09-19",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Blockchain Dead Drop Attacks Jump 420% as State Hackers Expand",
+    "link": "https://thedefiant.io/news/security/blockchain-dead-drop-attacks-jump-420-as-state-hackers-expand",
+    "date": "Fri, 18 Sep 2026 16:59:38 GMT",
+    "collected": "2026-09-19",
+    "used": false
   }
 ]
