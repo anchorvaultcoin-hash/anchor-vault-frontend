@@ -1102,5 +1102,21 @@
     "date": "Sat, 19 Sep 2026 14:00:00 +0000",
     "collected": "2026-09-20",
     "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "X sues Bitcoin account operators over alleged $278K payout fraud",
+    "link": "https://cointelegraph.com/news/x-lawsuit-bitcoin-accounts-alleged-scheme?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 21 Sep 2026 10:13:57 +0000",
+    "collected": "2026-09-21",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "North Korean fake recruiters infect 30K devices, steal $10.7M in crypto",
+    "link": "https://cointelegraph.com/news/north-korean-fake-recruiters-infect-30k-devices-steal-107m-in-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 21 Sep 2026 05:01:59 +0000",
+    "collected": "2026-09-21",
+    "used": false
   }
 ]
