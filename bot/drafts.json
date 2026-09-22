@@ -1118,5 +1118,29 @@
     "date": "Mon, 21 Sep 2026 05:01:59 +0000",
     "collected": "2026-09-21",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Contagious Interview Campaign Compromises 30,000 Devices, Steals $10.71M in Crypto",
+    "link": "https://thehackernews.com/2026/09/contagious-interview-campaign.html",
+    "date": "Mon, 21 Sep 2026 22:49:00 +0530",
+    "collected": "2026-09-22",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Whitehats move 52 bitcoin from the Coldcard hack to a recovery trust",
+    "link": "https://www.coindesk.com/markets/2026/09/22/whitehats-move-52-bitcoin-from-the-coldcard-hack-to-a-recovery-trust",
+    "date": "Tue, 22 Sep 2026 06:27:28 +0000",
+    "collected": "2026-09-22",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "White hats outrun Coldcard hackers in 52-Bitcoin evacuation",
+    "link": "https://cointelegraph.com/news/white-hats-coldcard-btc-exploit-galaxy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Tue, 22 Sep 2026 09:11:27 +0000",
+    "collected": "2026-09-22",
+    "used": false
   }
 ]
