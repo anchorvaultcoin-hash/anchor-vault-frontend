@@ -1142,5 +1142,29 @@
     "date": "Tue, 22 Sep 2026 09:11:27 +0000",
     "collected": "2026-09-22",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Microsoft Takes Down EvilTokens Device-Code Phishing Service Tied to 12,000 Inbox Compromises",
+    "link": "https://thehackernews.com/2026/09/microsoft-takes-down-eviltokens-device.html",
+    "date": "Tue, 22 Sep 2026 22:33:31 +0530",
+    "collected": "2026-09-23",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Malicious iOS app FomoPeek linked to $580K crypto theft, SlowMist says",
+    "link": "https://cointelegraph.com/news/fomopeek-ios-app-580k-crypto-theft?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Wed, 23 Sep 2026 09:18:45 +0000",
+    "collected": "2026-09-23",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "White-Hat Hackers Route Coldcard Exploit Bitcoin Into 'Recovery Trust'",
+    "link": "https://decrypt.co/378978/white-hat-hackers-coldcard-exploit-bitcoin-recovery-trust",
+    "date": "Tue, 22 Sep 2026 19:31:03 +0000",
+    "collected": "2026-09-23",
+    "used": false
   }
 ]
