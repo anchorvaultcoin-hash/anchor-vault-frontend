@@ -1174,5 +1174,61 @@
     "date": "Wed, 23 Sep 2026 19:54:30 GMT",
     "collected": "2026-09-24",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Hackers steal $351.6 million in Bitget crypto exchange hack",
+    "link": "https://www.bleepingcomputer.com/news/security/hackers-steal-3516-million-in-bitget-crypto-exchange-hack/",
+    "date": "Fri, 25 Sep 2026 04:33:44 -0400",
+    "collected": "2026-09-25",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Bitget's $352 million hack happened via spoofed transfers, not private keys, CEO Gracy Chen says",
+    "link": "https://www.coindesk.com/markets/2026/09/25/bitget-s-usd351-million-hack-happened-via-spoofed-transfers-not-private-keys-ceo-gray-chen-says",
+    "date": "Fri, 25 Sep 2026 04:29:34 +0000",
+    "collected": "2026-09-25",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Crypto exchange Bitget says $352 million affected in a hack, claims user funds are 'safe'",
+    "link": "https://www.coindesk.com/markets/2026/09/24/crypto-exchange-bitget-loses-usd352-million-in-hack-claims-user-funds-are-safe",
+    "date": "Thu, 24 Sep 2026 21:59:32 +0000",
+    "collected": "2026-09-25",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Crypto casino Duelbits goes offline after $7 million hot wallet hack",
+    "link": "https://www.coindesk.com/business/2026/09/24/crypto-casino-duelbits-goes-offline-after-usd7m-hot-wallet-hack",
+    "date": "Thu, 24 Sep 2026 15:48:20 +0000",
+    "collected": "2026-09-25",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Asia dominates Crypto Adoption Index, Bitget’s $352M hack: Asia Express",
+    "link": "https://cointelegraph.com/magazine/asia-dominates-crypto-adoption-index-bitgets-356m-hack-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 25 Sep 2026 01:24:52 +0000",
+    "collected": "2026-09-25",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Bitget Hacked as $350 Million Vanishes From Crypto Exchange Wallets",
+    "link": "https://decrypt.co/379275/bitget-hack-183-million-crypto-exchange-wallets",
+    "date": "Thu, 24 Sep 2026 21:15:38 +0000",
+    "collected": "2026-09-25",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Payy Halts Network After $1.92 Million USDC Drain",
+    "link": "https://thedefiant.io/news/hacks/payy-halts-network-after-1-92-million-usdc-drain",
+    "date": "Thu, 24 Sep 2026 16:53:16 GMT",
+    "collected": "2026-09-25",
+    "used": false
   }
 ]
