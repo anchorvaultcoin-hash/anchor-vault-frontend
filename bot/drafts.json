@@ -1278,5 +1278,29 @@
     "date": "Fri, 25 Sep 2026 16:12:07 GMT",
     "collected": "2026-09-26",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Bitget resumes Bitcoin withdrawals after $387.5 million crypto heist",
+    "link": "https://www.bleepingcomputer.com/news/security/bitget-resumes-bitcoin-withdrawals-after-3875-million-crypto-heist/",
+    "date": "Mon, 28 Sep 2026 05:25:29 -0400",
+    "collected": "2026-09-28",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Bitget resumes Bitcoin withdrawals as hacker swaps ETH via THORChain",
+    "link": "https://cointelegraph.com/news/bitget-btc-withdrawal-hacker-eth-swap-thorchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 28 Sep 2026 11:09:35 +0000",
+    "collected": "2026-09-28",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Zano rolls blockchain back a month after Gateway Address exploit",
+    "link": "https://cointelegraph.com/news/zano-rolls-blockchain-back-a-month-after-gateway-address-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 28 Sep 2026 06:06:56 +0000",
+    "collected": "2026-09-28",
+    "used": false
   }
 ]
