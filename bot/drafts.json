@@ -1302,5 +1302,45 @@
     "date": "Mon, 28 Sep 2026 06:06:56 +0000",
     "collected": "2026-09-28",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Vietnamese man charged in $16 million 'pig butchering' crypto scam",
+    "link": "https://www.bleepingcomputer.com/news/security/vietnamese-man-charged-in-16-million-pig-butchering-crypto-scam/",
+    "date": "Tue, 29 Sep 2026 07:41:53 -0400",
+    "collected": "2026-09-29",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "⚡ Weekly Recap: $387M Crypto Hack, Citrix Exploits, AI Agents Go Off-Script, and More Threats",
+    "link": "https://thehackernews.com/2026/09/weekly-recap-387m-crypto-hack-citrix.html",
+    "date": "Mon, 28 Sep 2026 19:30:53 +0530",
+    "collected": "2026-09-29",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "THORChain rejects Bitget request to block hacker as $6 million moves to bitcoin",
+    "link": "https://www.coindesk.com/tech/2026/09/28/thorchain-rejects-bitget-request-to-block-hacker-as-usd6-million-moves-to-bitcoin",
+    "date": "Mon, 28 Sep 2026 12:13:09 +0000",
+    "collected": "2026-09-29",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Canadian ‘crypto king’ set to represent himself at fraud trial",
+    "link": "https://cointelegraph.com/news/canada-aiden-pleterski-fraud-trial-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Tue, 29 Sep 2026 04:03:58 +0000",
+    "collected": "2026-09-29",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Canada's 'Crypto King' Aiden Pleterski to Represent Himself at Fraud Trial",
+    "link": "https://decrypt.co/379523/canadas-crypto-king-aiden-pleterski-to-represent-himself-at-fraud-trial",
+    "date": "Tue, 29 Sep 2026 10:38:29 +0000",
+    "collected": "2026-09-29",
+    "used": false
   }
 ]
