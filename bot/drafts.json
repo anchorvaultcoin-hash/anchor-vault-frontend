@@ -1390,5 +1390,29 @@
     "date": "Wed, 30 Sep 2026 15:17:45 +0000",
     "collected": "2026-10-01",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Microsoft’s X account hacked in crypto pump-and-dump scheme",
+    "link": "https://www.bleepingcomputer.com/news/security/microsofts-x-account-hacked-in-crypto-token-pump-and-dump-scheme/",
+    "date": "Fri, 02 Oct 2026 05:29:56 -0400",
+    "collected": "2026-10-02",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "NEAR Intents hit by $3.8 million exploit as crypto's rough year of hacks continues",
+    "link": "https://www.coindesk.com/tech/2026/10/01/near-intents-hit-by-usd3-8-million-exploit-as-crypto-s-rough-year-of-hacks-continues",
+    "date": "Thu, 01 Oct 2026 14:18:14 +0000",
+    "collected": "2026-10-02",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Zano exploiter minted more than a quadrillion fUSD before blockchain rollback",
+    "link": "https://cointelegraph.com/news/zano-exploiter-created-369m-unauthorized-zano-before-blockchain-rollback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 02 Oct 2026 07:04:48 +0000",
+    "collected": "2026-10-02",
+    "used": false
   }
 ]
