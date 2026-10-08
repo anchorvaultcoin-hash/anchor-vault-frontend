@@ -1438,5 +1438,29 @@
     "date": "Tue, 06 Oct 2026 15:26:41 +0000",
     "collected": "2026-10-07",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "16 Malicious Firefox Extensions Pose as Rabby and OKX Wallets to Steal Recovery Phrases",
+    "link": "https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html",
+    "date": "Thu, 08 Oct 2026 15:16:32 +0530",
+    "collected": "2026-10-08",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Hunter Biden confirms LAPTOP token ‘not a rug pull,’ just trolling Trumps",
+    "link": "https://cointelegraph.com/news/hunter-biden-laptop-memecoin-troll-no-rug-pull?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 08 Oct 2026 07:02:38 +0000",
+    "collected": "2026-10-08",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Trader Frogman Drained of $4 Million on the First Morning of TOKEN2049",
+    "link": "https://thedefiant.io/news/hacks/trader-frogman-drained-of-4-million-on-the-first-morning-of-token2049",
+    "date": "Wed, 07 Oct 2026 16:57:34 GMT",
+    "collected": "2026-10-08",
+    "used": false
   }
 ]
