@@ -1462,5 +1462,29 @@
     "date": "Wed, 07 Oct 2026 16:57:34 GMT",
     "collected": "2026-10-08",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Uranium crypto exchange hacker convicted for stealing $53 million",
+    "link": "https://www.bleepingcomputer.com/news/security/uranium-crypto-exchange-hacker-found-guilty-of-53-million-theft/",
+    "date": "Thu, 08 Oct 2026 09:18:36 -0400",
+    "collected": "2026-10-09",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "SIM-Swap Fraudster Who Spent Stolen Crypto on Gold Grills and Dubai Trips Jailed",
+    "link": "https://decrypt.co/380554/sim-swap-fraudster-who-spent-stolen-crypto-on-gold-grills-and-dubai-trips-jailed",
+    "date": "Fri, 09 Oct 2026 08:59:31 +0000",
+    "collected": "2026-10-09",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "US Government Moves $1 Billion in Bitcoin Seized From Bitfinex Hacker",
+    "link": "https://decrypt.co/380504/us-government-moves-1-billion-bitcoin-bitfinex",
+    "date": "Thu, 08 Oct 2026 16:44:20 +0000",
+    "collected": "2026-10-09",
+    "used": false
   }
 ]
