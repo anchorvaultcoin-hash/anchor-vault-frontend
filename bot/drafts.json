@@ -1486,5 +1486,69 @@
     "date": "Thu, 08 Oct 2026 16:44:20 +0000",
     "collected": "2026-10-09",
     "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Unpatched AhsayCBS flaws exploited to deploy webshells, mine crypto",
+    "link": "https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/",
+    "date": "Fri, 09 Oct 2026 13:17:23 -0400",
+    "collected": "2026-10-10",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands",
+    "link": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
+    "date": "Fri, 09 Oct 2026 21:59:55 +0530",
+    "collected": "2026-10-10",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Ledger investigates potential wallet tampering after reports of $86 million in crypto stolen",
+    "link": "https://www.coindesk.com/business/2026/10/09/ledger-investigates-potential-wallet-tampering-after-reports-of-usd86-million-in-crypto-stolen",
+    "date": "Fri, 09 Oct 2026 14:47:27 +0000",
+    "collected": "2026-10-10",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Bitcoin consolidates near $82.5K as crypto weathers Ledger theft reports",
+    "link": "https://cointelegraph.com/markets/bitcoin-consolidates-crypto-weathers-ledger-theft-reports?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 09 Oct 2026 15:26:01 +0000",
+    "collected": "2026-10-10",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Ledger Probes Potential Theft of $87M in User Funds Tied to Crypto Wallet Reseller",
+    "link": "https://decrypt.co/380582/ledger-probes-87m-theft-crypto-wallet-reseller",
+    "date": "Fri, 09 Oct 2026 15:30:36 +0000",
+    "collected": "2026-10-10",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Wallet Linked to CryptoBilis Thefts Routes 464 ETH to Tornado Cash",
+    "link": "https://thedefiant.io/news/hacks/wallet-linked-to-cryptobilis-thefts-routes-464-eth-to-tornado-cash",
+    "date": "Sat, 10 Oct 2026 11:09:33 GMT",
+    "collected": "2026-10-10",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Ledger Theft Funds Shift Into USDD, Beyond Tether’s Freeze Controls",
+    "link": "https://thedefiant.io/news/hacks/ledger-theft-funds-shift-into-usdd-beyond-tether-s-freeze-controls",
+    "date": "Sat, 10 Oct 2026 02:06:06 GMT",
+    "collected": "2026-10-10",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Tether Freezes USDT Linked to Ledger User Thefts, MistTrack Says",
+    "link": "https://thedefiant.io/news/hacks/tether-freezes-usdt-linked-to-ledger-user-thefts-misttrack-says",
+    "date": "Fri, 09 Oct 2026 15:29:41 GMT",
+    "collected": "2026-10-10",
+    "used": false
   }
 ]
