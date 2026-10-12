@@ -1550,5 +1550,37 @@
     "date": "Fri, 09 Oct 2026 15:29:41 GMT",
     "collected": "2026-10-10",
     "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Ledger Finds Unauthorized Hardware Implant in CryptoBilis-Sold Wallet Amid Fund Theft Reports",
+    "link": "https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html",
+    "date": "Mon, 12 Oct 2026 16:51:48 +0530",
+    "collected": "2026-10-12",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Bitquery Says $10 Million Frozen in CryptoBilis-Linked Wallet Drains",
+    "link": "https://thedefiant.io/news/hacks/bitquery-says-10-million-frozen-in-cryptobilis-linked-wallet-drains",
+    "date": "Mon, 12 Oct 2026 12:25:19 GMT",
+    "collected": "2026-10-12",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "CZ Alleges Hackers Bought CryptoBilis as Ledger Probes Wallet Drains",
+    "link": "https://thedefiant.io/news/security/cz-alleges-hackers-bought-cryptobilis-as-ledger-probes-wallet-drains",
+    "date": "Mon, 12 Oct 2026 07:44:31 GMT",
+    "collected": "2026-10-12",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Ledger Says All Confirmed Draining Cases Involve CryptoBilis-Sold Devices",
+    "link": "https://thedefiant.io/news/hacks/ledger-says-all-confirmed-draining-cases-involve-cryptobilis-sold-devices",
+    "date": "Sun, 11 Oct 2026 17:18:19 GMT",
+    "collected": "2026-10-12",
+    "used": false
   }
 ]
