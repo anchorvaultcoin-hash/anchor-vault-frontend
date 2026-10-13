@@ -1,21 +1,5 @@
 [
   {
-    "source": "The Defiant",
-    "title": "Crypto Hacks Hit Record 212 Incidents in H1 2026: Blockaid",
-    "link": "https://thedefiant.io/news/hacks/crypto-hacks-hit-record-212-incidents-in-h1-2026-blockaid",
-    "date": "Wed, 29 Jul 2026 15:03:20 GMT",
-    "collected": "2026-07-30",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Chinese newspaper warns of Bitcoin extortion scam using its name",
-    "link": "https://cointelegraph.com/news/chinese-newspaper-bitcoin-extortion-scam-name?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Thu, 30 Jul 2026 12:36:06 +0000",
-    "collected": "2026-07-30",
-    "used": false
-  },
-  {
     "source": "The Hacker News",
     "title": "DPRK-Linked macOS Malvertising Uses Fake Updates to Deliver Crypto-Stealing Malware",
     "link": "https://thehackernews.com/2026/07/dprk-linked-macos-malvertising-uses.html",
@@ -1581,6 +1565,38 @@
     "link": "https://thedefiant.io/news/hacks/ledger-says-all-confirmed-draining-cases-involve-cryptobilis-sold-devices",
     "date": "Sun, 11 Oct 2026 17:18:19 GMT",
     "collected": "2026-10-12",
+    "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Ledger confirms spy chip implant behind wallet crypto thefts",
+    "link": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
+    "date": "Mon, 12 Oct 2026 12:27:23 -0400",
+    "collected": "2026-10-13",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Chinese fraud victims lose key court battle over 61,000 Bitcoin",
+    "link": "https://cointelegraph.com/news/uk-court-chinese-law-61k-bitcoin-fraud-victims?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Tue, 13 Oct 2026 09:07:06 +0000",
+    "collected": "2026-10-13",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Ledger Finds LTE Implant That Stole Recovery Phrases in Suspected $86M Drain",
+    "link": "https://decrypt.co/380826/ledger-finds-lte-implant-that-stole-recovery-phrases-in-suspected-86m-drain",
+    "date": "Tue, 13 Oct 2026 11:53:15 +0000",
+    "collected": "2026-10-13",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Ledger Says All Confirmed Cases in Suspected $87M Drain Tied to Reseller CryptoBilis",
+    "link": "https://decrypt.co/380706/ledger-says-all-confirmed-cases-in-suspected-87m-drain-tied-to-reseller-cryptobilis",
+    "date": "Mon, 12 Oct 2026 16:32:17 +0000",
+    "collected": "2026-10-13",
     "used": false
   }
 ]
