@@ -1,38 +1,6 @@
 [
   {
     "source": "CoinDesk",
-    "title": "Major bitcoin wallet flaw drains 594 BTC in 25-minute sweep",
-    "link": "https://www.coindesk.com/tech/2026/07/31/major-bitcoin-wallet-flaw-drains-594-btc-in-25-minute-sweep",
-    "date": "Fri, 31 Jul 2026 05:12:55 +0000",
-    "collected": "2026-07-31",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Coldcard issues Mk3 warning as experts examine $38M Bitcoin wallet drain",
-    "link": "https://cointelegraph.com/news/coldcard-mk3-warning-594-btc-sweep?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Fri, 31 Jul 2026 06:23:25 +0000",
-    "collected": "2026-07-31",
-    "used": false
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Online ad firm Adform’s script compromised to steal cryptocurrency",
-    "link": "https://www.bleepingcomputer.com/news/security/online-ad-firm-adforms-script-compromised-to-steal-cryptocurrency/",
-    "date": "Fri, 31 Jul 2026 17:09:25 -0400",
-    "collected": "2026-08-01",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "How bitcoin cold wallets lost $70 million in an attack that never touched the devices",
-    "link": "https://www.coindesk.com/tech/2026/08/01/how-bitcoin-cold-wallets-lost-usd70-million-in-an-attack-that-never-touched-the-devices",
-    "date": "Sat, 01 Aug 2026 05:55:46 +0000",
-    "collected": "2026-08-01",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
     "title": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs",
     "link": "https://www.coindesk.com/business/2026/07/31/coldcard-s-usd38-million-so-far-exploit-shakes-faith-in-self-custody-may-push-investors-to-etfs",
     "date": "Fri, 31 Jul 2026 17:07:30 +0000",
@@ -1597,6 +1565,38 @@
     "link": "https://www.coindesk.com/policy/2026/10/13/why-self-custody-and-hardware-wallets-cannot-prevent-physical-crypto-extortion",
     "date": "Tue, 13 Oct 2026 15:24:52 +0000",
     "collected": "2026-10-14",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Bitget, Liquid exploits push Q3 crypto hacks toward $1.2B",
+    "link": "https://cointelegraph.com/news/bitget-liquid-exploits-push-crypto-hacks-near-12b-q3?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 15 Oct 2026 09:39:39 +0000",
+    "collected": "2026-10-15",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "US authorities dismantle crypto scam network that stole tens of millions",
+    "link": "https://cointelegraph.com/news/fbi-brooklyn-crypto-scam-112-servers-241-websites?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 15 Oct 2026 03:11:25 +0000",
+    "collected": "2026-10-15",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Brooklyn Prosecutors Take Down 112 Servers Behind Crypto Scam Targeting Russian Speakers",
+    "link": "https://decrypt.co/381000/brooklyn-prosecutors-take-down-112-servers-behind-crypto-scam-targeting-russian-speakers",
+    "date": "Thu, 15 Oct 2026 10:01:21 +0000",
+    "collected": "2026-10-15",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Ledger Asks Resellers in Seven Asian Markets to Pull Devices After Suspected $86M Drain",
+    "link": "https://decrypt.co/380940/ledger-asks-resellers-in-seven-asian-markets-to-pull-devices-after-suspected-86m-drain",
+    "date": "Wed, 14 Oct 2026 13:47:44 +0000",
+    "collected": "2026-10-15",
     "used": false
   }
 ]
