@@ -1,37 +1,5 @@
 [
   {
-    "source": "CoinDesk",
-    "title": "Coldcard's $38 million (so far) exploit shakes faith in self-custody, may push investors to ETFs",
-    "link": "https://www.coindesk.com/business/2026/07/31/coldcard-s-usd38-million-so-far-exploit-shakes-faith-in-self-custody-may-push-investors-to-etfs",
-    "date": "Fri, 31 Jul 2026 17:07:30 +0000",
-    "collected": "2026-08-01",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Crypto Kiosk Scams Cost Texans $57M as Lawmakers Weigh a Ban",
-    "link": "https://decrypt.co/374778/crypto-kiosk-scams-cost-texans-57m-as-lawmakers-weigh-a-ban",
-    "date": "Fri, 31 Jul 2026 11:13:58 +0000",
-    "collected": "2026-08-01",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "$38M in Bitcoin Drained by Coldcard Key Flaw Its Maker Thinks AI Found",
-    "link": "https://decrypt.co/374766/38m-in-bitcoin-drained-by-coldcard-key-flaw-its-maker-thinks-ai-found",
-    "date": "Fri, 31 Jul 2026 09:02:01 +0000",
-    "collected": "2026-08-01",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "Coldcard Hardware Wallet Flaw Linked to $70 Million Bitcoin Theft in 41 Minutes",
-    "link": "https://thehackernews.com/2026/08/coldcard-hardware-wallet-flaw-linked-to.html",
-    "date": "Sat, 01 Aug 2026 22:47:22 +0530",
-    "collected": "2026-08-02",
-    "used": false
-  },
-  {
     "source": "The Hacker News",
     "title": "Hackers Poison Adform Script to Swap Crypto Wallet Addresses Across Customer Sites",
     "link": "https://thehackernews.com/2026/08/hackers-poison-adform-script-to-swap.html",
@@ -1597,6 +1565,38 @@
     "link": "https://decrypt.co/380940/ledger-asks-resellers-in-seven-asian-markets-to-pull-devices-after-suspected-86m-drain",
     "date": "Wed, 14 Oct 2026 13:47:44 +0000",
     "collected": "2026-10-15",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "ThreatsDay: Adobe RCE, DNS Wallet Theft, NVIDIA Container Escape, Self-Healing Backdoor + 23 More",
+    "link": "https://thehackernews.com/2026/10/threatsday-adobe-rce-dns-wallet-theft.html",
+    "date": "Fri, 16 Oct 2026 00:19:33 +0530",
+    "collected": "2026-10-16",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "How Brooklyn prosecutors and the FBI took down a massive crypto fraud network targeting Russian speakers",
+    "link": "https://www.coindesk.com/business/2026/10/15/how-brooklyn-prosecutors-and-the-fbi-took-down-a-massive-crypto-fraud-network-targeting-russian-speakers",
+    "date": "Thu, 15 Oct 2026 12:35:24 +0000",
+    "collected": "2026-10-16",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Scammer loses $4.8M stored on tampered Ledgers: Asia Express",
+    "link": "https://cointelegraph.com/magazine/scammer-loses-48m-stored-on-tampered-ledgers-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 16 Oct 2026 00:16:25 +0000",
+    "collected": "2026-10-16",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Ledger Was Hacked — Who Do You Trust With Your Keys Now?",
+    "link": "https://thedefiant.io/podcasts-and-videos/podcast/ledger-was-hacked-who-do-you-trust-with-your-keys-now",
+    "date": "Thu, 15 Oct 2026 18:14:31 GMT",
+    "collected": "2026-10-16",
     "used": false
   }
 ]
