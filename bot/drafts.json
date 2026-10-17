@@ -1,21 +1,5 @@
 [
   {
-    "source": "The Hacker News",
-    "title": "Hackers Poison Adform Script to Swap Crypto Wallet Addresses Across Customer Sites",
-    "link": "https://thehackernews.com/2026/08/hackers-poison-adform-script-to-swap.html",
-    "date": "Sat, 01 Aug 2026 14:33:07 +0530",
-    "collected": "2026-08-02",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Solana Foundation's new CISO warns AI is making crypto scams more convincing",
-    "link": "https://www.coindesk.com/tech/2026/07/31/solana-foundation-s-new-ciso-warns-ai-is-making-crypto-scams-more-convincing",
-    "date": "Sat, 01 Aug 2026 13:00:00 +0000",
-    "collected": "2026-08-02",
-    "used": false
-  },
-  {
     "source": "CoinDesk",
     "title": "Binance founder CZ calls for wallet diversification after $70 million Coldcard exploit",
     "link": "https://www.coindesk.com/markets/2026/08/01/binance-founder-cz-says-diversify-your-wallets-following-usd70-million-coldcard-exploit",
@@ -1597,6 +1581,22 @@
     "link": "https://thedefiant.io/podcasts-and-videos/podcast/ledger-was-hacked-who-do-you-trust-with-your-keys-now",
     "date": "Thu, 15 Oct 2026 18:14:31 GMT",
     "collected": "2026-10-16",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Scammer gets scammed in Ledger spy-chip exploit, loses almost $5 million in bitcoin",
+    "link": "https://www.coindesk.com/business/2026/10/16/scammer-gets-scammed-in-ledger-spy-chip-exploit-loses-almost-usd5-million-in-bitcoin",
+    "date": "Fri, 16 Oct 2026 10:24:30 +0000",
+    "collected": "2026-10-17",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Scammer Lost $4.8M in Bitcoin to Tampered Ledger Wallets: Chainalysis",
+    "link": "https://decrypt.co/381141/scammer-lost-4-8m-in-bitcoin-to-tampered-ledger-wallets-chainalysis",
+    "date": "Fri, 16 Oct 2026 12:22:18 +0000",
+    "collected": "2026-10-17",
     "used": false
   }
 ]
