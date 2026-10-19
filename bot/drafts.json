@@ -1,30 +1,6 @@
 [
   {
     "source": "CoinDesk",
-    "title": "Binance founder CZ calls for wallet diversification after $70 million Coldcard exploit",
-    "link": "https://www.coindesk.com/markets/2026/08/01/binance-founder-cz-says-diversify-your-wallets-following-usd70-million-coldcard-exploit",
-    "date": "Sat, 01 Aug 2026 09:01:08 +0000",
-    "collected": "2026-08-02",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "CZ Warns Bitcoin Holders After $70 Million Wallet Exploit: 'Nothing Is 100%'",
-    "link": "https://decrypt.co/374810/cz-warns-bitcoin-holders-70-million-coldcard-wallet-exploit",
-    "date": "Sat, 01 Aug 2026 16:01:17 +0000",
-    "collected": "2026-08-02",
-    "used": false
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "COLDCARD wallet RNG flaw likely linked to $88 million Bitcoin theft",
-    "link": "https://www.bleepingcomputer.com/news/security/coldcard-wallet-rng-flaw-likely-linked-to-88-million-bitcoin-theft/",
-    "date": "Sun, 02 Aug 2026 17:14:29 -0400",
-    "collected": "2026-08-03",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
     "title": "Unlike the FTX collapse, the $89 million Coldcard exploit has investors sending bitcoin back to exchanges",
     "link": "https://www.coindesk.com/markets/2026/08/02/unlike-the-ftx-collapse-the-usd88-million-coldcard-exploit-has-investors-sending-bitcoin-back-to-exchanges",
     "date": "Sun, 02 Aug 2026 12:03:51 +0000",
@@ -1597,6 +1573,30 @@
     "link": "https://decrypt.co/381141/scammer-lost-4-8m-in-bitcoin-to-tampered-ledger-wallets-chainalysis",
     "date": "Fri, 16 Oct 2026 12:22:18 +0000",
     "collected": "2026-10-17",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Qubic freezes chain after attacker drains 1.4K wallets with weak seeds",
+    "link": "https://cointelegraph.com/news/qubic-freezes-chain-after-attacker-drains-14k-wallets-with-weak-seeds?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 19 Oct 2026 05:23:35 +0000",
+    "collected": "2026-10-19",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "UK Trio Jailed Over Home Invasion in Failed Crypto Theft Attempt",
+    "link": "https://decrypt.co/381281/uk-trio-jailed-over-home-invasion-in-failed-crypto-theft-attempt",
+    "date": "Mon, 19 Oct 2026 10:31:09 +0000",
+    "collected": "2026-10-19",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Qubic Halts Network After $1.3 Million Wallet Drain",
+    "link": "https://thedefiant.io/news/hacks/qubic-halts-network-after-1-3-million-wallet-drain",
+    "date": "Sun, 18 Oct 2026 15:09:55 GMT",
+    "collected": "2026-10-19",
     "used": false
   }
 ]
