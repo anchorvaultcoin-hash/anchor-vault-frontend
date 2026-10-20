@@ -1,37 +1,5 @@
 [
   {
-    "source": "CoinDesk",
-    "title": "Unlike the FTX collapse, the $89 million Coldcard exploit has investors sending bitcoin back to exchanges",
-    "link": "https://www.coindesk.com/markets/2026/08/02/unlike-the-ftx-collapse-the-usd88-million-coldcard-exploit-has-investors-sending-bitcoin-back-to-exchanges",
-    "date": "Sun, 02 Aug 2026 12:03:51 +0000",
-    "collected": "2026-08-03",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Coldcard exploit sparks Bitcoin flight, ‘bullish’ crypto consolidation: Hodler’s Digest, August 2",
-    "link": "https://cointelegraph.com/magazine/coldcard-exploit-sparks-bitcoin-flight-clarity-act-no-vote-or-no-vote-hodlers-digest-august-2?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Sun, 02 Aug 2026 23:56:19 +0000",
-    "collected": "2026-08-03",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Coldcard hack sparks biggest sub-1 BTC move since FTX: CryptoQuant",
-    "link": "https://cointelegraph.com/news/coldcard-biggest-sub-1-btc-transfer-ftx-cryptoquant?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Mon, 03 Aug 2026 07:40:00 +0000",
-    "collected": "2026-08-03",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Coldcard Bitcoin Exploit Balloons to $88 Million as Attackers Keep Draining Wallets",
-    "link": "https://decrypt.co/374817/coldcard-bitcoin-exploit-88-million-attackers-draining-wallets",
-    "date": "Sun, 02 Aug 2026 17:18:51 +0000",
-    "collected": "2026-08-03",
-    "used": false
-  },
-  {
     "source": "The Hacker News",
     "title": "⚡ Weekly Recap: Rogue AI Models, $88M Bitcoin Theft, Water-System Attacks and Dangling DNS Hijacks",
     "link": "https://thehackernews.com/2026/08/weekly-recap-rogue-ai-models-88m.html",
@@ -1597,6 +1565,38 @@
     "link": "https://thedefiant.io/news/hacks/qubic-halts-network-after-1-3-million-wallet-drain",
     "date": "Sun, 18 Oct 2026 15:09:55 GMT",
     "collected": "2026-10-19",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Exploit Plex2Shell Flaws to Install Crypto Miners and Linux Proxy Backdoor",
+    "link": "https://thehackernews.com/2026/10/hackers-exploit-plex2shell-flaws-to.html",
+    "date": "Mon, 19 Oct 2026 23:02:13 +0530",
+    "collected": "2026-10-20",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "⚡ Weekly Recap: 98 Zero-Days, Rogue AI Agents, $100M Crypto Theft, 700 Supermarkets Hit and More",
+    "link": "https://thehackernews.com/2026/10/weekly-recap-98-zero-days-rogue-ai.html",
+    "date": "Mon, 19 Oct 2026 19:44:07 +0530",
+    "collected": "2026-10-20",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Bitget plans Thai crypto exchange acquisition weeks after $388M hack",
+    "link": "https://cointelegraph.com/news/bitget-plans-thai-crypto-exchange-acquisition-weeks-after-388m-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 19 Oct 2026 22:53:47 +0000",
+    "collected": "2026-10-20",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Mastercard Brings Its Fraud-Fighting Tools to Stablecoin Payments",
+    "link": "https://decrypt.co/381365/mastercard-brings-its-fraud-fighting-tools-to-stablecoin-payments",
+    "date": "Mon, 19 Oct 2026 19:16:04 +0000",
+    "collected": "2026-10-20",
     "used": false
   }
 ]
