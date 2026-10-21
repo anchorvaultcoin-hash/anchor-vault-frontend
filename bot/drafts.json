@@ -1,21 +1,5 @@
 [
   {
-    "source": "The Hacker News",
-    "title": "⚡ Weekly Recap: Rogue AI Models, $88M Bitcoin Theft, Water-System Attacks and Dangling DNS Hijacks",
-    "link": "https://thehackernews.com/2026/08/weekly-recap-rogue-ai-models-88m.html",
-    "date": "Mon, 03 Aug 2026 19:33:11 +0530",
-    "collected": "2026-08-04",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "U.S. FBI intelligence agent arrested in connection with theft of $1 million in crypto",
-    "link": "https://www.coindesk.com/policy/2026/08/03/u-s-fbi-intelligence-agent-arrested-in-connection-with-theft-of-usd1-million-in-crypto",
-    "date": "Mon, 03 Aug 2026 22:17:59 +0000",
-    "collected": "2026-08-04",
-    "used": false
-  },
-  {
     "source": "Cointelegraph",
     "title": "Coldcard Bitcoin theft tops $100M across 3 confirmed attack waves: Galaxy",
     "link": "https://cointelegraph.com/news/coldcard-bitcoin-theft-100-million-three-waves?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -1597,6 +1581,22 @@
     "link": "https://decrypt.co/381365/mastercard-brings-its-fraud-fighting-tools-to-stablecoin-payments",
     "date": "Mon, 19 Oct 2026 19:16:04 +0000",
     "collected": "2026-10-20",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Qubic restarts blockchain, opens recovery claims after $1.4M hack",
+    "link": "https://cointelegraph.com/news/qubic-restarts-blockchain-opens-recovery-claims-after-14m-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Wed, 21 Oct 2026 10:18:14 +0000",
+    "collected": "2026-10-21",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Wallet Linked to Drift Exploit Sends $61 Million in Ethereum to Tornado Cash",
+    "link": "https://decrypt.co/381450/wallet-drift-exploit-sends-61-million-ethereum-tornado-cash",
+    "date": "Tue, 20 Oct 2026 20:46:04 +0000",
+    "collected": "2026-10-21",
     "used": false
   }
 ]
