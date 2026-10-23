@@ -1,22 +1,6 @@
 [
   {
     "source": "Decrypt",
-    "title": "Former FBI Agent Charged With Stealing Nearly $1 Million in Crypto and Using ChatGPT for Investment Advice",
-    "link": "https://decrypt.co/374871/former-fbi-agent-charged-stealing-crypto-using-chatgpt-advice",
-    "date": "Mon, 03 Aug 2026 21:17:06 +0000",
-    "collected": "2026-08-04",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "What Is an Air-Gapped Bitcoin Wallet? Why the Coldcard Exploit Changes the Conversation About Offline Security",
-    "link": "https://decrypt.co/374868/what-is-air-gapped-bitcoin-wallet-coldcard-exploit-security",
-    "date": "Mon, 03 Aug 2026 20:39:33 +0000",
-    "collected": "2026-08-04",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
     "title": "Morning Minute: The Coldcard Bitcoin Hack Nears $114 Million in Potential Losses",
     "link": "https://decrypt.co/374830/morning-minute-the-coldcard-bitcoin-hack-nears-114-million-in-potential-losses",
     "date": "Mon, 03 Aug 2026 13:11:19 +0000",
@@ -1597,6 +1581,22 @@
     "link": "https://thedefiant.io/news/hacks/coindcx-co-founder-denies-new-hack-after-16-million-wallet-alert",
     "date": "Thu, 22 Oct 2026 08:18:24 GMT",
     "collected": "2026-10-22",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Critical x402 SDK Flaw Could Let Malicious APIs Drain AI Agents’ Token Balances",
+    "link": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
+    "date": "Fri, 23 Oct 2026 14:05:45 +0530",
+    "collected": "2026-10-23",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "UAE-Led Scam Crackdown Identifies Over $39 Billion in Funds and Crypto",
+    "link": "https://thedefiant.io/news/security/uae-led-scam-crackdown-identifies-over-39-billion-in-funds-and-crypto",
+    "date": "Fri, 23 Oct 2026 02:03:09 GMT",
+    "collected": "2026-10-23",
     "used": false
   }
 ]
