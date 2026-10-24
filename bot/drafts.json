@@ -1,21 +1,5 @@
 [
   {
-    "source": "Decrypt",
-    "title": "Morning Minute: The Coldcard Bitcoin Hack Nears $114 Million in Potential Losses",
-    "link": "https://decrypt.co/374830/morning-minute-the-coldcard-bitcoin-hack-nears-114-million-in-potential-losses",
-    "date": "Mon, 03 Aug 2026 13:11:19 +0000",
-    "collected": "2026-08-04",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "Greatness PhaaS Adds Device Code Phishing to Bypass MFA and Steal Tokens",
-    "link": "https://thehackernews.com/2026/08/greatness-phaas-adds-device-code.html",
-    "date": "Tue, 04 Aug 2026 22:57:39 +0530",
-    "collected": "2026-08-05",
-    "used": false
-  },
-  {
     "source": "CoinDesk",
     "title": "\"You stole, please return some.\" Coldcard hacker's wallet becomes a graffiti wall of pleas and hustles",
     "link": "https://www.coindesk.com/markets/2026/08/05/you-stole-please-return-some-coldcard-hacker-s-wallet-becomes-a-graffiti-wall-of-pleas-and-hustles",
@@ -1597,6 +1581,22 @@
     "link": "https://thedefiant.io/news/security/uae-led-scam-crackdown-identifies-over-39-billion-in-funds-and-crypto",
     "date": "Fri, 23 Oct 2026 02:03:09 GMT",
     "collected": "2026-10-23",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Initia halts blockchain after exploit reportedly drains over $2.6M",
+    "link": "https://cointelegraph.com/news/initia-halts-blockchain-exploit-drained?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 23 Oct 2026 18:43:17 +0000",
+    "collected": "2026-10-24",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Crypto Scammers Who Used Prayer Groups to Lure Victims Must Pay $1.3 Billion, Says New York",
+    "link": "https://decrypt.co/381708/crypto-scammers-prayer-groups-lure-victims-must-pay-1-3-billion-new-york",
+    "date": "Fri, 23 Oct 2026 16:31:03 +0000",
+    "collected": "2026-10-24",
     "used": false
   }
 ]
