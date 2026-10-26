@@ -1,29 +1,5 @@
 [
   {
-    "source": "CoinDesk",
-    "title": "Coldcard exploit could boost demand for regulated bitcoin exposure, analysts say",
-    "link": "https://www.coindesk.com/tech/2026/08/05/coldcard-exploit-could-boost-demand-for-regulated-bitcoin-exposure-analysts-say",
-    "date": "Wed, 05 Aug 2026 15:44:08 +0000",
-    "collected": "2026-08-06",
-    "used": false
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "ClickFix attack pushes macOS infostealer for crypto theft attacks",
-    "link": "https://www.bleepingcomputer.com/news/security/clickfix-attack-pushes-macos-infostealer-for-crypto-theft-attacks/",
-    "date": "Thu, 06 Aug 2026 18:37:17 -0400",
-    "collected": "2026-08-07",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "CryptoJS Weak RNG Behind $5.7 Million in Drains Affects Five Crypto Wallet Apps",
-    "link": "https://thehackernews.com/2026/08/cryptojs-weak-rng-behind-57-million-in.html",
-    "date": "Thu, 06 Aug 2026 17:19:48 +0530",
-    "collected": "2026-08-07",
-    "used": false
-  },
-  {
     "source": "Cointelegraph",
     "title": "Japan FSA asks crypto exchanges to impose withdrawal delays to fight scams",
     "link": "https://cointelegraph.com/news/japan-fsa-crypto-exchanges-withdrawal-delays-scams?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -1597,6 +1573,30 @@
     "link": "https://thedefiant.io/news/hacks/x100-exploit-nets-4-85-million-usdt-after-governance-takeover",
     "date": "Sat, 24 Oct 2026 14:58:09 GMT",
     "collected": "2026-10-25",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs",
+    "link": "https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html",
+    "date": "Mon, 26 Oct 2026 13:19:46 +0530",
+    "collected": "2026-10-26",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Bitcoin wallet bug let rogue servers steal funds when users tried to speed up payments",
+    "link": "https://www.coindesk.com/tech/2026/10/26/bitcoin-wallet-bug-let-rogue-servers-steal-funds-when-users-tried-to-speed-up-payments",
+    "date": "Mon, 26 Oct 2026 05:15:20 +0000",
+    "collected": "2026-10-26",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "AI agents help rescue ETH’s Glamsterdam fork, ‘Steal My Bitcoin’ site: Hodler’s Digest",
+    "link": "https://cointelegraph.com/magazine/ai-agents-help-rescue-eths-glamsterdam-fork-steal-my-bitcoin-site-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 26 Oct 2026 03:15:31 +0000",
+    "collected": "2026-10-26",
     "used": false
   }
 ]
