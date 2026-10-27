@@ -1,29 +1,5 @@
 [
   {
-    "source": "Cointelegraph",
-    "title": "Japan FSA asks crypto exchanges to impose withdrawal delays to fight scams",
-    "link": "https://cointelegraph.com/news/japan-fsa-crypto-exchanges-withdrawal-delays-scams?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Fri, 07 Aug 2026 05:25:52 +0000",
-    "collected": "2026-08-07",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Crypto Wrench Attacks on Pace for Record Year as $30M Stolen in 2026: Chainalysis",
-    "link": "https://decrypt.co/375014/crypto-wrench-attacks-30m-stolen-2026-chainalysis",
-    "date": "Thu, 06 Aug 2026 12:01:04 +0000",
-    "collected": "2026-08-07",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "ClickFix Attacks Deliver macOS Stealer That Can Drain Crypto Wallets",
-    "link": "https://thehackernews.com/2026/08/clickfix-attacks-deliver-macos-stealer.html",
-    "date": "Fri, 07 Aug 2026 23:59:08 +0530",
-    "collected": "2026-08-08",
-    "used": false
-  },
-  {
     "source": "The Hacker News",
     "title": "New CSS Attacks Can Break Webmail Defenses to Steal Passwords and Tokens",
     "link": "https://thehackernews.com/2026/08/new-css-attacks-can-break-webmail.html",
@@ -1597,6 +1573,30 @@
     "link": "https://cointelegraph.com/magazine/ai-agents-help-rescue-eths-glamsterdam-fork-steal-my-bitcoin-site-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "date": "Mon, 26 Oct 2026 03:15:31 +0000",
     "collected": "2026-10-26",
+    "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Chinese man extradited for role in $36 million cryptocurrency scam",
+    "link": "https://www.bleepingcomputer.com/news/security/chinese-man-extradited-for-role-in-36-million-cryptocurrency-scam/",
+    "date": "Mon, 26 Oct 2026 09:56:44 -0400",
+    "collected": "2026-10-27",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Keystone breach deepens: Hackers stole key used to verify wallets as genuine",
+    "link": "https://cointelegraph.com/news/keystone-breach-deepens-hackers-stole-key-used-to-verify-wallets-as-genuine?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Tue, 27 Oct 2026 02:48:47 +0000",
+    "collected": "2026-10-27",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Bitcoin Wallet Fixes Critical Flaw That Redirected Funds to Attackers",
+    "link": "https://decrypt.co/381844/bitcoin-wallet-flaw-trick-users-paying-attackers",
+    "date": "Mon, 26 Oct 2026 17:41:21 +0000",
+    "collected": "2026-10-27",
     "used": false
   }
 ]
