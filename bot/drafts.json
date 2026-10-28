@@ -1,38 +1,6 @@
 [
   {
     "source": "The Hacker News",
-    "title": "New CSS Attacks Can Break Webmail Defenses to Steal Passwords and Tokens",
-    "link": "https://thehackernews.com/2026/08/new-css-attacks-can-break-webmail.html",
-    "date": "Sat, 08 Aug 2026 13:33:57 +0530",
-    "collected": "2026-08-09",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Another Bitcoin infrastructure exploit hits, this time draining Lightning payment servers",
-    "link": "https://www.coindesk.com/tech/2026/08/08/another-bitcoin-infrastructure-exploit-hits-this-time-draining-merchant-lightning-nodes",
-    "date": "Sat, 08 Aug 2026 07:46:04 +0000",
-    "collected": "2026-08-09",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Bitcoin Red Team Says AI Is Finding Critical Exploits Across Core Projects",
-    "link": "https://decrypt.co/375169/bitcoin-red-team-ai-finding-critical-vulnerabilities",
-    "date": "Sat, 08 Aug 2026 17:31:03 +0000",
-    "collected": "2026-08-09",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Brazil targets crypto fraud with up to 24-hour transfer hold",
-    "link": "https://cointelegraph.com/news/brazil-targets-crypto-fraud-with-up-to-24-hour-transfer-hold?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Mon, 10 Aug 2026 06:10:01 +0000",
-    "collected": "2026-08-10",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
     "title": "China-Linked Hackers Deploy New StormEncryptor Ransomware, Likely via N-central Flaw",
     "link": "https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html",
     "date": "Mon, 10 Aug 2026 22:08:37 +0530",
@@ -1597,6 +1565,38 @@
     "link": "https://decrypt.co/381844/bitcoin-wallet-flaw-trick-users-paying-attackers",
     "date": "Mon, 26 Oct 2026 17:41:21 +0000",
     "collected": "2026-10-27",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
+    "link": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
+    "date": "Tue, 27 Oct 2026 17:39:50 +0530",
+    "collected": "2026-10-28",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key",
+    "link": "https://thehackernews.com/2026/10/keystone-to-destroy-18835-hardware.html",
+    "date": "Tue, 27 Oct 2026 17:16:00 +0530",
+    "collected": "2026-10-28",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Bitcoin Wallet Maker Keystone Pulls Devices as Stolen Key Opens Door to Fakes",
+    "link": "https://decrypt.co/381983/bitcoin-wallet-keystone-devices-destroyed-stolen-key",
+    "date": "Tue, 27 Oct 2026 18:16:02 +0000",
+    "collected": "2026-10-28",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Tranche Vault on Avalanche Drained of 1.01 Million USDC",
+    "link": "https://thedefiant.io/news/hacks/tranche-vault-on-avalanche-drained-of-1-01-million-usdc",
+    "date": "Wed, 28 Oct 2026 01:11:39 GMT",
+    "collected": "2026-10-28",
     "used": false
   }
 ]
