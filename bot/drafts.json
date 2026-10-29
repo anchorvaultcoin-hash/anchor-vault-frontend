@@ -1,14 +1,6 @@
 [
   {
     "source": "The Hacker News",
-    "title": "China-Linked Hackers Deploy New StormEncryptor Ransomware, Likely via N-central Flaw",
-    "link": "https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html",
-    "date": "Mon, 10 Aug 2026 22:08:37 +0530",
-    "collected": "2026-08-11",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
     "title": "New Passkey Attacks Can Recover Synced Private Keys or Bypass Phishing-Resistant MFA",
     "link": "https://thehackernews.com/2026/08/new-passkey-attacks-can-recover-synced.html",
     "date": "Mon, 10 Aug 2026 17:55:04 +0530",
@@ -1597,6 +1589,14 @@
     "link": "https://thedefiant.io/news/hacks/tranche-vault-on-avalanche-drained-of-1-01-million-usdc",
     "date": "Wed, 28 Oct 2026 01:11:39 GMT",
     "collected": "2026-10-28",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Crypto PAC spending before midterms possibly obscured after reported FEC hack",
+    "link": "https://cointelegraph.com/news/crypto-pac-spending-midterms-fec-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Wed, 28 Oct 2026 17:11:01 +0000",
+    "collected": "2026-10-29",
     "used": false
   }
 ]
