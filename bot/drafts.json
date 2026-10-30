@@ -1,277 +1,5 @@
 [
   {
-    "source": "The Hacker News",
-    "title": "New Passkey Attacks Can Recover Synced Private Keys or Bypass Phishing-Resistant MFA",
-    "link": "https://thehackernews.com/2026/08/new-passkey-attacks-can-recover-synced.html",
-    "date": "Mon, 10 Aug 2026 17:55:04 +0530",
-    "collected": "2026-08-11",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "Solidity Pro VS Code Extensions Steal Crypto Wallets, API Keys, and Credentials",
-    "link": "https://thehackernews.com/2026/08/solidity-pro-vs-code-extensions-steal.html",
-    "date": "Mon, 10 Aug 2026 13:08:23 +0530",
-    "collected": "2026-08-11",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "BTCPay offers $190,000 bounty after bitcoin payment servers drained in exploit",
-    "link": "https://www.coindesk.com/markets/2026/08/11/btcpay-offers-usd190-000-bounty-after-bitcoin-payment-servers-drained-in-exploit",
-    "date": "Tue, 11 Aug 2026 06:19:07 +0000",
-    "collected": "2026-08-11",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Hackers Drain $8 Million From Crypto Exchange Across Two Blockchains",
-    "link": "https://decrypt.co/375213/hackers-drain-8-million-from-crypto-platform-coinsbuy",
-    "date": "Mon, 10 Aug 2026 15:56:30 +0000",
-    "collected": "2026-08-11",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "BTCPay Backers Offer Bitcoin Bounty After Wallet Exploit",
-    "link": "https://decrypt.co/375376/btcpay-bitcoin-bounty-critical-wallet-exploit",
-    "date": "Tue, 11 Aug 2026 21:16:03 +0000",
-    "collected": "2026-08-12",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "North Korea Now Leans on Crime Networks to Launder Stolen Crypto: RUSI",
-    "link": "https://decrypt.co/375305/north-korea-now-leans-on-crime-networks-to-launder-stolen-crypto-rusi",
-    "date": "Tue, 11 Aug 2026 12:02:42 +0000",
-    "collected": "2026-08-12",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Bitcoin firms ask AI labs for same tools attackers already have",
-    "link": "https://www.coindesk.com/tech/2026/08/13/bitcoin-firms-ask-ai-labs-for-same-tools-attackers-already-have",
-    "date": "Thu, 13 Aug 2026 05:21:21 +0000",
-    "collected": "2026-08-13",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Arizona crypto ATM law helps 35 scam victims recover $171K",
-    "link": "https://cointelegraph.com/news/arizona-crypto-atm-law-scam-refunds-171k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Thu, 13 Aug 2026 02:28:29 +0000",
-    "collected": "2026-08-13",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "After Coldcard Was Hacked, $15 Billion in Bitcoin Moved to Safety",
-    "link": "https://decrypt.co/375450/coldcard-hack-15-billion-bitcoin-moved-safety",
-    "date": "Wed, 12 Aug 2026 18:16:04 +0000",
-    "collected": "2026-08-13",
-    "used": false
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Hackers breach govt webmail while running parallel crypto fraud",
-    "link": "https://www.bleepingcomputer.com/news/security/hackers-breach-govt-webmail-while-running-parallel-crypto-fraud/",
-    "date": "Thu, 13 Aug 2026 14:15:19 -0400",
-    "collected": "2026-08-14",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Crypto platform operator gets 15-year prison sentence in South Korea due to $50 million scam",
-    "link": "https://www.coindesk.com/business/2026/08/13/crypto-platform-operator-gets-15-year-prison-sentence-in-south-korea-due-to-usd50-million-scam",
-    "date": "Thu, 13 Aug 2026 13:37:56 +0000",
-    "collected": "2026-08-14",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Delio CEO sentenced to 15 years in prison on crypto fraud in South Korea",
-    "link": "https://cointelegraph.com/news/delio-ceo-prison-crypto-fraud-south-korea?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Thu, 13 Aug 2026 19:22:28 +0000",
-    "collected": "2026-08-14",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Bitcoin Companies Want Help From AI Labs to Guard Against Hackers",
-    "link": "https://decrypt.co/375564/bitcoin-firms-want-ai-hacking-tools",
-    "date": "Thu, 13 Aug 2026 17:11:04 +0000",
-    "collected": "2026-08-14",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "France Tax Data Leak Could Fuel Scams, Attacks Targeting Bitcoin Holders",
-    "link": "https://decrypt.co/375715/france-tax-data-leak-wrench-attacks-bitcoin",
-    "date": "Fri, 14 Aug 2026 21:03:35 +0000",
-    "collected": "2026-08-15",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Coldcard Bitcoin Thefts Slow, But Losses Could Top $150 Million: Galaxy",
-    "link": "https://decrypt.co/375656/coldcard-bitcoin-thefts-slow-losses-top-150-million",
-    "date": "Fri, 14 Aug 2026 17:46:06 +0000",
-    "collected": "2026-08-15",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Fake LinkedIn Crypto Job Scams Have Cost $11.8M: Singapore",
-    "link": "https://decrypt.co/375653/fake-linkedin-crypto-job-scams-have-cost-11-8m-singapore",
-    "date": "Fri, 14 Aug 2026 14:55:29 +0000",
-    "collected": "2026-08-15",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "DefiLlama delayed mobile launch over phishing apps on Apple Store, founder says",
-    "link": "https://cointelegraph.com/news/defillama-delayed-app-launch-fake-phishing-apps-apple?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Mon, 17 Aug 2026 02:55:45 +0000",
-    "collected": "2026-08-17",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "The bitcoin price level where leveraged bulls could get whacked",
-    "link": "https://www.coindesk.com/markets/2026/08/18/the-bitcoin-price-level-where-leveraged-bulls-could-get-whacked",
-    "date": "Tue, 18 Aug 2026 05:55:43 +0000",
-    "collected": "2026-08-18",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Pirated Copies of 'The Odyssey' Are Hiding Crypto-Stealing Malware",
-    "link": "https://decrypt.co/375747/pirated-copies-odyssey-hiding-crypto-stealing-malware",
-    "date": "Mon, 17 Aug 2026 12:31:04 +0000",
-    "collected": "2026-08-18",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "16 Typosquatted RubyGems Packages Steal Browser Credentials and Crypto Wallets",
-    "link": "https://thehackernews.com/2026/08/16-typosquatted-rubygems-packages-steal.html",
-    "date": "Tue, 18 Aug 2026 16:50:00 +0530",
-    "collected": "2026-08-19",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Trader who made $49 million shorting crypto lost $24 million on ether in 12 seconds",
-    "link": "https://www.coindesk.com/markets/2026/08/20/trader-who-made-usd49-million-shorting-crypto-lost-usd24-million-on-ether-in-12-seconds",
-    "date": "Thu, 20 Aug 2026 05:40:54 +0000",
-    "collected": "2026-08-20",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Six-Bug Exploit Halts Maya Protocol After $1.4 Million in Bitcoin Stolen",
-    "link": "https://decrypt.co/375976/maya-protocol-halts-network-bitcoin-exploit",
-    "date": "Wed, 19 Aug 2026 18:20:35 +0000",
-    "collected": "2026-08-20",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "New Cryptographic Context Injection Attack Could Let Web Pages Steal Grok Chat Data",
-    "link": "https://thehackernews.com/2026/08/new-cryptographic-context-injection.html",
-    "date": "Thu, 20 Aug 2026 20:06:27 +0530",
-    "collected": "2026-08-21",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "40 Malicious Firefox Extensions Pose as Web3 Products to Steal Wallet Secrets",
-    "link": "https://thehackernews.com/2026/08/40-malicious-firefox-extensions-pose-as.html",
-    "date": "Thu, 20 Aug 2026 14:12:03 +0530",
-    "collected": "2026-08-21",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "MANTRA token plunges 18% to record low as blockchain halts after exploit",
-    "link": "https://www.coindesk.com/tech/2026/08/21/mantra-token-plunges-18-to-record-low-as-blockchain-halts-after-exploit",
-    "date": "Fri, 21 Aug 2026 05:52:27 +0000",
-    "collected": "2026-08-21",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Cybersecurity firm unveils crypto phishing campaign targeting 885,000 phone numbers",
-    "link": "https://cointelegraph.com/news/cybersecurity-unveils-crypto-phishing-885000-phone-numbers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Thu, 20 Aug 2026 13:03:38 +0000",
-    "collected": "2026-08-21",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Iranian Hackers Tied to $6 Million Bitcoin Extortion Charged in Massive Cyber Campaign",
-    "link": "https://decrypt.co/376117/iranian-hackers-bitcoin-extortion-charged",
-    "date": "Thu, 20 Aug 2026 17:12:43 +0000",
-    "collected": "2026-08-21",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Fake Crypto AML Checkers Are Trying to Drain Users' Wallets",
-    "link": "https://decrypt.co/376029/fake-crypto-aml-drain-users-wallets",
-    "date": "Thu, 20 Aug 2026 13:31:05 +0000",
-    "collected": "2026-08-21",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Coldcard ships firmware after $114 million bitcoin theft; says AI helped catch more bugs",
-    "link": "https://www.coindesk.com/tech/2026/08/21/coldcard-ships-firmware-after-usd114-million-bitcoin-theft-says-ai-helped-catch-more-bugs",
-    "date": "Fri, 21 Aug 2026 12:10:55 +0000",
-    "collected": "2026-08-22",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Coldcard Adds New Security Measures After $130 Million Bitcoin Exploit",
-    "link": "https://decrypt.co/376270/coldcard-new-security-after-bitcoin-exploit",
-    "date": "Fri, 21 Aug 2026 21:31:05 +0000",
-    "collected": "2026-08-22",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Web3 gaming network Sandbox stops Base and BNB chain bridging after exploit",
-    "link": "https://www.coindesk.com/web3/2026/08/22/web3-gaming-network-sandbox-stops-base-and-bnb-chain-bridging-after-exploit",
-    "date": "Sat, 22 Aug 2026 14:10:17 +0000",
-    "collected": "2026-08-23",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Ethereum lending app Term Finance loses $8.5 million after attacker buys voting power",
-    "link": "https://www.coindesk.com/markets/2026/08/24/ethereum-lending-app-term-finance-loses-usd8-5-million-after-attacker-buys-voting-power",
-    "date": "Mon, 24 Aug 2026 06:27:33 +0000",
-    "collected": "2026-08-24",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Chainalysis-run sting targets child exploitation networks with aid of Binance, Coinbase",
-    "link": "https://www.coindesk.com/policy/2026/08/24/chainalysis-run-sting-targets-child-exploitation-networks-with-aid-of-binance-coinbase",
-    "date": "Tue, 25 Aug 2026 13:00:00 +0000",
-    "collected": "2026-08-26",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Crypto Fund Founder Convicted of Fraud Over Fake Trading Bot",
-    "link": "https://decrypt.co/376441/crypto-fund-founder-convicted-of-fraud-over-fake-trading-bot",
-    "date": "Tue, 25 Aug 2026 14:56:10 +0000",
-    "collected": "2026-08-26",
-    "used": false
-  },
-  {
     "source": "Decrypt",
     "title": "Dozens of Fake Firefox Wallet Extensions Linked to Crypto-Stealing Malware",
     "link": "https://decrypt.co/376432/dozens-of-fake-firefox-wallet-extensions-linked-to-crypto-stealing-malware",
@@ -1597,6 +1325,278 @@
     "link": "https://cointelegraph.com/news/crypto-pac-spending-midterms-fec-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "date": "Wed, 28 Oct 2026 17:11:01 +0000",
     "collected": "2026-10-29",
+    "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Binance links $6.3 billion crypto theft to compromised DevOps laptop",
+    "link": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/",
+    "date": "Fri, 30 Oct 2026 05:18:13 -0400",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Binance probes potential $5.8 billion crypto-theft hack",
+    "link": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
+    "date": "Thu, 29 Oct 2026 18:45:23 -0400",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Polymarket halts trading after crypto-draining script breach, $2.5M traced",
+    "link": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
+    "date": "Thu, 29 Oct 2026 17:47:25 -0400",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Fake crypto app on Apple App Store linked to $23K wallet theft",
+    "link": "https://www.bleepingcomputer.com/news/security/fake-crypto-app-on-apple-app-store-linked-to-23k-wallet-theft/",
+    "date": "Thu, 29 Oct 2026 15:23:41 -0400",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
+    "link": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
+    "date": "Fri, 30 Oct 2026 00:41:58 +0530",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Here’s how an Ethereum upgrade helped drain part of Binance’s $6 billion loss",
+    "link": "https://www.coindesk.com/tech/2026/10/30/here-s-how-one-ethereum-permission-let-an-attacker-drain-usd2-5-billion-from-binance",
+    "date": "Fri, 30 Oct 2026 11:35:16 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Crypto liquidations jump to $1.57 billion as Binance hack sends bitcoin, ether lower",
+    "link": "https://www.coindesk.com/markets/2026/10/30/crypto-liquidations-jump-to-usd1-57-billion-as-binance-hack-sends-bitcoin-ether-lower",
+    "date": "Fri, 30 Oct 2026 11:09:24 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Live updates: Binance finds more breaches in $6.3 billion hack; AI spending fears hit tech",
+    "link": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech",
+    "date": "Fri, 30 Oct 2026 08:36:52 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Binance hacker dumps a little-known 2017 token and it crashes 90%",
+    "link": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-dumps-a-little-known-2017-token-and-it-crashes-90",
+    "date": "Fri, 30 Oct 2026 07:54:07 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Binance hack bites India's largest crypto exchange as it curbs futures trading",
+    "link": "https://www.coindesk.com/markets/2026/10/30/coindcx-halts-new-crypto-futures-bets-as-binance-incident-disrupts-liquidity",
+    "date": "Fri, 30 Oct 2026 05:43:07 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Binance hacker splits $1.4 billion of bitcoin into 19 wallets that no one can freeze",
+    "link": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-splits-usd1-4-billion-of-bitcoin-into-19-wallets-that-no-one-can-freeze",
+    "date": "Fri, 30 Oct 2026 04:50:42 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Standard Chartered sees more pain after $6 billion Binance hack sends bitcoin lower",
+    "link": "https://www.coindesk.com/markets/2026/10/30/usd6-billion-binance-hack-sends-bitcoin-ether-tumbling-standard-chartered-sees-more-losses-ahead",
+    "date": "Fri, 30 Oct 2026 04:00:43 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Institutional crypto investors rush to pull funds from exchanges after Binance hack",
+    "link": "https://www.coindesk.com/markets/2026/10/30/institutional-crypto-investors-rush-to-pull-funds-from-exchanges-after-binance-hack",
+    "date": "Fri, 30 Oct 2026 03:56:40 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Crypto's longtime foe, North Korea's Lazarus Group, likely behind Binance hack: blockchain sleuths",
+    "link": "https://www.coindesk.com/policy/2026/10/29/crypto-s-longtime-foe-north-korea-s-lazarus-group-likely-behind-binance-hack-blockchain-sleuths",
+    "date": "Fri, 30 Oct 2026 03:36:11 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Binance hack drained wallets backing customer assets, reserve data shows",
+    "link": "https://www.coindesk.com/business/2026/10/30/binance-hack-drained-wallets-backing-customer-assets-reserve-data-shows",
+    "date": "Fri, 30 Oct 2026 00:17:10 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Binance loses over $6 billion in 'biggest crypto hack in history'",
+    "link": "https://www.coindesk.com/business/2026/10/29/potential-multi-billion-binance-hack-hitting-crypto-markets",
+    "date": "Thu, 29 Oct 2026 21:12:45 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Bitcoin price metrics hint at rebound as $1.6B liquidations follow Binance hack",
+    "link": "https://cointelegraph.com/markets/bitcoin-price-metrics-hint-at-rebound-as-16b-liquidations-follow-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 30 Oct 2026 11:32:24 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "EIP-7702 didn’t cause Binance hack, but may have amplified losses",
+    "link": "https://cointelegraph.com/news/binance-hack-security-ethereum-eip-7702-role?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 30 Oct 2026 11:00:20 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Binance hacker’s Bitcoin haul tops Coinbase’s corporate treasury",
+    "link": "https://cointelegraph.com/news/binance-hacker-bitcoin-holdings-exceed-coinbase-btc-treasury?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 30 Oct 2026 10:56:04 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "THORChain’s RUNE jumps 13% after Binance’s record $6.3B hack",
+    "link": "https://cointelegraph.com/markets/rune-token-surges-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 30 Oct 2026 10:21:45 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Live updates: Binance says $6.34B set aside to cover hack losses",
+    "link": "https://cointelegraph.com/news/live-updates-binance-63b-hack-linked-to-north-koreas-tradertraitor?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 30 Oct 2026 11:40:14 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "North Korea’s TraderTraitor linked to $6.3B Binance hack",
+    "link": "https://cointelegraph.com/news/north-korea-linked-to-63b-binance-hack-by-crypto-investigators?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 30 Oct 2026 07:36:32 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Binance hack could accelerate shift to DEXs: Standard Chartered",
+    "link": "https://cointelegraph.com/news/binance-hack-could-accelerate-shift-to-dexs-standard-chartered?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 30 Oct 2026 09:12:35 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Binance points to engineer’s hacked laptop in $6.3B breach",
+    "link": "https://cointelegraph.com/news/binance-hack-may-involve-private-key-misuse-not-theft-blockaid-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 30 Oct 2026 04:52:16 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Binance hack rattles markets as BNB falls 8%, Bitcoin nears $77K",
+    "link": "https://cointelegraph.com/markets/binance-hack-rattles-crypto-markets-bnb-bitcoin-slide?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 30 Oct 2026 10:47:23 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Binance Finds 'Additional Points of Breach' in $6.3B Hack",
+    "link": "https://decrypt.co/382203/binance-finds-additional-points-of-breach-in-6-3b-hack",
+    "date": "Fri, 30 Oct 2026 09:31:59 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Binance Hacker Hunts for Exit Ramps as DeFi Exchanges Pause Markets",
+    "link": "https://decrypt.co/382194/binance-hack-exit-ramps-defi-exchange-ethereum",
+    "date": "Thu, 29 Oct 2026 22:57:48 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Binance Drained of $5.5 Billion in Suspected Hack, Tether and Circle Freeze $1.8 Billion",
+    "link": "https://decrypt.co/382191/binance-suspected-hack-5-billion-tether-circle-freeze-crypto",
+    "date": "Thu, 29 Oct 2026 21:36:24 +0000",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Binance Says It Has Reserved Over $6.34 Billion to Cover Hack Losses",
+    "link": "https://thedefiant.io/news/hacks/binance-says-it-has-reserved-over-6-34-billion-to-cover-hack-losses",
+    "date": "Fri, 30 Oct 2026 11:02:14 GMT",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Synthetix Recovers 8.4 Million SNX Stolen in Binance Hack",
+    "link": "https://thedefiant.io/news/hacks/synthetix-recovers-8-4-million-snx-stolen-in-binance-hack",
+    "date": "Fri, 30 Oct 2026 10:53:40 GMT",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Chainalysis Says Binance Hacker Swapped $325 Million to Evade Freezes",
+    "link": "https://thedefiant.io/news/hacks/chainalysis-says-binance-hacker-swapped-325-million-to-evade-freezes",
+    "date": "Fri, 30 Oct 2026 09:51:59 GMT",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "CZ Says Binance Hack Leaves $2 Billion Gap, Points to SpaceX Shares",
+    "link": "https://thedefiant.io/news/hacks/cz-says-binance-hack-leaves-2-billion-gap-points-to-spacex-shares",
+    "date": "Fri, 30 Oct 2026 09:44:00 GMT",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "USDT0 Freezes 6.19 Million Tokens Linked to Binance Exploit",
+    "link": "https://thedefiant.io/news/hacks/usdt0-freezes-6-19-million-tokens-linked-to-binance-exploit",
+    "date": "Fri, 30 Oct 2026 09:43:25 GMT",
+    "collected": "2026-10-30",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "FUN Plunges 95% in Uniswap Pool as Binance Exploiter Sells",
+    "link": "https://thedefiant.io/news/markets/fun-plunges-95-in-uniswap-pool-as-binance-exploiter-sells",
+    "date": "Fri, 30 Oct 2026 08:17:27 GMT",
+    "collected": "2026-10-30",
     "used": false
   }
 ]
