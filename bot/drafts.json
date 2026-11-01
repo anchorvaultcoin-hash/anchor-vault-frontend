@@ -1,125 +1,5 @@
 [
   {
-    "source": "BleepingComputer",
-    "title": "Over 5,400 hacked sites serve ClickFix payloads stored on the blockchain",
-    "link": "https://www.bleepingcomputer.com/news/security/over-5-400-hacked-sites-serve-clickfix-payloads-stored-on-the-blockchain/",
-    "date": "Sat, 05 Sep 2026 10:29:13 -0400",
-    "collected": "2026-09-06",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "British investor thought he lost $2,000 in bitcoin in 2012. He just recovered $4.5 million",
-    "link": "https://www.coindesk.com/business/2026/09/02/british-investor-thought-he-lost-usd2-000-in-bitcoin-in-2012-he-just-recovered-usd4-5-million",
-    "date": "Sat, 05 Sep 2026 12:00:00 +0000",
-    "collected": "2026-09-06",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "Four REVSTEALER-Linked Modules Disable Windows Update and Defender to Run a Crypto Miner",
-    "link": "https://thehackernews.com/2026/09/four-revstealer-linked-modules-disable.html",
-    "date": "Sun, 06 Sep 2026 14:04:20 +0530",
-    "collected": "2026-09-07",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "A two-key breach could hand control of $91 billion in USDT to hackers, report finds",
-    "link": "https://www.coindesk.com/tech/2026/09/04/tether-receives-bluechip-rating-upgrade-but-hacken-finds-major-key-security-gaps",
-    "date": "Mon, 07 Sep 2026 10:35:23 +0000",
-    "collected": "2026-09-07",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Coldcard hacker moves $7.7 million in BTC, 45% of bitcoin stolen in third attack wave",
-    "link": "https://www.coindesk.com/business/2026/09/07/coldcard-hacker-moves-45-of-bitcoin-stolen-in-third-attack-wave",
-    "date": "Mon, 07 Sep 2026 09:32:05 +0000",
-    "collected": "2026-09-07",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Bitcoin network used by exchanges hit by $320 million exploit. Hackers claim they're the 'good guys'",
-    "link": "https://www.coindesk.com/markets/2026/09/07/bitcoin-network-used-by-exchanges-hit-by-usd320-million-exploit-hackers-claim-they-re-the-good-guys",
-    "date": "Mon, 07 Sep 2026 03:43:12 +0000",
-    "collected": "2026-09-07",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Ukrainian police took down a crypto scam that stole up to $1 million a month",
-    "link": "https://www.coindesk.com/business/2026/09/06/ukrainian-police-took-down-a-crypto-scam-that-stole-up-to-usd1-million-a-month",
-    "date": "Sun, 06 Sep 2026 16:00:00 +0000",
-    "collected": "2026-09-07",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Coldcard third-wave attacker moves 45% of stolen Bitcoin",
-    "link": "https://cointelegraph.com/news/coldcard-third-wave-attacker-moves-bitcoin-stolen?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Mon, 07 Sep 2026 10:13:40 +0000",
-    "collected": "2026-09-07",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "'Purported White-Hat Hackers' Withdraw $320M in Bitcoin From Liquid",
-    "link": "https://decrypt.co/377528/purported-white-hat-hackers-withdraw-320m-in-bitcoin-from-liquid",
-    "date": "Mon, 07 Sep 2026 09:55:42 +0000",
-    "collected": "2026-09-07",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Liquid Network gets back 3,400 bitcoin from whitehat hackers; talks underway for the rest",
-    "link": "https://www.coindesk.com/markets/2026/09/08/white-hat-hackers-return-most-of-usd320m-bitcoin-taken-from-liquid-network",
-    "date": "Tue, 08 Sep 2026 04:41:17 +0000",
-    "collected": "2026-09-08",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Liquid Hackers Return $270M in Bitcoin After Swiping $320 Million",
-    "link": "https://decrypt.co/377600/liquid-hackers-return-270m-bitcoin",
-    "date": "Mon, 07 Sep 2026 19:13:56 +0000",
-    "collected": "2026-09-08",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Malone Lam Faces Plea Hearing Over $245M Bitcoin Theft",
-    "link": "https://decrypt.co/377595/malone-lam-faces-plea-hearing-over-245m-bitcoin-theft",
-    "date": "Mon, 07 Sep 2026 17:41:55 +0000",
-    "collected": "2026-09-08",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Coldcard Hacker Moves $7.7M, Nearly Half of Third-Wave Bitcoin Haul",
-    "link": "https://decrypt.co/377537/coldcard-hacker-moves-7-7m-nearly-half-of-third-wave-bitcoin-haul",
-    "date": "Mon, 07 Sep 2026 11:09:27 +0000",
-    "collected": "2026-09-08",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "Slim Spider Steals Crypto Custody Secrets From Brazilian Financial Institution",
-    "link": "https://thehackernews.com/2026/09/slim-spider-steals-crypto-custody.html",
-    "date": "Tue, 08 Sep 2026 21:50:23 +0530",
-    "collected": "2026-09-09",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "Liquid Hackers Return 3,400 Bitcoin Taken via Elements Bug, Still Holding $47M in BTC",
-    "link": "https://thehackernews.com/2026/09/liquid-hackers-return-3400-bitcoin.html",
-    "date": "Tue, 08 Sep 2026 20:24:30 +0530",
-    "collected": "2026-09-09",
-    "used": false
-  },
-  {
     "source": "CoinDesk",
     "title": "Singaporean 22-year old pleads guilty to being the ringleader in $245 million crypto fraud case",
     "link": "https://www.coindesk.com/business/2026/09/09/singaporean-22-year-old-pleads-guilty-to-being-the-ringleader-in-usd245-million-crypto-fraud-case",
@@ -1597,6 +1477,126 @@
     "link": "https://thedefiant.io/news/hacks/binance-s-teng-targets-sunday-withdrawal-restart-after-hack",
     "date": "Fri, 30 Oct 2026 14:38:19 GMT",
     "collected": "2026-10-31",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
+    "link": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
+    "date": "Sun, 01 Nov 2026 14:21:31 +0530",
+    "collected": "2026-11-01",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
+    "link": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
+    "date": "Sun, 01 Nov 2026 12:33:00 +0530",
+    "collected": "2026-11-01",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Binance opens crypto withdrawals in phases starting with bitcoin following $6.3 billion hack",
+    "link": "https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack",
+    "date": "Sun, 01 Nov 2026 10:35:42 +0000",
+    "collected": "2026-11-01",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "FBI confirms North Korea's role in $6 billion Binance hack, asks DeFi community to block BTC, ETH, SOL addresses",
+    "link": "https://www.coindesk.com/policy/2026/10/31/fbi-confirms-north-korea-s-role-in-usd6-billion-binance-hack-asks-defi-community-to-block-btc-eth-sol-addresses",
+    "date": "Sun, 01 Nov 2026 01:10:05 +0000",
+    "collected": "2026-11-01",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "A stolen iPhone, $14,000 in losses and London's crypto theft problem",
+    "link": "https://www.coindesk.com/business/2026/11/01/a-stolen-iphone-usd14-000-in-losses-and-london-s-crypto-theft-problem",
+    "date": "Sat, 31 Oct 2026 16:09:30 +0000",
+    "collected": "2026-11-01",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Binance says it has replaced 90% of stolen crypto after massive $6.3 billion breach",
+    "link": "https://www.coindesk.com/business/2026/10/31/binance-says-it-has-replaced-90-of-stolen-crypto-after-massive-usd6-3-billion-breach",
+    "date": "Sat, 31 Oct 2026 15:24:10 +0000",
+    "collected": "2026-11-01",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "A Nasdaq-listed company may sell $450 million bitcoin, citing Binance hack and quantum fears",
+    "link": "https://www.coindesk.com/markets/2026/10/31/a-nasdaq-listed-company-may-sell-usd450-million-bitcoin-citing-binance-hack-and-quantum-fears",
+    "date": "Sat, 31 Oct 2026 12:49:47 +0000",
+    "collected": "2026-11-01",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "The $6.3 billion Binance hack paradox: Centralization made the hack possible, but also saved $3 billion",
+    "link": "https://www.coindesk.com/business/2026/10/31/the-usd6-3-billion-binance-hack-paradox-centralization-made-the-hack-possible-but-also-saved-usd3-billion",
+    "date": "Sat, 31 Oct 2026 12:00:00 +0000",
+    "collected": "2026-11-01",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Binance says phase one of withdrawals opens after $6.3B hack",
+    "link": "https://cointelegraph.com/news/binance-says-phase-one-of-withdrawals-opens-after-63b-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Sun, 01 Nov 2026 09:41:08 +0000",
+    "collected": "2026-11-01",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "FBI blames North Korea for record $6.3B Binance hack",
+    "link": "https://cointelegraph.com/news/fbi-blames-north-korea-for-record-63b-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Sun, 01 Nov 2026 07:49:19 +0000",
+    "collected": "2026-11-01",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Binance says 90% of stolen assets replenished, targets Sunday withdrawals",
+    "link": "https://cointelegraph.com/news/binance-hack-90-percent-replenished?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Sat, 31 Oct 2026 16:27:13 +0000",
+    "collected": "2026-11-01",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Bitcoin held up better than expected after Binance hack, Strive CEO says",
+    "link": "https://cointelegraph.com/markets/bitcoin-binance-hack-strive-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Sat, 31 Oct 2026 15:32:44 +0000",
+    "collected": "2026-11-01",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Binance Hack: Everything You Need to Know About the Biggest Crypto Heist in History",
+    "link": "https://decrypt.co/382306/binance-hack-everything-you-need-to-know",
+    "date": "Sat, 31 Oct 2026 15:01:02 +0000",
+    "collected": "2026-11-01",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Binance Begins Reopening Withdrawals With Bitcoin After $6.3 Billion Hack",
+    "link": "https://thedefiant.io/news/hacks/binance-begins-reopening-withdrawals-with-bitcoin-after-6-3-billion-hack",
+    "date": "Sun, 01 Nov 2026 06:25:43 GMT",
+    "collected": "2026-11-01",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "FBI Attributes $6 Billion-Plus Binance Hack to North Korea",
+    "link": "https://thedefiant.io/news/hacks/fbi-attributes-6-billion-plus-binance-hack-to-north-korea",
+    "date": "Sat, 31 Oct 2026 21:46:33 GMT",
+    "collected": "2026-11-01",
     "used": false
   }
 ]
