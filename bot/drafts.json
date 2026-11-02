@@ -1,149 +1,5 @@
 [
   {
-    "source": "CoinDesk",
-    "title": "Singaporean 22-year old pleads guilty to being the ringleader in $245 million crypto fraud case",
-    "link": "https://www.coindesk.com/business/2026/09/09/singaporean-22-year-old-pleads-guilty-to-being-the-ringleader-in-usd245-million-crypto-fraud-case",
-    "date": "Wed, 09 Sep 2026 09:54:42 +0000",
-    "collected": "2026-09-09",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Cybercrime ringleader Malone Lam pleads guilty in $245M crypto theft conspiracy",
-    "link": "https://cointelegraph.com/news/malone-lam-pleads-guilty-245m-crypto-theft-conspiracy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Wed, 09 Sep 2026 08:36:39 +0000",
-    "collected": "2026-09-09",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Cronos Erased Two Hours of Transactions to Reverse $111 Million DeFi Exploit",
-    "link": "https://decrypt.co/377686/cronos-erased-two-hours-transactions-defi-exploit",
-    "date": "Tue, 08 Sep 2026 17:10:51 +0000",
-    "collected": "2026-09-09",
-    "used": false
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Trezor warns users of email provider breach, phishing attacks",
-    "link": "https://www.bleepingcomputer.com/news/security/trezor-warns-users-of-email-provider-breach-phishing-attacks/",
-    "date": "Thu, 10 Sep 2026 02:56:33 -0400",
-    "collected": "2026-09-10",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "U.S. Disrupts Xinbi Guarantee Scam Marketplace, Freezes $52.8 Million in Crypto",
-    "link": "https://thehackernews.com/2026/09/us-disrupts-xinbi-guarantee-scam.html",
-    "date": "Wed, 09 Sep 2026 23:56:05 +0530",
-    "collected": "2026-09-10",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "Infostealer Logs Expose Replayable AI Tokens That Can Bypass MFA",
-    "link": "https://thehackernews.com/2026/09/infostealer-logs-expose-replayable-ai.html",
-    "date": "Wed, 09 Sep 2026 19:53:55 +0530",
-    "collected": "2026-09-10",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "Alby Hub Critical Flaw Could Let Attackers Take Over Internet-Exposed Bitcoin Wallets",
-    "link": "https://thehackernews.com/2026/09/alby-hub-critical-flaw-could-let.html",
-    "date": "Wed, 09 Sep 2026 16:13:04 +0530",
-    "collected": "2026-09-10",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Hunter Biden's new LAPTOP token lost 98% of its value in under an hour after $1.6 billion debut",
-    "link": "https://www.coindesk.com/business/2026/09/09/hunter-biden-s-laptop-memecoin-debuts-at-usd1-6-billion-market-cap",
-    "date": "Wed, 09 Sep 2026 13:57:57 +0000",
-    "collected": "2026-09-10",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "US sanctions Xinbi scam marketplace, restrains $52M in crypto",
-    "link": "https://cointelegraph.com/news/us-sanctions-xinbi-restrains-52m-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Thu, 10 Sep 2026 05:04:41 +0000",
-    "collected": "2026-09-10",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Bitcoin Wallet Maker Trezor Says Hackers Breached Its Email Provider",
-    "link": "https://decrypt.co/377831/bitcoin-wallet-trezor-hackers-breach-email",
-    "date": "Wed, 09 Sep 2026 23:02:23 +0000",
-    "collected": "2026-09-10",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Secret Service Freezes $52.8 Million in Crypto Tied to Telegram Bazaar Behind Global Scams",
-    "link": "https://decrypt.co/377804/secret-service-freezes-crypto-telegram-bazaar-xinbi",
-    "date": "Wed, 09 Sep 2026 17:16:08 +0000",
-    "collected": "2026-09-10",
-    "used": false
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Trezor: 347,000 users targeted in phishing attacks after Brevo breach",
-    "link": "https://www.bleepingcomputer.com/news/security/trezor-347-000-users-targeted-in-phishing-attacks-after-brevo-breach/",
-    "date": "Fri, 11 Sep 2026 03:55:15 -0400",
-    "collected": "2026-09-11",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Brevo login flaw enabled phishing email targeting 347K Trezor subscribers",
-    "link": "https://cointelegraph.com/news/brevo-login-flaw-trezor-bitbox-cointracking-phishing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Fri, 11 Sep 2026 04:24:24 +0000",
-    "collected": "2026-09-11",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Blockstream Refuses Ransom for Return of $47M in Bitcoin from Liquid Hack: 'It Is Theft'",
-    "link": "https://decrypt.co/377959/blockstream-refuses-ransom-for-return-of-47m-in-bitcoin-from-liquid-hack-it-is-theft",
-    "date": "Fri, 11 Sep 2026 14:17:38 +0000",
-    "collected": "2026-09-12",
-    "used": false
-  },
-  {
-    "source": "The Defiant",
-    "title": "Blockstream Rejects Ransom Demand After Liquid Bitcoin Exploit",
-    "link": "https://thedefiant.io/news/security/blockstream-rejects-ransom-demand-after-liquid-bitcoin-exploit",
-    "date": "Fri, 11 Sep 2026 14:42:37 GMT",
-    "collected": "2026-09-12",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "How a simple coding mistake let a hacker drain $7.8 million from a crypto wallet",
-    "link": "https://www.coindesk.com/business/2026/09/15/how-a-simple-coding-mistake-let-a-hacker-drain-usd7-8-million-from-a-crypto-wallet",
-    "date": "Tue, 15 Sep 2026 10:27:55 +0000",
-    "collected": "2026-09-15",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "MetaMask Adds New Wallet Protections Against Crypto Scams",
-    "link": "https://decrypt.co/378117/metamask-adds-wallet-protections",
-    "date": "Mon, 14 Sep 2026 14:01:04 +0000",
-    "collected": "2026-09-15",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "Active Exploitation Attempts Target WSO2 API Manager JWT Bypass With Forged Admin Tokens",
-    "link": "https://thehackernews.com/2026/09/active-exploitation-attempts-target.html",
-    "date": "Wed, 16 Sep 2026 10:48:06 +0530",
-    "collected": "2026-09-16",
-    "used": false
-  },
-  {
     "source": "The Hacker News",
     "title": "KREMLIN Banking Malware Hijacks Chrome and Edge to Steal Credentials and Session Tokens",
     "link": "https://thehackernews.com/2026/09/kremlin-banking-malware-hijacks-chrome.html",
@@ -1597,6 +1453,150 @@
     "link": "https://thedefiant.io/news/hacks/fbi-attributes-6-billion-plus-binance-hack-to-north-korea",
     "date": "Sat, 31 Oct 2026 21:46:33 GMT",
     "collected": "2026-11-01",
+    "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "FBI links $6.3 billion Binance crypto heist to North Korean hackers",
+    "link": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/",
+    "date": "Sun, 01 Nov 2026 14:57:53 -0500",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "No proof of AI in North Korean hackers move of stolen Binance funds",
+    "link": "https://www.coindesk.com/tech/2026/11/02/no-proof-of-ai-in-north-korean-hackers-move-of-stolen-binance-funds-through-thousands-of-wallets",
+    "date": "Mon, 02 Nov 2026 11:57:45 +0000",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Binance hack fallout, U.S. midterms and jobs report: Crypto Week Ahead",
+    "link": "https://www.coindesk.com/markets/2026/11/02/binance-hack-fallout-u-s-midterms-and-jobs-report-crypto-week-ahead",
+    "date": "Mon, 02 Nov 2026 09:04:49 +0000",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Why stealing billions from a crypto exchange can be harder to stop than a bank theft",
+    "link": "https://www.coindesk.com/business/2026/11/02/why-crypto-exchange-hacks-can-be-harder-to-contain-versus-global-banks",
+    "date": "Mon, 02 Nov 2026 08:32:01 +0000",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Bitcoin ETFs lost $643 million in outflows Friday, and 2026 is barely green now",
+    "link": "https://www.coindesk.com/markets/2026/11/02/bitcoin-etfs-lost-usd643-million-in-outflows-friday-and-2026-is-barely-green-now",
+    "date": "Mon, 02 Nov 2026 06:46:41 +0000",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Strangers are begging the Binance hacker for bitcoin, one ‘help me bro’ at a time",
+    "link": "https://www.coindesk.com/tech/2026/11/02/strangers-are-begging-the-binance-hacker-for-bitcoin-one-help-me-bro-at-a-time",
+    "date": "Mon, 02 Nov 2026 05:18:12 +0000",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Bitcoin claws back toward $79,000 as markets shake off crypto's biggest hack",
+    "link": "https://www.coindesk.com/markets/2026/11/02/bitcoin-claws-back-toward-usd79-000-as-markets-shake-off-crypto-s-biggest-hack",
+    "date": "Mon, 02 Nov 2026 04:42:22 +0000",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "BTCPay, a bitcoin payment tool, tells users to switch off their servers after reports of drained wallets",
+    "link": "https://www.coindesk.com/tech/2026/11/02/btcpay-a-bitcoin-payment-tool-tells-users-to-switch-off-their-servers-after-reports-of-drained-wallets",
+    "date": "Mon, 02 Nov 2026 04:41:16 +0000",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis",
+    "link": "https://cointelegraph.com/news/binance-hackers-solana-new-phase-laundering-chainalysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 02 Nov 2026 12:47:37 +0000",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "From Uptober to Hacktober: Are Bitcoin’s seasonal patterns becoming obsolete?",
+    "link": "https://cointelegraph.com/markets/uptober-hacktober-bitcoin-seasonal-pattern?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 02 Nov 2026 11:26:01 +0000",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Trezor lifts password ceiling after Coldcard’s $100M wallet thefts",
+    "link": "https://cointelegraph.com/news/trezor-wallet-passphrase-limit-128-characters-coldcard-attacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 02 Nov 2026 10:50:07 +0000",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Bitcoin ETFs sink into October outflows with $643M exit after Binance hack",
+    "link": "https://cointelegraph.com/markets/bitcoin-etfs-october-red-binance-hack-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 02 Nov 2026 07:53:53 +0000",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "BTCPay Server warns of hot wallet thefts running on outdated software",
+    "link": "https://cointelegraph.com/news/btcpay-server-hot-wallet-thefts-older-versions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 02 Nov 2026 07:32:13 +0000",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "THORChain halts swaps after block reorg bug, slowing Binance hackers",
+    "link": "https://cointelegraph.com/news/thorchain-halts-swaps-after-block-reorg-bug-slowing-binance-hackers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 02 Nov 2026 03:49:05 +0000",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Morning Minute: Binance Hack Leads to Mass Outflows While FBI Opens Probe",
+    "link": "https://decrypt.co/382332/morning-minute-the-binance-hack-leads-to-mass-outflows-while-fbi-opens-probe",
+    "date": "Mon, 02 Nov 2026 13:34:02 +0000",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "FBI Blames North Korea for $6B Binance Hack as Exchange Reopens Withdrawals",
+    "link": "https://decrypt.co/382316/fbi-blames-north-korea-for-6b-binance-hack-as-exchange-reopens-withdrawals",
+    "date": "Mon, 02 Nov 2026 10:36:19 +0000",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Bitcoin ETF Investors Head for the Exits After Record Binance Hack",
+    "link": "https://decrypt.co/382309/bitcoin-etf-investors-exits-record-binance-hack",
+    "date": "Sun, 01 Nov 2026 16:01:02 +0000",
+    "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Elliptic Flags First Bitcoin Mixing of Binance Hack Proceeds",
+    "link": "https://thedefiant.io/news/hacks/elliptic-flags-first-bitcoin-mixing-of-binance-hack-proceeds",
+    "date": "Mon, 02 Nov 2026 11:19:01 GMT",
+    "collected": "2026-11-02",
     "used": false
   }
 ]
