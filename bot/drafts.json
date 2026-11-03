@@ -1,181 +1,5 @@
 [
   {
-    "source": "The Hacker News",
-    "title": "KREMLIN Banking Malware Hijacks Chrome and Edge to Steal Credentials and Session Tokens",
-    "link": "https://thehackernews.com/2026/09/kremlin-banking-malware-hijacks-chrome.html",
-    "date": "Wed, 16 Sep 2026 00:24:14 +0530",
-    "collected": "2026-09-16",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Robinhood Engineers Charged With Fraud Over Alleged Crypto Listing Trades",
-    "link": "https://decrypt.co/378267/robinhood-engineers-charged-fraud-over-crypto-listing-trades",
-    "date": "Tue, 15 Sep 2026 17:49:23 +0000",
-    "collected": "2026-09-16",
-    "used": false
-  },
-  {
-    "source": "The Defiant",
-    "title": "MEV Bot Front-Runs $7.8 Million rsETH Exploit on Ethereum",
-    "link": "https://thedefiant.io/news/hacks/mev-bot-front-runs-7-8-million-rseth-exploit-on-ethereum",
-    "date": "Tue, 15 Sep 2026 16:03:00 GMT",
-    "collected": "2026-09-16",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Hackers Hijack HBO Max’s Reddit Account to Spread Crypto-Stealing Malware",
-    "link": "https://decrypt.co/378401/hackers-hbo-max-reddit-account-crypto-malware",
-    "date": "Wed, 16 Sep 2026 17:06:02 +0000",
-    "collected": "2026-09-17",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Crypto tech provider Haruko hit by cyberattack affecting 15 clients, some funds lost",
-    "link": "https://www.coindesk.com/business/2026/09/18/crypto-tech-provider-haruko-hit-by-cyberattack-affecting-15-clients-some-funds-lost",
-    "date": "Fri, 18 Sep 2026 15:06:31 +0000",
-    "collected": "2026-09-19",
-    "used": false
-  },
-  {
-    "source": "The Defiant",
-    "title": "Blockchain Dead Drop Attacks Jump 420% as State Hackers Expand",
-    "link": "https://thedefiant.io/news/security/blockchain-dead-drop-attacks-jump-420-as-state-hackers-expand",
-    "date": "Fri, 18 Sep 2026 16:59:38 GMT",
-    "collected": "2026-09-19",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "'We have lost control': Crypto pioneer warns AI could trigger systemic banking and infrastructure shocks",
-    "link": "https://www.coindesk.com/markets/2026/09/17/we-have-lost-control-crypto-pioneer-warns-ai-could-trigger-systemic-banking-and-infrastructure-shocks",
-    "date": "Sat, 19 Sep 2026 14:00:00 +0000",
-    "collected": "2026-09-20",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "X sues Bitcoin account operators over alleged $278K payout fraud",
-    "link": "https://cointelegraph.com/news/x-lawsuit-bitcoin-accounts-alleged-scheme?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Mon, 21 Sep 2026 10:13:57 +0000",
-    "collected": "2026-09-21",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "North Korean fake recruiters infect 30K devices, steal $10.7M in crypto",
-    "link": "https://cointelegraph.com/news/north-korean-fake-recruiters-infect-30k-devices-steal-107m-in-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Mon, 21 Sep 2026 05:01:59 +0000",
-    "collected": "2026-09-21",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "Contagious Interview Campaign Compromises 30,000 Devices, Steals $10.71M in Crypto",
-    "link": "https://thehackernews.com/2026/09/contagious-interview-campaign.html",
-    "date": "Mon, 21 Sep 2026 22:49:00 +0530",
-    "collected": "2026-09-22",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Whitehats move 52 bitcoin from the Coldcard hack to a recovery trust",
-    "link": "https://www.coindesk.com/markets/2026/09/22/whitehats-move-52-bitcoin-from-the-coldcard-hack-to-a-recovery-trust",
-    "date": "Tue, 22 Sep 2026 06:27:28 +0000",
-    "collected": "2026-09-22",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "White hats outrun Coldcard hackers in 52-Bitcoin evacuation",
-    "link": "https://cointelegraph.com/news/white-hats-coldcard-btc-exploit-galaxy?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Tue, 22 Sep 2026 09:11:27 +0000",
-    "collected": "2026-09-22",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "Microsoft Takes Down EvilTokens Device-Code Phishing Service Tied to 12,000 Inbox Compromises",
-    "link": "https://thehackernews.com/2026/09/microsoft-takes-down-eviltokens-device.html",
-    "date": "Tue, 22 Sep 2026 22:33:31 +0530",
-    "collected": "2026-09-23",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Malicious iOS app FomoPeek linked to $580K crypto theft, SlowMist says",
-    "link": "https://cointelegraph.com/news/fomopeek-ios-app-580k-crypto-theft?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Wed, 23 Sep 2026 09:18:45 +0000",
-    "collected": "2026-09-23",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "White-Hat Hackers Route Coldcard Exploit Bitcoin Into 'Recovery Trust'",
-    "link": "https://decrypt.co/378978/white-hat-hackers-coldcard-exploit-bitcoin-recovery-trust",
-    "date": "Tue, 22 Sep 2026 19:31:03 +0000",
-    "collected": "2026-09-23",
-    "used": false
-  },
-  {
-    "source": "The Defiant",
-    "title": "Cosmos Hub Restarts; 1.23 Million ATOM Moved From Neutron Attacker Wallet",
-    "link": "https://thedefiant.io/news/hacks/cosmos-hub-restarts-1-23-million-atom-moved-from-neutron-attacker-wallet",
-    "date": "Wed, 23 Sep 2026 19:54:30 GMT",
-    "collected": "2026-09-24",
-    "used": false
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Hackers steal $351.6 million in Bitget crypto exchange hack",
-    "link": "https://www.bleepingcomputer.com/news/security/hackers-steal-3516-million-in-bitget-crypto-exchange-hack/",
-    "date": "Fri, 25 Sep 2026 04:33:44 -0400",
-    "collected": "2026-09-25",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Bitget's $352 million hack happened via spoofed transfers, not private keys, CEO Gracy Chen says",
-    "link": "https://www.coindesk.com/markets/2026/09/25/bitget-s-usd351-million-hack-happened-via-spoofed-transfers-not-private-keys-ceo-gray-chen-says",
-    "date": "Fri, 25 Sep 2026 04:29:34 +0000",
-    "collected": "2026-09-25",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Crypto exchange Bitget says $352 million affected in a hack, claims user funds are 'safe'",
-    "link": "https://www.coindesk.com/markets/2026/09/24/crypto-exchange-bitget-loses-usd352-million-in-hack-claims-user-funds-are-safe",
-    "date": "Thu, 24 Sep 2026 21:59:32 +0000",
-    "collected": "2026-09-25",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Crypto casino Duelbits goes offline after $7 million hot wallet hack",
-    "link": "https://www.coindesk.com/business/2026/09/24/crypto-casino-duelbits-goes-offline-after-usd7m-hot-wallet-hack",
-    "date": "Thu, 24 Sep 2026 15:48:20 +0000",
-    "collected": "2026-09-25",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Asia dominates Crypto Adoption Index, Bitget’s $352M hack: Asia Express",
-    "link": "https://cointelegraph.com/magazine/asia-dominates-crypto-adoption-index-bitgets-356m-hack-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Fri, 25 Sep 2026 01:24:52 +0000",
-    "collected": "2026-09-25",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Bitget Hacked as $350 Million Vanishes From Crypto Exchange Wallets",
-    "link": "https://decrypt.co/379275/bitget-hack-183-million-crypto-exchange-wallets",
-    "date": "Thu, 24 Sep 2026 21:15:38 +0000",
-    "collected": "2026-09-25",
-    "used": false
-  },
-  {
     "source": "The Defiant",
     "title": "Payy Halts Network After $1.92 Million USDC Drain",
     "link": "https://thedefiant.io/news/hacks/payy-halts-network-after-1-92-million-usdc-drain",
@@ -1597,6 +1421,182 @@
     "link": "https://thedefiant.io/news/hacks/elliptic-flags-first-bitcoin-mixing-of-binance-hack-proceeds",
     "date": "Mon, 02 Nov 2026 11:19:01 GMT",
     "collected": "2026-11-02",
+    "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "BTCPay Server warns of hot wallet crypto thefts on outdated instances",
+    "link": "https://www.bleepingcomputer.com/news/security/btcpay-server-warns-of-hot-wallet-thefts-targeting-outdated-instances/",
+    "date": "Mon, 02 Nov 2026 10:03:07 -0500",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Exploit BTCPay Server Flaw to Steal Bitcoin and Litecoin From Hot Wallets",
+    "link": "https://thehackernews.com/2026/11/hackers-exploit-btcpay-server-flaw-to.html",
+    "date": "Tue, 03 Nov 2026 14:01:48 +0530",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
+    "link": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
+    "date": "Tue, 03 Nov 2026 11:04:37 +0530",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Binance net outflows reach $5.3 billion after record hack. CEO says recovery underway",
+    "link": "https://www.coindesk.com/business/2026/11/03/binance-net-outflows-reach-usd5-3b-after-record-hack-though-ceo-cites-recovery",
+    "date": "Tue, 03 Nov 2026 12:57:28 +0000",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Liquid’s bitcoin IOUs are fully backed again after a $320 million exploit",
+    "link": "https://www.coindesk.com/markets/2026/11/03/liquid-s-bitcoin-ious-are-fully-backed-again-after-a-usd320-million-exploit",
+    "date": "Tue, 03 Nov 2026 11:12:12 +0000",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "North Korea denies role in $6.4 billion Binance hack after FBI points to TraderTraitor",
+    "link": "https://www.coindesk.com/business/2026/11/03/north-korea-denies-role-in-usd6-4-billion-binance-hack-after-fbi-points-to-tradertraitor",
+    "date": "Tue, 03 Nov 2026 09:40:32 +0000",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Mercado Bitcoin pledges to cover all user losses after near $40 million hack",
+    "link": "https://www.coindesk.com/business/2026/11/03/mercado-bitcoin-pledges-to-cover-all-user-losses-after-near-usd40-million-hack",
+    "date": "Tue, 03 Nov 2026 08:56:48 +0000",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Arbitrum’s council moved $30 million of Binance hack funds without the hacker’s key",
+    "link": "https://www.coindesk.com/tech/2026/11/03/arbitrum-s-council-moved-usd30-million-of-binance-hack-funds-without-the-hacker-s-key",
+    "date": "Tue, 03 Nov 2026 05:25:12 +0000",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Kraken restricts accounts amid suspected $133M EU crypto theft",
+    "link": "https://cointelegraph.com/news/zachxbt-eu-crypto-theft-133m-alleged-cover-up?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Tue, 03 Nov 2026 12:13:14 +0000",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "South Korea urges exchanges to boost cold storage after Binance hack",
+    "link": "https://cointelegraph.com/news/south-korea-urges-exchanges-to-boost-cold-storage-after-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Tue, 03 Nov 2026 01:36:38 +0000",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "North Korea denies role in $6.3B Binance hack, points finger at US",
+    "link": "https://cointelegraph.com/news/north-korea-denies-role-in-63b-binance-hack-points-finger-at-us?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Tue, 03 Nov 2026 03:41:26 +0000",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Liquid Network Restores Full Bitcoin Backing Two Months After $320M Exploit",
+    "link": "https://decrypt.co/382397/liquid-network-restores-full-bitcoin-backing-two-months-after-320m-exploit",
+    "date": "Tue, 03 Nov 2026 11:22:10 +0000",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "North Korea Denies $6.3B Binance Hack, Calls FBI Finding a 'Political Provocation'",
+    "link": "https://decrypt.co/382394/north-korea-denies-6-3b-binance-hack-calls-fbi-finding-a-political-provocation",
+    "date": "Tue, 03 Nov 2026 10:18:48 +0000",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Mystery $106 Million Crypto Theft Hits EU Entity Days After Binance Hack",
+    "link": "https://decrypt.co/382383/mystery-106-million-crypto-theft-eu-entity-binance-hack",
+    "date": "Mon, 02 Nov 2026 21:16:03 +0000",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "North Korea Is Laundering Binance Hack Loot at One New Wallet Every 25 Seconds",
+    "link": "https://decrypt.co/382355/north-korea-laundering-binance-hack-loot-new-wallet-every-25-seconds",
+    "date": "Mon, 02 Nov 2026 18:46:03 +0000",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Brazil's Largest Exchange Mercado Bitcoin Halts Withdrawals After $40 Million Hack",
+    "link": "https://decrypt.co/382341/mercado-bitcoin-halts-withdrawals-40-million-hack",
+    "date": "Mon, 02 Nov 2026 16:46:03 +0000",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Bitmine Buys More Ethereum as Tom Lee Calls the Binance Hack Bullish",
+    "link": "https://decrypt.co/382340/bitmine-buys-more-ethereum-tom-lee-binance-hack-bullish",
+    "date": "Mon, 02 Nov 2026 16:23:24 +0000",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Binance Lacks Cyber Insurance for $6.3 Billion Hack, Bloomberg Law Reports",
+    "link": "https://thedefiant.io/news/hacks/binance-lacks-cyber-insurance-for-6-3-billion-hack-bloomberg-law-reports",
+    "date": "Tue, 03 Nov 2026 11:59:23 GMT",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Mercado Bitcoin Promises No Customer Asset Losses After Hack",
+    "link": "https://thedefiant.io/news/hacks/mercado-bitcoin-promises-no-customer-asset-losses-after-hack",
+    "date": "Tue, 03 Nov 2026 09:08:33 GMT",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Chainalysis Puts Mercado Bitcoin Hack at $49 Million Across 17 Chains",
+    "link": "https://thedefiant.io/news/hacks/chainalysis-puts-mercado-bitcoin-hack-at-49-million-across-17-chains",
+    "date": "Tue, 03 Nov 2026 00:56:08 GMT",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Liquid Restores Full Bitcoin Backing After Elements Exploit",
+    "link": "https://thedefiant.io/news/security/liquid-restores-full-bitcoin-backing-after-elements-exploit",
+    "date": "Tue, 03 Nov 2026 00:12:59 GMT",
+    "collected": "2026-11-03",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "North Korea Rejects FBI Blame for $6.3 Billion Binance Hack",
+    "link": "https://thedefiant.io/news/hacks/north-korea-rejects-fbi-blame-for-6-3-billion-binance-hack",
+    "date": "Mon, 02 Nov 2026 21:25:45 GMT",
+    "collected": "2026-11-03",
     "used": false
   }
 ]
