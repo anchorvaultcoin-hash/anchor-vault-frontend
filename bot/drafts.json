@@ -1,45 +1,5 @@
 [
   {
-    "source": "BleepingComputer",
-    "title": "Vietnamese man charged in $16 million 'pig butchering' crypto scam",
-    "link": "https://www.bleepingcomputer.com/news/security/vietnamese-man-charged-in-16-million-pig-butchering-crypto-scam/",
-    "date": "Tue, 29 Sep 2026 07:41:53 -0400",
-    "collected": "2026-09-29",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "⚡ Weekly Recap: $387M Crypto Hack, Citrix Exploits, AI Agents Go Off-Script, and More Threats",
-    "link": "https://thehackernews.com/2026/09/weekly-recap-387m-crypto-hack-citrix.html",
-    "date": "Mon, 28 Sep 2026 19:30:53 +0530",
-    "collected": "2026-09-29",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "THORChain rejects Bitget request to block hacker as $6 million moves to bitcoin",
-    "link": "https://www.coindesk.com/tech/2026/09/28/thorchain-rejects-bitget-request-to-block-hacker-as-usd6-million-moves-to-bitcoin",
-    "date": "Mon, 28 Sep 2026 12:13:09 +0000",
-    "collected": "2026-09-29",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Canadian ‘crypto king’ set to represent himself at fraud trial",
-    "link": "https://cointelegraph.com/news/canada-aiden-pleterski-fraud-trial-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Tue, 29 Sep 2026 04:03:58 +0000",
-    "collected": "2026-09-29",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Canada's 'Crypto King' Aiden Pleterski to Represent Himself at Fraud Trial",
-    "link": "https://decrypt.co/379523/canadas-crypto-king-aiden-pleterski-to-represent-himself-at-fraud-trial",
-    "date": "Tue, 29 Sep 2026 10:38:29 +0000",
-    "collected": "2026-09-29",
-    "used": false
-  },
-  {
     "source": "Cointelegraph",
     "title": "Crypto.com AI agent still in ‘stealth mode’ nearly 8 months after Super Bowl debut",
     "link": "https://cointelegraph.com/news/cryptocom-ai-agent-stealth-mode-nearly-8-months-after-super-bowl-debut?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -1597,6 +1557,46 @@
     "link": "https://decrypt.co/382420/five-ways-north-korea-breaks-into-crypto-firms-and-how-binance-was-hacked",
     "date": "Tue, 03 Nov 2026 17:30:54 +0000",
     "collected": "2026-11-04",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Mercado Bitcoin hack continued hours after exchange said attack was contained, report finds",
+    "link": "https://www.coindesk.com/business/2026/11/05/mercado-bitcoin-hack-continued-hours-after-exchange-said-attack-was-contained-report-finds",
+    "date": "Thu, 05 Nov 2026 10:44:54 +0000",
+    "collected": "2026-11-05",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Binance, Polymarket seek Polygon hard fork to recover $6.8M in stolen crypto",
+    "link": "https://cointelegraph.com/news/polygon-hard-fork-binance-polymarket-6-8m-hack-recovery?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 05 Nov 2026 08:54:56 +0000",
+    "collected": "2026-11-05",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "India warns AI-powered hackers targeting crypto exchanges at ‘machine speed’",
+    "link": "https://cointelegraph.com/news/india-warns-ai-powered-hackers-targeting-crypto-exchanges-at-machine-speed?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 05 Nov 2026 05:28:51 +0000",
+    "collected": "2026-11-05",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Coinbase Says 99% of Customer Crypto Is Offline and Out of Hackers’ Reach",
+    "link": "https://decrypt.co/382570/coinbase-99-percent-customer-crypto-offline-binance-hack",
+    "date": "Wed, 04 Nov 2026 20:46:03 +0000",
+    "collected": "2026-11-05",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Mercado Bitcoin Plans View-Only Reopening on Nov. 9 After Hack",
+    "link": "https://thedefiant.io/news/hacks/mercado-bitcoin-plans-view-only-reopening-on-nov-9-after-hack",
+    "date": "Wed, 04 Nov 2026 23:36:50 GMT",
+    "collected": "2026-11-05",
     "used": false
   }
 ]
