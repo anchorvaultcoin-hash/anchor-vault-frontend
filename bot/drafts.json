@@ -1,77 +1,5 @@
 [
   {
-    "source": "Cointelegraph",
-    "title": "Crypto.com AI agent still in ‘stealth mode’ nearly 8 months after Super Bowl debut",
-    "link": "https://cointelegraph.com/news/cryptocom-ai-agent-stealth-mode-nearly-8-months-after-super-bowl-debut?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Wed, 30 Sep 2026 03:49:09 +0000",
-    "collected": "2026-09-30",
-    "used": false
-  },
-  {
-    "source": "The Defiant",
-    "title": "SEC Sues Cryptoaiml and TSAI Over Alleged $15 Million AI Trading Scams",
-    "link": "https://thedefiant.io/news/regulation/sec-sues-cryptoaiml-and-tsai-over-alleged-15-million-ai-trading-scams",
-    "date": "Tue, 29 Sep 2026 20:05:34 GMT",
-    "collected": "2026-09-30",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "Bitget Confirms Third-Party Zero-Day Behind $387.5 Million Cryptocurrency Theft",
-    "link": "https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html",
-    "date": "Thu, 01 Oct 2026 10:51:10 +0530",
-    "collected": "2026-10-01",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Crypto lost $1.26 billion in hacks while bitcoin bulls enjoyed a monster quarter",
-    "link": "https://www.coindesk.com/daybook-us/2026/10/01/crypto-lost-usd1-26-billion-in-hacks-while-bitcoin-bulls-enjoyed-a-monster-quarter",
-    "date": "Thu, 01 Oct 2026 11:30:38 +0000",
-    "collected": "2026-10-01",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Crypto hacks top $768M in September, worst month of 2026",
-    "link": "https://cointelegraph.com/news/crypto-hacks-total-766m-in-september-peckshield?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Thu, 01 Oct 2026 04:47:21 +0000",
-    "collected": "2026-10-01",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Ex-NCA Officer Must Repay $2.4M for Bitcoin He Stole When It Was Worth $77K",
-    "link": "https://decrypt.co/379702/ex-nca-officer-must-repay-2-4m-for-bitcoin-he-stole-when-it-was-worth-77k",
-    "date": "Wed, 30 Sep 2026 15:17:45 +0000",
-    "collected": "2026-10-01",
-    "used": false
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Microsoft’s X account hacked in crypto pump-and-dump scheme",
-    "link": "https://www.bleepingcomputer.com/news/security/microsofts-x-account-hacked-in-crypto-token-pump-and-dump-scheme/",
-    "date": "Fri, 02 Oct 2026 05:29:56 -0400",
-    "collected": "2026-10-02",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "NEAR Intents hit by $3.8 million exploit as crypto's rough year of hacks continues",
-    "link": "https://www.coindesk.com/tech/2026/10/01/near-intents-hit-by-usd3-8-million-exploit-as-crypto-s-rough-year-of-hacks-continues",
-    "date": "Thu, 01 Oct 2026 14:18:14 +0000",
-    "collected": "2026-10-02",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Zano exploiter minted more than a quadrillion fUSD before blockchain rollback",
-    "link": "https://cointelegraph.com/news/zano-exploiter-created-369m-unauthorized-zano-before-blockchain-rollback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Fri, 02 Oct 2026 07:04:48 +0000",
-    "collected": "2026-10-02",
-    "used": false
-  },
-  {
     "source": "Decrypt",
     "title": "Crypto 'Godfather' Gets Six Years for Hiring Sheriff's Deputies, $37M Meta Fraud",
     "link": "https://decrypt.co/380138/crypto-godfather-gets-six-years-for-hiring-sheriffs-deputies-37m-meta-fraud",
@@ -1597,6 +1525,78 @@
     "link": "https://thedefiant.io/news/hacks/mercado-bitcoin-plans-view-only-reopening-on-nov-9-after-hack",
     "date": "Wed, 04 Nov 2026 23:36:50 GMT",
     "collected": "2026-11-05",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "What is TraderTraitor, the hacking squad behind the $6.3 billion Binance heist?",
+    "link": "https://www.coindesk.com/business/2026/11/05/what-is-tradertraitor-the-hacking-squad-behind-the-usd6-3-billion-binance-heist",
+    "date": "Thu, 05 Nov 2026 16:58:21 +0000",
+    "collected": "2026-11-06",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Gate CEO says crypto exchanges must prove they can survive a hack like Binance’s",
+    "link": "https://www.coindesk.com/business/2026/11/05/gate-ceo-says-crypto-exchanges-must-prove-they-can-survive-a-hack-like-binance-s",
+    "date": "Thu, 05 Nov 2026 14:21:50 +0000",
+    "collected": "2026-11-06",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Binance hackers had 8 weeks of access before $6.3B exploit, Security Alliance estimates",
+    "link": "https://cointelegraph.com/news/binance-hackers-8-weeks-access-63b-exploit-security-alliance?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 06 Nov 2026 11:26:44 +0000",
+    "collected": "2026-11-06",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Binance’s $6.3B hack leaves questions over hot wallet safeguards",
+    "link": "https://cointelegraph.com/news/binances-hack-questions-hot-wallet-risk-controls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 06 Nov 2026 10:41:07 +0000",
+    "collected": "2026-11-06",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Former FBI Agent Pleads Guilty to Stealing $2.5M in Crypto From 35 Investigations",
+    "link": "https://decrypt.co/382695/former-fbi-agent-pleads-guilty-to-stealing-2-5m-in-crypto-from-35-investigations",
+    "date": "Fri, 06 Nov 2026 10:57:06 +0000",
+    "collected": "2026-11-06",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Mercado Bitcoin Said Its Hack Was Contained, But Blockchain Data Tells a Different Story",
+    "link": "https://decrypt.co/382670/mercado-bitcoin-hack-contained-blockchain-data",
+    "date": "Thu, 05 Nov 2026 20:16:03 +0000",
+    "collected": "2026-11-06",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Binance Hackers Swap $50 Million in XRP, Mostly Into Bitcoin, Elliptic Says",
+    "link": "https://thedefiant.io/news/hacks/binance-hackers-swap-50-million-in-xrp-mostly-into-bitcoin-elliptic-says",
+    "date": "Fri, 06 Nov 2026 11:06:26 GMT",
+    "collected": "2026-11-06",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "iPhone Wallet Theft Probe Traces $4.06 Million in TRON Drains",
+    "link": "https://thedefiant.io/news/hacks/iphone-wallet-theft-probe-traces-4-06-million-in-tron-drains",
+    "date": "Fri, 06 Nov 2026 08:13:07 GMT",
+    "collected": "2026-11-06",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Former FBI Agent Pleads Guilty to $2.47 Million Crypto Theft",
+    "link": "https://thedefiant.io/news/security/former-fbi-agent-pleads-guilty-to-2-47-million-crypto-theft",
+    "date": "Thu, 05 Nov 2026 21:53:55 GMT",
+    "collected": "2026-11-06",
     "used": false
   }
 ]
