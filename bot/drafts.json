@@ -1,37 +1,5 @@
 [
   {
-    "source": "Decrypt",
-    "title": "Crypto 'Godfather' Gets Six Years for Hiring Sheriff's Deputies, $37M Meta Fraud",
-    "link": "https://decrypt.co/380138/crypto-godfather-gets-six-years-for-hiring-sheriffs-deputies-37m-meta-fraud",
-    "date": "Tue, 06 Oct 2026 10:36:57 +0000",
-    "collected": "2026-10-06",
-    "used": false
-  },
-  {
-    "source": "The Defiant",
-    "title": "Base Vault Drained of About $6 Million in Aave Deposit Tokens",
-    "link": "https://thedefiant.io/news/hacks/base-vault-drained-of-about-6-million-in-aave-deposit-tokens",
-    "date": "Mon, 05 Oct 2026 18:44:11 GMT",
-    "collected": "2026-10-06",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Flash Loan Attacks Drained $1.2B From DeFi Between 2020 and 2024: Study",
-    "link": "https://decrypt.co/380166/flash-loan-attacks-drained-1-2b-from-defi-between-2020-and-2024-study",
-    "date": "Tue, 06 Oct 2026 15:26:41 +0000",
-    "collected": "2026-10-07",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "16 Malicious Firefox Extensions Pose as Rabby and OKX Wallets to Steal Recovery Phrases",
-    "link": "https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html",
-    "date": "Thu, 08 Oct 2026 15:16:32 +0530",
-    "collected": "2026-10-08",
-    "used": false
-  },
-  {
     "source": "Cointelegraph",
     "title": "Hunter Biden confirms LAPTOP token ‘not a rug pull,’ just trolling Trumps",
     "link": "https://cointelegraph.com/news/hunter-biden-laptop-memecoin-troll-no-rug-pull?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -1597,6 +1565,38 @@
     "link": "https://thedefiant.io/news/security/former-fbi-agent-pleads-guilty-to-2-47-million-crypto-theft",
     "date": "Thu, 05 Nov 2026 21:53:55 GMT",
     "collected": "2026-11-06",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Binance hack is ‘cyber war,’ TRM Labs executive says",
+    "link": "https://cointelegraph.com/interview/trm-labs-binance-hack-interview?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 06 Nov 2026 20:36:38 +0000",
+    "collected": "2026-11-07",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "US Sanctions 45 More Targets Tied to Alleged Crypto Scam Empire Prince Group",
+    "link": "https://decrypt.co/382730/us-sanctions-45-more-targets-tied-to-alleged-crypto-scam-empire-prince-group",
+    "date": "Fri, 06 Nov 2026 17:42:31 +0000",
+    "collected": "2026-11-07",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Crypto Card Provider Gnosis Pay Says Hackers Accessed Customer Data",
+    "link": "https://decrypt.co/382718/crypto-card-provider-gnosis-pay-hackers-customer-data",
+    "date": "Fri, 06 Nov 2026 16:41:29 +0000",
+    "collected": "2026-11-07",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "$3.1B in Stolen Binance Crypto Has Yet to Be Laundered: Elliptic",
+    "link": "https://decrypt.co/382711/3-1b-in-stolen-binance-crypto-has-yet-to-be-laundered-elliptic",
+    "date": "Fri, 06 Nov 2026 14:04:18 +0000",
+    "collected": "2026-11-07",
     "used": false
   }
 ]
