@@ -1,69 +1,5 @@
 [
   {
-    "source": "The Defiant",
-    "title": "Trader Frogman Drained of $4 Million on the First Morning of TOKEN2049",
-    "link": "https://thedefiant.io/news/hacks/trader-frogman-drained-of-4-million-on-the-first-morning-of-token2049",
-    "date": "Wed, 07 Oct 2026 16:57:34 GMT",
-    "collected": "2026-10-08",
-    "used": false
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Uranium crypto exchange hacker convicted for stealing $53 million",
-    "link": "https://www.bleepingcomputer.com/news/security/uranium-crypto-exchange-hacker-found-guilty-of-53-million-theft/",
-    "date": "Thu, 08 Oct 2026 09:18:36 -0400",
-    "collected": "2026-10-09",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "SIM-Swap Fraudster Who Spent Stolen Crypto on Gold Grills and Dubai Trips Jailed",
-    "link": "https://decrypt.co/380554/sim-swap-fraudster-who-spent-stolen-crypto-on-gold-grills-and-dubai-trips-jailed",
-    "date": "Fri, 09 Oct 2026 08:59:31 +0000",
-    "collected": "2026-10-09",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "US Government Moves $1 Billion in Bitcoin Seized From Bitfinex Hacker",
-    "link": "https://decrypt.co/380504/us-government-moves-1-billion-bitcoin-bitfinex",
-    "date": "Thu, 08 Oct 2026 16:44:20 +0000",
-    "collected": "2026-10-09",
-    "used": false
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Unpatched AhsayCBS flaws exploited to deploy webshells, mine crypto",
-    "link": "https://www.bleepingcomputer.com/news/security/unpatched-ahsaycbs-flaws-exploited-to-deploy-webshells-mine-crypto/",
-    "date": "Fri, 09 Oct 2026 13:17:23 -0400",
-    "collected": "2026-10-10",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "P7 DarkSword iOS Exploit Kit Adds Crypto Wallet Data Theft and Remote Commands",
-    "link": "https://thehackernews.com/2026/10/p7-darksword-ios-exploit-kit-adds.html",
-    "date": "Fri, 09 Oct 2026 21:59:55 +0530",
-    "collected": "2026-10-10",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Ledger investigates potential wallet tampering after reports of $86 million in crypto stolen",
-    "link": "https://www.coindesk.com/business/2026/10/09/ledger-investigates-potential-wallet-tampering-after-reports-of-usd86-million-in-crypto-stolen",
-    "date": "Fri, 09 Oct 2026 14:47:27 +0000",
-    "collected": "2026-10-10",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Bitcoin consolidates near $82.5K as crypto weathers Ledger theft reports",
-    "link": "https://cointelegraph.com/markets/bitcoin-consolidates-crypto-weathers-ledger-theft-reports?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Fri, 09 Oct 2026 15:26:01 +0000",
-    "collected": "2026-10-10",
-    "used": false
-  },
-  {
     "source": "Decrypt",
     "title": "Ledger Probes Potential Theft of $87M in User Funds Tied to Crypto Wallet Reseller",
     "link": "https://decrypt.co/380582/ledger-probes-87m-theft-crypto-wallet-reseller",
@@ -1597,6 +1533,70 @@
     "link": "https://cointelegraph.com/news/ex-fbi-counterintelligence-agent-stole-almost-25m-in-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "date": "Sat, 07 Nov 2026 14:21:42 +0000",
     "collected": "2026-11-08",
+    "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "Ukraine dismantles crypto scam network that stole €4.3 million",
+    "link": "https://www.bleepingcomputer.com/news/security/ukraine-dismantles-crypto-scam-network-that-stole-43-million/",
+    "date": "Mon, 09 Nov 2026 07:16:13 -0500",
+    "collected": "2026-11-09",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
+    "link": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
+    "date": "Mon, 09 Nov 2026 16:26:25 +0530",
+    "collected": "2026-11-09",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Solana moves to scrap the transaction feature used in the $270 million Drift hack",
+    "link": "https://www.coindesk.com/tech/2026/11/09/solana-moves-to-scrap-the-transaction-feature-used-in-the-usd270-million-drift-hack",
+    "date": "Mon, 09 Nov 2026 06:36:45 +0000",
+    "collected": "2026-11-09",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Analysts see no broader ‘contagion’ from $6.3B Binance hack",
+    "link": "https://cointelegraph.com/markets/analysts-no-contagion-effect-63b-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Mon, 09 Nov 2026 14:04:17 +0000",
+    "collected": "2026-11-09",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "The $2.85B Binance hackers lost shows why the UK needs stablecoin freeze rules",
+    "link": "https://cointelegraph.com/opinion/285b-binance-hackers-lost-shows-why-uk-needs-stablecoin-freeze-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Sun, 08 Nov 2026 22:18:35 +0000",
+    "collected": "2026-11-09",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Mercado Bitcoin Begins View-Only Reopening After Hack",
+    "link": "https://thedefiant.io/news/hacks/mercado-bitcoin-begins-view-only-reopening-after-hack",
+    "date": "Mon, 09 Nov 2026 13:34:05 GMT",
+    "collected": "2026-11-09",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Ankr Ethereum Bridge Loses More Than $303,000 in Five-Transaction Exploit",
+    "link": "https://thedefiant.io/news/hacks/ankr-ethereum-bridge-loses-more-than-303-000-in-five-transaction-exploit",
+    "date": "Mon, 09 Nov 2026 08:53:50 GMT",
+    "collected": "2026-11-09",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Binance Says 335.9 Million-Record Breach Claim Is Likely a Scam",
+    "link": "https://thedefiant.io/news/hacks/binance-says-335-9-million-record-breach-claim-is-likely-a-scam",
+    "date": "Mon, 09 Nov 2026 08:47:03 GMT",
+    "collected": "2026-11-09",
     "used": false
   }
 ]
