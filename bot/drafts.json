@@ -1,37 +1,5 @@
 [
   {
-    "source": "Decrypt",
-    "title": "Ledger Probes Potential Theft of $87M in User Funds Tied to Crypto Wallet Reseller",
-    "link": "https://decrypt.co/380582/ledger-probes-87m-theft-crypto-wallet-reseller",
-    "date": "Fri, 09 Oct 2026 15:30:36 +0000",
-    "collected": "2026-10-10",
-    "used": false
-  },
-  {
-    "source": "The Defiant",
-    "title": "Wallet Linked to CryptoBilis Thefts Routes 464 ETH to Tornado Cash",
-    "link": "https://thedefiant.io/news/hacks/wallet-linked-to-cryptobilis-thefts-routes-464-eth-to-tornado-cash",
-    "date": "Sat, 10 Oct 2026 11:09:33 GMT",
-    "collected": "2026-10-10",
-    "used": false
-  },
-  {
-    "source": "The Defiant",
-    "title": "Ledger Theft Funds Shift Into USDD, Beyond Tether’s Freeze Controls",
-    "link": "https://thedefiant.io/news/hacks/ledger-theft-funds-shift-into-usdd-beyond-tether-s-freeze-controls",
-    "date": "Sat, 10 Oct 2026 02:06:06 GMT",
-    "collected": "2026-10-10",
-    "used": false
-  },
-  {
-    "source": "The Defiant",
-    "title": "Tether Freezes USDT Linked to Ledger User Thefts, MistTrack Says",
-    "link": "https://thedefiant.io/news/hacks/tether-freezes-usdt-linked-to-ledger-user-thefts-misttrack-says",
-    "date": "Fri, 09 Oct 2026 15:29:41 GMT",
-    "collected": "2026-10-10",
-    "used": false
-  },
-  {
     "source": "The Hacker News",
     "title": "Ledger Finds Unauthorized Hardware Implant in CryptoBilis-Sold Wallet Amid Fund Theft Reports",
     "link": "https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html",
@@ -1597,6 +1565,38 @@
     "link": "https://thedefiant.io/news/hacks/binance-says-335-9-million-record-breach-claim-is-likely-a-scam",
     "date": "Mon, 09 Nov 2026 08:47:03 GMT",
     "collected": "2026-11-09",
+    "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "FBI agent stole $2.5 million in crypto from hackers under investigation",
+    "link": "https://www.bleepingcomputer.com/news/security/fbi-agent-stole-25-million-in-crypto-from-hackers-fraud-victims/",
+    "date": "Mon, 09 Nov 2026 09:34:03 -0500",
+    "collected": "2026-11-10",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Hackers Compromise Ethersphere's bee-js and Swarm Desktop to Deliver Wallet-Stealing Malware",
+    "link": "https://thehackernews.com/2026/11/hackers-compromise-etherspheres-bee-js.html",
+    "date": "Mon, 09 Nov 2026 23:06:28 +0530",
+    "collected": "2026-11-10",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "An 11-year-old Ethereum wallet moved $4.6 million and dodged a scam set up in minutes",
+    "link": "https://www.coindesk.com/tech/2026/11/10/an-11-year-old-ethereum-wallet-moved-usd4-6-million-and-dodged-a-scam-set-up-in-minutes",
+    "date": "Tue, 10 Nov 2026 07:01:06 +0000",
+    "collected": "2026-11-10",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Binance Hack Launderers Mint Elon Musk and Animal Meme Coins to Move Stolen Crypto",
+    "link": "https://decrypt.co/382873/binance-hack-elon-musk-animal-meme-coins-launder-stolen-crypto",
+    "date": "Mon, 09 Nov 2026 19:36:02 +0000",
+    "collected": "2026-11-10",
     "used": false
   }
 ]
