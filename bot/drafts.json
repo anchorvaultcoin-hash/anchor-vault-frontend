@@ -1,29 +1,5 @@
 [
   {
-    "source": "The Hacker News",
-    "title": "Ledger Finds Unauthorized Hardware Implant in CryptoBilis-Sold Wallet Amid Fund Theft Reports",
-    "link": "https://thehackernews.com/2026/10/ledger-finds-unauthorized-hardware.html",
-    "date": "Mon, 12 Oct 2026 16:51:48 +0530",
-    "collected": "2026-10-12",
-    "used": false
-  },
-  {
-    "source": "The Defiant",
-    "title": "Bitquery Says $10 Million Frozen in CryptoBilis-Linked Wallet Drains",
-    "link": "https://thedefiant.io/news/hacks/bitquery-says-10-million-frozen-in-cryptobilis-linked-wallet-drains",
-    "date": "Mon, 12 Oct 2026 12:25:19 GMT",
-    "collected": "2026-10-12",
-    "used": false
-  },
-  {
-    "source": "The Defiant",
-    "title": "CZ Alleges Hackers Bought CryptoBilis as Ledger Probes Wallet Drains",
-    "link": "https://thedefiant.io/news/security/cz-alleges-hackers-bought-cryptobilis-as-ledger-probes-wallet-drains",
-    "date": "Mon, 12 Oct 2026 07:44:31 GMT",
-    "collected": "2026-10-12",
-    "used": false
-  },
-  {
     "source": "The Defiant",
     "title": "Ledger Says All Confirmed Draining Cases Involve CryptoBilis-Sold Devices",
     "link": "https://thedefiant.io/news/hacks/ledger-says-all-confirmed-draining-cases-involve-cryptobilis-sold-devices",
@@ -1597,6 +1573,30 @@
     "link": "https://decrypt.co/382873/binance-hack-elon-musk-animal-meme-coins-launder-stolen-crypto",
     "date": "Mon, 09 Nov 2026 19:36:02 +0000",
     "collected": "2026-11-10",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Bitget Wallet reports sevenfold jump in crypto phishing risk alerts",
+    "link": "https://cointelegraph.com/news/bitget-wallet-crypto-phishing-risk-detections-surge?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Wed, 11 Nov 2026 11:45:22 +0000",
+    "collected": "2026-11-11",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "LNbits rushes emergency patch after reported Bitcoin wallet thefts",
+    "link": "https://cointelegraph.com/news/lnbits-rushes-emergency-patch-after-reported-bitcoin-wallet-thefts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Wed, 11 Nov 2026 09:31:28 +0000",
+    "collected": "2026-11-11",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Prisoner Jailed for 8 Years Over $2.7M Crypto Theft Plot Run From His Cell",
+    "link": "https://decrypt.co/382984/prisoner-jailed-for-8-years-over-2-7m-crypto-theft-plot-run-from-his-cell",
+    "date": "Wed, 11 Nov 2026 10:20:53 +0000",
+    "collected": "2026-11-11",
     "used": false
   }
 ]
