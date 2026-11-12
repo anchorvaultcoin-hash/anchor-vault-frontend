@@ -1,37 +1,5 @@
 [
   {
-    "source": "The Defiant",
-    "title": "Ledger Says All Confirmed Draining Cases Involve CryptoBilis-Sold Devices",
-    "link": "https://thedefiant.io/news/hacks/ledger-says-all-confirmed-draining-cases-involve-cryptobilis-sold-devices",
-    "date": "Sun, 11 Oct 2026 17:18:19 GMT",
-    "collected": "2026-10-12",
-    "used": false
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Ledger confirms spy chip implant behind wallet crypto thefts",
-    "link": "https://www.bleepingcomputer.com/news/security/ledger-confirms-hardware-wallet-spy-implant-behind-crypto-thefts/",
-    "date": "Mon, 12 Oct 2026 12:27:23 -0400",
-    "collected": "2026-10-13",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Chinese fraud victims lose key court battle over 61,000 Bitcoin",
-    "link": "https://cointelegraph.com/news/uk-court-chinese-law-61k-bitcoin-fraud-victims?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Tue, 13 Oct 2026 09:07:06 +0000",
-    "collected": "2026-10-13",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Ledger Finds LTE Implant That Stole Recovery Phrases in Suspected $86M Drain",
-    "link": "https://decrypt.co/380826/ledger-finds-lte-implant-that-stole-recovery-phrases-in-suspected-86m-drain",
-    "date": "Tue, 13 Oct 2026 11:53:15 +0000",
-    "collected": "2026-10-13",
-    "used": false
-  },
-  {
     "source": "Decrypt",
     "title": "Ledger Says All Confirmed Cases in Suspected $87M Drain Tied to Reseller CryptoBilis",
     "link": "https://decrypt.co/380706/ledger-says-all-confirmed-cases-in-suspected-87m-drain-tied-to-reseller-cryptobilis",
@@ -1597,6 +1565,38 @@
     "link": "https://decrypt.co/382984/prisoner-jailed-for-8-years-over-2-7m-crypto-theft-plot-run-from-his-cell",
     "date": "Wed, 11 Nov 2026 10:20:53 +0000",
     "collected": "2026-11-11",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Crypto hack losses equal 57 cents per $1 earned onchain: Ark’s Valente",
+    "link": "https://cointelegraph.com/news/crypto-hackers-stole-57-cents-every-1-earned-ark?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 12 Nov 2026 13:39:38 +0000",
+    "collected": "2026-11-12",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "South Korea to permit crypto withdrawal freezes during hacking threats",
+    "link": "https://cointelegraph.com/news/south-korea-crypto-withdrawal-freezes-suspected-hacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 12 Nov 2026 06:00:56 +0000",
+    "collected": "2026-11-12",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Binance CSO unwittingly foreshadowed $6.3B hack tactic months before attack",
+    "link": "https://cointelegraph.com/news/binance-cso-foreshadowed-6b-hack-tactic-months-before-attack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 12 Nov 2026 05:22:44 +0000",
+    "collected": "2026-11-12",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Stablecoin Drain, ETF Outflows Leave Bitcoin 'Running on Empty'",
+    "link": "https://decrypt.co/383094/stablecoin-drain-etf-outflows-bitcoin-running-empty",
+    "date": "Wed, 11 Nov 2026 21:46:03 +0000",
+    "collected": "2026-11-12",
     "used": false
   }
 ]
