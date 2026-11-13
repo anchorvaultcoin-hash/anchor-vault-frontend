@@ -46,6 +46,8 @@ The supported asset list may expand over time.
 Always verify application checksums before use.
 
 ## Official links
+**Website:**
+https://anchorvaultcoin.com
 
 **Website:**
 https://anchorvaultcoin-hash.github.io/anchor-vault-frontend/
