@@ -86,7 +86,7 @@ No part of the project may be copied, reproduced, redistributed, modified, repub
 This repository does not grant permission to reproduce or distribute the AnchorVaultCoin product, branding or proprietary materials.
 
 Smart contract source code is publicly available:
-[anchorvaultcoin-hash/anchor-vault-v45] https://github.com/anchorvaultcoin-hash/anchor-vault-v45) (licensed under BUSL-1.1).
+[anchorvaultcoin-hash/anchor-vault-v45] (https://github.com/anchorvaultcoin-hash/anchor-vault-v45) (licensed under BUSL-1.1).
 
 **AnchorVaultCoin**
 Secure your crypto with an additional layer of protection.
