@@ -69,7 +69,7 @@ https://github.com/anchorvaultcoin-hash/anchor-vault-frontend
 
 ## Security
 
-Use only the official https//anchorvaultcoin.com website, official project accounts and official application releases.
+Use only the official https://anchorvaultcoin.com website, official project accounts and official application releases.
 
 Never trust cloned websites, modified applications, unofficial contract addresses or links received from unknown sources.
 
