@@ -1,13 +1,5 @@
 [
   {
-    "source": "Cointelegraph",
-    "title": "Scammer loses $4.8M stored on tampered Ledgers: Asia Express",
-    "link": "https://cointelegraph.com/magazine/scammer-loses-48m-stored-on-tampered-ledgers-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Fri, 16 Oct 2026 00:16:25 +0000",
-    "collected": "2026-10-16",
-    "used": false
-  },
-  {
     "source": "The Defiant",
     "title": "Ledger Was Hacked — Who Do You Trust With Your Keys Now?",
     "link": "https://thedefiant.io/podcasts-and-videos/podcast/ledger-was-hacked-who-do-you-trust-with-your-keys-now",
@@ -1597,6 +1589,14 @@
     "link": "https://thehackernews.com/2026/11/trezor-confirms-hidden-hardware.html",
     "date": "Fri, 13 Nov 2026 19:24:20 +0530",
     "collected": "2026-11-14",
+    "used": false
+  },
+  {
+    "source": "BleepingComputer",
+    "title": "US disrupts North Korean campaign behind $400 million crypto theft",
+    "link": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
+    "date": "Sat, 14 Nov 2026 10:15:49 -0500",
+    "collected": "2026-11-15",
     "used": false
   }
 ]
