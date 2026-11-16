@@ -1,13 +1,5 @@
 [
   {
-    "source": "The Defiant",
-    "title": "Ledger Was Hacked — Who Do You Trust With Your Keys Now?",
-    "link": "https://thedefiant.io/podcasts-and-videos/podcast/ledger-was-hacked-who-do-you-trust-with-your-keys-now",
-    "date": "Thu, 15 Oct 2026 18:14:31 GMT",
-    "collected": "2026-10-16",
-    "used": false
-  },
-  {
     "source": "CoinDesk",
     "title": "Scammer gets scammed in Ledger spy-chip exploit, loses almost $5 million in bitcoin",
     "link": "https://www.coindesk.com/business/2026/10/16/scammer-gets-scammed-in-ledger-spy-chip-exploit-loses-almost-usd5-million-in-bitcoin",
@@ -1597,6 +1589,14 @@
     "link": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
     "date": "Sat, 14 Nov 2026 10:15:49 -0500",
     "collected": "2026-11-15",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Bitcoin miners were hijacked and their BTC rewards redirected to an attacker",
+    "link": "https://www.coindesk.com/tech/2026/11/16/bitcoin-miners-were-hijacked-and-their-btc-rewards-redirected-to-an-attacker",
+    "date": "Mon, 16 Nov 2026 07:51:15 +0000",
+    "collected": "2026-11-16",
     "used": false
   }
 ]
