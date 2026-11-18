@@ -1,53 +1,5 @@
 [
   {
-    "source": "Decrypt",
-    "title": "Mastercard Brings Its Fraud-Fighting Tools to Stablecoin Payments",
-    "link": "https://decrypt.co/381365/mastercard-brings-its-fraud-fighting-tools-to-stablecoin-payments",
-    "date": "Mon, 19 Oct 2026 19:16:04 +0000",
-    "collected": "2026-10-20",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Qubic restarts blockchain, opens recovery claims after $1.4M hack",
-    "link": "https://cointelegraph.com/news/qubic-restarts-blockchain-opens-recovery-claims-after-14m-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Wed, 21 Oct 2026 10:18:14 +0000",
-    "collected": "2026-10-21",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Wallet Linked to Drift Exploit Sends $61 Million in Ethereum to Tornado Cash",
-    "link": "https://decrypt.co/381450/wallet-drift-exploit-sends-61-million-ethereum-tornado-cash",
-    "date": "Tue, 20 Oct 2026 20:46:04 +0000",
-    "collected": "2026-10-21",
-    "used": false
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Lazarus hackers use post-quantum cryptography for malware delivery",
-    "link": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-use-post-quantum-cryptography-for-malware-delivery/",
-    "date": "Wed, 21 Oct 2026 16:31:48 -0400",
-    "collected": "2026-10-22",
-    "used": false
-  },
-  {
-    "source": "The Defiant",
-    "title": "CoinDCX Co-Founder Denies New Hack After $16 Million Wallet Alert",
-    "link": "https://thedefiant.io/news/hacks/coindcx-co-founder-denies-new-hack-after-16-million-wallet-alert",
-    "date": "Thu, 22 Oct 2026 08:18:24 GMT",
-    "collected": "2026-10-22",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "Critical x402 SDK Flaw Could Let Malicious APIs Drain AI Agents’ Token Balances",
-    "link": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
-    "date": "Fri, 23 Oct 2026 14:05:45 +0530",
-    "collected": "2026-10-23",
-    "used": false
-  },
-  {
     "source": "The Defiant",
     "title": "UAE-Led Scam Crackdown Identifies Over $39 Billion in Funds and Crypto",
     "link": "https://thedefiant.io/news/security/uae-led-scam-crackdown-identifies-over-39-billion-in-funds-and-crypto",
@@ -1597,6 +1549,54 @@
     "link": "https://decrypt.co/383392/hackers-redirected-bitcoin-miner-rewards-ai-attack-luxor",
     "date": "Mon, 16 Nov 2026 21:16:03 +0000",
     "collected": "2026-11-17",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "Trigram Campaign Impersonates About 50 AI and Blockchain Brands to Target Devs with Infostealers",
+    "link": "https://thehackernews.com/2026/11/trigram-campaign-impersonates-about-50.html",
+    "date": "Tue, 17 Nov 2026 20:47:28 +0530",
+    "collected": "2026-11-18",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "U.S. judge says Ethereum has ‘no terms of use,’ clears MIT brothers of $25 million fraud",
+    "link": "https://www.coindesk.com/policy/2026/11/18/u-s-judge-says-ethereum-has-no-terms-of-use-clears-mit-brothers-of-usd25-million-fraud",
+    "date": "Wed, 18 Nov 2026 05:30:10 +0000",
+    "collected": "2026-11-18",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Scattered Spider Hacker Sentenced to 6 Years Over $11.6M in Stolen Crypto",
+    "link": "https://decrypt.co/383522/scattered-spider-hacker-sentenced-to-6-years-over-11-6m-in-stolen-crypto",
+    "date": "Wed, 18 Nov 2026 10:17:17 +0000",
+    "collected": "2026-11-18",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Binance Hack Wallets Move $137 Million in Ethereum After Two Weeks of Silence",
+    "link": "https://decrypt.co/383446/binance-hack-wallets-move-ethereum-after-two-weeks",
+    "date": "Tue, 17 Nov 2026 17:18:41 +0000",
+    "collected": "2026-11-18",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Binance Hack Wallet Moves Another $142 Million in ETH",
+    "link": "https://thedefiant.io/news/hacks/binance-hack-wallet-moves-another-142-million-in-eth",
+    "date": "Wed, 18 Nov 2026 10:31:54 GMT",
+    "collected": "2026-11-18",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Scattered Spider Hacker Gets Six Years for Crypto Theft",
+    "link": "https://thedefiant.io/news/security/scattered-spider-hacker-gets-six-years-for-crypto-theft",
+    "date": "Wed, 18 Nov 2026 10:31:11 GMT",
+    "collected": "2026-11-18",
     "used": false
   }
 ]
