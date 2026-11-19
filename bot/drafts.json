@@ -1,46 +1,6 @@
 [
   {
     "source": "The Defiant",
-    "title": "UAE-Led Scam Crackdown Identifies Over $39 Billion in Funds and Crypto",
-    "link": "https://thedefiant.io/news/security/uae-led-scam-crackdown-identifies-over-39-billion-in-funds-and-crypto",
-    "date": "Fri, 23 Oct 2026 02:03:09 GMT",
-    "collected": "2026-10-23",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Initia halts blockchain after exploit reportedly drains over $2.6M",
-    "link": "https://cointelegraph.com/news/initia-halts-blockchain-exploit-drained?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Fri, 23 Oct 2026 18:43:17 +0000",
-    "collected": "2026-10-24",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Crypto Scammers Who Used Prayer Groups to Lure Victims Must Pay $1.3 Billion, Says New York",
-    "link": "https://decrypt.co/381708/crypto-scammers-prayer-groups-lure-victims-must-pay-1-3-billion-new-york",
-    "date": "Fri, 23 Oct 2026 16:31:03 +0000",
-    "collected": "2026-10-24",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "Leaked LiteLLM Master Key Let Attackers Steal GitHub Tokens and Hijack Release Pipeline",
-    "link": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html",
-    "date": "Sat, 24 Oct 2026 16:33:33 +0530",
-    "collected": "2026-10-25",
-    "used": false
-  },
-  {
-    "source": "The Defiant",
-    "title": "X100 Exploit Proceeds Split Into Four 400-ETH Wallets",
-    "link": "https://thedefiant.io/news/hacks/x100-exploit-proceeds-split-into-four-400-eth-wallets",
-    "date": "Sat, 24 Oct 2026 19:41:15 GMT",
-    "collected": "2026-10-25",
-    "used": false
-  },
-  {
-    "source": "The Defiant",
     "title": "Electrum Patches Wallet Flaw Exploited Through Malicious Servers",
     "link": "https://thedefiant.io/news/security/electrum-patches-wallet-flaw-exploited-through-malicious-servers",
     "date": "Sat, 24 Oct 2026 17:57:11 GMT",
@@ -1597,6 +1557,46 @@
     "link": "https://thedefiant.io/news/security/scattered-spider-hacker-gets-six-years-for-crypto-theft",
     "date": "Wed, 18 Nov 2026 10:31:11 GMT",
     "collected": "2026-11-18",
+    "used": false
+  },
+  {
+    "source": "The Hacker News",
+    "title": "CISA Warns of 4 Exploited Flaws Linked to Ransomware, Cryptomining, and LLMjacking Attacks",
+    "link": "https://thehackernews.com/2026/11/cisa-warns-of-4-exploited-flaws-linked.html",
+    "date": "Thu, 19 Nov 2026 13:30:00 +0530",
+    "collected": "2026-11-19",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "North Korean hackers used Sky's stablecoin system, putting billions at freeze risk",
+    "link": "https://www.coindesk.com/business/2026/11/19/north-korean-hackers-used-sky-s-stablecoin-system-putting-billions-at-freeze-risk",
+    "date": "Thu, 19 Nov 2026 11:30:00 +0000",
+    "collected": "2026-11-19",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Ethereum block builders received the most in a $3.4 million vault hack, data shows",
+    "link": "https://www.coindesk.com/tech/2026/11/19/ethereum-block-builders-received-the-most-in-a-usd3-4-million-vault-hack-data-shows",
+    "date": "Thu, 19 Nov 2026 05:39:06 +0000",
+    "collected": "2026-11-19",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Binance hackers stole 192 tokens across 11 networks, court docs show",
+    "link": "https://cointelegraph.com/news/binance-hackers-stole-192-tokens-across-11-networks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 19 Nov 2026 08:13:08 +0000",
+    "collected": "2026-11-19",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Binance Wins $6.5B Freezing Order Over Hack That Can Be Served via the Blockchain",
+    "link": "https://decrypt.co/383608/binance-wins-6-5b-freezing-order-over-hack-that-can-be-served-via-the-blockchain",
+    "date": "Thu, 19 Nov 2026 12:59:14 +0000",
+    "collected": "2026-11-19",
     "used": false
   }
 ]
