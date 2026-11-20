@@ -1,21 +1,5 @@
 [
   {
-    "source": "The Defiant",
-    "title": "Electrum Patches Wallet Flaw Exploited Through Malicious Servers",
-    "link": "https://thedefiant.io/news/security/electrum-patches-wallet-flaw-exploited-through-malicious-servers",
-    "date": "Sat, 24 Oct 2026 17:57:11 GMT",
-    "collected": "2026-10-25",
-    "used": false
-  },
-  {
-    "source": "The Defiant",
-    "title": "X100 Exploit Nets 4.85 Million USDT After Governance Takeover",
-    "link": "https://thedefiant.io/news/hacks/x100-exploit-nets-4-85-million-usdt-after-governance-takeover",
-    "date": "Sat, 24 Oct 2026 14:58:09 GMT",
-    "collected": "2026-10-25",
-    "used": false
-  },
-  {
     "source": "The Hacker News",
     "title": "Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs",
     "link": "https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html",
@@ -1597,6 +1581,22 @@
     "link": "https://decrypt.co/383608/binance-wins-6-5b-freezing-order-over-hack-that-can-be-served-via-the-blockchain",
     "date": "Thu, 19 Nov 2026 12:59:14 +0000",
     "collected": "2026-11-19",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Binance hacker moves nearly $600M in ETH, routes funds through THORChain, Chainflip",
+    "link": "https://cointelegraph.com/news/binance-hacker-600m-eth-routes-thorchain-chainflip?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 20 Nov 2026 11:38:49 +0000",
+    "collected": "2026-11-20",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "SEC charges eight firms over fake crypto platforms tied to $37M fraud",
+    "link": "https://cointelegraph.com/news/sec-charges-eight-fake-crypto-platforms-37m-fraud?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 20 Nov 2026 08:11:30 +0000",
+    "collected": "2026-11-20",
     "used": false
   }
 ]
