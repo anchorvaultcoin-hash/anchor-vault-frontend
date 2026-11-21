@@ -1,21 +1,5 @@
 [
   {
-    "source": "The Hacker News",
-    "title": "Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs",
-    "link": "https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html",
-    "date": "Mon, 26 Oct 2026 13:19:46 +0530",
-    "collected": "2026-10-26",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Bitcoin wallet bug let rogue servers steal funds when users tried to speed up payments",
-    "link": "https://www.coindesk.com/tech/2026/10/26/bitcoin-wallet-bug-let-rogue-servers-steal-funds-when-users-tried-to-speed-up-payments",
-    "date": "Mon, 26 Oct 2026 05:15:20 +0000",
-    "collected": "2026-10-26",
-    "used": false
-  },
-  {
     "source": "Cointelegraph",
     "title": "AI agents help rescue ETH’s Glamsterdam fork, ‘Steal My Bitcoin’ site: Hodler’s Digest",
     "link": "https://cointelegraph.com/magazine/ai-agents-help-rescue-eths-glamsterdam-fork-steal-my-bitcoin-site-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -1597,6 +1581,22 @@
     "link": "https://cointelegraph.com/news/sec-charges-eight-fake-crypto-platforms-37m-fraud?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "date": "Fri, 20 Nov 2026 08:11:30 +0000",
     "collected": "2026-11-20",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Wrapped Monero token crashes 99.8% amid suspected $13.5M exploit",
+    "link": "https://cointelegraph.com/news/wrapped-monero-token-crashes-998-amid-suspected-135m-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 20 Nov 2026 19:46:10 +0000",
+    "collected": "2026-11-21",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Wrapped Monero Token Collapses 99% After $13 Million Hack Blamed on Web Host",
+    "link": "https://decrypt.co/383732/wrapped-monero-token-collapses-99-after-13-million-hack-blamed-on-web-host",
+    "date": "Fri, 20 Nov 2026 17:41:45 +0000",
+    "collected": "2026-11-21",
     "used": false
   }
 ]
