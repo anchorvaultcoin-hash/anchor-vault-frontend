@@ -3,13 +3,13 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://anchorvaultcoin.com/</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://anchorvaultcoin.com/landing.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://anchorvaultcoin.com/landing.html?lang=ru"/>
@@ -19,14 +19,20 @@
   </url>
   <url>
     <loc>https://anchorvaultcoin.com/pulse.html</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://anchorvaultcoin.com/hexens-audit-anchorvaultcoin-2026-08-10.pdf</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-11-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://anchorvaultcoin.com/llms.txt</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
