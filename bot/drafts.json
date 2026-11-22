@@ -1,22 +1,6 @@
 [
   {
     "source": "Cointelegraph",
-    "title": "AI agents help rescue ETH’s Glamsterdam fork, ‘Steal My Bitcoin’ site: Hodler’s Digest",
-    "link": "https://cointelegraph.com/magazine/ai-agents-help-rescue-eths-glamsterdam-fork-steal-my-bitcoin-site-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Mon, 26 Oct 2026 03:15:31 +0000",
-    "collected": "2026-10-26",
-    "used": false
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Chinese man extradited for role in $36 million cryptocurrency scam",
-    "link": "https://www.bleepingcomputer.com/news/security/chinese-man-extradited-for-role-in-36-million-cryptocurrency-scam/",
-    "date": "Mon, 26 Oct 2026 09:56:44 -0400",
-    "collected": "2026-10-27",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
     "title": "Keystone breach deepens: Hackers stole key used to verify wallets as genuine",
     "link": "https://cointelegraph.com/news/keystone-breach-deepens-hackers-stole-key-used-to-verify-wallets-as-genuine?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
     "date": "Tue, 27 Oct 2026 02:48:47 +0000",
@@ -1597,6 +1581,22 @@
     "link": "https://decrypt.co/383732/wrapped-monero-token-collapses-99-after-13-million-hack-blamed-on-web-host",
     "date": "Fri, 20 Nov 2026 17:41:45 +0000",
     "collected": "2026-11-21",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Fraudsters Used Fake Crypto Exchanges to Steal $37 Million, SEC Alleges",
+    "link": "https://decrypt.co/383752/fraudsters-fake-crypto-exchanges-steal-37-million-sec",
+    "date": "Sat, 21 Nov 2026 17:01:02 +0000",
+    "collected": "2026-11-22",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Cysic Bridge Exploit Minted 10 Million Tokens on BNB",
+    "link": "https://thedefiant.io/news/hacks/cysic-bridge-exploit-minted-10-million-tokens-on-bnb",
+    "date": "Sun, 22 Nov 2026 04:10:34 GMT",
+    "collected": "2026-11-22",
     "used": false
   }
 ]
