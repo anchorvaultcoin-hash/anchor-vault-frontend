@@ -39,6 +39,7 @@ AnchorVaultCoin is not affiliated with any project named "AnchorVault" — that 
 - [Blog](https://anchorvaultcoin-hash.github.io/anchor-vault-blog/)
 - [Telegram](https://t.me/AnchorVaultCoin)
 - [X](https://x.com/Anchorvaultcoin)
+- [Discord](https://discord.gg/ydKjw4pAwH)
 
 ---
 
@@ -83,3 +84,4 @@ AnchorVaultCoin is not affiliated with any project named "AnchorVault" — that 
 - [Блог](https://anchorvaultcoin-hash.github.io/anchor-vault-blog/)
 - [Telegram](https://t.me/AnchorVaultCoin)
 - [X](https://x.com/Anchorvaultcoin)
+- [Discord](https://discord.gg/ydKjw4pAwH)
