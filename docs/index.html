@@ -567,13 +567,13 @@ Full checksums: CHECKSUMS.txt</code></pre>
      просит публичную информацию об основателе и способ связи. -->
 <section id="team">
   <div class="container">
-    <h2 id="teamTitle"></h2>
-    <p style="color:var(--text2);margin-bottom:18px" id="teamDesc"></p>
+    <h2 id="teamTitle">Команда и контакты</h2>
+    <p style="color:var(--text2);margin-bottom:18px" id="teamDesc">Проект ведётся открыто: исходный код, отчёт аудита и контакты доступны всем.</p>
 
     <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start">
       <div style="flex:1 1 280px;border:1px solid var(--line,#1e2736);border-radius:12px;padding:16px">
         <div style="font-weight:700;font-size:17px">Vitaly Sokolov</div>
-        <div style="color:var(--text2);margin:2px 0 10px" id="teamRole"></div>
+        <div style="color:var(--text2);margin:2px 0 10px" id="teamRole">Основатель и разработчик</div>
         <div class="flinks" style="display:flex;gap:14px;flex-wrap:wrap">
           <a href="https://github.com/anchorvaultcoin-hash" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://x.com/Anchorvaultcoin" target="_blank" rel="noopener noreferrer">X</a>
@@ -582,9 +582,9 @@ Full checksums: CHECKSUMS.txt</code></pre>
       </div>
 
       <div style="flex:1 1 280px;border:1px solid var(--line,#1e2736);border-radius:12px;padding:16px">
-        <div style="font-weight:700;font-size:17px" id="contactTitle"></div>
+        <div style="font-weight:700;font-size:17px" id="contactTitle">Связаться с проектом</div>
         <p style="margin:8px 0 0"><a href="mailto:info@anchorvaultcoin.com">info@anchorvaultcoin.com</a></p>
-        <p style="color:var(--text2);font-size:14px;margin:8px 0 0" id="contactNote"></p>
+        <p style="color:var(--text2);font-size:14px;margin:8px 0 0" id="contactNote">Этот адрес указан в заявках обозревателям и подтверждает, что сайт и токен принадлежат одному проекту.</p>
       </div>
     </div>
   </div>
@@ -971,7 +971,7 @@ Full checksums: CHECKSUMS.txt</code></pre>
     if(t.ancrContractText) setText('ancrContractText', t.ancrContractText);
     // Видео, Bitcoin и Litecoin, факты, лимиты
     ['videoTitle','videoSoon','utxoDesc','utxo1Title','utxo1Desc','utxo2Title','utxo2Desc','utxo3Title','utxo3Desc','utxoDl','dlNew',
-     'factsTitle','factSiteL','factTokL','factTok','factNetL','factNet','factNet2','factAuditL','factAudit','factAuditLink','factResL','factNotAff','fLimits']
+     'teamTitle','teamDesc','teamRole','contactTitle','contactNote','factsTitle','factSiteL','factTokL','factTok','factNetL','factNet','factNet2','factAuditL','factAudit','factAuditLink','factResL','factNotAff','fLimits']
       .forEach(function(k){ if(t[k]) setText(k, t[k]); });
     if(t.utxoTitle1) setGold('utxoTitle', t.utxoTitle1, t.utxoTitle2);
   }
