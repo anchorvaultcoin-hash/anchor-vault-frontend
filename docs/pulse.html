@@ -1070,7 +1070,10 @@ const I18N = {
   t_disconnected:{ru:"Отключён",en:"Disconnected",zh:"已断开"},
   t_wrong_net:{ru:"Переключитесь на Ethereum Mainnet",en:"Switch to Ethereum Mainnet",zh:"请切换到以太坊主网"},
   t_wrong_net_manual:{ru:"Не удалось переключить сеть автоматически. Откройте MetaMask и выберите Ethereum Mainnet вручную, затем нажмите на бейдж «Сеть» ещё раз.",en:"Could not switch the network automatically. Open MetaMask and select Ethereum Mainnet manually, then click the Network badge again.",zh:"无法自动切换网络。请打开 MetaMask 手动选择以太坊主网，然后再次点击「网络」标签。"},
-  t_no_metamask:{ru:"MetaMask не найден",en:"MetaMask not found",zh:"未找到 MetaMask"},
+  t_no_metamask:{ru:"Кошелёк не найден",en:"Wallet not found",zh:"未找到钱包"},
+  kw_no_gen:{ru:"В браузере пульт ключи не создаёт и не хранит. Новые адреса создайте в своём кошельке (MetaMask, Rabby, Trust и др.) или в приложении AnchorVaultCoin.",en:"In the browser the panel never creates or stores keys. Create new addresses in your wallet (MetaMask, Rabby, Trust, etc.) or in the AnchorVaultCoin app.",zh:"在浏览器中，面板不会创建或存储密钥。请在您的钱包（MetaMask、Rabby、Trust 等）或 AnchorVaultCoin 应用中创建新地址。"},
+  w_pick_title:{ru:"🔌 Выберите кошелёк",en:"🔌 Choose a wallet",zh:"🔌 选择钱包"},
+  w_wallet:{ru:"Кошелёк",en:"Wallet",zh:"钱包"},
   t_fill_all:{ru:"Заполните все поля",en:"Fill in all fields",zh:"请填写所有字段"},
   t_bad_address:{ru:"Неверный адрес",en:"Invalid address",zh:"地址无效"},
   t_bad_amount:{ru:"Неверная сумма",en:"Invalid amount",zh:"金额无效"},
@@ -1104,27 +1107,13 @@ const I18N = {
   kw_field_rec:{ru:"Аварийный ключ",en:"Emergency key",zh:"紧急钥匙"},
   kw_field_reserve:{ru:"Резервный адрес",en:"Backup address",zh:"备用地址"},
   kw_choose:{ru:"Выберите способ",en:"Choose a method",zh:"选择方式"},
-  kw_gen_btn:{ru:"Создать новый кошелёк",en:"Create a new wallet",zh:"创建新钱包"},
-  kw_gen_desc:{ru:"Пульт создаст новый кошелёк прямо здесь. Удобно для теста.",en:"The panel creates a new wallet right here. Handy for testing.",zh:"面板将在此直接创建新钱包。便于测试。"},
-  kw_mm_btn:{ru:"Выбрать из MetaMask",en:"Pick from MetaMask",zh:"从 MetaMask 选取"},
-  kw_mm_desc:{ru:"Берём адрес из ваших аккаунтов MetaMask. Самый безопасный способ.",en:"Take an address from your MetaMask accounts. The safest way.",zh:"从您的 MetaMask 账户中选取地址。最安全的方式。"},
+  kw_mm_btn:{ru:"Выбрать из кошелька",en:"Pick from your wallet",zh:"从钱包中选取"},
+  kw_mm_desc:{ru:"Адрес берётся из аккаунтов вашего кошелька: MetaMask, Rabby, Coinbase Wallet, Trust и других.",en:"The address is taken from your wallet accounts: MetaMask, Rabby, Coinbase Wallet, Trust and others.",zh:"地址取自您的钱包账户：MetaMask、Rabby、Coinbase Wallet、Trust 等。"},
   kw_manual_btn:{ru:"Ввести адрес вручную",en:"Enter address manually",zh:"手动输入地址"},
-  kw_gen_warn:{ru:"⚠ Сохраните секретную фразу. Без неё кошелёк не восстановить, и мы её нигде не храним.",en:"⚠ Save the secret phrase. Without it the wallet can't be recovered, and we don't store it anywhere.",zh:"⚠ 请保存助记词。没有它将无法恢复钱包，我们也不会在任何地方存储它。"},
-  kw_address:{ru:"Адрес",en:"Address",zh:"地址"},
-  kw_phrase:{ru:"Секретная фраза (12 слов)",en:"Secret phrase (12 words)",zh:"助记词（12 个单词）"},
-  kw_saved_check:{ru:"Я сохранил секретную фразу в надёжном месте",en:"I've saved the secret phrase somewhere safe",zh:"我已将助记词保存在安全的地方"},
-  kw_download:{ru:"⬇ Скачать памятку (.txt)",en:"⬇ Download memo (.txt)",zh:"⬇ 下载备忘录 (.txt)"},
-  kw_use:{ru:"Подставить в поле →",en:"Fill into field →",zh:"填入字段 →"},
-  kw_regen:{ru:"Создать другой",en:"Create another",zh:"创建另一个"},
-  kw_mm_loading:{ru:"Открываю MetaMask…",en:"Opening MetaMask…",zh:"正在打开 MetaMask…"},
+  kw_mm_loading:{ru:"Открываю кошелёк…",en:"Opening your wallet…",zh:"正在打开钱包…"},
   kw_mm_pick:{ru:"Выберите аккаунт",en:"Pick an account",zh:"选择账户"},
-  kw_mm_none:{ru:"Аккаунты не выбраны. В MetaMask можно создать новый аккаунт и подключить его.",en:"No accounts selected. In MetaMask you can create a new account and connect it.",zh:"未选择账户。在 MetaMask 中可创建新账户并连接。"},
-  kw_mm_hint:{ru:"Совет: в MetaMask заранее создайте 2 новых аккаунта — они и станут вашими ключами.",en:"Tip: create 2 new accounts in MetaMask beforehand — they'll be your keys.",zh:"提示：请提前在 MetaMask 中创建 2 个新账户——它们将成为您的钥匙。"},
-  kw_import_note:{ru:"Чтобы подписывать операции этим кошельком, импортируйте его в MetaMask по секретной фразе (Импорт аккаунта → секретная фраза).",en:"To sign operations with this wallet, import it into MetaMask using the secret phrase (Import account → secret phrase).",zh:"要用此钱包签署操作，请用助记词将其导入 MetaMask（导入账户 → 助记词）。"},
-  kw_mainnet_warn:{ru:"Ключи, созданные в браузере, защищены слабее. Для реальных денег используйте аккаунты MetaMask или аппаратный кошелёк.",en:"Keys created in the browser are less protected. For real funds use MetaMask accounts or a hardware wallet.",zh:"在浏览器中创建的密钥防护较弱。如涉及真实资金，请使用 MetaMask 账户或硬件钱包。"},
-  kw_danger_title:{ru:"ВНИМАНИЕ! Ненадёжный способ хранения!",en:"WARNING! Unsafe key storage!",zh:"警告！密钥存储方式不安全！"},
-  kw_danger_text:{ru:"Приватный ключ создаётся прямо в браузере. Любое расширение, любой XSS, любой вирус могут его украсть. На mainnet это НЕДОПУСТИМО. Ключи стираются из памяти при закрытии этого окна или через 5 минут.",en:"The private key is generated directly in the browser. Any extension, any XSS, any virus can steal it. NEVER use this on mainnet. Keys are wiped from memory when this window closes or after 5 minutes.",zh:"私钥直接在浏览器中生成。任何扩展、任何 XSS、任何病毒都能窃取它。绝不可在主网上使用。关闭此窗口或 5 分钟后，密钥将从内存中清除。"},
-  kw_agree_check:{ru:"Я понимаю риск и использую эту функцию осознанно.",en:"I understand the risk and I am using this feature deliberately.",zh:"我了解风险，并确认自愿使用此功能。"},
+  kw_mm_none:{ru:"Аккаунты не выбраны. Создайте новый аккаунт в своём кошельке и подключите его.",en:"No accounts selected. Create a new account in your wallet and connect it.",zh:"未选择账户。请在您的钱包中创建新账户并连接。"},
+  kw_mm_hint:{ru:"Совет: заранее создайте в своём кошельке 2 новых аккаунта — они и станут вашими ключами.",en:"Tip: create 2 new accounts in your wallet beforehand — they'll be your keys.",zh:"提示：请提前在您的钱包中创建 2 个新账户——它们将成为您的钥匙。"},
   kw_done:{ru:"Адрес подставлен",en:"Address filled in",zh:"地址已填入"},
 
   // ВСТРОЕННАЯ ПОДПИСЬ
@@ -1900,8 +1889,8 @@ async function ensureNet(){
     if($('nnet')) $('nnet').textContent='Сеть: Ethereum';
     return true;
   }
-  if(!window.ethereum)return false;
-  const cid=await window.ethereum.request({method:'eth_chainId'});
+  if(!ethP())return false;
+  const cid=await ethP().request({method:'eth_chainId'});
   const ok=parseInt(cid,16)===C.CHAIN;
   S.netOK=ok;
   const n=$('ibn'),v=$('ibv-n');
@@ -1909,12 +1898,45 @@ async function ensureNet(){
   if($('nnet')) $('nnet').textContent=`Сеть: ${ok?'Ethereum':'WRONG'}`;
   return ok;
 }
+/* ═══ Кошельки пользователя: EIP-6963 (MetaMask, Rabby, Coinbase, Trust, OKX и др.) ═══
+   В браузере пульт ключей не создаёт и не хранит: только подключается к кошельку пользователя. */
+const WALLETS=[];
+let EP=null;
+window.addEventListener('eip6963:announceProvider',e=>{
+  const d=e&&e.detail;
+  if(!d||!d.info||!d.provider||typeof d.provider.request!=='function')return;
+  if(!WALLETS.some(w=>w.info.uuid===d.info.uuid))WALLETS.push(d);
+});
+try{window.dispatchEvent(new Event('eip6963:requestProvider'));}catch(e){}
+function ethP(){
+  if(EP)return EP;
+  const r=lsGet('av45w','');
+  const w=r&&WALLETS.find(x=>x.info.rdns===r);
+  return w?w.provider:(window.ethereum||(WALLETS[0]&&WALLETS[0].provider)||null);
+}
+function wIcon(i){const s=String(i||'');return /^data:image\/(png|svg\+xml|webp|jpeg|gif);base64,[A-Za-z0-9+\/=]+$/.test(s)?s:'';}
+function pickWallet(){
+  return new Promise(res=>{
+    if(WALLETS.length<=1){res(ethP());return;}
+    $('kwz-title').textContent=t('w_pick_title');
+    $('kwz-sub').textContent='';
+    window.__wPick=i=>{
+      const w=WALLETS[i];if(!w)return;
+      EP=w.provider;lsSet('av45w',w.info.rdns||'');
+      try{EP.on&&EP.on('accountsChanged',()=>location.reload());EP.on&&EP.on('chainChanged',()=>location.reload());}catch(e){}
+      window.__wPick=null;$('kwz').classList.remove('show');res(EP);
+    };
+    window.__wCancel=()=>{window.__wPick=null;$('kwz').classList.remove('show');res(null);};
+    $('kwz-body').innerHTML=`<div class="flex flex-col gap2 mb3">${WALLETS.map((w,i)=>{const ic=wIcon(w.info.icon);return `<button class="btn btnsm btnbl" style="display:flex;align-items:center;gap:8px;text-align:left" onclick="__wPick(${i})">${ic?`<img src="${ic}" alt="" style="width:20px;height:20px;border-radius:4px;flex-shrink:0">`:''}<span>${E(w.info.name||'Wallet')}</span></button>`;}).join('')}</div><button class="btn btnsm" onclick="__wCancel()">${t('btn_back')}</button>`;
+    $('kwz').classList.add('show');
+  });
+}
 async function swNetRetry(){
   // В нативном режиме сеть задаёт сам провайдер приложения — MetaMask здесь
   // ни при чём, и предлагать его установить бессмысленно. Просто
   // переподключаем провайдер: это и есть «повторить попытку».
   if(window.SecureWallet){ await switchNet(); return; }
-  if(!window.ethereum){toast(t('t_no_metamask'),'warning');return;}
+  if(!ethP()){toast(t('t_no_metamask'),'warning');return;}
   await swNet();
   const ok=await ensureNet();
   if(ok){ toast(t('net_ok'),'success'); await refreshIB(); }
@@ -1923,8 +1945,8 @@ async function swNetRetry(){
 window.swNetRetry=swNetRetry;
 
 async function swNet(){
-  try{await window.ethereum.request({method:'wallet_switchEthereumChain',params:[{chainId:C.CHEX}]});}
-  catch(e){if(e.code===4902)await window.ethereum.request({method:'wallet_addEthereumChain',params:[{chainId:C.CHEX,chainName:'Ethereum Mainnet',nativeCurrency:{name:'Ether',symbol:'ETH',decimals:18},rpcUrls:[C.RPC],blockExplorerUrls:[C.EXP]}]});}
+  try{await ethP().request({method:'wallet_switchEthereumChain',params:[{chainId:C.CHEX}]});}
+  catch(e){if(e.code===4902)await ethP().request({method:'wallet_addEthereumChain',params:[{chainId:C.CHEX,chainName:'Ethereum Mainnet',nativeCurrency:{name:'Ether',symbol:'ETH',decimals:18},rpcUrls:[C.RPC],blockExplorerUrls:[C.EXP]}]});}
 }
 
 async function connect(){
@@ -1945,12 +1967,14 @@ async function connect(){
       S.erc = new ethers.Contract(C.ANCR, ERC20, S.sign);
     }
     // ═══ MetaMask browser fallback ═══
-    else if(window.ethereum){
-      showL(t('loading'),'MetaMask');
-      const accs=await window.ethereum.request({method:'eth_requestAccounts'});
+    else if(ethP()){
+      const P=await pickWallet();
+      if(!P)return;
+      showL(t('loading'),t('w_wallet'));
+      const accs=await P.request({method:'eth_requestAccounts'});
       hideL();
       if(!accs?.length){toast(t('t_no_metamask'),'warning');return;}
-      S.prov=new ethers.BrowserProvider(window.ethereum,'any');
+      S.prov=new ethers.BrowserProvider(P,'any');
       S.sign=await S.prov.getSigner();
       S.user=await S.sign.getAddress();
       S.vlt=new ethers.Contract(C.CONTRACT,ABI,S.sign);
@@ -2263,18 +2287,6 @@ window.closeKW=function(){
   }
   if(window.__kwTimer){clearTimeout(window.__kwTimer);window.__kwTimer=null;}
 };
-// Автоочистка через 5 минут даже если мастер открыт
-function kwArmTimer(){
-  if(window.__kwTimer)clearTimeout(window.__kwTimer);
-  window.__kwTimer=setTimeout(()=>{
-    if(KW_GEN.length){
-      KW_GEN.forEach(g=>{g.pk='';g.phrase='';});
-      KW_GEN.length=0;
-      log('🔒 Сгенерированные ключи стёрты из памяти (5 мин таймаут).','warning');
-      try{closeKW();}catch{}
-    }
-  }, 5*60*1000);
-}
 
 // Экран 1: выбор какого поля (когда запуск общей кнопкой)
 function kwPickField(){
@@ -2293,19 +2305,8 @@ window.kwSetField=function(id,l){KW_TARGET=id;KW_LABEL=l;kwChoose();};
 function kwChoose(){
   $('kwz-sub').textContent=KW_LABEL;
   $('kwz-body').innerHTML=`
-    <div class="nc ncd mb3" style="font-size:11.5px;line-height:1.5;border-left:4px solid #5ba3c9;padding:10px 12px">
-      <b style="color:#bde0f0">⚠ ${t('kw_danger_title')}</b><br>
-      <span style="color:#fcd9b6">${t('kw_danger_text')}</span>
-    </div>
-    <label class="flex items-start gap2 mb3" style="font-size:11px;color:#e2e8f0;cursor:pointer">
-      <input type="checkbox" id="kwagree" style="margin-top:1px;flex-shrink:0" onchange="kwTogAgree(this.checked)">
-      <span>${t('kw_agree_check')}</span>
-    </label>
+    <div class="nc nci mb3" style="font-size:11px">${t('kw_no_gen')}</div>
     <div style="display:flex;flex-direction:column;gap:9px">
-      <button class="btn btnsm btnbl" id="kwgenbtn" style="text-align:left;padding:11px;opacity:.4;cursor:not-allowed" disabled onclick="kwGen()">
-        <div style="font-weight:700">${t('kw_gen_btn')}</div>
-        <div style="font-size:10px;color:#94a3b8;font-weight:400;margin-top:2px">${t('kw_gen_desc')}</div>
-      </button>
       <button class="btn btnsm btnbl" style="text-align:left;padding:11px" onclick="kwMM()">
         <div style="font-weight:700">${t('kw_mm_btn')}</div>
         <div style="font-size:10px;color:#94a3b8;font-weight:400;margin-top:2px">${t('kw_mm_desc')}</div>
@@ -2315,13 +2316,6 @@ function kwChoose(){
       </button>
     </div>`;
 }
-window.kwTogAgree=function(checked){
-  const b=$('kwgenbtn');
-  if(!b)return;
-  b.disabled=!checked;
-  b.style.opacity=checked?'1':'.4';
-  b.style.cursor=checked?'pointer':'not-allowed';
-};
 
 // Способ A: генерация нового кошелька
 window.kwGen=async function(){
@@ -2341,32 +2335,9 @@ window.kwGen=async function(){
       return;
     }catch(e){toast(perr(e),'error');return;}
   }
-  // --- Browser fallback (original kwGen) ---
-  let w;
-  try{w=ethers.Wallet.createRandom();}catch(e){toast(perr(e),'error');return;}
-  const addr=w.address, phrase=w.mnemonic?.phrase||'', pk=w.privateKey;
-  KW_GEN.push({label:KW_LABEL,address:addr,phrase,pk});
-  kwArmTimer();
-  $('kwz-sub').textContent=KW_LABEL;
-  $('kwz-body').innerHTML=`
-    <div class="nc ncw mb3">${t('kw_gen_warn')}</div>
-    <div class="mb2">
-      <div class="stl">${t('kw_address')}</div>
-      <div class="mono" style="font-size:10.5px;word-break:break-all;background:#0f1318;border:1px solid #2a3347;border-radius:8px;padding:8px;margin-top:3px">${addr}</div>
-    </div>
-    <div class="mb2">
-      <div class="stl">${t('kw_phrase')}</div>
-      <div class="mono" style="font-size:11px;line-height:1.6;word-break:break-word;background:#0f1318;border:1px solid rgba(91,163,201,.4);border-radius:8px;padding:9px;margin-top:3px;color:#bde0f0">${E(phrase)}</div>
-    </div>
-    <div class="nc nci mb3" style="font-size:10px">${t('kw_import_note')}</div>
-    <label class="flex items-start gap2 mb3" style="font-size:11px;color:#e2e8f0;cursor:pointer">
-      <input type="checkbox" id="kwsaved" style="margin-top:1px;flex-shrink:0" onchange="$('kwuse').disabled=!this.checked"> ${t('kw_saved_check')}
-    </label>
-    <div class="flex gap2">
-      <button class="btn btnsm" onclick="kwDownload()">${t('kw_download')}</button>
-      <button class="btn btng btnsm flex-1" id="kwuse" disabled onclick="kwUse('${addr}')">${t('kw_use')}</button>
-    </div>
-    <button class="btn btnsm btnbl mt2" onclick="kwGen()">${t('kw_regen')}</button>`;
+  // В браузере ключи не создаются: только подключение к кошельку пользователя.
+  toast(t('kw_no_gen'),'warning',9000);
+  kwChoose();
 };
 
 // Способ B: выбор из аккаунтов MetaMask
@@ -2375,8 +2346,8 @@ window.kwMM=async function(){
   $('kwz-body').innerHTML=`<div style="text-align:center;padding:18px;color:#94a3b8;font-size:12px">${t('kw_mm_loading')}</div>`;
   let accs=[];
   try{
-    await window.ethereum.request({method:'wallet_requestPermissions',params:[{eth_accounts:{}}]}).catch(()=>{});
-    accs=await window.ethereum.request({method:'eth_accounts'});
+    await ethP().request({method:'wallet_requestPermissions',params:[{eth_accounts:{}}]}).catch(()=>{});
+    accs=await ethP().request({method:'eth_accounts'});
   }catch(e){accs=[];}
   if(!accs||!accs.length){
     $('kwz-body').innerHTML=`<div class="nc ncw mb3">${t('kw_mm_none')}</div><div class="nc nci mb3" style="font-size:10.5px">${t('kw_mm_hint')}</div><button class="btn btnsm btnbl" onclick="kwChoose()">${t('btn_back')}</button>`;
@@ -2402,31 +2373,17 @@ window.kwUse=function(addr){
   toast(t('kw_done'),'success');
 };
 
-// Скачать памятку со всеми сгенерированными ключами
-window.kwDownload=function(){
-  if(!KW_GEN.length){return;}
-  const L={ru:{h:'ПАМЯТКА ПО КЛЮЧАМ AnchorVaultCoin',w:'НИКОМУ НЕ ПОКАЗЫВАЙТЕ ЭТОТ ФАЙЛ. Любой, у кого есть секретная фраза, получит полный доступ.',imp:'Как пользоваться: импортируйте каждый кошелёк в MetaMask по секретной фразе, чтобы подписывать им операции.',a:'Адрес',p:'Секретная фраза',k:'Приватный ключ',d:'Создано'},
-           en:{h:'AnchorVaultCoin KEY MEMO',w:'DO NOT SHARE THIS FILE. Anyone with the secret phrase gets full access.',imp:'How to use: import each wallet into MetaMask via its secret phrase to sign operations with it.',a:'Address',p:'Secret phrase',k:'Private key',d:'Created'},
-           zh:{h:'AnchorVaultCoin 钥匙备忘录',w:'请勿分享此文件。任何拥有助记词的人都将获得完全访问权限。',imp:'使用方法：通过助记词将每个钱包导入 MetaMask，以便用它签署操作。',a:'地址',p:'助记词',k:'私钥',d:'创建于'}}[S.lang]||{};
-  let txt=`${L.h}\n${'='.repeat(40)}\n${L.d}: ${new Date().toLocaleString()}\n\n* ${L.w}\n${L.imp}\n\n`;
-  KW_GEN.forEach((g,i)=>{txt+=`[${i+1}] ${g.label}\n${L.a}: ${g.address}\n${L.p}: ${g.phrase}\n${L.k}: ${g.pk}\n\n`;});
-  const blob=new Blob([txt],{type:'text/plain;charset=utf-8'});
-  const url=URL.createObjectURL(blob);
-  const a=document.createElement('a');
-  a.href=url;a.download='anchorvault-keys.txt';a.click();
-  setTimeout(()=>URL.revokeObjectURL(url),1000);
-};
 
 /* ================================================================
    EIP-712 HELPERS
    ================================================================ */
 async function buildDom(){
-  // В настольном приложении window.ethereum отсутствует — раньше здесь
+  // В настольном приложении ethP() отсутствует — раньше здесь
   // падали ВСЕ подписи EIP-712 (вывод, передача, смена ключей).
   let chainId=null;
   try{ if(S.prov) chainId=Number((await S.prov.getNetwork()).chainId); }catch(e){ chainId=null; }
-  if(chainId===null && window.ethereum){
-    try{ chainId=parseInt(await window.ethereum.request({method:'eth_chainId'}),16); }catch(e){ chainId=null; }
+  if(chainId===null && ethP()){
+    try{ chainId=parseInt(await ethP().request({method:'eth_chainId'}),16); }catch(e){ chainId=null; }
   }
   if(chainId===null) throw new Error(t('t_no_net'));
   if(chainId!==C.CHAIN) throw new Error(t('net_wrong'));
@@ -4855,13 +4812,13 @@ async function boot(){
   log(`Contract: ${C.CONTRACT}`,'info');
   log(`ANCR: ${C.ANCR}`,'info');
 
-  if(window.ethereum){
-    const accs=await window.ethereum.request({method:'eth_accounts'}).catch(()=>[]);
+  if(ethP()){
+    const accs=await ethP().request({method:'eth_accounts'}).catch(()=>[]);
     if(accs?.length){
       try{
         // Re-connect on account change (MetaMask mode only)
-        if(window.ethereum){
-          S.prov=new ethers.BrowserProvider(window.ethereum,'any');
+        if(ethP()){
+          S.prov=new ethers.BrowserProvider(ethP(),'any');
           S.sign=await S.prov.getSigner();
           S.user=await S.sign.getAddress();
           S.vlt=new ethers.Contract(C.CONTRACT,ABI,S.sign);
@@ -4878,8 +4835,8 @@ async function boot(){
         await chkEm();
       }catch(e){log(t('lg_autoconn')+perr(e),'warning');}
     }
-    window.ethereum.on('accountsChanged',()=>location.reload());
-    window.ethereum.on('chainChanged',()=>location.reload());
+    ethP().on('accountsChanged',()=>location.reload());
+    ethP().on('chainChanged',()=>location.reload());
   }
   setInterval(()=>{if(S.user)refreshIB();},30000);
 }
