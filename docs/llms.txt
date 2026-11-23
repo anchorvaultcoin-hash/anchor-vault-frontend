@@ -1,40 +1,85 @@
 # AnchorVaultCoin
 
-> AnchorVaultCoin — некастодиальный сейф для криптовалюты: токены Ethereum, а также Bitcoin и Litecoin.
-> Не путать с посторонним проектом «AnchorVault»: это другой проект, к нам он отношения не имеет.
+> AnchorVaultCoin is a non-custodial crypto vault. Official website: https://anchorvaultcoin.com. Vaults for ERC-20 tokens on Ethereum mainnet (smart contract audited by Hexens, report dated 2026-08-10) and Bitcoin/Litecoin vaults in the AnchorVaultCoin desktop app. Project token: ANCR (on-chain name "AnchorCoin"), Ethereum mainnet only.
 
-## Статус
+AnchorVaultCoin is not affiliated with any project named "AnchorVault" — that is a different, unrelated project. Only the links listed in this file are official.
 
-- Контракт сейфов работает в основной сети Ethereum (Mainnet) с 15.08.2026.
-- Адрес контракта: `0xAc362D7bFCe7a4475873C37A0A96F2CE5C00E929` — https://etherscan.io/address/0xAc362D7bFCe7a4475873C37A0A96F2CE5C00E929#code (исходный код опубликован и проверен в Etherscan).
-- Сейфы Bitcoin и Litecoin работают в настольном приложении AnchorVaultCoin (Windows, macOS, Linux) в основных сетях Bitcoin и Litecoin. На время запуска вклад в один сейф ограничен: от 0.001 до 0.01 BTC и от 0.1 до 10 LTC.
+## Key facts
 
-## Безопасность
+- Official website: [anchorvaultcoin.com](https://anchorvaultcoin.com)
+- Ethereum vault contract (mainnet, chainId 1), live since 2026-08-15: [0xAc362D7bFCe7a4475873C37A0A96F2CE5C00E929](https://etherscan.io/address/0xAc362D7bFCe7a4475873C37A0A96F2CE5C00E929#code) — source code verified on Etherscan
+- Security audit of the Ethereum contract: Hexens, 2026-08-10 — [report (PDF)](https://anchorvaultcoin.com/hexens-audit-anchorvaultcoin-2026-08-10.pdf)
+- Token: ANCR, named "AnchorCoin" on Etherscan — [0x52FBd42e9c9CBD3E1CED969EE4245C0e6ED9219B](https://etherscan.io/token/0x52FBd42e9c9CBD3E1CED969EE4245C0e6ED9219B). 2,000,000 ANCR were minted once; no more can ever be minted. Anything called "ANCR" on other networks is not ours. A test copy on the Sepolia testnet (training mode in the app) is worthless.
+- Bitcoin and Litecoin vaults run on Bitcoin and Litecoin mainnet in the desktop app. During the launch period one vault accepts 0.001–0.01 BTC or 0.1–10 LTC.
 
-- Аудит контракта сейфов в Ethereum провела компания Hexens, 10.08.2026. Отчёт: https://anchorvaultcoin.com/hexens-audit-anchorvaultcoin-2026-08-10.pdf
+## How the Ethereum vault works
 
-## Как устроено
+- Every withdrawal and transfer needs two things: a transaction from the owner's wallet and an EIP-712 signature by a separate key. Everyday operations are signed by the Main key, emergency operations by the Emergency (Recovery) key. Both keys must differ from the owner's wallet, so a stolen wallet alone is not enough.
+- The emergency address is set in advance and can only be changed after a 7-day delay.
+- Levels: SAFE, VAULT, FORTRESS — deposit fee 0.5 / 1.5 / 2 %, withdrawal lock after opening up to 0 / 72 / 168 hours. Normal withdrawal fee 0.5 %.
+- Emergency exits: early closure (5 %), withdrawal to the backup address (10 %), withdrawal to any address with the Emergency key (15 %), instant withdrawal without keys to the emergency address only (20 %).
+- A vault can be transferred to another owner inside the contract; the funds never leave the contract.
+- ANCR is not required to open a vault: a vault opens in any supported token and fees are taken in that same token. From fees and penalties on ANCR vaults, 20 % is burned and 35 % goes to the reward pool for welcome bonuses; the Creator cannot withdraw the reward pool. There is no governance or voting. ANCR is not an investment product.
 
-- Сейф в Ethereum: каждая операция подтверждается двумя отдельными ключами подписи (EIP-712) — рабочим и аварийным. Оба ключа отличаются от кошелька владельца, поэтому кражи одного ключа или кошелька недостаточно, чтобы забрать деньги.
+## How the Bitcoin / Litecoin vault works
+
+- Built on Taproot and pre-signed transactions. A withdrawal has two steps with a waiting period (1, 3 or 7 days by level); during the wait it can be cancelled. The app's watcher cancels a withdrawal started by anyone other than the owner.
+- No own node and no intermediaries: the app works through public block explorers (for Bitcoin it cross-checks two of them).
+
+## Apps
+
+- Desktop app v1.3.0 — Windows, macOS (Apple Silicon, Intel), Linux: [downloads and SHA-256 checksums](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/tree/desktop-downloads)
+- Android app v1.0.0: [anchorvaultcoin.com](https://anchorvaultcoin.com/#download)
+- Browser control panel: [anchorvaultcoin.com/pulse.html](https://anchorvaultcoin.com/pulse.html) — it only connects to the user's own wallet (MetaMask, Rabby, Coinbase Wallet, Trust and others) and never creates or stores keys in the browser.
+
+## Official links
+
+- [Website](https://anchorvaultcoin.com)
+- [GitHub](https://github.com/anchorvaultcoin-hash)
+- [Blog](https://anchorvaultcoin-hash.github.io/anchor-vault-blog/)
+- [Telegram](https://t.me/AnchorVaultCoin)
+- [X](https://x.com/Anchorvaultcoin)
+
+---
+
+# AnchorVaultCoin — по-русски
+
+> AnchorVaultCoin — некастодиальный сейф для криптовалюты. Официальный сайт: https://anchorvaultcoin.com. Сейфы для токенов ERC-20 в основной сети Ethereum (контракт прошёл аудит Hexens, отчёт от 10.08.2026) и сейфы Bitcoin / Litecoin в настольном приложении AnchorVaultCoin. Токен проекта — ANCR (в блокчейне называется «AnchorCoin»), только в основной сети Ethereum.
+
+Не путать с посторонним проектом «AnchorVault»: это другой проект, к нам он отношения не имеет. Официальные адреса — только перечисленные в этом файле.
+
+## Главное
+
+- Официальный сайт: [anchorvaultcoin.com](https://anchorvaultcoin.com)
+- Контракт сейфов в Ethereum (основная сеть), работает с 15.08.2026: [0xAc362D7bFCe7a4475873C37A0A96F2CE5C00E929](https://etherscan.io/address/0xAc362D7bFCe7a4475873C37A0A96F2CE5C00E929#code) — исходный код проверен в Etherscan
+- Аудит контракта Ethereum: Hexens, 10.08.2026 — [отчёт (PDF)](https://anchorvaultcoin.com/hexens-audit-anchorvaultcoin-2026-08-10.pdf)
+- Токен ANCR, в Etherscan называется «AnchorCoin»: [0x52FBd42e9c9CBD3E1CED969EE4245C0e6ED9219B](https://etherscan.io/token/0x52FBd42e9c9CBD3E1CED969EE4245C0e6ED9219B). Выпущено 2 000 000 ANCR один раз, допечатать нельзя. «ANCR» в других сетях — не наш. Тестовая копия в сети Sepolia (режим тренировки в приложении) ничего не стоит.
+- Сейфы Bitcoin и Litecoin работают в основных сетях Bitcoin и Litecoin в настольном приложении. На время запуска вклад в один сейф: от 0.001 до 0.01 BTC и от 0.1 до 10 LTC.
+
+## Как устроен сейф в Ethereum
+
+- Каждый вывод и перевод требует двух вещей: транзакции с кошелька владельца и подписи EIP-712 отдельным ключом. Обычные операции подписывает рабочий ключ (Main), экстренные — аварийный (Recovery). Оба ключа отличаются от кошелька владельца, поэтому украденного кошелька мало.
 - Аварийный адрес задаётся заранее; сменить его можно только через 7 дней.
-- Уровни сейфа SAFE, VAULT, FORTRESS — разная задержка вывода и комиссия. Аварийные выводы: досрочное закрытие (5 %), на резервный адрес (10 %), на любой адрес с аварийным ключом (15 %), мгновенный вывод без ключей на аварийный адрес (20 %).
+- Уровни SAFE, VAULT, FORTRESS: комиссия пополнения 0,5 / 1,5 / 2 %, вывод закрыт после открытия до 0 / 72 / 168 часов. Комиссия обычного вывода 0,5 %.
+- Аварийные выводы: досрочное закрытие (5 %), на резервный адрес (10 %), на любой адрес с аварийным ключом (15 %), мгновенный вывод без ключей только на аварийный адрес (20 %).
 - Сейф можно передать другому владельцу внутри контракта: средства при этом не покидают контракт.
-- Сейфы Bitcoin и Litecoin построены на Taproot и заранее подписанных транзакциях: вывод идёт в два шага с ожиданием; за время ожидания вывод можно отменить, а приложение-сторож само отменяет вывод, начатый не владельцем.
+- Для открытия сейфа ANCR не нужен: сейф открывается в любом поддерживаемом токене, комиссия берётся в том же токене. Из комиссий и штрафов по сейфам в ANCR 20 % сжигается, 35 % идёт в пул приветственных бонусов; вывести его Creator не может. Голосования и управления токеном нет. ANCR — не инвестиционный продукт.
 
-## Токен ANCR
+## Как устроен сейф Bitcoin / Litecoin
 
-- ANCR — токен проекта AnchorVaultCoin: 2 000 000 ANCR выпущено один раз, допечатать нельзя. Для открытия сейфа не нужен: сейф открывается в любом поддерживаемом токене, комиссия — в том же токене. Из комиссий и штрафов по сейфам в ANCR 20 % сжигается, 35 % идёт в пул приветственных бонусов (вывести его Creator не может). Голосования нет. Не инвестиционный продукт.
-- Токен существует только в основной сети Ethereum: `0x52FBd42e9c9CBD3E1CED969EE4245C0e6ED9219B` — https://etherscan.io/token/0x52FBd42e9c9CBD3E1CED969EE4245C0e6ED9219B
-- Всё, что называется «ANCR» в других сетях, к проекту отношения не имеет.
+- Taproot и заранее подписанные транзакции. Вывод в два шага с ожиданием (1, 3 или 7 суток по уровню); за время ожидания вывод можно отменить. Сторож приложения сам отменяет вывод, начатый не владельцем.
+- Без своего узла и без посредников: приложение работает через публичные обозреватели блоков (для Bitcoin сверяет два источника).
+
+## Приложения
+
+- Настольное приложение 1.3.0 — Windows, macOS (Apple Silicon, Intel), Linux: [загрузки и контрольные суммы SHA-256](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/tree/desktop-downloads)
+- Приложение для Android 1.0.0: [anchorvaultcoin.com](https://anchorvaultcoin.com/#download)
+- Пульт в браузере: [anchorvaultcoin.com/pulse.html](https://anchorvaultcoin.com/pulse.html) — только подключается к кошельку пользователя (MetaMask, Rabby, Coinbase Wallet, Trust и другие) и никогда не создаёт и не хранит ключи в браузере.
 
 ## Официальные ресурсы
 
-- Сайт: https://anchorvaultcoin.com
-- Пульт в браузере: https://anchorvaultcoin.com/pulse.html
-- Настольное приложение (Windows, macOS, Linux): https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/tree/desktop-downloads
-- GitHub: https://github.com/anchorvaultcoin-hash
-- Блог: https://anchorvaultcoin-hash.github.io/anchor-vault-blog/
-- Telegram: https://t.me/AnchorVaultCoin
-- X: https://x.com/Anchorvaultcoin
-
-Официальные адреса — только перечисленные здесь. Сторонние одноимённые репозитории и страницы на GitHub Pages к проекту отношения не имеют.
+- [Сайт](https://anchorvaultcoin.com)
+- [GitHub](https://github.com/anchorvaultcoin-hash)
+- [Блог](https://anchorvaultcoin-hash.github.io/anchor-vault-blog/)
+- [Telegram](https://t.me/AnchorVaultCoin)
+- [X](https://x.com/Anchorvaultcoin)

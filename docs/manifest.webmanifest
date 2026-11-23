@@ -1,7 +1,7 @@
 {
-  "name": "AnchorVaultCoin Pulse",
-  "short_name": "AnchorVault",
-  "description": "Non-custodial ERC-20 vaults on Ethereum mainnet — EIP-712 signed operations, dual-key recovery, hardware-backed key storage in the mobile and desktop apps.",
+  "name": "AnchorVaultCoin",
+  "short_name": "AnchorVaultCoin",
+  "description": "Official AnchorVaultCoin control panel: non-custodial vaults for Ethereum ERC-20 tokens. Connects to your own wallet (MetaMask, Rabby, Trust and others); never creates or stores keys in the browser. Bitcoin and Litecoin vaults are in the desktop app.",
   "start_url": "./pulse.html",
   "scope": "./",
   "display": "standalone",
@@ -30,7 +30,7 @@
       "sizes": "1200x675",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "AnchorVaultCoin Pulse — dashboard"
+      "label": "AnchorVaultCoin control panel"
     }
   ]
 }

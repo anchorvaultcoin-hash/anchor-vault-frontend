@@ -1,23 +1,59 @@
 User-agent: *
 Allow: /
 
-# Поисковые и ИИ-боты — явно разрешены
-User-agent: GPTBot
-Allow: /
-
-User-agent: OAI-SearchBot
+# Поисковые и ИИ-боты — явно разрешены (у каждого своя группа)
+User-agent: Googlebot
 Allow: /
 
 User-agent: Google-Extended
 Allow: /
 
+User-agent: bingbot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: YandexAdditional
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
 User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
 Allow: /
 
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Bingbot
+User-agent: Perplexity-User
 Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amzn-SearchBot
+Allow: /
+
+User-agent: meta-webindexer
+Allow: /
+
+# Яндекс: метки и параметр языка — не отдельные страницы
+Clean-param: lang&utm_source&utm_medium&utm_campaign&utm_content&utm_term
 
 Sitemap: https://anchorvaultcoin.com/sitemap.xml
