@@ -4446,6 +4446,32 @@ const FAQ_GROUPS = [
          zh:'标准的以太坊代币 — ANCR，以及其他已加入支持列表的代币。列表会持续增加。每种代币您可以拥有一个活跃保险箱。'}
     },
   ]},
+  {id:'utxo', t:{"ru": "₿ Bitcoin и Litecoin", "en": "₿ Bitcoin and Litecoin", "zh": "₿ 比特币和莱特币"}, items:[
+    {
+      q:{"ru": "Можно ли хранить в сейфе Bitcoin и Litecoin?", "en": "Can I keep Bitcoin and Litecoin in a vault?", "zh": "可以在保险箱里存放比特币和莱特币吗？"},
+      a:{"ru": "Да, в настольном приложении для Windows, macOS и Linux (с версии 1.3.0). Сейф Ethereum работает через смарт-контракт, а сейф BTC/LTC — прямо в сети Bitcoin или Litecoin: монеты лежат на адресе-сейфе, и вывести их можно только в два шага с ожиданием. Серверов проекта нет — данные сети берутся у публичных обозревателей. В браузерном пульте сейфов BTC/LTC нет.", "en": "Yes, in the desktop app for Windows, macOS and Linux (since version 1.3.0). An Ethereum vault works through a smart contract, while a BTC/LTC vault lives directly on the Bitcoin or Litecoin network: the coins sit on a vault address and can only be withdrawn in two steps with a waiting period. There are no project servers — network data comes from public block explorers. The browser console has no BTC/LTC vaults.", "zh": "可以，在适用于 Windows、macOS 和 Linux 的桌面应用中（自 1.3.0 版起）。以太坊保险箱通过智能合约运行，而 BTC/LTC 保险箱直接在比特币或莱特币网络上：币存放在保险箱地址上，只能分两步并经过等待期才能取出。项目没有服务器——网络数据来自公共区块浏览器。浏览器控制台没有 BTC/LTC 保险箱。"}
+    },
+    {
+      q:{"ru": "Как вывести монеты из сейфа BTC/LTC?", "en": "How do I withdraw coins from a BTC/LTC vault?", "zh": "如何从 BTC/LTC 保险箱取出币？"},
+      a:{"ru": "Нажмите «Начать вывод», дождитесь срока своего уровня (SAFE — 1 сутки, VAULT — 3, FORTRESS — 7) и нажмите «Завершить вывод» на свой адрес. Комиссия проекта 0,5 % идёт отдельным выходом — её видно в окне подтверждения до отправки.", "en": "Press \"Start withdrawal\", wait for your level's delay (SAFE — 1 day, VAULT — 3, FORTRESS — 7) and press \"Complete withdrawal\" to your own address. The 0.5% project fee is a separate output — you see it in the confirmation window before sending.", "zh": "点击「开始取款」，等待您所选等级的期限（SAFE — 1 天，VAULT — 3 天，FORTRESS — 7 天），然后点击「完成取款」到您自己的地址。0.5% 的项目费用是单独的输出——发送前可在确认窗口中看到。"}
+    },
+    {
+      q:{"ru": "А если ключи украдут и начнут вывод?", "en": "What if someone steals the keys and starts a withdrawal?", "zh": "如果密钥被盗并有人开始取款怎么办？"},
+      a:{"ru": "Пока идёт ожидание, сторож приложения (проверка каждые 3 минуты) увидит вывод, которого вы не начинали, и сам отменит его заранее подписанной отменой — монеты вернутся в сейф. О любом выводе приходит уведомление системы. Важно: закрытое приложение не сторожит — держите его открытым или заходите регулярно, пока идёт срок ожидания.", "en": "During the waiting period the app's watcher (it checks every 3 minutes) sees a withdrawal you did not start and cancels it itself with a pre-signed cancellation — the coins go back to the vault. Every withdrawal triggers a system notification. Important: a closed app does not watch — keep it open, or open it regularly while a waiting period is running.", "zh": "在等待期内，应用的守护程序（每 3 分钟检查一次）会发现不是您发起的取款，并用预先签名的取消交易自动取消——币会回到保险箱。任何取款都会触发系统通知。注意：应用关闭时不会守护——请保持应用打开，或在等待期内定期打开。"}
+    },
+    {
+      q:{"ru": "Какие фразы нужно записать для сейфа BTC/LTC?", "en": "Which phrases must I write down for a BTC/LTC vault?", "zh": "BTC/LTC 保险箱需要抄写哪些助记词？"},
+      a:{"ru": "При создании сейфа приложение покажет две фразы: фразу сейфа (ключи вывода; приложение хранит её зашифрованной) и фразу revault (аварийный ключ; приложение её НЕ хранит — только ваша запись на бумаге). Ещё будет резервная строка — секретов в ней нет. Фраза кошелька BTC/LTC сейф не восстанавливает: для этого нужны резервная строка и обе фразы. Восстановление сейфа на другом компьютере пока делается инструментом командной строки, в приложении — позже.", "en": "When you create a vault, the app shows two phrases: the vault phrase (withdrawal keys; the app stores it encrypted) and the revault phrase (emergency key; the app does NOT store it — only your paper copy). There is also a backup string with no secrets in it. The BTC/LTC wallet phrase does not restore a vault: you need the backup string and both phrases. Restoring a vault on another computer is currently done with a command-line tool; in the app — later.", "zh": "创建保险箱时，应用会显示两组助记词：保险箱助记词（取款密钥；应用会加密保存）和 revault 助记词（应急密钥；应用不保存——只有您的纸质记录）。另外还有一行不含任何秘密的备份字符串。BTC/LTC 钱包助记词无法恢复保险箱：需要备份字符串和这两组助记词。目前在另一台电脑上恢复保险箱需使用命令行工具，应用内支持稍后推出。"}
+    },
+    {
+      q:{"ru": "Сколько можно положить в сейф BTC/LTC?", "en": "How much can I put into a BTC/LTC vault?", "zh": "BTC/LTC 保险箱可以存入多少？"},
+      a:{"ru": "На время запуска в основной сети: BTC — от 0.001 до 0.01, LTC — от 0.1 до 10 на один сейф. Попробовать без риска можно в режиме тренировки 🧪 — бесплатные тестовые сети Bitcoin signet и Litecoin testnet4.", "en": "During the mainnet launch: BTC — from 0.001 to 0.01, LTC — from 0.1 to 10 per vault. You can try it risk-free in training mode 🧪 — the free test networks Bitcoin signet and Litecoin testnet4.", "zh": "主网启动期间：每个保险箱 BTC 为 0.001 至 0.01，LTC 为 0.1 至 10。可以在训练模式 🧪 下零风险试用——免费的测试网络 Bitcoin signet 和 Litecoin testnet4。"}
+    },
+    {
+      q:{"ru": "Какой кошелёк BTC/LTC подходит и где хранится ключ?", "en": "Which BTC/LTC wallet works, and where is the key kept?", "zh": "支持哪些 BTC/LTC 钱包？密钥保存在哪里？"},
+      a:{"ru": "Подходит фраза любого кошелька BIP-39: Trust, Exodus, Ledger, Trezor, BlueWallet, Sparrow (фразы Electrum — нет). Фраза вводится только в отдельном окне приложения и на диск не пишется; ключ хранится зашифрованным системной связкой ключей. Каждый перевод подтверждается окном приложения с получателем, суммой и комиссией.", "en": "A phrase from any BIP-39 wallet works: Trust, Exodus, Ledger, Trezor, BlueWallet, Sparrow (Electrum phrases do not). The phrase is typed only in a separate app window and never written to disk; the key is stored encrypted by the system keyring. Every transfer is confirmed in an app window showing the recipient, amount and fee.", "zh": "任何 BIP-39 钱包的助记词都可以：Trust、Exodus、Ledger、Trezor、BlueWallet、Sparrow（不支持 Electrum 助记词）。助记词只在应用的独立窗口中输入，绝不写入磁盘；密钥由系统钥匙串加密保存。每笔转账都会在应用窗口中确认，显示收款人、金额和手续费。"}
+    },
+  ]},
 
   {id:'keys', t:{ru:'🔑 Ключи',en:'🔑 Keys',zh:'🔑 密钥'}, items:[
     {
