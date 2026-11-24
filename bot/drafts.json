@@ -1,61 +1,5 @@
 [
   {
-    "source": "The Hacker News",
-    "title": "Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key",
-    "link": "https://thehackernews.com/2026/10/keystone-to-destroy-18835-hardware.html",
-    "date": "Tue, 27 Oct 2026 17:16:00 +0530",
-    "collected": "2026-10-28",
-    "used": false
-  },
-  {
-    "source": "Decrypt",
-    "title": "Bitcoin Wallet Maker Keystone Pulls Devices as Stolen Key Opens Door to Fakes",
-    "link": "https://decrypt.co/381983/bitcoin-wallet-keystone-devices-destroyed-stolen-key",
-    "date": "Tue, 27 Oct 2026 18:16:02 +0000",
-    "collected": "2026-10-28",
-    "used": false
-  },
-  {
-    "source": "The Defiant",
-    "title": "Tranche Vault on Avalanche Drained of 1.01 Million USDC",
-    "link": "https://thedefiant.io/news/hacks/tranche-vault-on-avalanche-drained-of-1-01-million-usdc",
-    "date": "Wed, 28 Oct 2026 01:11:39 GMT",
-    "collected": "2026-10-28",
-    "used": false
-  },
-  {
-    "source": "Cointelegraph",
-    "title": "Crypto PAC spending before midterms possibly obscured after reported FEC hack",
-    "link": "https://cointelegraph.com/news/crypto-pac-spending-midterms-fec-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-    "date": "Wed, 28 Oct 2026 17:11:01 +0000",
-    "collected": "2026-10-29",
-    "used": false
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Binance links $6.3 billion crypto theft to compromised DevOps laptop",
-    "link": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/",
-    "date": "Fri, 30 Oct 2026 05:18:13 -0400",
-    "collected": "2026-10-30",
-    "used": false
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Binance probes potential $5.8 billion crypto-theft hack",
-    "link": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
-    "date": "Thu, 29 Oct 2026 18:45:23 -0400",
-    "collected": "2026-10-30",
-    "used": false
-  },
-  {
-    "source": "BleepingComputer",
-    "title": "Polymarket halts trading after crypto-draining script breach, $2.5M traced",
-    "link": "https://www.bleepingcomputer.com/news/security/polymarket-halts-trading-after-crypto-draining-script-breach-25m-traced/",
-    "date": "Thu, 29 Oct 2026 17:47:25 -0400",
-    "collected": "2026-10-30",
-    "used": false
-  },
-  {
     "source": "BleepingComputer",
     "title": "Fake crypto app on Apple App Store linked to $23K wallet theft",
     "link": "https://www.bleepingcomputer.com/news/security/fake-crypto-app-on-apple-app-store-linked-to-23k-wallet-theft/",
@@ -1597,6 +1541,62 @@
     "link": "https://thedefiant.io/news/hacks/elliptic-traces-about-247m-in-binance-theft-linked-bitcoin-to-coinjoins",
     "date": "Mon, 23 Nov 2026 16:07:46 GMT",
     "collected": "2026-11-23",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Crypto trader Ansem says his wallet was hacked as $2 million in memecoins were sold",
+    "link": "https://www.coindesk.com/markets/2026/11/24/a-wallet-linked-to-popular-crypto-trader-ansem-sold-usd2-million-in-memecoins-as-his-namesake-token-cratered",
+    "date": "Tue, 24 Nov 2026 12:47:49 +0000",
+    "collected": "2026-11-24",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "U.S. seeks $1.1 billion seized in Binance hack as North Korean funds keep moving",
+    "link": "https://www.coindesk.com/policy/2026/11/24/u-s-seeks-usd1-1-billion-seized-in-binance-hack-as-north-korean-funds-keep-moving",
+    "date": "Tue, 24 Nov 2026 10:58:51 +0000",
+    "collected": "2026-11-24",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "US seeks to recover $1.1B in crypto stolen in North Korea-linked Binance hack",
+    "link": "https://cointelegraph.com/news/us-seeks-11b-crypto-stolen-north-korea-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Tue, 24 Nov 2026 16:02:35 +0000",
+    "collected": "2026-11-24",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Justice Department Moves to Forfeit $1.1B in USDC From North Korea's Binance Hack",
+    "link": "https://decrypt.co/383874/justice-department-moves-to-forfeit-1-1b-in-usdc-from-north-koreas-binance-hack",
+    "date": "Tue, 24 Nov 2026 14:13:03 +0000",
+    "collected": "2026-11-24",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "CertiK Trains Interpol Investigators to Trace and Freeze Stolen Crypto",
+    "link": "https://decrypt.co/383857/certik-trains-interpol-investigators-to-trace-and-freeze-stolen-crypto",
+    "date": "Tue, 24 Nov 2026 13:46:03 +0000",
+    "collected": "2026-11-24",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "$14.7B in ‘Lost’ Bitcoin Has Moved Since 2018: Report",
+    "link": "https://decrypt.co/383854/14-7b-in-lost-bitcoin-has-moved-since-2018-report",
+    "date": "Tue, 24 Nov 2026 12:40:47 +0000",
+    "collected": "2026-11-24",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "North Korea Moves $247 Million of Binance Hack Loot Through Bitcoin Mixers",
+    "link": "https://decrypt.co/383844/north-korea-247-million-binance-hack-bitcoin-mixers",
+    "date": "Mon, 23 Nov 2026 20:36:02 +0000",
+    "collected": "2026-11-24",
     "used": false
   }
 ]
