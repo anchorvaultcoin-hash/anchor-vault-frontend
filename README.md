@@ -20,6 +20,19 @@
 Контрольные суммы: [SHA256SUMS](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/raw/desktop-downloads/SHA256SUMS),
 подпись Creator: [SHA256SUMS.sig](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/raw/desktop-downloads/SHA256SUMS.sig).
 
+### SHA-256 каждого файла
+
+| Файл | SHA-256 |
+|---|---|
+| AnchorVaultCoin-UTXO-1.3.0-win-x64.exe | `5d95365090e421392ff0c97f2b2b2800e39d50a1b7dadbf46ade07918836ad86` |
+| AnchorVaultCoin-UTXO-1.3.0-win-x64.zip | `0d8a8c6510c0d45c06da8df65f649cba3bf4b98a41d9356151d85c1aac35e88c` |
+| AnchorVaultCoin-UTXO-1.3.0-mac-arm64.dmg | `384b993783d42f2353e6b1aada951c8110f05b62294bfafce2177b0859d86859` |
+| AnchorVaultCoin-UTXO-1.3.0-mac-x64.dmg | `aa34a9799a7e0a3d848c0cdafcee9cb8f2b7f48a78f59bdd14704ec6c28628c0` |
+| AnchorVaultCoin-UTXO-1.3.1.AppImage | `86137c9f6633566670b73985eff44dfcfbf1ad41a7f0074c9abf2ad8bd914a84` |
+| anchorvaultcoin-utxo_1.3.1_amd64.deb | `fdc94ba16075fc14433b20fe5e7bad22ef03c6cdd578d0b832cd3ef778cf7d1e` |
+
+Те же суммы — в подписанном списке SHA256SUMS. Проверка в Linux/macOS: `sha256sum <файл>`, в Windows: `certutil -hashfile <файл> SHA256`.
+
 ## Подлинность: ключ выпуска
 
 Список SHA256SUMS подписан ключом выпуска Creator (Ed25519). Открытый ключ:
