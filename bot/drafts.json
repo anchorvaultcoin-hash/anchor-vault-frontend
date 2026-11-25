@@ -1,45 +1,5 @@
 [
   {
-    "source": "BleepingComputer",
-    "title": "Fake crypto app on Apple App Store linked to $23K wallet theft",
-    "link": "https://www.bleepingcomputer.com/news/security/fake-crypto-app-on-apple-app-store-linked-to-23k-wallet-theft/",
-    "date": "Thu, 29 Oct 2026 15:23:41 -0400",
-    "collected": "2026-10-30",
-    "used": false
-  },
-  {
-    "source": "The Hacker News",
-    "title": "ThreatsDay: Critical Firewall Flaws, Banking Trojans Rented, Weaponized PDF, Token Theft + 26 More Stories",
-    "link": "https://thehackernews.com/2026/10/threatsday-critical-firewall-flaws.html",
-    "date": "Fri, 30 Oct 2026 00:41:58 +0530",
-    "collected": "2026-10-30",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Here’s how an Ethereum upgrade helped drain part of Binance’s $6 billion loss",
-    "link": "https://www.coindesk.com/tech/2026/10/30/here-s-how-one-ethereum-permission-let-an-attacker-drain-usd2-5-billion-from-binance",
-    "date": "Fri, 30 Oct 2026 11:35:16 +0000",
-    "collected": "2026-10-30",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Crypto liquidations jump to $1.57 billion as Binance hack sends bitcoin, ether lower",
-    "link": "https://www.coindesk.com/markets/2026/10/30/crypto-liquidations-jump-to-usd1-57-billion-as-binance-hack-sends-bitcoin-ether-lower",
-    "date": "Fri, 30 Oct 2026 11:09:24 +0000",
-    "collected": "2026-10-30",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Live updates: Binance finds more breaches in $6.3 billion hack; AI spending fears hit tech",
-    "link": "https://www.coindesk.com/markets/2026/10/30/live-news-binance-hack-rattles-crypto-as-intel-plunges-and-ai-spending-fears-hit-tech",
-    "date": "Fri, 30 Oct 2026 08:36:52 +0000",
-    "collected": "2026-10-30",
-    "used": false
-  },
-  {
     "source": "CoinDesk",
     "title": "Binance hacker dumps a little-known 2017 token and it crashes 90%",
     "link": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-dumps-a-little-known-2017-token-and-it-crashes-90",
@@ -1597,6 +1557,46 @@
     "link": "https://decrypt.co/383844/north-korea-247-million-binance-hack-bitcoin-mixers",
     "date": "Mon, 23 Nov 2026 20:36:02 +0000",
     "collected": "2026-11-24",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "South Korean crypto exchange Bithumb warns of phishing after deeper October breach probe",
+    "link": "https://www.coindesk.com/tech/2026/11/25/south-korean-crypto-exchange-bithumb-warns-of-phishing-after-deeper-october-breach-probe",
+    "date": "Wed, 25 Nov 2026 14:47:17 +0000",
+    "collected": "2026-11-25",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Gold's haven status has lost its edge over bitcoin, and the Fed's to blame",
+    "link": "https://www.coindesk.com/markets/2026/11/25/bitcoin-hasn-t-paid-its-holders-for-the-risk-it-carries-and-now-gold-is-doing-the-same",
+    "date": "Wed, 25 Nov 2026 11:30:32 +0000",
+    "collected": "2026-11-25",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Solana developers move to stop validators finishing work on blocks that already lost",
+    "link": "https://www.coindesk.com/tech/2026/11/25/solana-developers-move-to-stop-validators-finishing-work-on-blocks-that-already-lost",
+    "date": "Wed, 25 Nov 2026 06:33:10 +0000",
+    "collected": "2026-11-25",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Florida Man Jailed for Using AI to Pose as Streamer N3ON in $260K Crypto Scam",
+    "link": "https://decrypt.co/383941/florida-man-jailed-for-using-ai-to-pose-as-streamer-n3on-in-260k-crypto-scam",
+    "date": "Wed, 25 Nov 2026 11:52:06 +0000",
+    "collected": "2026-11-25",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Coldcard Bitcoin Exploit, Revisited: How a Hidden Flaw Survived Years of Audits",
+    "link": "https://decrypt.co/383930/coldcard-bitcoin-exploit-how-hidden-flaw-survived-years-audits",
+    "date": "Tue, 24 Nov 2026 21:16:02 +0000",
+    "collected": "2026-11-25",
     "used": false
   }
 ]
