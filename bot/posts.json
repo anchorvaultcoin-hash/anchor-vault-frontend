@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "posted": false,
+    "posted": true,
     "ru": "Что если нужно вывести всё немедленно, без обычной подписи\n\nВ AnchorVaultCoin есть panicWithdraw — вывод без подписи, мгновенно.\n\nПлата за скорость — комиссия 20%. Осознанный компромисс: экстренный канал не должен требовать доказательств авторизации, но и не должен быть бесплатным — иначе им будут злоупотреблять.\n\nОбычный вывод — 0.5% комиссии, штатный сценарий.",
     "en": "What if you need everything out right now, without the usual signature\n\nThere is an emergency withdrawal — no signature required, immediate.\n\nThe price of that speed is a 20% fee. A deliberate trade-off: an emergency exit shouldn't demand proof of authorization, but it shouldn't be free either, or people would lean on it by default.\n\nRegular withdrawal costs 0.5%. That's the normal path.",
     "zh": "如果需要立即取出全部资金，又无法正常签名怎么办\n\n这里有紧急提取功能——无需签名，立即执行。\n\n代价是 20% 的手续费。这是刻意的权衡：紧急通道不应要求授权证明，但也不能免费，否则会被随意滥用。\n\n常规提取手续费为 0.5%，这是正常路径。",
