@@ -1,4 +1,4 @@
-# AnchorVaultCoin-UTXO — настольный пульт 1.3.1 (Linux) · 1.3.0 (Windows, macOS)
+# AnchorVaultCoin-UTXO — настольный пульт 1.3.2 · Android 1.1.0
 
 Пульт сейфов AnchorVaultCoin для компьютера: контракт Ethereum (сейфы, аварийные операции,
 передача сейфов), кошелёк BTC/LTC по своей фразе и сейфы Bitcoin / Litecoin кнопками.
@@ -8,12 +8,13 @@
 
 | Система | Файл | Размер |
 |---|---|---|
-| **Windows 10/11** (x64) — установщик | [AnchorVaultCoin-UTXO-1.3.0-win-x64.exe](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/raw/desktop-downloads/AnchorVaultCoin-UTXO-1.3.0-win-x64.exe) | 70 МБ |
-| **Windows 10/11** (x64) — без установки | [AnchorVaultCoin-UTXO-1.3.0-win-x64.zip](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/raw/desktop-downloads/AnchorVaultCoin-UTXO-1.3.0-win-x64.zip) | 97 МБ |
-| **macOS, процессор Apple** (M1–M4) | [AnchorVaultCoin-UTXO-1.3.0-mac-arm64.dmg](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/raw/desktop-downloads/AnchorVaultCoin-UTXO-1.3.0-mac-arm64.dmg) | 86 МБ |
-| **macOS, процессор Intel** | [AnchorVaultCoin-UTXO-1.3.0-mac-x64.dmg](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/raw/desktop-downloads/AnchorVaultCoin-UTXO-1.3.0-mac-x64.dmg) | 93 МБ |
-| **Ubuntu / Debian** | [anchorvaultcoin-utxo_1.3.1_amd64.deb](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/raw/desktop-downloads/anchorvaultcoin-utxo_1.3.1_amd64.deb) | 66 МБ |
-| **Другой Linux** | [AnchorVaultCoin-UTXO-1.3.1.AppImage](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/raw/desktop-downloads/AnchorVaultCoin-UTXO-1.3.1.AppImage) | 97 МБ |
+| **Windows 10/11** (x64) — установщик | [AnchorVaultCoin-UTXO-1.3.2-win-x64.exe](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/raw/desktop-downloads/AnchorVaultCoin-UTXO-1.3.2-win-x64.exe) | 70 МБ |
+| **Windows 10/11** (x64) — без установки | [AnchorVaultCoin-UTXO-1.3.2-win-x64.zip](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/raw/desktop-downloads/AnchorVaultCoin-UTXO-1.3.2-win-x64.zip) | 96 МБ |
+| **macOS, процессор Apple** (M1–M4) | [AnchorVaultCoin-UTXO-1.3.2-mac-arm64.dmg](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/raw/desktop-downloads/AnchorVaultCoin-UTXO-1.3.2-mac-arm64.dmg) | 86 МБ |
+| **macOS, процессор Intel** | [AnchorVaultCoin-UTXO-1.3.2-mac-x64.dmg](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/raw/desktop-downloads/AnchorVaultCoin-UTXO-1.3.2-mac-x64.dmg) | 93 МБ |
+| **Ubuntu / Debian** | [anchorvaultcoin-utxo_1.3.2_amd64.deb](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/raw/desktop-downloads/anchorvaultcoin-utxo_1.3.2_amd64.deb) | 66 МБ |
+| **Другой Linux** | [AnchorVaultCoin-UTXO-1.3.2.AppImage](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/raw/desktop-downloads/AnchorVaultCoin-UTXO-1.3.2.AppImage) | 97 МБ |
+| **Android** 5.1+ (телефон) | [AnchorVaultCoin-Android-1.1.0.apk](https://github.com/anchorvaultcoin-hash/anchor-vault-frontend/raw/desktop-downloads/AnchorVaultCoin-Android-1.1.0.apk) | 12 МБ |
 
 Какой у Mac процессор: меню  → «Об этом Mac» → строка «Чип» или «Процессор» (Apple M… — первый файл, Intel — второй).
 
@@ -24,12 +25,13 @@
 
 | Файл | SHA-256 |
 |---|---|
-| AnchorVaultCoin-UTXO-1.3.0-win-x64.exe | `5d95365090e421392ff0c97f2b2b2800e39d50a1b7dadbf46ade07918836ad86` |
-| AnchorVaultCoin-UTXO-1.3.0-win-x64.zip | `0d8a8c6510c0d45c06da8df65f649cba3bf4b98a41d9356151d85c1aac35e88c` |
-| AnchorVaultCoin-UTXO-1.3.0-mac-arm64.dmg | `384b993783d42f2353e6b1aada951c8110f05b62294bfafce2177b0859d86859` |
-| AnchorVaultCoin-UTXO-1.3.0-mac-x64.dmg | `aa34a9799a7e0a3d848c0cdafcee9cb8f2b7f48a78f59bdd14704ec6c28628c0` |
-| AnchorVaultCoin-UTXO-1.3.1.AppImage | `86137c9f6633566670b73985eff44dfcfbf1ad41a7f0074c9abf2ad8bd914a84` |
-| anchorvaultcoin-utxo_1.3.1_amd64.deb | `fdc94ba16075fc14433b20fe5e7bad22ef03c6cdd578d0b832cd3ef778cf7d1e` |
+| AnchorVaultCoin-UTXO-1.3.2-win-x64.exe | `8c4bc3dbcf91ee679fb968d0c655672a6f65e1170f36eb64586dcb89e2aac950` |
+| AnchorVaultCoin-UTXO-1.3.2-win-x64.zip | `e961621a36b29c5156903fffb6e59d49b524cb0ef8cea93cd6e3aa7fff792640` |
+| AnchorVaultCoin-UTXO-1.3.2-mac-arm64.dmg | `a9bb364325de184419967cef54ac64ad1ca12038b2bbcb9979ca02375ca09696` |
+| AnchorVaultCoin-UTXO-1.3.2-mac-x64.dmg | `8ca0ba0b0d7606e14f0f87fd359baa7f9084e03b6643eefd03d484acecaae702` |
+| AnchorVaultCoin-UTXO-1.3.2.AppImage | `f6f54221dd65effcd55a776fe58fc89a0acf8ee23a1c511af13af3221635269f` |
+| anchorvaultcoin-utxo_1.3.2_amd64.deb | `9f5d230cee10ac3d5b834c9955356a1d2f54da918bfbc28a29180c06cbbeea20` |
+| AnchorVaultCoin-Android-1.1.0.apk | `871a2b60277e592c033b1765f0644ce071f1ecd4b06479dfa9ff97cde96f35ae` |
 
 Те же суммы — в подписанном списке SHA256SUMS. Проверка в Linux/macOS: `sha256sum <файл>`, в Windows: `certutil -hashfile <файл> SHA256`.
 
@@ -47,13 +49,26 @@ f881f543afc1644374f15460045400ca9ce9fb3f58861c6ad0212449295b4782
 (в отдельной пустой папке): `node scripts/release_verify.js --dir <папка>` из репозитория
 [anchorvaultcoin-utxo](https://github.com/anchorvaultcoin-hash/anchorvaultcoin-utxo).
 
-## Обновление по кнопке (Linux .deb, с версии 1.3.1)
+## Обновление по кнопке (с версии 1.3.2; Linux .deb — с 1.3.1; Android — с 1.1.0)
 
-Приложение раз в 6 часов проверяет подписанный список выпуска. Если подпись верна и версия новее —
-предлагает «Обновить»: скачивает файл, сверяет SHA-256 из подписанного списка, ставит через системный
-apt (пароль спрашивает окно системы) и перезапускается. Без подписи Creator, с подменённым файлом или
-со старой версией обновление не предлагается и не ставится. Ключи и фразы не затрагиваются.
-Версию 1.3.1 один раз нужно поставить вручную: в 1.3.0 кнопки нет. Windows и macOS — следующим шагом.
+Приложение раз в 6 часов проверяет подписанный список выпуска. Если подпись Creator верна и версия
+новее — в пульте появляется плашка «Доступна версия…» и уведомление системы. Нажали — окно
+«Обновить / Позже». Можно и вручную: кнопка ⟳ «Проверить обновления» в шапке пульта.
+
+После «Обновить» файл скачивается, сверяется по SHA-256 из подписанного списка и ставится:
+
+- **Ubuntu / Debian (.deb)** — через системный apt, пароль спрашивает окно системы;
+- **AppImage** — новый файл встаёт на место старого;
+- **Windows, установщик «для себя»** — приложение закрывается, установщик обновляет его без вопросов и запускает снова;
+- **macOS** — новая версия заменяет приложение в той же папке (если приложение не перемещено в «Программы» — подскажет);
+- **Android** — системный установщик Android; он сам проверяет, что новая версия подписана тем же ключом.
+
+Переносная версия Windows (.zip) и установка «для всех пользователей» обновляются вручную: приложение
+сообщит о новой версии и откроет эту страницу. Без подписи Creator, с подменённым файлом или со старой
+версией обновление не предлагается и не ставится. Ключи и фразы не затрагиваются.
+
+**Один раз вручную:** у кого стоит Windows/macOS 1.3.0 или Android 1.0 — поставьте новую версию со
+страницы (в старых версиях кнопки нет). Linux 1.3.1 обновится до 1.3.2 по кнопке сам.
 
 ## Установка
 
@@ -64,10 +79,12 @@ apt (пароль спрашивает окно системы) и переза�
 компьютер» — «Подробнее» → «Выполнить в любом случае». Ключи хранятся там же, где у версии 1.1.0:
 если она стоит, новая её ключи увидит.
 
-**Ubuntu / Debian.** `sudo apt install ./anchorvaultcoin-utxo_1.3.1_amd64.deb`, затем запуск из меню
+**Ubuntu / Debian.** `sudo apt install ./anchorvaultcoin-utxo_1.3.2_amd64.deb`, затем запуск из меню
 приложений. Нужна связка ключей: `sudo apt install gnome-keyring libsecret-1-0`.
 
-**Другой Linux.** `chmod +x AnchorVaultCoin-UTXO-1.3.1.AppImage` и запустить.
+**Другой Linux.** `chmod +x AnchorVaultCoin-UTXO-1.3.2.AppImage` и запустить.
+
+**Android.** Открыть скачанный `.apk` на телефоне; если Android спросит — разрешить установку из этого источника.
 
 **macOS.** Открыть `.dmg`, перетащить AnchorVaultCoin-UTXO в «Программы». Первый запуск: если macOS
 пишет «не удаётся проверить разработчика» — Системные настройки → Конфиденциальность и безопасность →
