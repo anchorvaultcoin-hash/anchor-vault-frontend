@@ -1,22 +1,6 @@
 [
   {
     "source": "CoinDesk",
-    "title": "Binance hacker dumps a little-known 2017 token and it crashes 90%",
-    "link": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-dumps-a-little-known-2017-token-and-it-crashes-90",
-    "date": "Fri, 30 Oct 2026 07:54:07 +0000",
-    "collected": "2026-10-30",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Binance hack bites India's largest crypto exchange as it curbs futures trading",
-    "link": "https://www.coindesk.com/markets/2026/10/30/coindcx-halts-new-crypto-futures-bets-as-binance-incident-disrupts-liquidity",
-    "date": "Fri, 30 Oct 2026 05:43:07 +0000",
-    "collected": "2026-10-30",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
     "title": "Binance hacker splits $1.4 billion of bitcoin into 19 wallets that no one can freeze",
     "link": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-splits-usd1-4-billion-of-bitcoin-into-19-wallets-that-no-one-can-freeze",
     "date": "Fri, 30 Oct 2026 04:50:42 +0000",
@@ -1597,6 +1581,22 @@
     "link": "https://decrypt.co/383930/coldcard-bitcoin-exploit-how-hidden-flaw-survived-years-audits",
     "date": "Tue, 24 Nov 2026 21:16:02 +0000",
     "collected": "2026-11-25",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "UK regulator plans tighter DeFi rules, citing $6.3B Binance hack: Report",
+    "link": "https://cointelegraph.com/news/uk-fca-defi-regulation-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Thu, 26 Nov 2026 07:08:12 +0000",
+    "collected": "2026-11-26",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "UK Regulator Cites Binance Hack as It Plans Tougher DeFi Rules Than US and EU: Report",
+    "link": "https://decrypt.co/384027/uk-regulator-cites-binance-hack-as-it-plans-tougher-defi-rules-than-us-and-eu-report",
+    "date": "Thu, 26 Nov 2026 11:50:23 +0000",
+    "collected": "2026-11-26",
     "used": false
   }
 ]
