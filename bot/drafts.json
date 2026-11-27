@@ -1,53 +1,5 @@
 [
   {
-    "source": "CoinDesk",
-    "title": "Binance hacker splits $1.4 billion of bitcoin into 19 wallets that no one can freeze",
-    "link": "https://www.coindesk.com/markets/2026/10/30/binance-hacker-splits-usd1-4-billion-of-bitcoin-into-19-wallets-that-no-one-can-freeze",
-    "date": "Fri, 30 Oct 2026 04:50:42 +0000",
-    "collected": "2026-10-30",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Standard Chartered sees more pain after $6 billion Binance hack sends bitcoin lower",
-    "link": "https://www.coindesk.com/markets/2026/10/30/usd6-billion-binance-hack-sends-bitcoin-ether-tumbling-standard-chartered-sees-more-losses-ahead",
-    "date": "Fri, 30 Oct 2026 04:00:43 +0000",
-    "collected": "2026-10-30",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Institutional crypto investors rush to pull funds from exchanges after Binance hack",
-    "link": "https://www.coindesk.com/markets/2026/10/30/institutional-crypto-investors-rush-to-pull-funds-from-exchanges-after-binance-hack",
-    "date": "Fri, 30 Oct 2026 03:56:40 +0000",
-    "collected": "2026-10-30",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Crypto's longtime foe, North Korea's Lazarus Group, likely behind Binance hack: blockchain sleuths",
-    "link": "https://www.coindesk.com/policy/2026/10/29/crypto-s-longtime-foe-north-korea-s-lazarus-group-likely-behind-binance-hack-blockchain-sleuths",
-    "date": "Fri, 30 Oct 2026 03:36:11 +0000",
-    "collected": "2026-10-30",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Binance hack drained wallets backing customer assets, reserve data shows",
-    "link": "https://www.coindesk.com/business/2026/10/30/binance-hack-drained-wallets-backing-customer-assets-reserve-data-shows",
-    "date": "Fri, 30 Oct 2026 00:17:10 +0000",
-    "collected": "2026-10-30",
-    "used": false
-  },
-  {
-    "source": "CoinDesk",
-    "title": "Binance loses over $6 billion in 'biggest crypto hack in history'",
-    "link": "https://www.coindesk.com/business/2026/10/29/potential-multi-billion-binance-hack-hitting-crypto-markets",
-    "date": "Thu, 29 Oct 2026 21:12:45 +0000",
-    "collected": "2026-10-30",
-    "used": false
-  },
-  {
     "source": "Cointelegraph",
     "title": "Bitcoin price metrics hint at rebound as $1.6B liquidations follow Binance hack",
     "link": "https://cointelegraph.com/markets/bitcoin-price-metrics-hint-at-rebound-as-16b-liquidations-follow-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
@@ -1597,6 +1549,54 @@
     "link": "https://decrypt.co/384027/uk-regulator-cites-binance-hack-as-it-plans-tougher-defi-rules-than-us-and-eu-report",
     "date": "Thu, 26 Nov 2026 11:50:23 +0000",
     "collected": "2026-11-26",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Tether can freeze stolen crypto in minutes. Getting it back can take years.",
+    "link": "https://www.coindesk.com/business/2026/11/27/tether-can-freeze-stolen-crypto-in-minutes-getting-it-back-can-take-years",
+    "date": "Fri, 27 Nov 2026 10:00:00 +0000",
+    "collected": "2026-11-27",
+    "used": false
+  },
+  {
+    "source": "CoinDesk",
+    "title": "Binance says customer withdrawals are fully restored, four weeks after the $6.3 billion hack",
+    "link": "https://www.coindesk.com/markets/2026/11/27/binance-says-its-withdrawal-suspension-is-over-four-weeks-after-a-usd6-3-billion-hack",
+    "date": "Fri, 27 Nov 2026 04:45:47 +0000",
+    "collected": "2026-11-27",
+    "used": false
+  },
+  {
+    "source": "Cointelegraph",
+    "title": "Japan’s crypto security group taps SEAL to speed up hack response",
+    "link": "https://cointelegraph.com/news/japans-crypto-security-group-taps-seal-to-speed-up-hack-response?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+    "date": "Fri, 27 Nov 2026 06:15:27 +0000",
+    "collected": "2026-11-27",
+    "used": false
+  },
+  {
+    "source": "Decrypt",
+    "title": "Binance Fully Lifts Withdrawal Suspension Four Weeks After $6.4B Hack",
+    "link": "https://decrypt.co/384121/binance-fully-lifts-withdrawal-suspension-four-weeks-after-6-4b-hack",
+    "date": "Fri, 27 Nov 2026 13:24:17 +0000",
+    "collected": "2026-11-27",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Atoshi Bridge Drained of 201 Million ATOS on Ethereum",
+    "link": "https://thedefiant.io/news/hacks/atoshi-bridge-drained-of-201-million-atos-on-ethereum",
+    "date": "Fri, 27 Nov 2026 12:51:58 GMT",
+    "collected": "2026-11-27",
+    "used": false
+  },
+  {
+    "source": "The Defiant",
+    "title": "Binance Hack Flows Through THORChain Top $600M: Reuters",
+    "link": "https://thedefiant.io/news/hacks/binance-hack-flows-through-thorchain-top-600m-reuters",
+    "date": "Thu, 26 Nov 2026 21:35:55 GMT",
+    "collected": "2026-11-27",
     "used": false
   }
 ]
