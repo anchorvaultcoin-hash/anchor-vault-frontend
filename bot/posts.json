@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "posted": false,
+    "posted": true,
     "ru": "Как проверяется, что контракт не может уйти в минус\n\nГлавный инвариант AnchorVaultCoin: баланс токена на контракте всегда >= сумма всех обязательств (принципал + комиссии + резервы).\n\nЭто не просто юнит-тесты. Это проверено фаззингом Medusa — 10 миллионов случайных вызовов функций контракта, 0 нарушений инварианта.\n\nСейчас контракт также проходит независимый внешний аудит.",
     "en": "How we check that the contract can never go short\n\nThe core rule: the contract's balance is always greater than or equal to everything it owes its users.\n\nThis isn't just ordinary tests. It's verified by fuzzing — millions of random function calls in random order, zero violations found.\n\nThe contract is also currently undergoing an independent external audit.",
     "zh": "如何验证合约永远不会资不抵债\n\n核心规则：合约余额始终大于或等于它对所有用户的负债总额。\n\n这不只是普通测试，而是通过模糊测试验证的——数百万次随机顺序的函数调用，零违规。\n\n该合约目前也正在接受独立的外部审计。",
